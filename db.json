@@ -1,0 +1,181 @@
+{
+  "admins": [
+    {
+      "id": 0,
+      "name": "Soundwanders",
+      "role": "Admin",
+      "email": "admin@soundwanders.com",
+      "address": "333 Jelly Tree Trail",
+      "dateHired": "February 10, 1555"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Chase the Cat",
+      "role": "Head of Engineering",
+      "email": "chasethecat@soundwanders.com",
+      "address": "404 Frog Leg Lane",
+      "dateHired": "March 20, 2020"
+    },
+    {
+      "id": 2,
+      "name": "Macey Marley",
+      "role": "Systems Design",
+      "email": "macey@soundwanders.com",
+      "address": "201 Sunny Bunny Boulevard",
+      "dateHired": "April 30, 2020"
+    },
+    {
+      "id": 3,
+      "name": "Zidane Starplanet",
+      "role": "Project Manager",
+      "email": "zidane@soundwanders.com",
+      "address": "300 Dystopian Circle",
+      "dateHired": "May 20, 2020"
+    },
+    {
+      "id": 4,
+      "name": "Wilfred Wasabi",
+      "role": "Product Manager",
+      "email": "wilfred@soundwanders.com",
+      "address": "505 Nifty Knees Drive",
+      "dateHired": "June 30 2020"
+    },
+    {
+      "id": 5,
+      "name": "Jack McMackerel",
+      "role": "Developer",
+      "email": "jack@soundwanders.com",
+      "address": "602 Greentoads Lane",
+      "dateHired": "July 10 2020"
+    },
+    {
+      "id": 6,
+      "name": "Freddie Pasgetti",
+      "role": "Developer",
+      "email": "freddie@soundwanders.com",
+      "address": "808 Brighlight Lane",
+      "dateHired": "August 20, 2020"
+    },
+    {
+      "id": 7,
+      "name": "Elton von Melton",
+      "role": "Developer",
+      "email": "elton@soundwanders.com",
+      "address": "909 Donut Square",
+      "dateHired": "September 30, 2020"
+    },
+    {
+      "id": 8,
+      "name": "Bruce B. Sprucetree",
+      "role": "Developer",
+      "email": "bruce@soundwanders.com",
+      "address": "700 Rainbow Road",
+      "dateHired": "October 10, 2020"
+    },
+    {
+      "id": 9,
+      "name": "Eliza Greenfruit",
+      "role": "Data Scientist",
+      "email": "eliza@soundwanders.com",
+      "address": "201 Birdtoe Trail",
+      "dateHired": "November 20, 2020"
+    },
+    {
+      "id": 10,
+      "name": "Kelly von Jelly",
+      "role": "Quality Control",
+      "email": "kelly@soundwanders.com",
+      "address": "988 Spacerace Place",
+      "dateHired": "December 30, 2020"
+    },
+    {
+      "id": 11,
+      "name": "Sebastian LeCrashin",
+      "role": "Quality Control",
+      "email": "sebastian@soundwanders.com",
+      "address": "220 Curmudgeon Lane",
+      "dateHired": "January 10, 2020"
+    },
+    {
+      "id": 12,
+      "name": "Thomas Pomegranates",
+      "role": "System Administrator",
+      "email": "thomas@soundwanders.com",
+      "address": "789 Goldeneye Grotto",
+      "dateHired": "February 20, 2021"
+    },
+    {
+      "id": 13,
+      "name": "Maximus Blasphemus",
+      "role": "Technology Consultant",
+      "email": "maximus@soundwanders.com",
+      "address": "344 Bison Leg Lane",
+      "dateHired": "March 29, 2021"
+    },
+    {
+      "id": 14,
+      "name": "Helga Honeywheel",
+      "role": "Client Support",
+      "email": "helga@soundwanders.com",
+      "address": "128 Waspwing Way",
+      "dateHired": "April 30, 2021"
+    },
+    {
+      "id": 15,
+      "name": "Lester Professor",
+      "role": "Client Support",
+      "email": "lester@soundwanders.com",
+      "address": "660 Battlebats Boulevard",
+      "dateHired": "May 30, 2021"
+    }
+  ],
+  "clients": [
+    {
+      "id": 11,
+      "name": "Billy Bolognabear",
+      "organization": "Bologna Crew",
+      "email": "billy@bolognacrew.com",
+      "phone": 1112221111,
+      "dateAcquired": "September 21, 2020",
+      "totalSales": 52505
+    },
+    {
+      "id": 22,
+      "name": "Holly Hollandaise",
+      "organization": "Hollandaise Resorts",
+      "email": "holly@eggsquad.net",
+      "phone": 2227771921,
+      "dateAcquired": "October 22, 2020",
+      "totalSales": 32999
+    },
+    {
+      "id": 33,
+      "name": "Bernie Barrelboss",
+      "organization": "Barrel Bosses",
+      "email": "bernie@barrelboys.com",
+      "phone": 3334443535,
+      "dateAcquired": "July 15, 2020",
+      "totalSales": 125995
+    },
+    {
+      "id": 44,
+      "name": "Wayne Brainburden",
+      "organization": "Brainy Bunch",
+      "email": "wayne@brainybunch.com",
+      "phone": 4448882828,
+      "dateAcquired": "November 5, 2020",
+      "totalSales": 283300
+    },
+    {
+      "id": 55,
+      "name": "Reggie Fishgills",
+      "organization": "Gill's Guys",
+      "email": "reggie@gillsguys.org",
+      "phone": 8880001919,
+      "dateAcquired": "December 18, 2020",
+      "totalSales": 85010
+    }
+  ]
+}
