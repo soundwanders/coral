@@ -53,6 +53,10 @@ const Container = styled.div`
   border-radius: 2rem;
   background-color: #0e1e36;
   gap: 3rem;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    width: 100%;
+    height: max-content !important;
+  }
 `;
 
 const ProfileContainer = styled.div`
@@ -122,6 +126,9 @@ const ContactContainer = styled.div`
   a {
     color: #f9f9f9;
     text-decoration: none;
+  }
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    margin-bottom: 2rem;
   }
 `;
 
