@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {themeColor} from "../utils";
+import { ThemeColor, DarkThemeColor } from "../utils";
 
 function Badge({content, clean = false, glow = false, paid = false, late = false}) {
   return (
@@ -14,31 +14,31 @@ const Div = styled.span`
   padding: 0.3rem 1rem;
   margin: 0.2rem;
   border-radius: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #f9f9f9;
-  background-color: ${themeColor};
+  background-color: #48bff6;
   cursor: pointer;
 
   ${({clean}) =>
     clean &&
     `background-color: transparent;
-    border: 0.05rem solid ${themeColor};
-    color:${themeColor};`}
+    border: 0.05rem solid ${ThemeColor};
+    color:${ThemeColor};`}
 
   ${({glow}) =>
     glow &&
     `
-        font-size:0.8rem;
-        padding:0.2rem 0.5rem;
-        font-weight:normal;
-        background-color: rgba(105, 132, 245, 0.2);
-        color: #2f233d;
+        font-size: 0.8rem;
+        padding: 0.25rem 0.5rem;
+        font-weight: 500;
+        background-color: #ffea94;
+        color: ${DarkThemeColor};
     `}
     ${({paid}) =>
     paid &&
     `
         background-color: #70e00041;
-        color: #70e000;
+        color: #4be000;
     `}
 
 ${({late}) =>

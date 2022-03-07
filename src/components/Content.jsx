@@ -30,7 +30,7 @@ function Content() {
             </InvoiceContainer>
           </ColumnThree>
           <ColumnFour>
-            <TitleText>Recommended Project</TitleText>
+            <TitleText>Upcoming Projects</TitleText>
             <LatestProject />
           </ColumnFour>
         </SectionTwo>
@@ -41,8 +41,8 @@ function Content() {
 
 const Container = styled.div`
   width: 85%;
-  padding: 0.5rem 1.2rem 3.5rem 1.2rem;
-  background: linear-gradient(to bottom right, #f9f9f9 0%, #88b1e5 70%);
+  padding: 0.5rem 1.25rem;
+  background: linear-gradient(to bottom right, #f9f9f9 0%, #9dbfea 100%);
   border-radius: 1rem;
   margin: 1rem 8rem 1rem 4rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {

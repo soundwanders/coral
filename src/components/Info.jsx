@@ -1,17 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import Badge from "./Badge";
-import {cardShadow, hoverEffect, themeColor} from "../utils";
+import { CardShadow, HoverEffect, ThemeColor } from "../utils";
+
 function Info() {
   return (
     <InfoCard>
       <Card>
         <CardContent>
           <Row>
-            <Digit>15%</Digit>
+            <Digit>+ 15%</Digit>
             <InfoContainer>
-              <Title>Profit Margin</Title>
-              <SubTitle>Total Sales, Lifetime</SubTitle>
+              <Title>Projection</Title>
+              <SubTitle>Sales (Q1-Q4)</SubTitle>
             </InfoContainer>
           </Row>
         </CardContent>
@@ -19,15 +20,15 @@ function Info() {
       <Card>
         <CardContent>
           <Row>
-            <Digit>221</Digit>
+            <Digit>21</Digit>
             <InfoContainer>
               <Title>Projects</Title>
-              <SubTitle>5 MTD</SubTitle>
+              <SubTitle>5 currently active</SubTitle>
             </InfoContainer>
           </Row>
           <Row justify>
-            <Badge content="Website Overhaul" glow />
-            <Badge content="Branding & Merchandise" glow />
+            <Badge content="Web Design" glow />
+            <Badge content="Branding" glow />
           </Row>
         </CardContent>
       </Card>
@@ -38,14 +39,14 @@ function Info() {
 const InfoCard = styled.div`
   height: 100%;
   width: 15rem;
-  padding: 1rem 1rem 2rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
   background-color: #f9f9f9;
   border-radius: 1rem;
   color: #f9f9f9;
-  box-shadow: ${cardShadow};
+  box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
   &:hover {
-    box-shadow: ${hoverEffect};
+    box-shadow: ${HoverEffect};
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 80%;
@@ -74,7 +75,7 @@ const Row = styled.div`
   `}
 `;
 const Digit = styled.div`
-  background-color: ${themeColor};
+  background-color: ${ThemeColor};
   padding: 0.8rem 1rem;
   border-radius: 1rem;
   font-size: 1.3rem;
@@ -83,10 +84,10 @@ const InfoContainer = styled.div`
   margin-left: 0.7rem;
 `;
 const Title = styled.h3`
-  color: #11111;
+  color: #0e1e36;
 `;
 const SubTitle = styled.h5`
-  color: #333333;
+  color: #222;
   font-weight: normal;
 `;
 

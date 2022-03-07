@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import Badge from "./Badge";
 import AvatarImage from "../assets/Avatar.png";
-import {RiHomeLine, RiFileCopyLine} from "react-icons/ri";
-import {FaWallet} from "react-icons/fa";
-import {AiOutlinePieChart} from "react-icons/ai";
-import {darkThemeColor} from "../utils";
+import { RiHomeLine, RiFileCopyLine } from "react-icons/ri";
+import { FaWallet } from "react-icons/fa";
+import { AiOutlinePieChart } from "react-icons/ai";
+import { DarkThemeColor } from "../utils";
 
 function Sidebar() {
   return (
@@ -36,8 +36,8 @@ function Sidebar() {
           </Link>
         </PageLinks>
         <ContactContainer>
-          <span>Questions or requests?</span>
-          <a href="/">Contact us</a>
+          <Questions>Any Questions?</Questions>
+          <a href="/"><ContactUs>Contact us</ContactUs></a>
         </ContactContainer>
       </LinksContainer>
     </Container>
@@ -56,6 +56,8 @@ const Container = styled.div`
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 100%;
     height: max-content !important;
+    justify-content: center;
+    margin: 0 auto;
   }
 `;
 
@@ -80,7 +82,7 @@ const Name = styled.h1`
 `;
 
 const LinksContainer = styled.div`
-  background-color: ${darkThemeColor};
+  background-color: ${DarkThemeColor};
   height: 100%;
   width: 100%;
   border-radius: 2rem;
@@ -113,15 +115,15 @@ const Link = styled.div`
 `;
 
 const ContactContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 60%;
   background-color: #0d1c32;
   color: #dbdbdb;
   height: 15%;
   margin: auto;
   border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 1rem;
   a {
     color: #f9f9f9;
@@ -129,6 +131,17 @@ const ContactContainer = styled.div`
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin-bottom: 2rem;
+  }
+`;
+
+const Questions = styled.span`
+  padding-bottom: 0.5rem;
+`;
+
+const ContactUs = styled.h4`
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 `;
 

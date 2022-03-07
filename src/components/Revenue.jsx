@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import {IoStatsChart} from "react-icons/io5";
-import {themeColor, hoverEffect} from "../utils";
+import { IoStatsChart } from "react-icons/io5";
+import { ThemeColor, HoverEffect } from "../utils";
 
 function Revenue() {
   return (
@@ -21,13 +21,13 @@ function Revenue() {
 const RevenueCard = styled.div`
   height: 100%;
   width: 14rem;
-  background-color: ${themeColor};
+  background-color: ${ThemeColor};
   padding: 1rem;
   border-radius: 1rem;
   color: #f9f9f9;
   transition: 0.3s ease-in-out;
   &:hover {
-    box-shadow: ${hoverEffect};
+    box-shadow: ${HoverEffect};
   }
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -50,12 +50,13 @@ const Chart = styled.div`
 
 const RevenueText = styled.h3`
   text-align: center;
-  font-weight: normal;
-  padding: 0.4rem 0;
+  font-weight: 500;
+  padding: 0.3rem 0 0.5rem 0;
 `;
 
 const Earning = styled.h2`
   text-align: center;
+  padding: 0.3rem 0 0.5rem 0;
 `;
 
 const RevenueIncrease = styled.h5`

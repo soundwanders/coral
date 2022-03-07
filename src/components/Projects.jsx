@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import AvatarImage from "../assets/Avatar2.png";
 import AvatarImage2 from "../assets/Avatar3.png";
-import {cardShadow, hoverEffect, themeColor} from "../utils";
+import { CardShadow, HoverEffect, ThemeColor} from "../utils";
 
 function Projects() {
   return (
@@ -12,19 +12,21 @@ function Projects() {
           <img src={AvatarImage} alt="Avatar 2" />
         </Avatar>
         <Detail>
-          <Title>Hoshsplosh University Website Overhaul</Title>
-          <SubTitle>Due in 10 days</SubTitle>
+          <Title>Slimetime University Site Overhaul</Title>
+          <SubTitle>Due in 19 days</SubTitle>
         </Detail>
       </Project>
+
       <Project>
         <Avatar>
           <img src={AvatarImage2} alt="Avatar 3" />
         </Avatar>
         <Detail>
-          <Title>Mellow Jello Branding and Merchandise</Title>
-          <SubTitle>Due in 45 days</SubTitle>
+          <Title>Bigclaw Branding  &amp; Merchandising</Title>
+          <SubTitle>Due in 35 days</SubTitle>
         </Detail>
       </Project>
+      
       <AllProjects>View all active projects</AllProjects>
     </CurrentProjects>
   );
@@ -33,13 +35,13 @@ function Projects() {
 const CurrentProjects = styled.div`
   height: 70%;
   margin: 0;
-  padding: 1rem;
+  padding: 0.75rem 1rem 1.5rem 1rem;
   border-radius: 1rem;
-  background-color: white;
-  box-shadow: ${cardShadow};
+  background-color: #f9f9f9;
+  box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
   &:hover {
-    box-shadow: ${hoverEffect};
+    box-shadow: ${HoverEffect};
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     height: max-content;
@@ -74,8 +76,11 @@ const SubTitle = styled.h5`
 `;
 const AllProjects = styled.h5`
   text-align: end;
-  color: ${themeColor};
+  color: ${ThemeColor};
   cursor: pointer;
+  &:hover {
+    filter: brightness(110%);
+  }
 `;
 
 export default Projects;

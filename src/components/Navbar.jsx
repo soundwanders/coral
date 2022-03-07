@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import {FiSearch} from "react-icons/fi";
+import { FiSearch } from "react-icons/fi";
 
 function Navbar() {
   return (
     <NavbarContainer>
       <Text>
         Good morning,
-        <span> Chase </span>
+        <span> Chase! </span> 
       </Text>
       <InputContainer>
         <Icon>
@@ -31,6 +31,9 @@ const Text = styled.h1`
     font-weight: 500;
     color: #393d68;
   }
+  svg {
+    width: 2rem;
+  }
 `;
 
 const InputContainer = styled.div`
@@ -43,7 +46,7 @@ const Icon = styled.div`
   align-items: center;
   height: 3rem;
   width: 3rem;
-  background-color: #dce4ff;
+  background-color: #f6f8ff;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   svg {
@@ -53,7 +56,7 @@ const Icon = styled.div`
 
 const Input = styled.input`
   border: none;
-  background-color: #dce4ff;
+  background-color: #f6f8ff;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   &:focus {

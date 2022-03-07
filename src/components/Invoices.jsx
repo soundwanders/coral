@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Badge from "./Badge";
 import AvatarImage from "../assets/Omar.png";
 import Avatar2 from "../assets/Percy.png";
-import {cardShadow, hoverEffect} from "../utils";
+import {CardShadow, HoverEffect} from "../utils";
 
 function Invoices() {
   return (
@@ -15,13 +15,13 @@ function Invoices() {
               <img src={AvatarImage} alt="" />
             </Avatar>
             <TextContainer>
-              <Title>Omar Mirrorman</Title>
-              <SubTitle>Albatross Realty</SubTitle>
+              <Title>Carl Catattacks</Title>
+              <SubTitle>Molehill Motel</SubTitle>
             </TextContainer>
           </Info>
           <Container>
             <Badge content="Paid" paid />
-            <Price>$1599</Price>
+            <Price>$5999</Price>
           </Container>
         </Invoice>
         <Invoice>
@@ -50,10 +50,10 @@ const InvoicesContainer = styled.div`
   margin-top: 1rem;
   background-color: #f9f9f9;
   border-radius: 1rem;
-  box-shadow: ${cardShadow};
+  box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
   &:hover {
-    box-shadow: ${hoverEffect};
+    box-shadow: ${HoverEffect};
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 80%;

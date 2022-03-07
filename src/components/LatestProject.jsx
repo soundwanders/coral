@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Badge from "./Badge";
 import AvatarImage from "../assets/Billowbear.png";
-import {cardShadow, hoverEffect} from "../utils";
+import { CardShadow, HoverEffect } from "../utils";
 
 function LatestProject() {
   return (
@@ -15,18 +15,18 @@ function LatestProject() {
             </Avatar>
             <Info>
               <InfoName>Bernie Billowbear</InfoName>
-              <InfoUpdate>Updated {new Date().getDate}</InfoUpdate>
+              <InfoUpdate>Proposal Accepted {new Date().getMonth() }/{ new Date().getFullYear() }</InfoUpdate>
             </Info>
           </InfoContainer>
           <Badge content="Design" />
         </Detail>
-        <Title>Rebuilding the university website with a modern, refreshing design.</Title>
+        <Title>Billowbear Animal Shelter</Title>
         <ProjectInfo>
-          Full overhaul of content, CMS and site architecture. Includes brand style and content
-          guidelines for a streamlined content release schedule.
+          Redesign website, new CMS, create brand style guide. One year content release calendar 
+          due with delivery.
         </ProjectInfo>
         <QuoteContainer>
-          <Quote>$10500</Quote>
+          <Quote>$12500</Quote>
           <Badge content="Full Time" clean />
         </QuoteContainer>
       </CardContent>
@@ -36,14 +36,14 @@ function LatestProject() {
 
 const Project = styled.div`
   width: 27.5vw;
-  height: 130%;
+  height: 120%;
   padding: 1rem;
   border-radius: 1rem;
   background-color: #f9f9f9;
-  box-shadow: ${cardShadow};
+  box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
   &:hover {
-    box-shadow: ${hoverEffect};
+    box-shadow: ${HoverEffect};
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     height: max-content;
@@ -53,7 +53,7 @@ const Project = styled.div`
 `;
 
 const CardContent = styled.div`
-  margin: 0.4rem;
+  margin: 0.3rem;
 `;
 
 const Detail = styled.div`
@@ -98,7 +98,8 @@ const Title = styled.h4`
 
 const ProjectInfo = styled.p`
   margin: 0;
-  padding: 0;
+  padding: 0.4rem;
+  padding-left: 0;
   font-size: 0.9rem;
   color: #3b3b3b;
   margin-bottom: 0.5em;
@@ -109,7 +110,7 @@ const QuoteContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin: 0 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 1rem;
   border-radius: 1rem;
   background-color: rgba(146, 166, 255, 0.3);
   @media screen and (min-width: 320px) and (max-width: 1080px) {
