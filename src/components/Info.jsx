@@ -12,7 +12,7 @@ function Info() {
             <Digit>+ 15%</Digit>
             <InfoContainer>
               <Title>Projection</Title>
-              <SubTitle>Sales (Q1-Q4)</SubTitle>
+              <SubTitle>Sales Growth</SubTitle>
             </InfoContainer>
           </Row>
         </CardContent>
@@ -20,10 +20,10 @@ function Info() {
       <Card>
         <CardContent>
           <Row>
-            <Digit>21</Digit>
+            <Digit>10</Digit>
             <InfoContainer>
               <Title>Projects</Title>
-              <SubTitle>5 currently active</SubTitle>
+              <SubTitle>2 currently active</SubTitle>
             </InfoContainer>
           </Row>
           <Row justify>
