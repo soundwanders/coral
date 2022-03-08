@@ -5,18 +5,18 @@ import Content from "./components/Content";
 
 function App() {
   return (
-    <Container>
-      <Sidebar />
-      <Content />
-    </Container>
+      <Container>
+        <Sidebar />
+        <Content />
+      </Container>
   );
 }
 
 const Container = styled.div`
   display: flex;
+  flex: 1;
   width: 100%;
   height: 97vh;
-  max-height: 100vh;
   background-image: linear-gradient(
     0deg,
     rgb(185, 218, 245) 0%,

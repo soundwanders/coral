@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import Badge from "./Badge";
 import AvatarImage from "../assets/Billowbear.png";
-import { CardShadow, HoverEffect } from "../utils";
+import { CardShadow, HoverEffect } from "../utilities";
 
-function LatestProject() {
+function Pipeline() {
   return (
     <Project>
       <CardContent>
@@ -22,12 +22,11 @@ function LatestProject() {
         </Detail>
         <Title>Billowbear Animal Shelter</Title>
         <ProjectInfo>
-          Redesign website, new CMS, create brand style guide. One year content release calendar 
-          due with delivery.
+          Design, build, launch website with a revamped CMS. Requires prototype approval before final delivery.
         </ProjectInfo>
         <QuoteContainer>
           <Quote>$12500</Quote>
-          <Badge content="Full Time" clean />
+          <Badge content="Full Stack" tech />
         </QuoteContainer>
       </CardContent>
     </Project>
@@ -35,13 +34,15 @@ function LatestProject() {
 }
 
 const Project = styled.div`
-  width: 27.5vw;
-  height: 120%;
+  width: 90%;
+  height: 110%;
+  margin-left: 1rem;
   padding: 1rem;
+  padding-bottom: 2rem;
   border-radius: 1rem;
   background-color: #f9f9f9;
-  box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
+  box-shadow: ${CardShadow};
   &:hover {
     box-shadow: ${HoverEffect};
   }
@@ -49,10 +50,13 @@ const Project = styled.div`
     height: max-content;
     width: 80%;
     margin: 2rem 0;
+    margin-left: 0rem;
+    padding: 0.75rem;
   }
 `;
 
 const CardContent = styled.div`
+  width: 100%; !important;
   margin: 0.3rem;
 `;
 
@@ -100,26 +104,30 @@ const ProjectInfo = styled.p`
   margin: 0;
   padding: 0.4rem;
   padding-left: 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #3b3b3b;
   margin-bottom: 0.5em;
 `;
 
 const QuoteContainer = styled.div`
   display: flex;
+  flex: 1;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
-  margin: 0 1rem;
-  padding: 0.4rem 1rem;
+  padding: 0.3rem 0;
   border-radius: 1rem;
   background-color: rgba(146, 166, 255, 0.3);
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
-
+    flex: 1;
     gap: 0.4rem;
   }
 `;
 
-const Quote = styled.div``;
+const Quote = styled.div`
+  font-size: 1.3rem;
+  padding: 0 1rem;
+`;
 
-export default LatestProject;
+export default Pipeline;

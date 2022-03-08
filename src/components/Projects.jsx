@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import AvatarImage from "../assets/Avatar2.png";
-import AvatarImage2 from "../assets/Avatar3.png";
-import { CardShadow, HoverEffect, ThemeColor} from "../utils";
+import AvatarImage2 from "../assets/Avatar2.png";
+import AvatarImage3 from "../assets/Avatar3.png";
+import { CardShadow, HoverEffect, ThemeColor} from "../utilities";
 
 function Projects() {
   return (
     <CurrentProjects>
       <Project>
         <Avatar>
-          <img src={AvatarImage} alt="Avatar 2" />
+          <img src={AvatarImage2} alt="Avatar 2" />
         </Avatar>
         <Detail>
           <Title>Slimetime University Site Overhaul</Title>
@@ -19,7 +19,7 @@ function Projects() {
 
       <Project>
         <Avatar>
-          <img src={AvatarImage2} alt="Avatar 3" />
+          <img src={AvatarImage3} alt="Avatar 3" />
         </Avatar>
         <Detail>
           <Title>Bigclaw Branding  &amp; Merchandising</Title>
@@ -33,6 +33,7 @@ function Projects() {
 }
 
 const CurrentProjects = styled.div`
+  max-width: 100%;
   height: 70%;
   margin: 0;
   padding: 0.75rem 1rem 1.5rem 1rem;
@@ -46,15 +47,17 @@ const CurrentProjects = styled.div`
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     height: max-content;
     width: 75%;
-    margin-top: 1rem;
   }
 `;
 
 const Project = styled.div`
   display: flex;
+  flex: 1;
   align-items: center;
-  margin-bottom: 0.3rem;
+  margin: 0.2rem;
+  padding-top: 0.5rem;
 `;
+
 const Avatar = styled.div`
   img {
     height: 4rem;
@@ -67,6 +70,7 @@ const Detail = styled.div`
 `;
 const Title = styled.h3`
   font-weight: 500;
+  padding-bottom: 0.25rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     font-size: 1rem;
   }

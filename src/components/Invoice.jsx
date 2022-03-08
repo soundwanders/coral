@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Badge from "./Badge";
-import AvatarImage from "../assets/Omar.png";
-import Avatar2 from "../assets/Percy.png";
-import {CardShadow, HoverEffect} from "../utils";
+import Percy from "../assets/Percy.png";
+import Mary from "../assets/Mary.png";
+import {CardShadow, HoverEffect} from "../utilities";
 
 function Invoices() {
   return (
@@ -12,22 +12,23 @@ function Invoices() {
         <Invoice>
           <Info>
             <Avatar>
-              <img src={AvatarImage} alt="" />
+              <img src={Percy} alt="" />
             </Avatar>
             <TextContainer>
-              <Title>Carl Catattacks</Title>
-              <SubTitle>Molehill Motel</SubTitle>
+              <Title>Mary Mooglemash</Title>
+              <SubTitle>Moogle Media</SubTitle>
             </TextContainer>
           </Info>
           <Container>
             <Badge content="Paid" paid />
-            <Price>$5999</Price>
+            <Price>$2500</Price>
           </Container>
         </Invoice>
+
         <Invoice>
           <Info>
             <Avatar>
-              <img src={Avatar2} alt="" />
+              <img src={Mary} alt="" />
             </Avatar>
             <TextContainer>
               <Title>Percy Poppyseed</Title>
@@ -48,6 +49,7 @@ const InvoicesContainer = styled.div`
   width: 35rem;
   height: 140%;
   margin-top: 1rem;
+  padding: 0.25rem 0 1rem 0;
   background-color: #f9f9f9;
   border-radius: 1rem;
   box-shadow: ${CardShadow};
@@ -68,12 +70,14 @@ const CardContent = styled.div`
     margin: 2rem 0;
   }
 `;
+
 const Invoice = styled.div`
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: space-around;
-  margin: 0.4rem;
-  padding-top: 0.6rem;
+  margin: 0.2rem;
+  padding: 0.5rem 0;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
     gap: 1rem;

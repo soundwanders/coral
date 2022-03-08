@@ -5,7 +5,7 @@ import AvatarImage from "../assets/Avatar.png";
 import { RiHomeLine, RiFileCopyLine } from "react-icons/ri";
 import { FaWallet } from "react-icons/fa";
 import { AiOutlinePieChart } from "react-icons/ai";
-import { DarkThemeColor } from "../utils";
+import { DarkTheme } from "../utilities";
 
 function Sidebar() {
   return (
@@ -49,6 +49,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   width: 20%;
+  flex-wrap: no-wrap;
   height: 100% !important;
   border-radius: 2rem;
   background-color: #0e1e36;
@@ -57,7 +58,10 @@ const Container = styled.div`
     width: 100%;
     height: max-content !important;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0;
+    border-radius: 0;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
   }
 `;
 
@@ -82,7 +86,7 @@ const Name = styled.h1`
 `;
 
 const LinksContainer = styled.div`
-  background-color: ${DarkThemeColor};
+  background-color: ${DarkTheme};
   height: 100%;
   width: 100%;
   border-radius: 2rem;

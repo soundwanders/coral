@@ -3,9 +3,9 @@ import styled from "styled-components";
 import Navbar from "./Navbar";
 import Revenue from "./Revenue";
 import Info from "./Info";
-import LatestProject from "./LatestProject";
+import Pipeline from "./Pipeline";
 import Projects from "./Projects";
-import Invoices from "./Invoices";
+import Invoices from "./Invoice";
 
 function Content() {
   return (
@@ -30,8 +30,8 @@ function Content() {
             </InvoiceContainer>
           </ColumnThree>
           <ColumnFour>
-            <TitleText>Upcoming Projects</TitleText>
-            <LatestProject />
+            <TitleText2>Upcoming Projects</TitleText2>
+            <Pipeline />
           </ColumnFour>
         </SectionTwo>
       </SubContainer>
@@ -42,14 +42,15 @@ function Content() {
 const Container = styled.div`
   width: 85%;
   padding: 0.5rem 1.25rem;
-  background: linear-gradient(to bottom right, #f9f9f9 0%, #9dbfea 100%);
+  background: linear-gradient(to bottom right, #eaf5ff 66%, #ffe4ce 100%);
   border-radius: 1rem;
-  margin: 1rem 8rem 1rem 4rem;
+  margin: 0rem 8rem 0rem 4rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 1rem 0 0 0;
+    padding: 0.5rem 0.25rem;
   }
 `;
 
@@ -57,7 +58,7 @@ const SubContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  height: 80%;
+  height: 85%;
   width: 100%;
   margin: 0.5rem 0;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -102,6 +103,20 @@ const ColumnTwo = styled.div`
 
 const TitleText = styled.h3`
   height: 20%;
+  padding: 0 4px;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    padding: 0;
+  }
+`;
+
+const TitleText2 = styled.h3`
+  height: 20%;
+  margin-left: 1rem;
+  padding: 0 4px;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    margin-left: 0;
+    padding: 0;
+  }
 `;
 
 const SectionTwo = styled.div`

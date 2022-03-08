@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Badge from "./Badge";
-import { CardShadow, HoverEffect, ThemeColor } from "../utils";
+import { CardShadow, HoverEffect, ThemeColor } from "../utilities";
 
 function Info() {
   return (
@@ -48,7 +48,7 @@ const InfoCard = styled.div`
   &:hover {
     box-shadow: ${HoverEffect};
   }
-  @media screen and (min-width: 320px) and (max-width: 1080px) {
+  @media screen and (min-width: 320px) and (max-width: 960px) {
     width: 80%;
   }
 `;
@@ -60,7 +60,7 @@ const Card = styled.div`
 `;
 
 const CardContent = styled.div`
-  padding: 0.7rem 1rem 0.3rem 1rem;
+  padding: 0.4rem 1rem;
 `;
 
 const Row = styled.div`
@@ -70,8 +70,8 @@ const Row = styled.div`
   ${({justify}) =>
     justify &&
     `
-      justify-content:space-around;
-      width:90%
+      justify-content: space-around;
+      width: 100%
   `}
 `;
 const Digit = styled.div`
@@ -85,10 +85,13 @@ const InfoContainer = styled.div`
 `;
 const Title = styled.h3`
   color: #0e1e36;
+  margin-left: 0.7rem;
+  margin-bottom: 4px;
 `;
 const SubTitle = styled.h5`
   color: #222;
   font-weight: normal;
+  margin-left: 0.7rem;
 `;
 
 export default Info;
