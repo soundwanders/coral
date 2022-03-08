@@ -62,6 +62,7 @@ const InvoicesContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 0.5rem;
   }
 `;
 
@@ -82,6 +83,9 @@ const Invoice = styled.div`
     flex-direction: column;
     gap: 1rem;
   }
+  &:nth-child(2) {
+      padding-top: 0.5rem;
+    }
 `;
 const Info = styled.div`
   display: flex;
@@ -119,6 +123,7 @@ const Container = styled.div`
     width: 100%;
     flex-direction: column;
     gap: 0.6rem;
+
   }
 `;
 
