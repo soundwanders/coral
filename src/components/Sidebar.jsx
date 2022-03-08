@@ -59,6 +59,7 @@ const Container = styled.div`
     height: max-content !important;
     justify-content: center;
     margin: 0;
+    padding: 0 1rem;
     border-radius: 0;
     border-bottom-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
