@@ -71,7 +71,7 @@ const Row = styled.div`
     justify &&
     `
       justify-content: space-around;
-      width: 100%
+      width: 100%;
   `}
 `;
 const Digit = styled.div`
@@ -87,11 +87,18 @@ const Title = styled.h3`
   color: #0e1e36;
   margin-left: 0.7rem;
   margin-bottom: 4px;
+  @media (max-width: 960px) {
+    margin-left: 0.25rem;
+  }
 `;
+
 const SubTitle = styled.h5`
   color: #222;
   font-weight: normal;
   margin-left: 0.7rem;
+  @media (max-width: 960px) {
+    margin-left: 0.25rem;
+  }
 `;
 
 export default Info;
