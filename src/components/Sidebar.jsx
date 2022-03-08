@@ -55,7 +55,7 @@ const Container = styled.div`
   background-color: #0e1e36;
   gap: 3rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
-    width: 98%;
+    width: 99%;
     height: max-content !important;
     justify-content: center;
     margin: 0;
