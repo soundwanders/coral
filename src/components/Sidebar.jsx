@@ -76,9 +76,13 @@ const ProfileContainer = styled.div`
 `;
 
 const Avatar = styled.img`
-  width: 3rem;
+  width: 3.25rem;
   border-radius: 6rem;
   margin-top: 20%;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    width: 3.5rem;
+  }
+
 `;
 
 const Name = styled.h1`
