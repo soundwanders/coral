@@ -16,7 +16,7 @@ const Div = styled.span`
   border-radius: 1rem;
   font-weight: 600;
   color: #f9f9f9;
-  background-color: #11afd3;
+  background-color: #47bef2;
   cursor: pointer;
 
   ${({tech}) =>
