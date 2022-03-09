@@ -1,6 +1,6 @@
 # Coral Dashboard
 
-coralquarrel.netlify.app
+[coralquarrel.netlify.app](https://oralquarrel.netlify.app/)
 
 ---
 
