@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Badge from "./Badge";
 import AvatarImage from "../assets/Billowbear.png";
-import { CardShadow, HoverEffect } from "../utilities";
+import {CardShadow, HoverEffect} from "../utilities";
 
 function Pipeline() {
   return (
@@ -15,14 +15,17 @@ function Pipeline() {
             </Avatar>
             <Info>
               <InfoName>Bernie Billowbear</InfoName>
-              <InfoUpdate>Proposal Accepted {new Date().getMonth() }/{ new Date().getFullYear() }</InfoUpdate>
+              <InfoUpdate>
+                Proposal Accepted {new Date().getMonth()}/{new Date().getFullYear()}
+              </InfoUpdate>
             </Info>
           </InfoContainer>
           <Badge content="Design" />
         </Detail>
         <Title>Billowbear Animal Shelter</Title>
         <ProjectInfo>
-          Design, build, launch website with a revamped CMS. Requires prototype approval before final delivery.
+          Design, build, launch website with a revamped CMS. Requires prototype approval before
+          final delivery.
         </ProjectInfo>
         <QuoteContainer>
           <Quote>$12500</Quote>

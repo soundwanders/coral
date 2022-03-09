@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import AvatarImage2 from "../assets/Avatar2.png";
 import AvatarImage3 from "../assets/Avatar3.png";
-import { CardShadow, HoverEffect, ThemeColor} from "../utilities";
+import {CardShadow, HoverEffect, ThemeColor} from "../utilities";
 
 function Projects() {
   return (
@@ -22,11 +22,11 @@ function Projects() {
           <img src={AvatarImage3} alt="Avatar 3" />
         </Avatar>
         <Detail>
-          <Title>Bigclaw Branding  &amp; Merchandising</Title>
+          <Title>Bigclaw Branding &amp; Merchandising</Title>
           <SubTitle>Due in 35 days</SubTitle>
         </Detail>
       </Project>
-      
+
       <AllProjects>View all active projects</AllProjects>
     </CurrentProjects>
   );
@@ -36,7 +36,7 @@ const CurrentProjects = styled.div`
   max-width: 100%;
   height: 70%;
   margin: 0;
-  padding: 0.75rem 1rem 1.5rem 1rem;
+  padding: 1rem 1rem 1.5rem 1rem;
   border-radius: 1rem;
   background-color: #f9f9f9;
   box-shadow: ${CardShadow};

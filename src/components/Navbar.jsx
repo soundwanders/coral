@@ -1,19 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import { FiSearch } from "react-icons/fi";
+import {FiSearch} from "react-icons/fi";
 
 function Navbar() {
   return (
     <NavbarContainer>
-      <Text>
-        Good morning,
-        <span> Chase! </span> 
-      </Text>
+      <Greeting>
+        Good morning, 
+        <span> Chase! </span>
+      </Greeting>
       <InputContainer>
         <Icon>
           <FiSearch />
         </Icon>
-        <Input type="text" placeholder="Browse active projects" />
+        <Input type="text" placeholder="Browse projects" />
       </InputContainer>
     </NavbarContainer>
   );
@@ -26,18 +26,24 @@ const NavbarContainer = styled.nav`
   height: 10%;
 `;
 
-const Text = styled.h1`
+const Greeting = styled.h1`
   span {
     font-weight: 500;
     color: #393d68;
   }
-  svg {
-    width: 2rem;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    padding-left: 1.25rem;
   }
 `;
 
 const InputContainer = styled.div`
   display: flex;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    overflow-x: hidden;
+    flex-direction: row;
+    flex: 1;
+    flex-basis: 90%;
+  }
 `;
 
 const Icon = styled.div`
@@ -62,6 +68,10 @@ const Input = styled.input`
   &:focus {
     border: none;
     outline: none;
+  }
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    overflow-x: hidden;
+    margin-right: 1.25rem;
   }
 `;
 

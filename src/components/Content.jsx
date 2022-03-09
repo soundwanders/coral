@@ -18,19 +18,19 @@ function Content() {
             <Info />
           </ColumnOne>
           <ColumnTwo>
-            <TitleText>Active Projects</TitleText>
+            <ProjectsTitle>Active Projects</ProjectsTitle>
             <Projects />
           </ColumnTwo>
         </SectionOne>
         <SectionTwo>
           <ColumnThree>
             <InvoiceContainer>
-              <TitleText>Recent Invoices</TitleText>
+              <InvoiceTitle>Recent Invoices</InvoiceTitle>
               <Invoices />
             </InvoiceContainer>
           </ColumnThree>
           <ColumnFour>
-            <TitleText2>Upcoming Projects</TitleText2>
+            <PipelineTitle>Upcoming Projects</PipelineTitle>
             <Pipeline />
           </ColumnFour>
         </SectionTwo>
@@ -42,8 +42,8 @@ function Content() {
 const Container = styled.div`
   width: 85%;
   padding: 0.5rem 1.25rem;
-  background: linear-gradient(to bottom right, #eaf5ff 66%, #ffe4ce 100%);
-  border-radius: 1rem;
+  background: linear-gradient(to bottom right, #eaf5ff 55%, #ffe4ce 100%);
+  border-radius: 0;
   margin: 0rem 8rem 0rem 4rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     display: flex;
@@ -51,6 +51,8 @@ const Container = styled.div`
     width: 100%;
     margin: 1rem 0 0 0;
     padding: 0.5rem 0.25rem;
+    border-radius: 2rem;
+    background: linear-gradient(to bottom, #eaf5ff 75%, #ffe4ce 100%);
   }
 `;
 
@@ -101,7 +103,16 @@ const ColumnTwo = styled.div`
   }
 `;
 
-const TitleText = styled.h3`
+const ProjectsTitle = styled.h3`
+  height: 20%;
+  padding: 0 4px;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+`;
+
+const InvoiceTitle = styled.h3`
   height: 20%;
   padding: 0 4px;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -109,13 +120,14 @@ const TitleText = styled.h3`
   }
 `;
 
-const TitleText2 = styled.h3`
+const PipelineTitle= styled.h3`
   height: 20%;
   margin-left: 1rem;
   padding: 0 4px;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin-left: 0;
     padding: 0;
+    margin-bottom: -0.8rem;
   }
 `;
 

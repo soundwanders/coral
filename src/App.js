@@ -5,10 +5,10 @@ import Content from "./components/Content";
 
 function App() {
   return (
-      <Container>
-        <Sidebar />
-        <Content />
-      </Container>
+    <Container>
+      <Sidebar />
+      <Content />
+    </Container>
   );
 }
 

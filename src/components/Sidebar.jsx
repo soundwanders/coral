@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import Badge from "./Badge";
 import AvatarImage from "../assets/Avatar.png";
-import { RiHomeLine, RiFileCopyLine } from "react-icons/ri";
-import { FaWallet } from "react-icons/fa";
-import { AiOutlinePieChart } from "react-icons/ai";
-import { DarkTheme } from "../utilities";
+import {RiHomeLine, RiFileCopyLine} from "react-icons/ri";
+import {FaWallet} from "react-icons/fa";
+import {AiOutlinePieChart} from "react-icons/ai";
+import {DarkTheme} from "../utilities";
 
 function Sidebar() {
   return (
@@ -37,7 +37,9 @@ function Sidebar() {
         </PageLinks>
         <ContactContainer>
           <Questions>Any Questions?</Questions>
-          <a href="/"><ContactUs>Contact us</ContactUs></a>
+          <a href="/">
+            <ContactUs>Contact us</ContactUs>
+          </a>
         </ContactContainer>
       </LinksContainer>
     </Container>
@@ -59,6 +61,7 @@ const Container = styled.div`
     height: max-content !important;
     justify-content: center;
     margin: 0;
+    margin-bottom: 1.5rem;
     border-radius: 0;
     border-bottom-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
