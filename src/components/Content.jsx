@@ -127,7 +127,7 @@ const PipelineTitle= styled.h3`
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin-left: 0;
     padding: 0;
-    margin-bottom: -0.8rem;
+    margin-bottom: -0.9rem;
   }
 `;
 
