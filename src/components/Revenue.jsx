@@ -33,7 +33,8 @@ const RevenueCard = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 80%;
-    .margin-right: 0;
+    margin-right: 0;
+    margin-top: 0.3rem;
   }
 `;
 
