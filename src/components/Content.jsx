@@ -45,7 +45,7 @@ const BackgroundGradient = styled.div`
   width: 85%;
   padding: 0.5rem 1.25rem;
   background: linear-gradient(to bottom right, #eaf5ff 55%, #ffe4ce 100%);
-  border-radius: 0;
+  border-radius: 2rem;
   margin: 0rem 5rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     display: flex;
@@ -53,7 +53,8 @@ const BackgroundGradient = styled.div`
     width: 100%;
     margin: 1rem 0 0 0;
     padding: 0.5rem 0.25rem;
-    border-radius: 2rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     background: linear-gradient(to bottom, #eaf5ff 75%, #ffe4ce 100%);
   }
 `;
