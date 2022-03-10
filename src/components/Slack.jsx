@@ -11,7 +11,7 @@ function Slack() {
             <FaSlack />
           </SlackLogo>
           <SlackText>
-            <SlackHeader>Engage with the team!</SlackHeader>
+            <SlackHeader> Stop by and say hello!</SlackHeader>
           </SlackText>
         </SlackContainer>
         <SlackJoin>Join Our Slack</SlackJoin>
@@ -32,7 +32,7 @@ const Wrapper = styled.div`
     box-shadow: ${HoverEffect};
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     height: max-content;
     width: 80%;
   }
