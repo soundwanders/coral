@@ -45,11 +45,9 @@ const CurrentProjects = styled.div`
     box-shadow: ${HoverEffect};
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: max-content;
     width: 80%
+    max-width: 80%;
+    height: max-content;
     margin: 0.3rem 0 -1rem 0;
 `;
 
