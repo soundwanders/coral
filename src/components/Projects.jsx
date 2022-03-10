@@ -46,6 +46,7 @@ const CurrentProjects = styled.div`
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     height: max-content;
     width: 80%
