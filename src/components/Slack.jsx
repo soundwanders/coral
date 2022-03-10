@@ -33,7 +33,6 @@ const Wrapper = styled.div`
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin-top: 2rem;
-    margin-bottom: 2rem;
     height: max-content;
     width: 80%;
   }
@@ -88,6 +87,9 @@ const SlackJoin = styled.button`
   color: #f9f9f9;
   background-color: ${DarkTheme};
   cursor: pointer;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    margin-bottom: 0.3rem;
+  }
 `;
 
 export default Slack;
