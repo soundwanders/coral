@@ -24,6 +24,9 @@ const HeaderContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   height: 10%;
+  media screen and (min-width: 320px) and (max-width: 1080px) {
+    margin-bottom: 0.3rem;
+  }
 `;
 
 const Greeting = styled.h1`
