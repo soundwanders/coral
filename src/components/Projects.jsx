@@ -26,7 +26,6 @@ function Projects() {
           <SubTitle>Due in 35 days</SubTitle>
         </Detail>
       </Project>
-
       <AllProjects>View all active projects</AllProjects>
     </CurrentProjects>
   );
@@ -46,9 +45,11 @@ const CurrentProjects = styled.div`
     box-shadow: ${HoverEffect};
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
+    display: flex;
+    justify-content: center;
     height: max-content;
-    width: 75%;
-  }
+    width: 80%
+    margin: 0.3rem 0 -1rem 0;
 `;
 
 const Project = styled.div`
@@ -87,7 +88,7 @@ const AllProjects = styled.h5`
   &:hover {
     filter: brightness(110%);
   }
-  media screen and (min-width: 320px) and (max-width: 1080px) {
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin-top: 0.2rem;
   }
 `;
