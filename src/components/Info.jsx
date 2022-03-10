@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Badge from "./Badge";
+import Badges from "./Badges";
 import {CardShadow, HoverEffect, ThemeColor} from "../utilities";
 
 function Info() {
@@ -9,7 +9,7 @@ function Info() {
       <Card>
         <CardContent>
           <Row>
-            <Digit>+ 15%</Digit>
+            <Value>+ 15%</Value>
             <InfoContainer>
               <Title>Projection</Title>
               <SubTitle>Sales Growth</SubTitle>
@@ -20,15 +20,16 @@ function Info() {
       <Card>
         <CardContent>
           <Row>
-            <Digit>10</Digit>
+            <Value>10</Value>
             <InfoContainer>
               <Title>Projects</Title>
               <SubTitle>2 currently active</SubTitle>
             </InfoContainer>
           </Row>
           <Row justify>
-            <Badge content="Web Design" glow />
-            <Badge content="Branding" glow />
+            <Badges content="Design" glow />
+            <Badges content="Branding" glow />
+            <Badges content="CMS" glow />
           </Row>
         </CardContent>
       </Card>
@@ -39,7 +40,7 @@ function Info() {
 const InfoCard = styled.div`
   height: 100%;
   width: 15rem;
-  padding: 1rem 1rem 1rem 1rem;
+  padding: 1rem;
   background-color: #f9f9f9;
   border-radius: 1rem;
   color: #f9f9f9;
@@ -65,8 +66,9 @@ const CardContent = styled.div`
 
 const Row = styled.div`
   display: flex;
+  min-width: 0;
   align-items: center;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
   ${({justify}) =>
     justify &&
     `
@@ -74,14 +76,14 @@ const Row = styled.div`
       width: 100%;
   `}
 `;
-const Digit = styled.div`
+const Value = styled.div`
   background-color: ${ThemeColor};
   padding: 0.8rem 1rem;
   border-radius: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 `;
 const InfoContainer = styled.div`
-  margin-left: 0.7rem;
+  margin-left: 0.6rem;
 `;
 const Title = styled.h3`
   color: #0e1e36;

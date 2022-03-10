@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Badge from "./Badge";
+import Badges from "./Badges";
 import Percy from "../assets/Percy.png";
 import Mary from "../assets/Mary.png";
 import {CardShadow, HoverEffect} from "../utilities";
@@ -20,7 +20,7 @@ function Invoices() {
             </TextContainer>
           </Info>
           <Container>
-            <Badge content="Paid" paid />
+            <Badges content="Paid" paid />
             <Price>$2500</Price>
           </Container>
         </Invoice>
@@ -36,7 +36,7 @@ function Invoices() {
             </TextContainer>
           </Info>
           <Container>
-            <Badge content="Late" late />
+            <Badges content="Late" late />
             <Price>$825</Price>
           </Container>
         </Invoice>
@@ -49,7 +49,7 @@ const InvoicesContainer = styled.div`
   width: 35rem;
   height: 140%;
   margin-top: 1rem;
-  padding: 0.25rem 0 0.25rem 0;
+  padding: 0.25rem 0 1rem 0;
   background-color: #f9f9f9;
   border-radius: 1rem;
   box-shadow: ${CardShadow};
@@ -99,8 +99,8 @@ const Info = styled.div`
 `;
 const Avatar = styled.div`
   img {
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 3.2rem;
+    width: 3.2rem;
     border-radius: 3.5rem;
   }
 `;

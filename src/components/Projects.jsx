@@ -33,10 +33,11 @@ function Projects() {
 }
 
 const CurrentProjects = styled.div`
+  width: max-content;
   max-width: 100%;
   height: 70%;
-  margin: 0;
-  padding: 1rem 1rem 1.5rem 1rem;
+  margin: 0 0 0 1rem;
+  padding: 1rem 6rem 1.5rem 1rem;
   border-radius: 1rem;
   background-color: #f9f9f9;
   box-shadow: ${CardShadow};

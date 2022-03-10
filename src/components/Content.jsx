@@ -1,24 +1,25 @@
 import React from "react";
 import styled from "styled-components";
-import Navbar from "./Navbar";
+import Header from "./Header";
 import Revenue from "./Revenue";
 import Info from "./Info";
-import Pipeline from "./Pipeline";
 import Projects from "./Projects";
 import Invoices from "./Invoice";
+import Slack from "./Slack";
+import Pipeline from "./Pipeline";
 
 function Content() {
   return (
-    <Container>
-      <Navbar />
-      <SubContainer>
+    <BackgroundGradient>
+      <Header />
+      <ContentContainer>
         <SectionOne>
           <ColumnOne>
             <Revenue />
             <Info />
           </ColumnOne>
           <ColumnTwo>
-            <ProjectsTitle>Active Projects</ProjectsTitle>
+            <ActiveProjectsTitle>Active Projects</ActiveProjectsTitle>
             <Projects />
           </ColumnTwo>
         </SectionOne>
@@ -28,23 +29,24 @@ function Content() {
               <InvoiceTitle>Recent Invoices</InvoiceTitle>
               <Invoices />
             </InvoiceContainer>
+            <Slack />
           </ColumnThree>
           <ColumnFour>
-            <PipelineTitle>Upcoming Projects</PipelineTitle>
+            <ProjectsPipelineTitle>Upcoming Projects</ProjectsPipelineTitle>
             <Pipeline />
           </ColumnFour>
         </SectionTwo>
-      </SubContainer>
-    </Container>
+      </ContentContainer>
+    </BackgroundGradient>
   );
 }
 
-const Container = styled.div`
+const BackgroundGradient = styled.div`
   width: 85%;
   padding: 0.5rem 1.25rem;
   background: linear-gradient(to bottom right, #eaf5ff 55%, #ffe4ce 100%);
   border-radius: 0;
-  margin: 0rem 8rem 0rem 4rem;
+  margin: 0rem 5rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     display: flex;
     flex-direction: column;
@@ -56,7 +58,7 @@ const Container = styled.div`
   }
 `;
 
-const SubContainer = styled.div`
+const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 4rem;
@@ -67,18 +69,22 @@ const SubContainer = styled.div`
     height: 100%;
   }
 `;
+
+// Section One contains Revenue and Info components
 const SectionOne = styled.div`
   display: flex;
   justify-content: space-between;
   height: 40%;
-  gap: 2rem;
   width: 100%;
+  gap: 2rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
     align-items: center;
     height: max-content;
   }
 `;
+
+// Revenue
 const ColumnOne = styled.div`
   display: flex;
   gap: 3rem;
@@ -91,6 +97,7 @@ const ColumnOne = styled.div`
   }
 `;
 
+// Info
 const ColumnTwo = styled.div`
   display: flex;
   flex-direction: column;
@@ -103,7 +110,7 @@ const ColumnTwo = styled.div`
   }
 `;
 
-const ProjectsTitle = styled.h3`
+const ActiveProjectsTitle = styled.h3`
   height: 20%;
   padding: 0 4px;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -120,9 +127,9 @@ const InvoiceTitle = styled.h3`
   }
 `;
 
-const PipelineTitle= styled.h3`
+const ProjectsPipelineTitle = styled.h3`
   height: 20%;
-  margin-left: 1rem;
+  margin: 0 0 2px 1rem;
   padding: 0 4px;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin-left: 0;
@@ -131,6 +138,7 @@ const PipelineTitle= styled.h3`
   }
 `;
 
+// Section two contains Invoices and Pipeline components
 const SectionTwo = styled.div`
   display: flex;
   gap: 2rem;
@@ -142,6 +150,7 @@ const SectionTwo = styled.div`
   }
 `;
 
+// Invoices
 const ColumnThree = styled.div`
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     display: flex;
@@ -164,6 +173,7 @@ const InvoiceContainer = styled.div`
   }
 `;
 
+// Pipeline
 const ColumnFour = styled.div`
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     display: flex;

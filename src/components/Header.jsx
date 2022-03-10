@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import {FiSearch} from "react-icons/fi";
 
-function Navbar() {
+function Header() {
   return (
-    <NavbarContainer>
+    <HeaderContainer>
       <Greeting>
-        Good morning, 
+        Good morning,
         <span> Chase! </span>
       </Greeting>
       <InputContainer>
@@ -15,11 +15,11 @@ function Navbar() {
         </Icon>
         <Input type="text" placeholder="Browse projects" />
       </InputContainer>
-    </NavbarContainer>
+    </HeaderContainer>
   );
 }
 
-const NavbarContainer = styled.nav`
+const HeaderContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,4 +75,4 @@ const Input = styled.input`
   }
 `;
 
-export default Navbar;
+export default Header;

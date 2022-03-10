@@ -10,7 +10,7 @@ function Revenue() {
         <Chart>
           <IoStatsChart />
         </Chart>
-        <RevenueText>Net Earnings</RevenueText>
+        <RevenueText>Net Revenue</RevenueText>
         <Earning>$492,016</Earning>
         <RevenueIncrease>+ 10% YTD</RevenueIncrease>
       </CardContent>
@@ -23,6 +23,7 @@ const RevenueCard = styled.div`
   width: 14rem;
   background-color: ${ThemeColor};
   padding: 1rem;
+  margin-right: -1rem;
   border-radius: 1rem;
   color: #f9f9f9;
   transition: 0.3s ease-in-out;
@@ -44,14 +45,14 @@ const Chart = styled.div`
   justify-content: center;
   svg {
     height: 4rem;
-    width: 4rem;
+    width: 6rem;
   }
 `;
 
 const RevenueText = styled.h3`
   text-align: center;
-  font-weight: 500;
-  padding: 0.3rem 0 0.5rem 0;
+  font-weight: 600;
+  margin: 0.5rem 0 0.7rem 0;
 `;
 
 const Earning = styled.h2`
@@ -61,7 +62,7 @@ const Earning = styled.h2`
 
 const RevenueIncrease = styled.h5`
   text-align: center;
-  font-weight: normal;
+  font-weight: 500;
   background-color: rgba(0, 0, 0, 0.2);
   padding: 0.5rem;
   border-radius: 2rem;

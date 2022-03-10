@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Badge from "./Badge";
+import Badges from "./Badges";
 import AvatarImage from "../assets/Billowbear.png";
 import {CardShadow, HoverEffect} from "../utilities";
 
@@ -20,7 +20,7 @@ function Pipeline() {
               </InfoUpdate>
             </Info>
           </InfoContainer>
-          <Badge content="Design" />
+          <Badges content="Design" />
         </Detail>
         <Title>Billowbear Animal Shelter</Title>
         <ProjectInfo>
@@ -29,7 +29,7 @@ function Pipeline() {
         </ProjectInfo>
         <QuoteContainer>
           <Quote>$12500</Quote>
-          <Badge content="Full Stack" tech />
+          <Badges content="Full Stack" tech />
         </QuoteContainer>
       </CardContent>
     </Project>
@@ -114,7 +114,6 @@ const ProjectInfo = styled.p`
 
 const QuoteContainer = styled.div`
   display: flex;
-  flex: 1;
   width: 100%;
   align-items: center;
   justify-content: space-between;

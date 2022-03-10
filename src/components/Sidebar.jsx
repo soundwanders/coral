@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Badge from "./Badge";
+import Badges from "./Badges";
 import AvatarImage from "../assets/Avatar.png";
 import {RiHomeLine, RiFileCopyLine} from "react-icons/ri";
 import {FaWallet} from "react-icons/fa";
@@ -12,8 +12,8 @@ function Sidebar() {
     <Container>
       <ProfileContainer>
         <Avatar src={AvatarImage} />
-        <Name>Chase Wunderkat</Name>
-        <Badge content="Founder" />
+        <Name>Chase Wunderkatz</Name>
+        <Badges content="Founder" />
       </ProfileContainer>
 
       <LinksContainer>
@@ -82,7 +82,6 @@ const Avatar = styled.img`
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 3.5rem;
   }
-
 `;
 
 const Name = styled.h1`
