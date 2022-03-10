@@ -79,12 +79,16 @@ const Title = styled.h3`
 const SubTitle = styled.h5`
   font-weight: 300;
 `;
+
 const AllProjects = styled.h5`
   text-align: end;
   color: ${ThemeColor};
   cursor: pointer;
   &:hover {
     filter: brightness(110%);
+  }
+  media screen and (min-width: 320px) and (max-width: 1080px) {
+    margin-top: 0.2rem;
   }
 `;
 
