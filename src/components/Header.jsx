@@ -41,6 +41,7 @@ const Greeting = styled.h1`
 
 const InputContainer = styled.div`
   display: flex;
+  margin-right: 1rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     overflow-x: hidden;
     flex-direction: row;

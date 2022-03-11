@@ -32,11 +32,11 @@ function Projects() {
 }
 
 const CurrentProjects = styled.div`
-  width: max-content;
-  max-width: 100%;
+  width: 80%;
+  max-width: 640px;
   height: 70%;
   margin: 0 0 0 1rem;
-  padding: 1rem 6rem 1.5rem 1rem;
+  padding: 1rem 6rem 0.5rem 1rem;
   border-radius: 1rem;
   background-color: #f9f9f9;
   box-shadow: ${CardShadow};
@@ -45,18 +45,24 @@ const CurrentProjects = styled.div`
     box-shadow: ${HoverEffect};
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
-    width: 80%
-    max-width: 80%;
+    width: 70%;
+    max-width: 70%;
     height: max-content;
-    margin: 0.3rem 0 -1rem 0;
+    margin: 0.1rem 0 -1rem 0;
+    padding: 1rem;
 `;
 
 const Project = styled.div`
   display: flex;
   flex: 1;
   align-items: center;
-  margin: 0.2rem;
-  padding-top: 0.5rem;
+  margin: 0.4rem;
+  &:nth-child(2) {
+    padding-top: 2rem;
+    @media screen and (min-width: 320px) and (max-width: 1080px) {
+    padding-top: 2rem;
+  }
+}
 `;
 
 const Avatar = styled.div`
@@ -84,11 +90,12 @@ const AllProjects = styled.h5`
   text-align: end;
   color: ${ThemeColor};
   cursor: pointer;
+  margin-top: 0.75rem;
   &:hover {
     filter: brightness(110%);
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
-    margin-top: 0.2rem;
+    margin-top: 0.3rem;
   }
 `;
 

@@ -32,7 +32,7 @@ function Content() {
             <Slack />
           </ColumnThree>
           <ColumnFour>
-            <ProjectsPipelineTitle>Upcoming Projects</ProjectsPipelineTitle>
+            <PipelineTitle>Upcoming Projects</PipelineTitle>
             <Pipeline />
           </ColumnFour>
         </SectionTwo>
@@ -114,8 +114,11 @@ const ColumnTwo = styled.div`
 const ActiveProjectsTitle = styled.h3`
   height: 20%;
   padding: 0 4px;
+  margin-left: 1rem;
+  font-size: 1.5rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     padding: 0;
+    margin-top: 0.4rem;
     margin-bottom: 1rem;
   }
 `;
@@ -123,15 +126,17 @@ const ActiveProjectsTitle = styled.h3`
 const InvoiceTitle = styled.h3`
   height: 20%;
   padding: 0 4px;
+  font-size: 1.5rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     padding: 0;
   }
 `;
 
-const ProjectsPipelineTitle = styled.h3`
+const PipelineTitle = styled.h3`
   height: 20%;
   margin: 0 0 2px 1rem;
   padding: 0 4px;
+  font-size: 1.5rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin-left: 0;
     padding: 0;

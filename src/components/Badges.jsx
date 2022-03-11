@@ -13,6 +13,7 @@ function Badges({content, tech = false, glow = false, paid = false, late = false
 const Div = styled.span`
   padding: 0.3rem 1rem;
   margin: 0.25rem;
+  border: 0px solid transparent;
   border-radius: 1rem;
   font-weight: 600;
   color: #f9f9f9;

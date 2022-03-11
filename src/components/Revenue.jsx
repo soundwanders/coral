@@ -39,7 +39,10 @@ const RevenueCard = styled.div`
 `;
 
 const CardContent = styled.div`
-  margin: 1rem;
+  margin: 2rem 1rem;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    margin: 1rem;
+  }
 `;
 
 const Chart = styled.div`

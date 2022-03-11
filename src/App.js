@@ -23,6 +23,7 @@ const Container = styled.div`
     rgb(255, 255, 255) 66%,
     rgb(255, 255, 255) 100%
   );
+  border: 0px solid transparent;
   border-radius: 2rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;

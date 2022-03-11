@@ -38,7 +38,7 @@ function Sidebar() {
         <ContactContainer>
           <Questions>Any Questions?</Questions>
           <a href="/">
-            <ContactUs>Contact us</ContactUs>
+            <ContactUs>Contact us!</ContactUs>
           </a>
         </ContactContainer>
       </LinksContainer>
@@ -51,8 +51,10 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   width: 20%;
-  flex-wrap: no-wrap;
   height: 100% !important;
+  text-align: center;
+  flex-wrap: no-wrap;
+  border: 1px solid transparent;
   border-radius: 2rem;
   background-color: #0e1e36;
   gap: 3rem;
@@ -96,7 +98,9 @@ const LinksContainer = styled.div`
   height: 100%;
   width: 100%;
   border-radius: 2rem;
+  text-align: center;
 `;
+
 const PageLinks = styled.div`
   display: flex;
   flex-direction: column;
@@ -113,7 +117,8 @@ const Link = styled.div`
   color: #f5f5f5;
   cursor: pointer;
   h3 {
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 120%;
   }
   svg {
     font-size: 1.1rem;

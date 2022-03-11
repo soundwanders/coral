@@ -14,7 +14,7 @@ function Slack() {
             <SlackHeader> Stop by and say hello!</SlackHeader>
           </SlackText>
         </SlackContainer>
-        <SlackJoin>Join Our Slack</SlackJoin>
+        <Join>Join Our Slack</Join>
       </CardContent>
     </Wrapper>
   );
@@ -22,9 +22,11 @@ function Slack() {
 
 const Wrapper = styled.div`
   display: flex;
+  position: relative;
+  top: 63%;
   align-items: center;
-  height: 33%;
-  margin-top: 7.25rem;
+  height: 30%;
+  border: 0px solid transparent;
   border-radius: 1rem;
   background-color: ${ThemeColor};
   transition: 0.4s ease-in-out;
@@ -32,6 +34,7 @@ const Wrapper = styled.div`
     box-shadow: ${HoverEffect};
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
+    top: 0;
     margin-top: 2.5rem;
     height: max-content;
     width: 80%;
@@ -77,7 +80,7 @@ const SlackHeader = styled.h2`
   font-weight: 600;
 `;
 
-const SlackJoin = styled.button`
+const Join = styled.button`
   font-size: 1rem;
   font-weight: 700;
   border: none;
