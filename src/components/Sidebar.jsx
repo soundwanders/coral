@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import Badges from "./Badges";
-import AvatarImage from "../assets/Avatar.png";
+import AvatarImage from "../assets/Chase.png";
 import {RiHomeLine, RiFileCopyLine} from "react-icons/ri";
 import {FaWallet} from "react-icons/fa";
 import {AiOutlinePieChart} from "react-icons/ai";
-import {DarkTheme} from "../utilities";
+import {DarkTheme, White} from "../utilities";
 
 function Sidebar() {
   return (
@@ -13,7 +13,7 @@ function Sidebar() {
       <ProfileContainer>
         <Avatar src={AvatarImage} />
         <Name>Chase Wunderkatz</Name>
-        <Badges content="Founder" />
+        <Badges content="Pride Leader" />
       </ProfileContainer>
 
       <LinksContainer>
@@ -56,7 +56,7 @@ const Container = styled.div`
   flex-wrap: no-wrap;
   border: 1px solid transparent;
   border-radius: 2rem;
-  background-color: #0e1e36;
+  background-color: ${DarkTheme};
   gap: 3rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 100%;
@@ -81,20 +81,24 @@ const Avatar = styled.img`
   width: 3.25rem;
   border-radius: 6rem;
   margin-top: 20%;
+  &:hover {
+    transform: rotateZ(360deg);
+    transition: 0.8s 0.3s;
+  }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 3.5rem;
   }
 `;
 
 const Name = styled.h1`
-  color: #f9f9f9;
+  color: ${White};
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 600;
   margin: 0.8rem 0 0.5rem 0;
 `;
 
 const LinksContainer = styled.div`
-  background-color: ${DarkTheme};
+  background-color: #1c2c5d;
   height: 100%;
   width: 100%;
   border-radius: 2rem;
@@ -114,7 +118,7 @@ const Link = styled.div`
   margin-left: 25%;
   margin-bottom: 2rem;
   gap: 1rem;
-  color: #f5f5f5;
+  color: ${White};
   cursor: pointer;
   h3 {
     font-weight: 400;
@@ -134,14 +138,14 @@ const ContactContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 60%;
-  background-color: #0d1c32;
+  background-color: ${DarkTheme};
   color: #dbdbdb;
   height: 15%;
   margin: auto;
-  border-radius: 1rem;
+  border-radius: 1.75rem;
   padding: 1rem;
   a {
-    color: #f9f9f9;
+    color: ${White};
     text-decoration: none;
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {

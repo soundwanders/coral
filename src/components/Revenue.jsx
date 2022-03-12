@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {IoStatsChart} from "react-icons/io5";
-import {ThemeColor, HoverEffect} from "../utilities";
+import {ThemeColor, HoverEffect, White} from "../utilities";
 
 function Revenue() {
   return (
@@ -10,8 +10,8 @@ function Revenue() {
         <Chart>
           <IoStatsChart />
         </Chart>
-        <RevenueText>Net Revenue</RevenueText>
-        <Earning>$492,016</Earning>
+        <NetRevenue>Net Revenue</NetRevenue>
+        <Earning>$492,021</Earning>
         <RevenueIncrease>+ 10% YTD</RevenueIncrease>
       </CardContent>
     </RevenueCard>
@@ -25,7 +25,7 @@ const RevenueCard = styled.div`
   padding: 1rem;
   margin-right: -1rem;
   border-radius: 1rem;
-  color: #f9f9f9;
+  color: ${White};
   transition: 0.3s ease-in-out;
   &:hover {
     box-shadow: ${HoverEffect};
@@ -54,23 +54,28 @@ const Chart = styled.div`
   }
 `;
 
-const RevenueText = styled.h3`
+const NetRevenue = styled.h2`
   text-align: center;
   font-weight: 600;
-  margin: 0.5rem 0 0.7rem 0;
+  margin: 0.5rem 0 0.25rem 0;
 `;
 
 const Earning = styled.h2`
   text-align: center;
   padding: 0.3rem 0 0.5rem 0;
+  transform: translateY(-6px);
 `;
 
-const RevenueIncrease = styled.h5`
+const RevenueIncrease = styled.h4`
+  max-width: 90%;
+  margin: 0 auto;
   text-align: center;
-  font-weight: 500;
-  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  letter-spacing: 1px;
   padding: 0.5rem;
   border-radius: 2rem;
+  background-color: #f5f5f5;
+  color: ${ThemeColor};
 `;
 
 export default Revenue;

@@ -5,7 +5,7 @@ import Revenue from "./Revenue";
 import Info from "./Info";
 import Projects from "./Projects";
 import Invoices from "./Invoice";
-import Slack from "./Slack";
+import Slack from "./SlackBar";
 import Pipeline from "./Pipeline";
 
 function Content() {
@@ -44,7 +44,7 @@ function Content() {
 const BackgroundGradient = styled.div`
   width: 85%;
   padding: 0.5rem 1.25rem;
-  background: linear-gradient(to bottom right, #eaf5ff 55%, #ffe4ce 100%);
+  background: linear-gradient(to bottom right, #eaf5ff 60%, #ffe4ce 100%);
   border-radius: 2rem;
   margin: 0rem 5rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -116,10 +116,12 @@ const ActiveProjectsTitle = styled.h3`
   padding: 0 4px;
   margin-left: 1rem;
   font-size: 1.5rem;
+  transform: translateY(-0.5rem);
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     padding: 0;
     margin-top: 0.4rem;
     margin-bottom: 1rem;
+    transform: translateY(0);
   }
 `;
 

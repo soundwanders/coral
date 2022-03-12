@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Badges from "./Badges";
 import Percy from "../assets/Percy.png";
 import Mary from "../assets/Mary.png";
-import {CardShadow, HoverEffect} from "../utilities";
+import {CardShadow, HoverEffect, White} from "../utilities";
 
 function Invoices() {
   return (
@@ -50,7 +50,7 @@ const InvoicesContainer = styled.div`
   height: 140%;
   margin-top: 1rem;
   padding: 0.25rem 0 1rem 0;
-  background-color: #f9f9f9;
+  background-color: ${White};
   border-radius: 1rem;
   box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;

@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 
 body {
   margin: 0.3rem;
   padding: 0;
+  background: #eaf5ff;
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
-  background: #fafafa;
-  font-size: 100%;
   --webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 

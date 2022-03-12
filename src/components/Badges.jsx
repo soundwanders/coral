@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {ThemeColor, DarkTheme} from "../utilities";
+import {ThemeColor, DarkTheme, White, PrimaryBadgeColor} from "../utilities";
 
 function Badges({content, tech = false, glow = false, paid = false, late = false}) {
   return (
@@ -15,9 +15,9 @@ const Div = styled.span`
   margin: 0.25rem;
   border: 0px solid transparent;
   border-radius: 1rem;
-  font-weight: 600;
-  color: #f9f9f9;
-  background-color: #02aee8;
+  font-weight: 500;
+  color: ${White};
+  background-color: ${PrimaryBadgeColor};
   cursor: pointer;
 
   ${({tech}) =>

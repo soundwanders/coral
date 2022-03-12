@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import {FaSlack} from "react-icons/fa";
-import {DarkTheme, HoverEffect, ThemeColor} from "../utilities";
-function Slack() {
+import {DarkTheme, HoverEffect, ThemeColor, White} from "../utilities";
+function SlackBar() {
   return (
     <Wrapper>
       <CardContent flex={true}>
@@ -64,14 +64,14 @@ const SlackLogo = styled.div`
   justify-content: center;
   align-items: center;
   svg {
-    color: #f9f9f9;
+    color: ${White};
     height: 3rem;
     width: 3rem;
   }
 `;
 
 const SlackText = styled.div`
-  color: #f9f9f9;
+  color: ${White};
   align-content: center;
 `;
 
@@ -82,12 +82,12 @@ const SlackHeader = styled.h2`
 
 const Join = styled.button`
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 500;
   border: none;
   outline: none;
   padding: 0.3rem 2rem;
   border-radius: 2rem;
-  color: #f9f9f9;
+  color: ${White};
   background-color: ${DarkTheme};
   cursor: pointer;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -95,4 +95,4 @@ const Join = styled.button`
   }
 `;
 
-export default Slack;
+export default SlackBar;

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Badges from "./Badges";
 import AvatarImage from "../assets/Billowbear.png";
-import {CardShadow, HoverEffect} from "../utilities";
+import {CardShadow, HoverEffect, White} from "../utilities";
 
 function Pipeline() {
   return (
@@ -24,7 +24,8 @@ function Pipeline() {
         </Detail>
         <Title>Billowbear Animal Shelter</Title>
         <ProjectInfo>
-          Redesign and rebuild website with a revamped CMS using imported client's data. Soft launch prior to final delivery.
+          Redesign and rebuild website with a revamped CMS using imported client's data. Soft launch
+          prior to final delivery.
         </ProjectInfo>
         <QuoteContainer>
           <Quote>$12500</Quote>
@@ -42,7 +43,7 @@ const Project = styled.div`
   padding: 1rem;
   padding-bottom: 2rem;
   border-radius: 1rem;
-  background-color: #f9f9f9;
+  background-color: ${White};
   transition: 0.3s ease-in-out;
   box-shadow: ${CardShadow};
   &:hover {

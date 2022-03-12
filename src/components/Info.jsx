@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Badges from "./Badges";
-import {CardShadow, HoverEffect, ThemeColor} from "../utilities";
+import {CardShadow, HoverEffect, ThemeColor, White} from "../utilities";
 
 function Info() {
   return (
@@ -41,9 +41,9 @@ const InfoCard = styled.div`
   height: 100%;
   width: 15rem;
   padding: 1rem;
-  background-color: #f9f9f9;
+  background-color: ${White};
   border-radius: 1rem;
-  color: #f9f9f9;
+  color: ${White};
   box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
   &:hover {
@@ -58,7 +58,9 @@ const Card = styled.div`
   background-color: rgba(185, 195, 245, 0.3);
   border-radius: 1rem;
   margin: 1rem 0;
-  &:nth-child(1) { margin-top: 0.25rem; } 
+  &:nth-child(1) {
+    margin-top: 0.25rem;
+  }
 `;
 
 const CardContent = styled.div`
@@ -79,11 +81,14 @@ const Row = styled.div`
 `;
 const NumberValue = styled.div`
   background-color: ${ThemeColor};
-  padding: 0.6rem 1rem;
+  padding: 0.8rem 1rem;
   border-radius: 1rem;
-  font-family: 'Arvo', serif;
-  font-weight: 600;
-  font-size: 1.25rem;
+  font-family: "Arvo", serif;
+  font-size: 1rem;
+  @media (max-width: 960px) {
+    margin-left: 0.25rem;
+    padding: 0.6rem 0.8rem;
+  }
 `;
 
 const InfoContainer = styled.div`
