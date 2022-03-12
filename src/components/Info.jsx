@@ -9,10 +9,10 @@ function Info() {
       <Card>
         <CardContent>
           <Row>
-            <Value>+ 15%</Value>
+            <NumberValue>+ 15%</NumberValue>
             <InfoContainer>
               <Title>Projection</Title>
-              <SubTitle>Sales Growth</SubTitle>
+              <SubTitle>Annual Growth</SubTitle>
             </InfoContainer>
           </Row>
         </CardContent>
@@ -20,7 +20,7 @@ function Info() {
       <Card>
         <CardContent>
           <Row>
-            <Value>10</Value>
+            <NumberValue>10</NumberValue>
             <InfoContainer>
               <Title>Projects</Title>
               <SubTitle>2 currently active</SubTitle>
@@ -57,7 +57,8 @@ const InfoCard = styled.div`
 const Card = styled.div`
   background-color: rgba(185, 195, 245, 0.3);
   border-radius: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+  &:nth-child(1) { margin-top: 0.25rem; } 
 `;
 
 const CardContent = styled.div`
@@ -68,7 +69,7 @@ const Row = styled.div`
   display: flex;
   min-width: 0;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
   ${({justify}) =>
     justify &&
     `
@@ -76,12 +77,15 @@ const Row = styled.div`
       width: 100%;
   `}
 `;
-const Value = styled.div`
+const NumberValue = styled.div`
   background-color: ${ThemeColor};
-  padding: 0.8rem 1rem;
+  padding: 0.6rem 1rem;
   border-radius: 1rem;
-  font-size: 1.4rem;
+  font-family: 'Arvo', serif;
+  font-weight: 600;
+  font-size: 1.25rem;
 `;
+
 const InfoContainer = styled.div`
   margin-left: 0.6rem;
 `;

@@ -24,8 +24,7 @@ function Pipeline() {
         </Detail>
         <Title>Billowbear Animal Shelter</Title>
         <ProjectInfo>
-          Design, build, launch website with a revamped CMS. Requires prototype approval before
-          final delivery.
+          Redesign and rebuild website with a revamped CMS using imported client's data. Soft launch prior to final delivery.
         </ProjectInfo>
         <QuoteContainer>
           <Quote>$12500</Quote>

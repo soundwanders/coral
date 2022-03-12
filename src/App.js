@@ -14,6 +14,7 @@ function App() {
 
 const Container = styled.div`
   display: flex;
+  position: relative;
   flex: 1;
   width: 100%;
   height: 97vh;

@@ -32,11 +32,11 @@ function Projects() {
 }
 
 const CurrentProjects = styled.div`
-  width: 80%;
-  max-width: 640px;
-  height: 70%;
-  margin: 0 0 0 1rem;
-  padding: 1rem 6rem 0.5rem 1rem;
+  width: 90%;
+  max-width: 740px;
+  height: 80%;
+  margin: 0 0 0.25rem 1rem;
+  padding: 1rem;
   border-radius: 1rem;
   background-color: #f9f9f9;
   box-shadow: ${CardShadow};
@@ -67,8 +67,8 @@ const Project = styled.div`
 
 const Avatar = styled.div`
   img {
-    height: 4rem;
     width: 4rem;
+    height: 4rem;
     border-radius: 4rem;
   }
 `;
