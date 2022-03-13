@@ -20,6 +20,10 @@ const Div = styled.span`
   background-color: ${PrimaryBadgeColor};
   cursor: pointer;
 
+  @media (max-width: 960px) {
+    padding: 0.3rem 0;
+  }
+
   ${({tech}) =>
     tech &&
     `
