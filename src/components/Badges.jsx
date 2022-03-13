@@ -21,7 +21,7 @@ const Div = styled.span`
   cursor: pointer;
 
   @media (max-width: 960px) {
-    padding: 0.3rem 0;
+    margin: 0 auto;
   }
 
   ${({tech}) =>
