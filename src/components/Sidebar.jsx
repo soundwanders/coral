@@ -13,7 +13,7 @@ function Sidebar() {
       <ProfileContainer>
         <Avatar src={AvatarImage} />
         <Name>Chase Wunderkatz</Name>
-        <Badges content="" />
+        <Badges content="Mastermind" />
       </ProfileContainer>
 
       <LinksContainer>
