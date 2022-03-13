@@ -6,7 +6,7 @@ function Header() {
   return (
     <HeaderContainer>
       <Greeting>
-        Welcome back,
+        Welcome,
         <span> Chase! </span>
       </Greeting>
       <InputContainer>
