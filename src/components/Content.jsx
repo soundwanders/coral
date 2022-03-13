@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import Header from "./Header";
 import Revenue from "./Revenue";
-import Info from "./Info";
+import ContentCard from "./Cards";
 import Projects from "./Projects";
 import Invoices from "./Invoice";
-import Slack from "./SlackBar";
+import SlackBar from "./Slack";
 import Pipeline from "./Pipeline";
 
 function Content() {
@@ -16,7 +16,7 @@ function Content() {
         <SectionOne>
           <ColumnOne>
             <Revenue />
-            <Info />
+            <ContentCard />
           </ColumnOne>
           <ColumnTwo>
             <ActiveProjectsTitle>Active Projects</ActiveProjectsTitle>
@@ -29,7 +29,7 @@ function Content() {
               <InvoiceTitle>Recent Invoices</InvoiceTitle>
               <Invoices />
             </InvoiceContainer>
-            <Slack />
+            <SlackBar />
           </ColumnThree>
           <ColumnFour>
             <PipelineTitle>Upcoming Projects</PipelineTitle>

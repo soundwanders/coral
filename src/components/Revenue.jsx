@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import {IoStatsChart} from "react-icons/io5";
-import {ThemeColor, HoverEffect, White} from "../utilities";
+import { IoStatsChart } from "react-icons/io5";
+import { ThemeColor, HoverEffect, White } from "../utilities";
 
 function Revenue() {
   return (

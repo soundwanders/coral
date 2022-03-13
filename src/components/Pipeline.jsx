@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Badges from "./Badges";
 import AvatarImage from "../assets/Billowbear.png";
-import {CardShadow, HoverEffect, White} from "../utilities";
+import { CardShadow, HoverEffect, White } from "../utilities";
 
 function Pipeline() {
   return (
@@ -24,8 +24,7 @@ function Pipeline() {
         </Detail>
         <Title>Billowbear Animal Shelter</Title>
         <ProjectInfo>
-          Redesign and rebuild website with a revamped CMS using imported client's data. Soft launch
-          prior to final delivery.
+          Web design and development, integrate client's data into CMS, serverless hosting.
         </ProjectInfo>
         <QuoteContainer>
           <Quote>$12500</Quote>
@@ -52,7 +51,7 @@ const Project = styled.div`
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     height: max-content;
     width: 80%;
-    margin: 2rem 0;
+    margin: 2.2rem 0;
     margin-left: 0rem;
     padding: 0.75rem;
   }
@@ -125,11 +124,15 @@ const QuoteContainer = styled.div`
     flex: 1;
     gap: 0.4rem;
   }
+  &div:nth-child(3) {
+    margin: 10rem 0;
+  }
 `;
 
 const Quote = styled.div`
   font-size: 1.3rem;
   padding: 0 1rem;
+  margin: 0 1rem;
 `;
 
 export default Pipeline;

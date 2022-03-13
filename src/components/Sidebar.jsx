@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import Badges from "./Badges";
 import AvatarImage from "../assets/Chase.png";
-import {RiHomeLine, RiFileCopyLine} from "react-icons/ri";
-import {FaWallet} from "react-icons/fa";
-import {AiOutlinePieChart} from "react-icons/ai";
-import {DarkTheme, White} from "../utilities";
+import { RiHomeLine, RiFileCopyLine } from "react-icons/ri";
+import { FaWallet } from "react-icons/fa";
+import { AiOutlinePieChart } from "react-icons/ai";
+import { DarkTheme, White } from "../utilities";
 
 function Sidebar() {
   return (
@@ -13,7 +13,7 @@ function Sidebar() {
       <ProfileContainer>
         <Avatar src={AvatarImage} />
         <Name>Chase Wunderkatz</Name>
-        <Badges content="Pride Leader" />
+        <Badges content="" />
       </ProfileContainer>
 
       <LinksContainer>

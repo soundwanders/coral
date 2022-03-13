@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import {FiSearch} from "react-icons/fi";
+import { FiSearch } from "react-icons/fi";
 
 function Header() {
   return (
     <HeaderContainer>
       <Greeting>
-        Good morning,
+        Welcome back,
         <span> Chase! </span>
       </Greeting>
       <InputContainer>

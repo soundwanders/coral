@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Badges from "./Badges";
 import Percy from "../assets/Percy.png";
 import Mary from "../assets/Mary.png";
-import {CardShadow, HoverEffect, White} from "../utilities";
+import { CardShadow, HoverEffect, White } from "../utilities";
 
 function Invoices() {
   return (
@@ -126,6 +126,8 @@ const Container = styled.div`
   }
 `;
 
-const Price = styled.div``;
+const Price = styled.div`
+  font-family: 'Arvo', serif;
+`;
 
 export default Invoices;

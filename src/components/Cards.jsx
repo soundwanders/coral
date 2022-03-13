@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Badges from "./Badges";
-import {CardShadow, HoverEffect, ThemeColor, White} from "../utilities";
+import { CardShadow, HoverEffect, ThemeColor, White } from "../utilities";
 
-function Info() {
+function ContentCard() {
   return (
     <InfoCard>
       <Card>
@@ -112,4 +112,4 @@ const SubTitle = styled.h5`
   }
 `;
 
-export default Info;
+export default ContentCard;

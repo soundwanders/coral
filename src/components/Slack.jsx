@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import {FaSlack} from "react-icons/fa";
 import {DarkTheme, HoverEffect, ThemeColor, White} from "../utilities";
+
 function SlackBar() {
   return (
     <Wrapper>
@@ -23,10 +24,11 @@ function SlackBar() {
 const Wrapper = styled.div`
   display: flex;
   position: relative;
-  top: 63%;
+  top: 65%;
   align-items: center;
   height: 30%;
   border: 0px solid transparent;
+  padding: 0.2rem 0;
   border-radius: 1rem;
   background-color: ${ThemeColor};
   transition: 0.4s ease-in-out;
@@ -65,7 +67,7 @@ const SlackLogo = styled.div`
   align-items: center;
   svg {
     color: ${White};
-    height: 3rem;
+    height: 2.7rem;
     width: 3rem;
   }
 `;
