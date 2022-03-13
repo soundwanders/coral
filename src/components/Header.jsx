@@ -46,7 +46,7 @@ const InputContainer = styled.div`
     overflow-x: hidden;
     flex-direction: row;
     flex: 1;
-    flex-basis: 80%;
+    flex-basis: 90%;
   }
 `;
 
