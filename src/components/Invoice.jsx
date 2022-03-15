@@ -49,11 +49,12 @@ const InvoicesContainer = styled.div`
   width: 35rem;
   height: 140%;
   margin-top: 1rem;
-  padding: 0.25rem 0 1rem 0;
+  padding: 0.5rem 0 1rem 0;
   background-color: ${White};
   border-radius: 1rem;
   box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
+  overflow: hidden;
   &:hover {
     box-shadow: ${HoverEffect};
   }
@@ -63,11 +64,16 @@ const InvoicesContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding-top: 0.5rem;
+    overflow: initial;
   }
 `;
 
 const CardContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
   margin-top: 0.5rem;
+  margin: 1rem 0 0 0;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin: 1rem 0;
   }
@@ -76,7 +82,7 @@ const CardContent = styled.div`
 const Invoice = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 0.2rem;
   padding: 0.5rem 0;
   &:nth-child(2) {
@@ -89,7 +95,6 @@ const Invoice = styled.div`
 `;
 const Info = styled.div`
   display: flex;
-  align-items: center;
   width: 50%;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;

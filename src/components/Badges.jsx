@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { ThemeColor, DarkTheme, White, PrimaryBadgeColor } from "../utilities";
+import { ThemeColor, DarkTheme, White, PrimaryBadgeColor, PaidGreen, LateRed } from "../utilities";
 
-function Badges({content, tech = false, glow = false, paid = false, late = false}) {
+function Badges({content, tech = false, glowTags = false, paid = false, late = false}) {
   return (
-    <Div tech={tech} glow={glow} paid={paid} late={late}>
+    <Div tech={tech} glowTags={glowTags} paid={paid} late={late}>
       {content}
     </Div>
   );
@@ -19,10 +19,7 @@ const Div = styled.span`
   color: ${White};
   background-color: ${PrimaryBadgeColor};
   cursor: pointer;
-
-  @media (max-width: 960px) {
-    margin: 0 auto;
-  }
+}
 
   ${({tech}) =>
     tech &&
@@ -30,11 +27,11 @@ const Div = styled.span`
       background-color: transparent;
       border: 0.05rem solid ${ThemeColor};
       color:${ThemeColor};
-      margin-right: 2rem;
+      margin: 0 2rem 0 0;
     `}
 
-  ${({glow}) =>
-    glow &&
+  ${({glowTags}) =>
+    glowTags &&
     `
       font-size: 0.8rem;
       padding: 0.25rem 0.5rem;
@@ -43,18 +40,19 @@ const Div = styled.span`
       background-color: #ffea94;
       color: ${DarkTheme};
     `}
+
   ${({paid}) =>
     paid &&
     `
       background-color: #70e00041;
-      color: #4be000;
+      color: ${PaidGreen};
     `}
 
 ${({late}) =>
     late &&
     `
       background-color: #ff595e41;
-      color: #ff595e;
+      color: ${LateRed};
     `}
 `;
 

@@ -2,11 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import Header from "./Header";
 import Revenue from "./Revenue";
-import ContentCard from "./Cards";
+import ContentCard from "./InfoCards";
 import Projects from "./Projects";
 import Invoices from "./Invoice";
 import SlackBar from "./Slack";
 import Pipeline from "./Pipeline";
+import { MdOutlineBuildCircle , MdOutlineSavings, MdOutlineDataExploration } from "react-icons/md";
 
 function Content() {
   return (
@@ -19,20 +20,20 @@ function Content() {
             <ContentCard />
           </ColumnOne>
           <ColumnTwo>
-            <ActiveProjectsTitle>Active Projects</ActiveProjectsTitle>
+            <ActiveProjectsTitle>Active Projects  &nbsp; <MdOutlineDataExploration/> </ActiveProjectsTitle>
             <Projects />
           </ColumnTwo>
         </SectionOne>
         <SectionTwo>
           <ColumnThree>
             <InvoiceContainer>
-              <InvoiceTitle>Recent Invoices</InvoiceTitle>
+              <InvoiceTitle>Recent Invoices  &nbsp; <MdOutlineSavings/></InvoiceTitle>
               <Invoices />
             </InvoiceContainer>
             <SlackBar />
           </ColumnThree>
           <ColumnFour>
-            <PipelineTitle>Upcoming Projects</PipelineTitle>
+            <PipelineTitle>Upcoming Projects &nbsp; <MdOutlineBuildCircle/> </PipelineTitle>
             <Pipeline />
           </ColumnFour>
         </SectionTwo>
@@ -64,7 +65,7 @@ const ContentContainer = styled.div`
   flex-direction: column;
   gap: 4rem;
   height: 85%;
-  width: 100%;
+  width: 99%;
   margin: 0.5rem 0;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     height: 100%;
@@ -74,6 +75,8 @@ const ContentContainer = styled.div`
 // Section One contains Revenue and Info components
 const SectionOne = styled.div`
   display: flex;
+  flex: 0 1 auto;
+  min-width: 0;
   justify-content: space-between;
   height: 40%;
   width: 100%;
@@ -112,7 +115,10 @@ const ColumnTwo = styled.div`
 `;
 
 const ActiveProjectsTitle = styled.h3`
-  height: 20%;
+  height: 15%;
+  min-width: 0;
+  flex: 0 1 0;
+  align-items: center;
   padding: 0 4px;
   margin-left: 1rem;
   font-size: 1.5rem;
@@ -123,6 +129,9 @@ const ActiveProjectsTitle = styled.h3`
     margin-bottom: 1rem;
     transform: translateY(0);
   }
+  svg {
+    transform: translateY(3px);
+  }
 `;
 
 const InvoiceTitle = styled.h3`
@@ -131,6 +140,9 @@ const InvoiceTitle = styled.h3`
   font-size: 1.5rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     padding: 0;
+  }
+  svg {
+    transform: translateY(3px);
   }
 `;
 
@@ -143,6 +155,9 @@ const PipelineTitle = styled.h3`
     margin-left: 0;
     padding: 0;
     margin-bottom: -0.9rem;
+  }
+  svg {
+    transform: translateY(3px);
   }
 `;
 

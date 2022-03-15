@@ -20,7 +20,7 @@ function Pipeline() {
               </InfoUpdate>
             </Info>
           </InfoContainer>
-          <Badges content="Design" />
+          <Badges content="Web Services" />
         </Detail>
         <Title>Billowbear Animal Shelter</Title>
         <ProjectInfo>
@@ -36,41 +36,46 @@ function Pipeline() {
 }
 
 const Project = styled.div`
-  width: 90%;
-  height: 110%;
+  height: 120%;
+  width: 100%;
+  max-width: 700px;
   margin-left: 1rem;
-  padding: 1rem;
-  padding-bottom: 2rem;
-  border-radius: 1rem;
+  margin: 0 1rem;
+  padding: 1.5rem;
   background-color: ${White};
-  transition: 0.3s ease-in-out;
+  border-radius: 1rem;
   box-shadow: ${CardShadow};
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
   &:hover {
     box-shadow: ${HoverEffect};
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     height: max-content;
     width: 80%;
-    margin: 2.2rem 0;
-    margin-left: 0rem;
+    max-width: 80%;
+    margin: 2.1rem 0 0 0;
     padding: 0.75rem;
+    overflow: initial;
   }
 `;
 
 const CardContent = styled.div`
   width: 100%; !important;
-  margin: 0.3rem;
+  margin: 0.4rem;
 `;
 
 const Detail = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 1rem 0;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 0.2rem;
+    margin: 0;
     margin-bottom: 1rem;
   }
 `;
@@ -117,6 +122,7 @@ const QuoteContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0.3rem 0;
+  margin: 1rem 0 0 0;
   border-radius: 1rem;
   background-color: rgba(146, 166, 255, 0.3);
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -132,7 +138,7 @@ const QuoteContainer = styled.div`
 const Quote = styled.div`
   font-size: 1.3rem;
   padding: 0 1rem;
-  margin: 0 1rem;
+  margin: 8px 1rem;
 `;
 
 export default Pipeline;

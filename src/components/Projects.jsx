@@ -32,15 +32,16 @@ function Projects() {
 }
 
 const CurrentProjects = styled.div`
-  width: 90%;
-  max-width: 740px;
   height: 80%;
-  margin: 0 0 0.25rem 1rem;
-  padding: 1rem;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 0.5rem 0.25rem 1rem;
+  padding: 1.5rem;
   border-radius: 1rem;
   background-color: ${White};
   box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
+  overflow: hidden;
   &:hover {
     box-shadow: ${HoverEffect};
   }
@@ -49,14 +50,13 @@ const CurrentProjects = styled.div`
     max-width: 70%;
     height: max-content;
     margin: 0.1rem 0 -1rem 0;
-    padding: 1rem;
+    
 `;
 
 const Project = styled.div`
   display: flex;
-  flex: 1;
   align-items: center;
-  margin: 0 0.4rem;
+  margin: 0 0.5rem;
   &:nth-child(2) {
     padding-top: 2rem;
     @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -93,7 +93,7 @@ const AllProjects = styled.h5`
   text-align: end;
   color: ${PrimaryBadgeColor};
   cursor: pointer;
-  margin-top: 0.75rem;
+  margin: 1rem 1rem 0 1rem;
   &:hover {
     filter: brightness(110%);
   }

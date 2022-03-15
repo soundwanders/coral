@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { FiSearch } from "react-icons/fi";
+import { MdOutlineEco } from "react-icons/md";
 
 function Header() {
   return (
     <HeaderContainer>
       <Greeting>
         Welcome,
-        <span> Chase! </span>
+        <span> Chase! <MdOutlineEco/> </span>
       </Greeting>
       <InputContainer>
         <Icon>
@@ -24,7 +25,7 @@ const HeaderContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   height: 10%;
-  media screen and (min-width: 320px) and (max-width: 1080px) {
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin-bottom: 0.3rem;
   }
 `;
@@ -37,6 +38,9 @@ const Greeting = styled.h1`
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     padding-left: 1.25rem;
   }
+  svg {
+    transform: translateY(3px);  
+  }
 `;
 
 const InputContainer = styled.div`
@@ -46,7 +50,7 @@ const InputContainer = styled.div`
     overflow-x: hidden;
     flex-direction: row;
     flex: 1;
-    flex-basis: 90%;
+    flex-basis: 85%;
   }
 `;
 

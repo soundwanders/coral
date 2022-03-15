@@ -22,11 +22,12 @@ const RevenueCard = styled.div`
   height: 100%;
   width: 14rem;
   background-color: ${ThemeColor};
+  border-radius: 1rem;
   padding: 1rem;
   margin-right: -1rem;
-  border-radius: 1rem;
   color: ${White};
   transition: 0.3s ease-in-out;
+  overflow: hidden;
   &:hover {
     box-shadow: ${HoverEffect};
   }

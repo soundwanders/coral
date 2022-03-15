@@ -53,7 +53,6 @@ const Container = styled.div`
   width: 20%;
   height: 100% !important;
   text-align: center;
-  flex-wrap: no-wrap;
   border: 1px solid transparent;
   border-radius: 2rem;
   background-color: ${DarkTheme};

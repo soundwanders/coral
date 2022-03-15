@@ -27,9 +27,9 @@ function ContentCard() {
             </InfoContainer>
           </Row>
           <Row justify>
-            <Badges content="Design" glow />
-            <Badges content="Branding" glow />
-            <Badges content="CMS" glow />
+            <Badges content="Design" glowTags />
+            <Badges content="Branding" glowTags />
+            <Badges content="CMS" glowTags />
           </Row>
         </CardContent>
       </Card>

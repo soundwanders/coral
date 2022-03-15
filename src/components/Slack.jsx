@@ -26,12 +26,12 @@ const Wrapper = styled.div`
   position: relative;
   top: 65%;
   align-items: center;
-  height: 30%;
+  height: 22%;
   border: 0px solid transparent;
   padding: 0.2rem 0;
   border-radius: 1rem;
   background-color: ${ThemeColor};
-  transition: 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
   &:hover {
     box-shadow: ${HoverEffect};
   }
