@@ -1,8 +1,17 @@
-# Coral Dashboard
+<h2 align="center" style="font-weight: bold"> Coral Dashboard </h2>
 
-[coralquarrel.netlify.app](https://coralquarrel.netlify.app/)
+<p align="center" style="font-weight: bold">
+  <div align="center"> 
+    
+  [coralquarrel.netlify.app](https://coralquarrel.netlify.app/)
+    
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/7a2ca23b-0fe6-4a24-8fce-e52cd745c819/deploy-status)](https://app.netlify.com/sites/coralquarrel/deploys)
 
----
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+  </div>
+
+</p>
 
 ## Available Scripts
 
@@ -18,14 +27,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-The `eject` command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### `npm run format`
+Runs specified prettier format fixes. Visit the prettier config file to view the formatting rules.
