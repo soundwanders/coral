@@ -38,9 +38,9 @@ const Wrapper = styled.div`
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     top: 0;
-    margin-top: 2.5rem;
+    margin: 2.5rem 0 0 0;
     height: max-content;
-    width: 80%;
+    width: 85%;
   }
 `;
 
