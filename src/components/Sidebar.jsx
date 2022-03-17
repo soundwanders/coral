@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "styled-components";
-import Badges from "./Badges";
-import AvatarImage from "../assets/Chase.png";
-import { RiHomeLine, RiFileCopyLine } from "react-icons/ri";
-import { FaWallet } from "react-icons/fa";
-import { AiOutlinePieChart } from "react-icons/ai";
-import { DarkTheme, White } from "../utilities";
+import React from 'react';
+import styled from 'styled-components';
+import Badges from './Badges';
+import AvatarImage from '../assets/Chase.png';
+import {RiHomeLine, RiFileCopyLine} from 'react-icons/ri';
+import {FaWallet} from 'react-icons/fa';
+import {AiOutlinePieChart} from 'react-icons/ai';
+import {DarkTheme, White} from '../utilities';
 
-function Sidebar() {
+const Sidebar = () => {
   return (
     <Container>
       <ProfileContainer>
@@ -20,19 +20,19 @@ function Sidebar() {
         <PageLinks>
           <Link>
             <RiHomeLine />
-            <h3> Dashboard </h3>
+            <h2> Dashboard </h2>
           </Link>
           <Link>
             <RiFileCopyLine />
-            <h3> Projects </h3>
+            <h2> Projects </h2>
           </Link>
           <Link>
             <FaWallet />
-            <h3> Invoices </h3>
+            <h2> Invoices </h2>
           </Link>
           <Link>
             <AiOutlinePieChart />
-            <h3> Reports </h3>
+            <h2> Reports </h2>
           </Link>
         </PageLinks>
         <ContactContainer>
@@ -44,7 +44,7 @@ function Sidebar() {
       </LinksContainer>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   display: flex;
@@ -107,9 +107,9 @@ const LinksContainer = styled.div`
 const PageLinks = styled.div`
   display: flex;
   flex-direction: column;
+  height: 60%;
   list-style-type: none;
   padding-top: 2rem;
-  height: 60%;
 `;
 
 const Link = styled.div`
@@ -119,9 +119,8 @@ const Link = styled.div`
   gap: 1rem;
   color: ${White};
   cursor: pointer;
-  h3 {
+  h2 {
     font-weight: 400;
-    font-size: 120%;
   }
   svg {
     font-size: 1.1rem;

@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import AvatarImage2 from "../assets/Avatar.png";
-import AvatarImage3 from "../assets/Avatar2.png";
-import { CardShadow, HoverEffect, PrimaryBadgeColor, White } from "../utilities";
+import React from 'react';
+import styled from 'styled-components';
+import AvatarImage2 from '../assets/Avatar.png';
+import AvatarImage3 from '../assets/Avatar2.png';
+import {CardShadow, HoverEffect, PrimaryBadgeColor, White} from '../utilities';
 
-function Projects() {
+const Projects = () => {
   return (
     <CurrentProjects>
       <Project>
@@ -29,7 +29,7 @@ function Projects() {
       <AllProjects>View all active projects</AllProjects>
     </CurrentProjects>
   );
-}
+};
 
 const CurrentProjects = styled.div`
   height: 80%;
@@ -66,6 +66,7 @@ const Project = styled.div`
 `;
 
 const Avatar = styled.div`
+  margin-top: 0.3rem;
   img {
     width: 3.8rem;
     height: 3.8rem;

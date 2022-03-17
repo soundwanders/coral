@@ -7,7 +7,7 @@
     
   [![Netlify Status](https://api.netlify.com/api/v1/badges/7a2ca23b-0fe6-4a24-8fce-e52cd745c819/deploy-status)](https://app.netlify.com/sites/coralquarrel/deploys)
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   </div>
 
@@ -28,4 +28,5 @@ Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 ### `npm run format`
+
 Runs specified prettier format fixes. Visit the prettier config file to view the formatting rules.

@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import {FaSlack} from "react-icons/fa";
-import {DarkTheme, HoverEffect, ThemeColor, White} from "../utilities";
+import React from 'react';
+import styled from 'styled-components';
+import {FaSlack} from 'react-icons/fa';
+import {DarkTheme, HoverEffect, ThemeColor, White} from '../utilities';
 
-function SlackBar() {
+const SlackBar = () => {
   return (
     <Wrapper>
       <CardContent flex={true}>
@@ -19,16 +19,17 @@ function SlackBar() {
       </CardContent>
     </Wrapper>
   );
-}
+};
 
 const Wrapper = styled.div`
   display: flex;
   position: relative;
-  top: 65%;
+  top: 70%;
   align-items: center;
-  height: 22%;
-  border: 0px solid transparent;
+  height: 23%;
+  margin: 1rem 0;
   padding: 0.2rem 0;
+  border: 0px solid transparent;
   border-radius: 1rem;
   background-color: ${ThemeColor};
   transition: 0.3s ease-in-out;

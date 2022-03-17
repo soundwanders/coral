@@ -1,55 +1,55 @@
-import React from "react";
-import styled from "styled-components";
-import Badges from "./Badges";
-import Percy from "../assets/Percy.png";
-import Mary from "../assets/Mary.png";
-import { CardShadow, HoverEffect, White } from "../utilities";
+import React from 'react';
+import styled from 'styled-components';
+import Badges from './Badges';
+import Percy from '../assets/Percy.png';
+import Mary from '../assets/Mary.png';
+import {CardShadow, HoverEffect, White} from '../utilities';
 
-function Invoices() {
+const Invoices = () => {
   return (
-    <InvoicesContainer>
+    <Container>
       <CardContent>
-        <Invoice>
-          <Info>
+        <InvoiceContainer>
+          <ClientInfo>
             <Avatar>
-              <img src={Percy} alt="" />
+              <img src={Mary} id="Mooglemash" alt="" />
             </Avatar>
             <TextContainer>
               <Title>Mary Mooglemash</Title>
               <SubTitle>Moogle Media</SubTitle>
             </TextContainer>
-          </Info>
-          <Container>
+          </ClientInfo>
+          <InvoiceDetails>
             <Badges content="Paid" paid />
-            <Price>$2500</Price>
-          </Container>
-        </Invoice>
+            <Amount>$2500</Amount>
+          </InvoiceDetails>
+        </InvoiceContainer>
 
-        <Invoice>
-          <Info>
+        <InvoiceContainer>
+          <ClientInfo>
             <Avatar>
-              <img src={Mary} alt="" />
+              <img src={Percy} id="Poppyseed" alt="" />
             </Avatar>
             <TextContainer>
               <Title>Percy Poppyseed</Title>
               <SubTitle>Custard Crew</SubTitle>
             </TextContainer>
-          </Info>
-          <Container>
+          </ClientInfo>
+          <InvoiceDetails>
             <Badges content="Late" late />
-            <Price>$825</Price>
-          </Container>
-        </Invoice>
+            <Amount>$825</Amount>
+          </InvoiceDetails>
+        </InvoiceContainer>
       </CardContent>
-    </InvoicesContainer>
+    </Container>
   );
-}
+};
 
-const InvoicesContainer = styled.div`
+const Container = styled.div`
   width: 35rem;
   height: 140%;
   margin-top: 1rem;
-  padding: 0.5rem 0 1rem 0;
+  padding: 1rem;
   background-color: ${White};
   border-radius: 1rem;
   box-shadow: ${CardShadow};
@@ -79,7 +79,7 @@ const CardContent = styled.div`
   }
 `;
 
-const Invoice = styled.div`
+const InvoiceContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -93,7 +93,7 @@ const Invoice = styled.div`
     gap: 0.6rem;
   }
 `;
-const Info = styled.div`
+const ClientInfo = styled.div`
   display: flex;
   width: 50%;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -119,7 +119,7 @@ const SubTitle = styled.h5`
   font-weight: 400;
 `;
 
-const Container = styled.div`
+const InvoiceDetails = styled.div`
   display: flex;
   justify-content: space-between;
   width: 30%;
@@ -131,7 +131,7 @@ const Container = styled.div`
   }
 `;
 
-const Price = styled.div`
+const Amount = styled.div`
   font-family: 'Arvo', serif;
 `;
 

@@ -1,14 +1,14 @@
-import React from "react";
-import styled from "styled-components";
-import { ThemeColor, DarkTheme, White, PrimaryBadgeColor, PaidGreen, LateRed } from "../utilities";
+import React from 'react';
+import styled from 'styled-components';
+import {ThemeColor, DarkTheme, White, PrimaryBadgeColor, PaidGreen, LateRed} from '../utilities';
 
-function Badges({content, tech = false, glowTags = false, paid = false, late = false}) {
+const Badges = ({content, tech = false, glowTags = false, paid = false, late = false}) => {
   return (
     <Div tech={tech} glowTags={glowTags} paid={paid} late={late}>
       {content}
     </Div>
   );
-}
+};
 
 const Div = styled.span`
   padding: 0.3rem 1rem;
@@ -49,8 +49,8 @@ const Div = styled.span`
     `}
 
 ${({late}) =>
-    late &&
-    `
+  late &&
+  `
       background-color: #ff595e41;
       color: ${LateRed};
     `}

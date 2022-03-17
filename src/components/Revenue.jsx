@@ -1,22 +1,22 @@
-import React from "react";
-import styled from "styled-components";
-import { IoStatsChart } from "react-icons/io5";
-import { ThemeColor, HoverEffect, White } from "../utilities";
+import React from 'react';
+import styled from 'styled-components';
+import {IoStatsChart} from 'react-icons/io5';
+import {ThemeColor, HoverEffect, White} from '../utilities';
 
-function Revenue() {
+const Revenue = () => {
   return (
     <RevenueCard>
       <CardContent>
-        <Chart>
+        <ChartIcon>
           <IoStatsChart />
-        </Chart>
+        </ChartIcon>
         <NetRevenue>Net Revenue</NetRevenue>
         <Earning>$492,021</Earning>
         <RevenueIncrease>+ 10% YTD</RevenueIncrease>
       </CardContent>
     </RevenueCard>
   );
-}
+};
 
 const RevenueCard = styled.div`
   height: 100%;
@@ -46,7 +46,7 @@ const CardContent = styled.div`
   }
 `;
 
-const Chart = styled.div`
+const ChartIcon = styled.div`
   display: flex;
   justify-content: center;
   svg {

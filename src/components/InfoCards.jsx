@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import Badges from "./Badges";
-import { CardShadow, HoverEffect, ThemeColor, White } from "../utilities";
+import React from 'react';
+import styled from 'styled-components';
+import Badges from './Badges';
+import {CardShadow, HoverEffect, ThemeColor, White} from '../utilities';
 
-function ContentCard() {
+const ContentCard = () => {
   return (
     <InfoCard>
       <Card>
@@ -35,12 +35,13 @@ function ContentCard() {
       </Card>
     </InfoCard>
   );
-}
+};
 
 const InfoCard = styled.div`
   height: 100%;
   width: 15rem;
   padding: 1rem;
+  margin: 0 1rem;
   background-color: ${White};
   border-radius: 1rem;
   color: ${White};
@@ -55,16 +56,16 @@ const InfoCard = styled.div`
 `;
 
 const Card = styled.div`
-  background-color: rgba(185, 195, 245, 0.3);
   border-radius: 1rem;
   margin: 1rem 0;
+  background-color: rgba(185, 195, 245, 0.3);
   &:nth-child(1) {
     margin-top: 0.25rem;
   }
 `;
 
 const CardContent = styled.div`
-  padding: 0.4rem 1rem;
+  padding: 1rem;
 `;
 
 const Row = styled.div`
@@ -83,7 +84,7 @@ const NumberValue = styled.div`
   background-color: ${ThemeColor};
   padding: 0.8rem 1rem;
   border-radius: 1rem;
-  font-family: "Arvo", serif;
+  font-family: 'Arvo', serif;
   font-size: 1rem;
   @media (max-width: 960px) {
     margin-left: 0.25rem;

@@ -1,14 +1,17 @@
-import React from "react";
-import styled from "styled-components";
-import { FiSearch } from "react-icons/fi";
-import { MdOutlineEco } from "react-icons/md";
+import React from 'react';
+import styled from 'styled-components';
+import {FiSearch} from 'react-icons/fi';
+import {MdOutlineEco} from 'react-icons/md';
 
-function Header() {
+const Header = () => {
   return (
     <HeaderContainer>
       <Greeting>
         Welcome,
-        <span> Chase! <MdOutlineEco/> </span>
+        <span>
+          {' '}
+          Chase! <MdOutlineEco />{' '}
+        </span>
       </Greeting>
       <InputContainer>
         <Icon>
@@ -18,7 +21,7 @@ function Header() {
       </InputContainer>
     </HeaderContainer>
   );
-}
+};
 
 const HeaderContainer = styled.nav`
   display: flex;
@@ -39,7 +42,7 @@ const Greeting = styled.h1`
     padding-left: 1.25rem;
   }
   svg {
-    transform: translateY(3px);  
+    transform: translateY(3px);
   }
 `;
 
@@ -50,7 +53,7 @@ const InputContainer = styled.div`
     overflow-x: hidden;
     flex-direction: row;
     flex: 1;
-    flex-basis: 85%;
+    flex-basis: 90%;
   }
 `;
 

@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import Badges from "./Badges";
-import AvatarImage from "../assets/Billowbear.png";
-import { CardShadow, HoverEffect, White } from "../utilities";
+import React from 'react';
+import styled from 'styled-components';
+import Badges from './Badges';
+import AvatarImage from '../assets/Billowbear.png';
+import {CardShadow, HoverEffect, White} from '../utilities';
 
-function Pipeline() {
+const Pipeline = () => {
   return (
     <Project>
       <CardContent>
@@ -33,7 +33,7 @@ function Pipeline() {
       </CardContent>
     </Project>
   );
-}
+};
 
 const Project = styled.div`
   height: 120%;
@@ -125,18 +125,20 @@ const QuoteContainer = styled.div`
   margin: 1rem 0 0 0;
   border-radius: 1rem;
   background-color: rgba(146, 166, 255, 0.3);
+  &:div:nth-child(2) {
+    margin: 1rem 0;
+    border: 3px solid red;
+  }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
     flex: 1;
     gap: 0.4rem;
   }
-  &div:nth-child(3) {
-    margin: 10rem 0;
-  }
 `;
 
 const Quote = styled.div`
-  font-size: 1.3rem;
+  font-family: 'Arvo', serif;
+  font-size: 1.2rem;
   padding: 0 1rem;
   margin: 8px 1rem;
 `;

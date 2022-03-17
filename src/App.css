@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 
 body {
+  width: 100%;
   margin: 0.3rem;
   padding: 0;
   background: #eaf5ff;

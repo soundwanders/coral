@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import Header from "./Header";
-import Revenue from "./Revenue";
-import ContentCard from "./InfoCards";
-import Projects from "./Projects";
-import Invoices from "./Invoice";
-import SlackBar from "./Slack";
-import Pipeline from "./Pipeline";
-import { MdOutlineBuildCircle , MdOutlineSavings, MdOutlineDataExploration } from "react-icons/md";
+import React from 'react';
+import styled from 'styled-components';
+import Header from './Header';
+import Revenue from './Revenue';
+import ContentCard from './InfoCards';
+import Projects from './Projects';
+import Invoices from './Invoice';
+import SlackBar from './Slack';
+import Pipeline from './Pipeline';
+import {MdOutlineTipsAndUpdates, MdOutlineSavings, MdOutlineQueryStats} from 'react-icons/md';
 
-function Content() {
+const Content = () => {
   return (
     <BackgroundGradient>
       <Header />
@@ -20,27 +20,33 @@ function Content() {
             <ContentCard />
           </ColumnOne>
           <ColumnTwo>
-            <ActiveProjectsTitle>Active Projects  &nbsp; <MdOutlineDataExploration/> </ActiveProjectsTitle>
+            <ActiveProjectsTitle>
+              Active Projects &nbsp; <MdOutlineTipsAndUpdates />{' '}
+            </ActiveProjectsTitle>
             <Projects />
           </ColumnTwo>
         </SectionOne>
         <SectionTwo>
           <ColumnThree>
             <InvoiceContainer>
-              <InvoiceTitle>Recent Invoices  &nbsp; <MdOutlineSavings/></InvoiceTitle>
+              <InvoiceTitle>
+                Recent Invoices &nbsp; <MdOutlineSavings />{' '}
+              </InvoiceTitle>
               <Invoices />
             </InvoiceContainer>
             <SlackBar />
           </ColumnThree>
           <ColumnFour>
-            <PipelineTitle>Upcoming Projects &nbsp; <MdOutlineBuildCircle/> </PipelineTitle>
+            <PipelineTitle>
+              Upcoming Projects &nbsp; <MdOutlineQueryStats />{' '}
+            </PipelineTitle>
             <Pipeline />
           </ColumnFour>
         </SectionTwo>
       </ContentContainer>
     </BackgroundGradient>
   );
-}
+};
 
 const BackgroundGradient = styled.div`
   width: 85%;
