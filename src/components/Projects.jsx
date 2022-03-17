@@ -46,9 +46,9 @@ const CurrentProjects = styled.div`
     box-shadow: ${HoverEffect};
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
-    width: 70%;
-    max-width: 70%;
     height: max-content;
+    width: 75%;
+    max-width: 75%;
     margin: 0.1rem 0 -1rem 0;
     
 `;
