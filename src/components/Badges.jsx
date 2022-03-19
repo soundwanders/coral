@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import {ThemeColor, DarkTheme, White, PrimaryBadgeColor, PaidGreen, LateRed} from '../utilities';
 
-const Badges = ({content, tech = false, glowTags = false, paid = false, late = false}) => {
+const Badges = ({content, tech = false, scope = false, glowTags = false, paid = false, late = false}) => {
   return (
-    <Div tech={tech} glowTags={glowTags} paid={paid} late={late}>
+    <Div tech={tech} scope={scope} glowTags={glowTags} paid={paid} late={late}>
       {content}
     </Div>
   );
@@ -27,7 +27,18 @@ const Div = styled.span`
       background-color: transparent;
       border: 0.05rem solid ${ThemeColor};
       color:${ThemeColor};
+    `}
+
+    ${({scope}) =>
+    scope &&
+    `
+      background-color: ${White};
+      border: 0.05rem solid ${ThemeColor};
+      color:${ThemeColor};
       margin: 0 2rem 0 0;
+      @media screen and (max-width: 960px) {
+        margin: 0.2rem auto;
+      }
     `}
 
   ${({glowTags}) =>

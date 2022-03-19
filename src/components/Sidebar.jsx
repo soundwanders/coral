@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Badges from './Badges';
 import AvatarImage from '../assets/Chase.png';
-import {RiHomeLine, RiFileCopyLine} from 'react-icons/ri';
-import {FaWallet} from 'react-icons/fa';
-import {AiOutlinePieChart} from 'react-icons/ai';
+import {BiHomeSmile} from 'react-icons/bi';
+import {AiOutlinePieChart, AiOutlineFileSync} from 'react-icons/ai';
+import {HiOutlineCash} from 'react-icons/hi';
 import {DarkTheme, White} from '../utilities';
 
 const Sidebar = () => {
@@ -19,15 +19,15 @@ const Sidebar = () => {
       <LinksContainer>
         <PageLinks>
           <Link>
-            <RiHomeLine />
+            <BiHomeSmile />
             <h2> Dashboard </h2>
           </Link>
           <Link>
-            <RiFileCopyLine />
+            <AiOutlineFileSync />
             <h2> Projects </h2>
           </Link>
           <Link>
-            <FaWallet />
+            <HiOutlineCash />
             <h2> Invoices </h2>
           </Link>
           <Link>
@@ -120,6 +120,7 @@ const Link = styled.div`
   color: ${White};
   cursor: pointer;
   h2 {
+    font-size: 1.3rem;
     font-weight: 400;
   }
   svg {
@@ -136,12 +137,12 @@ const ContactContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 60%;
-  background-color: ${DarkTheme};
-  color: #dbdbdb;
   height: 15%;
   margin: auto;
   border-radius: 1.75rem;
   padding: 1rem;
+  background-color: ${DarkTheme};
+  color: #dbdbdb;
   a {
     color: ${White};
     text-decoration: none;

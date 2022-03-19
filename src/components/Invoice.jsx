@@ -47,7 +47,6 @@ const Invoices = () => {
 
 const Container = styled.div`
   width: 35rem;
-  height: 140%;
   margin-top: 1rem;
   padding: 1rem;
   background-color: ${White};
@@ -71,9 +70,7 @@ const Container = styled.div`
 const CardContent = styled.div`
   display: flex;
   flex-direction: column;
-  align-content: space-around;
-  margin-top: 0.5rem;
-  margin: 1rem 0 0 0;
+  margin: 0.7rem 0 0 0;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin: 1rem 0;
   }
@@ -81,10 +78,9 @@ const CardContent = styled.div`
 
 const InvoiceContainer = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 0.2rem;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
   &:nth-child(2) {
     padding-top: 1rem;
   }
@@ -95,7 +91,8 @@ const InvoiceContainer = styled.div`
 `;
 const ClientInfo = styled.div`
   display: flex;
-  width: 50%;
+  align-content: space-between;
+  width: 60%;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
     width: 100%;

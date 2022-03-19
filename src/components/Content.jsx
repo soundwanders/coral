@@ -7,11 +7,12 @@ import Projects from './Projects';
 import Invoices from './Invoice';
 import SlackBar from './Slack';
 import Pipeline from './Pipeline';
-import {MdOutlineTipsAndUpdates, MdOutlineSavings, MdOutlineQueryStats} from 'react-icons/md';
+import {MdOutlineSavings, MdOutlineEditCalendar} from 'react-icons/md';
+import {BiBuildings} from 'react-icons/bi';
 
 const Content = () => {
   return (
-    <BackgroundGradient>
+    <Wrapper>
       <Header />
       <ContentContainer>
         <SectionOne>
@@ -21,7 +22,7 @@ const Content = () => {
           </ColumnOne>
           <ColumnTwo>
             <ActiveProjectsTitle>
-              Active Projects &nbsp; <MdOutlineTipsAndUpdates />{' '}
+              Active Projects &nbsp; <BiBuildings />{' '}
             </ActiveProjectsTitle>
             <Projects />
           </ColumnTwo>
@@ -38,20 +39,19 @@ const Content = () => {
           </ColumnThree>
           <ColumnFour>
             <PipelineTitle>
-              Upcoming Projects &nbsp; <MdOutlineQueryStats />{' '}
+              Upcoming Projects &nbsp; <MdOutlineEditCalendar />{' '}
             </PipelineTitle>
             <Pipeline />
           </ColumnFour>
         </SectionTwo>
       </ContentContainer>
-    </BackgroundGradient>
+    </Wrapper>
   );
 };
 
-const BackgroundGradient = styled.div`
-  width: 85%;
+const Wrapper = styled.div`
+  width: 80%;
   padding: 0.5rem 1.25rem;
-  background: linear-gradient(to bottom right, #eaf5ff 60%, #ffe4ce 100%);
   border-radius: 2rem;
   margin: 0rem 5rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {

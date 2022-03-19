@@ -9,25 +9,27 @@ function App() {
       <Sidebar />
       <Content />
     </Container>
-  );
-}
+  )
+};
 
 const Container = styled.div`
   display: flex;
   position: relative;
-  flex: 1;
   width: 100%;
   height: 97vh;
-  background-image: linear-gradient(
-    0deg,
-    rgb(185, 218, 245) 0%,
-    rgb(255, 255, 255) 66%,
-    rgb(255, 255, 255) 100%
-  );
+  background: linear-gradient(to bottom right, #eaf5ff 60%, #ffe4ce 100%);
   border: 0px solid transparent;
   border-radius: 2rem;
-  @media screen and (min-width: 320px) and (max-width: 1080px) {
+  @media screen and (min-width: 320px) and (max-width: 960px) {
     flex-direction: column;
+    @media screen and (min-width: 320px) and (max-width 960px) {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 1rem 0 0 0;
+      padding: 0.5rem 0.25rem;
+      background: linear-gradient(to bottom, #eaf5ff 75%, #ffe4ce 100%);
+    }
   }
 `;
 

@@ -24,11 +24,11 @@ const Pipeline = () => {
         </Detail>
         <Title>Billowbear Animal Shelter</Title>
         <ProjectInfo>
-          Web design and development, integrate client's data into CMS, serverless hosting.
+          Web design and development, import and integrate client data for CMS, serverless hosting.
         </ProjectInfo>
         <QuoteContainer>
           <Quote>$12500</Quote>
-          <Badges content="Full Stack" tech />
+          <Badges content="Full Stack" scope />
         </QuoteContainer>
       </CardContent>
     </Project>
@@ -39,7 +39,6 @@ const Project = styled.div`
   height: 120%;
   width: 100%;
   max-width: 700px;
-  margin-left: 1rem;
   margin: 0 1rem;
   padding: 1.5rem;
   background-color: ${White};
@@ -125,10 +124,6 @@ const QuoteContainer = styled.div`
   margin: 1rem 0 0 0;
   border-radius: 1rem;
   background-color: rgba(146, 166, 255, 0.3);
-  &:div:nth-child(2) {
-    margin: 1rem 0;
-    border: 3px solid red;
-  }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
     flex: 1;
@@ -138,9 +133,12 @@ const QuoteContainer = styled.div`
 
 const Quote = styled.div`
   font-family: 'Arvo', serif;
-  font-size: 1.2rem;
-  padding: 0 1rem;
+  font-size: 1.125rem;
+  padding: 0 0.8rem;
   margin: 8px 1rem;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    margin: 0 auto;
+  }
 `;
 
 export default Pipeline;

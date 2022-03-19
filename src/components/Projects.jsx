@@ -58,7 +58,7 @@ const Project = styled.div`
   align-items: center;
   margin: 0 0.5rem;
   &:nth-child(2) {
-    padding-top: 2rem;
+    padding-top: 1.2rem;
     @media screen and (min-width: 320px) and (max-width: 1080px) {
       padding-top: 2rem;
     }
@@ -66,7 +66,7 @@ const Project = styled.div`
 `;
 
 const Avatar = styled.div`
-  margin-top: 0.3rem;
+  margin-top: 0.2rem;
   img {
     width: 3.8rem;
     height: 3.8rem;

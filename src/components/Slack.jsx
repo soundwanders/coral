@@ -40,7 +40,7 @@ const Wrapper = styled.div`
     top: 0;
     margin: 2.5rem 0 0 0;
     height: max-content;
-    width: 87%;
+    width: 88%;
   }
 `;
 
@@ -68,7 +68,7 @@ const SlackLogo = styled.div`
   align-items: center;
   svg {
     color: ${White};
-    height: 2.75rem;
+    height: 2.6rem;
     width: 3rem;
   }
 `;

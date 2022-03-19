@@ -5,7 +5,7 @@ import {CardShadow, HoverEffect, ThemeColor, White} from '../utilities';
 
 const ContentCard = () => {
   return (
-    <InfoCard>
+    <InfoCardContainer>
       <Card>
         <CardContent>
           <Row>
@@ -33,11 +33,13 @@ const ContentCard = () => {
           </Row>
         </CardContent>
       </Card>
-    </InfoCard>
+    </InfoCardContainer>
   );
 };
 
-const InfoCard = styled.div`
+const InfoCardContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 15rem;
   padding: 1rem;
@@ -47,6 +49,7 @@ const InfoCard = styled.div`
   color: ${White};
   box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
+  overflow: hidden;
   &:hover {
     box-shadow: ${HoverEffect};
   }
