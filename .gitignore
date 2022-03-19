@@ -14,9 +14,6 @@
 package-lock.json
 setupTests.js
 .vscode
-.prettierrc.json
-.prettierrc
-.prettierignore
 
 # misc
 .DS_Store

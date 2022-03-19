@@ -7,8 +7,6 @@
     
   [![Netlify Status](https://api.netlify.com/api/v1/badges/7a2ca23b-0fe6-4a24-8fce-e52cd745c819/deploy-status)](https://app.netlify.com/sites/coralquarrel/deploys)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
   </div>
 
 </p>
@@ -17,12 +15,12 @@
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm start` or `npm run start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm run build`
+### `npm build` or `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
