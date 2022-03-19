@@ -9,8 +9,8 @@ function App() {
       <Sidebar />
       <Content />
     </Container>
-  )
-};
+  );
+}
 
 const Container = styled.div`
   display: flex;
