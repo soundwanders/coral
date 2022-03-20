@@ -68,7 +68,7 @@ const Detail = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 0;
+  margin: 0.8rem 0;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
     justify-content: flex-start;
@@ -87,8 +87,8 @@ const InfoContainer = styled.div`
 const Avatar = styled.div`
   margin-right: 1rem;
   img {
-    height: 5rem;
-    border-radius: 5rem;
+    height: 4.5rem;
+    border-radius: 50%;
   }
 `;
 
@@ -117,7 +117,10 @@ const ProjectInfo = styled.p`
 
 const QuoteContainer = styled.div`
   display: flex;
+  position: relative;
+  top: 1rem;
   width: 100%;
+  flex: 1;
   align-items: center;
   justify-content: space-between;
   padding: 0.3rem 0;

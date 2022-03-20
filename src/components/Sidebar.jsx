@@ -43,7 +43,7 @@ const Sidebar = () => {
         </ContactContainer>
       </LinksContainer>
     </Container>
-  );
+  )
 };
 
 const Container = styled.div`
@@ -125,7 +125,7 @@ const Link = styled.div`
   }
   svg {
     font-size: 1.1rem;
-    margin-top: 3%;
+    margin-top: 1%;
   }
   &:hover {
     filter: brightness(120%);

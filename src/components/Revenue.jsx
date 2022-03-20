@@ -15,7 +15,7 @@ const Revenue = () => {
         <RevenueIncrease>+ 10% YTD</RevenueIncrease>
       </CardContent>
     </RevenueCard>
-  );
+  )
 };
 
 const RevenueCard = styled.div`

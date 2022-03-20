@@ -20,7 +20,7 @@ const ContentCard = () => {
       <Card>
         <CardContent>
           <Row>
-            <NumberValue>10</NumberValue>
+            <NumberValue>9</NumberValue>
             <InfoContainer>
               <Title>Projects</Title>
               <SubTitle>2 currently active</SubTitle>
@@ -88,7 +88,7 @@ const NumberValue = styled.div`
   padding: 0.8rem 1rem;
   border-radius: 1rem;
   font-family: 'Arvo', serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   @media (max-width: 960px) {
     margin-left: 0.25rem;
     padding: 0.6rem 0.8rem;

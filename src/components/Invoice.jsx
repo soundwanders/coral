@@ -101,8 +101,8 @@ const ClientInfo = styled.div`
 `;
 const Avatar = styled.div`
   img {
-    height: 3.2rem;
-    width: 3.2rem;
+    height: 3.4rem;
+    width: 3.4rem;
     border-radius: 3.5rem;
   }
 `;
