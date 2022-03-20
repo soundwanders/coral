@@ -55,6 +55,8 @@ const InfoCardContainer = styled.div`
   }
   @media screen and (min-width: 320px) and (max-width: 960px) {
     width: 80%;
+      padding: 1rem;
+      margin: 0;
   }
 `;
 
