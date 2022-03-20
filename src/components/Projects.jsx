@@ -35,7 +35,7 @@ const CurrentProjects = styled.div`
   height: 80%;
   width: 100%;
   max-width: 700px;
-  margin: 0 0.5rem 0.25rem 1rem;
+  margin: 0 0.5rem 0.25rem 0.5rem;
   padding: 1.5rem;
   border-radius: 1rem;
   background-color: ${White};

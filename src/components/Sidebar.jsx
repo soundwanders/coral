@@ -43,7 +43,7 @@ const Sidebar = () => {
         </ContactContainer>
       </LinksContainer>
     </Container>
-  )
+  );
 };
 
 const Container = styled.div`

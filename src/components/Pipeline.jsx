@@ -117,14 +117,10 @@ const ProjectInfo = styled.p`
 
 const QuoteContainer = styled.div`
   display: flex;
-  position: relative;
-  top: 1rem;
-  width: 100%;
-  flex: 1;
+  margin-top: 1rem;
   align-items: center;
   justify-content: space-between;
   padding: 0.3rem 0;
-  margin: 1rem 0 0 0;
   border-radius: 1rem;
   background-color: rgba(146, 166, 255, 0.3);
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -138,7 +134,7 @@ const Quote = styled.div`
   font-family: 'Arvo', serif;
   font-size: 1.125rem;
   padding: 0 0.8rem;
-  margin: 8px 1rem;
+  margin: 0.4rem 0.5rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin: 0 auto;
   }

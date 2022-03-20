@@ -70,7 +70,7 @@ const Container = styled.div`
 const CardContent = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0.7rem 0 0 0;
+  margin: 0.5rem 0 0 0;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin: 1rem 0;
   }

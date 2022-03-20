@@ -40,16 +40,16 @@ const ContentCard = () => {
 const InfoCardContainer = styled.div`
   display: flex;
   flex-direction: column;
+  flex-wrap: no-wrap;
   height: 100%;
   width: 15rem;
-  padding: 1rem;
-  margin: 0 1rem;
+  padding: 1rem 1.5rem;
+  margin: 0 0.5rem 0 1rem;
   background-color: ${White};
   border-radius: 1rem;
   color: ${White};
   box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
-  overflow: hidden;
   &:hover {
     box-shadow: ${HoverEffect};
   }
@@ -59,11 +59,15 @@ const InfoCardContainer = styled.div`
 `;
 
 const Card = styled.div`
+  height: 40%;
   border-radius: 1rem;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   background-color: rgba(185, 195, 245, 0.3);
   &:nth-child(1) {
     margin-top: 0.25rem;
+  }
+  &:nth-child(2) {
+    height: 60%;
   }
 `;
 
@@ -75,7 +79,7 @@ const Row = styled.div`
   display: flex;
   min-width: 0;
   align-items: center;
-  margin: 0.5rem 0;
+  margin: 0.25rem 0;
   ${({justify}) =>
     justify &&
     `
