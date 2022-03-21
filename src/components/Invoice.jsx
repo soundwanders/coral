@@ -15,7 +15,7 @@ const Invoices = () => {
               <img src={Mary} id="Mooglemash" alt="" />
             </Avatar>
             <TextContainer>
-              <Title>Mary Mooglemash</Title>
+              <Title>Mary Mooglemaker</Title>
               <SubTitle>Moogle Media</SubTitle>
             </TextContainer>
           </ClientInfo>

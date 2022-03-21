@@ -1,0 +1,76 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "name": "Billy Bolognabranch",
+      "organization": "Bologna Crew",
+      "email": "billy@bolognacrew.com",
+      "phone": 1112221111,
+      "dateAcquired": "January 21, 2021",
+      "totalSales": 52505
+    },
+    {
+      "id": 2,
+      "name": "Holly Hollandaise",
+      "organization": "Hollandaise Resorts",
+      "email": "holly@eggsquad.net",
+      "phone": 2227771921,
+      "dateAcquired": "March 22, 2021",
+      "totalSales": 32999
+    },
+    {
+      "id": 3,
+      "name": "Barry Barrelboss",
+      "organization": "Barrel Bosses",
+      "email": "bernie@barrelboys.com",
+      "phone": 3334443535,
+      "dateAcquired": "May 15, 2021",
+      "totalSales": 125995
+    },
+    {
+      "id": 4,
+      "name": "Wayne Brainburden",
+      "organization": "Brainy Bunch",
+      "email": "wayne@brainybunch.com",
+      "phone": 4448882828,
+      "dateAcquired": "July 5, 2021",
+      "totalSales": 283300
+    },
+    {
+      "id": 5,
+      "name": "Percy Poppyseed",
+      "organization": "Poppyseed Sailing",
+      "email": "percy@seedsailors.crew",
+      "phone": 8880012222,
+      "dateAcquired": "March 18, 2022",
+      "totalSales": 35322
+    },
+    {
+      "id": 6,
+      "name": "Mary Mooglemaker",
+      "organization": "Moogle Media",
+      "email": "mary@mooglemaker.dev",
+      "phone": 8880012121,
+      "dateAcquired": "January 18, 2022",
+      "totalSales": 55200
+    },
+    {
+      "id": 7,
+      "name": "Frederick Leverlegs",
+      "organization": "Slimetime University",
+      "email": "fred@slimetime.edu",
+      "phone": 8880011919,
+      "dateAcquired": "November 18, 2021",
+      "totalSales": 85010
+    },
+    {
+      "id": 8,
+      "name": "Bernie Billowbear",
+      "organization": "Billowbear Bakery",
+      "email": "bernie@billowbearbakery.net",
+      "phone": 8880012020,
+      "dateAcquired": "November 18, 2021",
+      "totalSales": 12500
+    }
+  ]
+}

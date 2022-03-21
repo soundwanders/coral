@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {FiSearch} from 'react-icons/fi';
 import {MdOutlineEco} from 'react-icons/md';
+import {SearchBarShadow} from '../utilities';
 
 const Header = () => {
   return (
@@ -48,15 +49,15 @@ const Greeting = styled.h1`
 
 const InputContainer = styled.div`
   display: flex;
-  justify-content: flex-end;
-  position: relative;
-  right: 0;
+  box-shadow: ${SearchBarShadow};
+  transform: translateX(2.5rem);
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     overflow-x: hidden;
     margin-right: 1rem;
     flex-direction: row;
     flex: 1;
     flex-basis: 90%;
+    transform: none;
   }
 `;
 
@@ -67,18 +68,18 @@ const Icon = styled.div`
   height: 3rem;
   width: 3rem;
   background-color: #f6f8ff;
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
   svg {
     color: #444444;
   }
 `;
 
 const Input = styled.input`
-  border: none;
+  border: 0;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
   background-color: #f6f8ff;
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
   &:focus {
     border: none;
     outline: none;

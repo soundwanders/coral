@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Badges from './Badges';
 import AvatarImage from '../assets/Chase.png';
 import {BiHomeSmile} from 'react-icons/bi';
+import {BsFileEarmarkPerson} from 'react-icons/bs';
 import {AiOutlinePieChart, AiOutlineFileSync} from 'react-icons/ai';
 import {HiOutlineCash} from 'react-icons/hi';
 import {DarkTheme, White} from '../utilities';
@@ -23,6 +24,10 @@ const Sidebar = () => {
             <h2> Dashboard </h2>
           </Link>
           <Link>
+            <AiOutlinePieChart />
+            <h2> Charts </h2>
+          </Link>
+          <Link>
             <AiOutlineFileSync />
             <h2> Projects </h2>
           </Link>
@@ -31,8 +36,8 @@ const Sidebar = () => {
             <h2> Invoices </h2>
           </Link>
           <Link>
-            <AiOutlinePieChart />
-            <h2> Reports </h2>
+            <BsFileEarmarkPerson />
+            <h2> Client List </h2>
           </Link>
         </PageLinks>
         <ContactContainer>
@@ -52,11 +57,14 @@ const Container = styled.div`
   align-items: center;
   width: 20%;
   height: 100% !important;
+  gap: 3rem;
   text-align: center;
   border: 1px solid transparent;
   border-radius: 2rem;
   background-color: ${DarkTheme};
-  gap: 3rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.46'%3E%3Ccircle fill='%23162349' cx='50' cy='0' r='50'/%3E%3Cg fill='%2316234a' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%2316244b' cx='50' cy='100' r='50'/%3E%3Cg fill='%2317244c' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%2317254c' cx='50' cy='200' r='50'/%3E%3Cg fill='%2317254d' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%2317254e' cx='50' cy='300' r='50'/%3E%3Cg fill='%2318264f' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23182650' cx='50' cy='400' r='50'/%3E%3Cg fill='%23182751' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23182751' cx='50' cy='500' r='50'/%3E%3Cg fill='%23192752' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23192853' cx='50' cy='600' r='50'/%3E%3Cg fill='%23192854' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23192955' cx='50' cy='700' r='50'/%3E%3Cg fill='%231a2956' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%231a2957' cx='50' cy='800' r='50'/%3E%3Cg fill='%231a2a57' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%231a2a58' cx='50' cy='900' r='50'/%3E%3Cg fill='%231b2b59' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%231B2B5A' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 100%;
     height: max-content !important;
@@ -98,6 +106,9 @@ const Name = styled.h1`
 
 const LinksContainer = styled.div`
   background-color: #1c2c5d;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.46'%3E%3Ccircle fill='%23162349' cx='50' cy='0' r='50'/%3E%3Cg fill='%2316234a' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%2316244b' cx='50' cy='100' r='50'/%3E%3Cg fill='%2317244c' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%2317254c' cx='50' cy='200' r='50'/%3E%3Cg fill='%2317254d' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%2317254e' cx='50' cy='300' r='50'/%3E%3Cg fill='%2318264f' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23182650' cx='50' cy='400' r='50'/%3E%3Cg fill='%23182751' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23182751' cx='50' cy='500' r='50'/%3E%3Cg fill='%23192752' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23192853' cx='50' cy='600' r='50'/%3E%3Cg fill='%23192854' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23192955' cx='50' cy='700' r='50'/%3E%3Cg fill='%231a2956' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%231a2957' cx='50' cy='800' r='50'/%3E%3Cg fill='%231a2a57' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%231a2a58' cx='50' cy='900' r='50'/%3E%3Cg fill='%231b2b59' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%231B2B5A' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
   height: 100%;
   width: 100%;
   border-radius: 2rem;
@@ -107,7 +118,7 @@ const LinksContainer = styled.div`
 const PageLinks = styled.div`
   display: flex;
   flex-direction: column;
-  height: 60%;
+  height: 63%;
   list-style-type: none;
   padding-top: 2rem;
 `;
