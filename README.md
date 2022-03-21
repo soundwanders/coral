@@ -6,7 +6,9 @@
   [coralquarrel.netlify.app](https://coralquarrel.netlify.app/)
     
   [![Netlify Status](https://api.netlify.com/api/v1/badges/7a2ca23b-0fe6-4a24-8fce-e52cd745c819/deploy-status)](https://app.netlify.com/sites/coralquarrel/deploys)
-  [Animal avatars from freepik](https://www.freepik.com/vectors/pet-animals)
+  
+  [Vectors from freepik](https://www.freepik.com/vectors/pet-animals)
+  
   </div>
 
 </p>
