@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Badges from './Badges';
 import AvatarImage from '../assets/Billowbear.png';
 import {CardShadow, HoverEffect, White} from '../utilities';
+import {MdOutlineLoyalty} from 'react-icons/md';
 
 const Pipeline = () => {
   return (
@@ -20,14 +21,18 @@ const Pipeline = () => {
               </InfoUpdate>
             </Info>
           </InfoContainer>
-          <Badges content="Web Services" />
+          <Badges content="Website" />
         </Detail>
         <Title>Billowbear Animal Shelter</Title>
         <ProjectInfo>
-          Web design and development, import and integrate client data for CMS, serverless hosting.
+          Web design and development, integrate client's database with our CMS, provide serverless
+          hosting.
         </ProjectInfo>
         <QuoteContainer>
-          <Quote>$12500</Quote>
+          <Quote>
+            {' '}
+            <MdOutlineLoyalty /> &nbsp; $12500
+          </Quote>
           <Badges content="Full Stack" scope />
         </QuoteContainer>
       </CardContent>
@@ -120,7 +125,7 @@ const QuoteContainer = styled.div`
   margin-top: 1rem;
   align-items: center;
   justify-content: space-between;
-  padding: 0.3rem 0;
+  padding: 0.4rem 0;
   border-radius: 1rem;
   background-color: rgba(146, 166, 255, 0.3);
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -132,11 +137,15 @@ const QuoteContainer = styled.div`
 
 const Quote = styled.div`
   font-family: 'Arvo', serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   padding: 0 0.8rem;
-  margin: 0.4rem 0.5rem;
+  margin: 0.4rem;
+  justify-content: space-between;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin: 0 auto;
+  }
+  svg {
+    transform: translateY(4px);
   }
 `;
 

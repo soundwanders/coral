@@ -37,7 +37,7 @@ const Sidebar = () => {
           </Link>
           <Link>
             <BsFileEarmarkPerson />
-            <h2> Client List </h2>
+            <h2> Clients </h2>
           </Link>
         </PageLinks>
         <ContactContainer>
@@ -103,7 +103,7 @@ const Name = styled.h1`
 
 const LinksContainer = styled.div`
   background-color: #1c2c5d;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.3'%3E%3Ccircle fill='%23162349' cx='50' cy='0' r='50'/%3E%3Cg fill='%2316234a' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%2316244b' cx='50' cy='100' r='50'/%3E%3Cg fill='%2317244c' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%2317254c' cx='50' cy='200' r='50'/%3E%3Cg fill='%2317254d' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%2317254e' cx='50' cy='300' r='50'/%3E%3Cg fill='%2318264f' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23182650' cx='50' cy='400' r='50'/%3E%3Cg fill='%23182751' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23182751' cx='50' cy='500' r='50'/%3E%3Cg fill='%23192752' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23192853' cx='50' cy='600' r='50'/%3E%3Cg fill='%23192854' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23192955' cx='50' cy='700' r='50'/%3E%3Cg fill='%231a2956' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%231a2957' cx='50' cy='800' r='50'/%3E%3Cg fill='%231a2a57' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%231a2a58' cx='50' cy='900' r='50'/%3E%3Cg fill='%231b2b59' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%231B2B5A' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.2'%3E%3Ccircle fill='%23162349' cx='50' cy='0' r='50'/%3E%3Cg fill='%2316234a' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%2316244b' cx='50' cy='100' r='50'/%3E%3Cg fill='%2317244c' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%2317254c' cx='50' cy='200' r='50'/%3E%3Cg fill='%2317254d' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%2317254e' cx='50' cy='300' r='50'/%3E%3Cg fill='%2318264f' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23182650' cx='50' cy='400' r='50'/%3E%3Cg fill='%23182751' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23182751' cx='50' cy='500' r='50'/%3E%3Cg fill='%23192752' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23192853' cx='50' cy='600' r='50'/%3E%3Cg fill='%23192854' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23192955' cx='50' cy='700' r='50'/%3E%3Cg fill='%231a2956' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%231a2957' cx='50' cy='800' r='50'/%3E%3Cg fill='%231a2a57' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%231a2a58' cx='50' cy='900' r='50'/%3E%3Cg fill='%231b2b59' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%231B2B5A' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
   background-size: contain;
   height: 100%;
   width: 100%;
@@ -145,9 +145,9 @@ const ContactContainer = styled.div`
   justify-content: center;
   width: 60%;
   height: 15%;
-  margin: auto;
+  margin: 1rem auto 0 auto;
   border-radius: 1.75rem;
-  padding: 1rem;
+  padding: 0.8rem 1rem;
   background-color: ${DarkTheme};
   color: #dbdbdb;
   a {
@@ -155,7 +155,7 @@ const ContactContainer = styled.div`
     text-decoration: none;
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
-    margin-bottom: 2rem;
+    margin: 1rem auto 2rem auto;
   }
 `;
 

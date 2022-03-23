@@ -68,7 +68,7 @@ const Earning = styled.h2`
 `;
 
 const RevenueIncrease = styled.h4`
-  max-width: 80%;
+  max-width: 70%;
   margin: 0 auto;
   text-align: center;
   font-weight: 600;

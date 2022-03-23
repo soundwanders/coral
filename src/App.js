@@ -1,7 +1,7 @@
 import './App.css';
 import styled from 'styled-components';
 import Sidebar from './components/Sidebar';
-import Content from './components/Content';
+import Content from './components/SiteContent';
 
 function App() {
   return (
@@ -28,7 +28,7 @@ const Container = styled.div`
       width: 100%;
       margin: 1rem 0 0 0;
       padding: 0.5rem 0.25rem;
-      background: linear-gradient(to bottom, #eaf5ff 75%, #ffe4ce 100%);
+      background: #eaf5ff;
     }
   }
 `;

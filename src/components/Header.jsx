@@ -53,11 +53,12 @@ const InputContainer = styled.div`
   transform: translateX(2.5rem);
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     overflow-x: hidden;
-    margin-right: 1rem;
+    margin-right: 1.4rem;
     flex-direction: row;
     flex: 1;
-    flex-basis: 90%;
+    flex-basis: 70%;
     transform: none;
+    box-shadow: none;
   }
 `;
 
@@ -86,7 +87,6 @@ const Input = styled.input`
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     overflow-x: hidden;
-    margin-right: 1.25rem;
   }
 `;
 

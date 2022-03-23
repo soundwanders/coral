@@ -39,39 +39,40 @@ const Div = styled.span`
     ${({scope}) =>
       scope &&
       `
+      font-size: 0.85rem;
       background-color: ${White};
       border: 0.05rem solid ${ThemeColor};
       color:${ThemeColor};
-      margin: 0 2rem 0 0;
+      margin: 0 1.4rem 0 0;
       @media screen and (max-width: 960px) {
         margin: 0.2rem auto;
       }
     `}
 
-  ${({glowTags}) =>
-    glowTags &&
-    `
-      font-size: 0.8rem;
-      padding: 0.25rem 0.5rem;
-      margin-top: 0.8rem;
-      font-weight: 500;
-      background-color: #ffea94;
-      color: ${DarkTheme};
-    `}
+    ${({glowTags}) =>
+      glowTags &&
+      `
+        font-size: 0.8rem;
+        padding: 0.25rem 0.5rem;
+        margin-top: 0.8rem;
+        font-weight: 500;
+        background-color: #ffea94;
+        color: ${DarkTheme};
+      `}
 
-  ${({paid}) =>
-    paid &&
-    `
-      background-color: #70e00041;
-      color: ${PaidGreen};
-    `}
+    ${({paid}) =>
+      paid &&
+      `
+        background-color: #70e00041;
+        color: ${PaidGreen};
+      `}
 
-${({late}) =>
-  late &&
-  `
-      background-color: #ff595e41;
-      color: ${LateRed};
-    `}
+    ${({late}) =>
+      late &&
+      `
+        background-color: #ff595e41;
+        color: ${LateRed};
+      `}
 `;
 
 export default Badges;

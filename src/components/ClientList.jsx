@@ -6,11 +6,11 @@ const ClientList = () => {
   return (
     <Wrapper>
       <Sidebar />
-        <Container>
-          <ClientContainer>
-            <ClientInfo />
-          </ClientContainer>
-        </Container> 
+      <Container>
+        <ClientContainer>
+          <ClientInfo />
+        </ClientContainer>
+      </Container>
     </Wrapper>
   );
 };
@@ -28,6 +28,5 @@ const ClientContainer = styled.div`
 `;
 
 const ClientInfo = styled.div``;
-
 
 export default ClientList;
