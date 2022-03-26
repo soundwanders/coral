@@ -10,7 +10,7 @@ import Pipeline from './Pipeline';
 import {MdOutlineSavings, MdOutlineEditCalendar} from 'react-icons/md';
 import {BiBuildings} from 'react-icons/bi';
 
-const Content = () => {
+const SiteContent = () => {
   return (
     <Wrapper>
       <Header />
@@ -212,4 +212,4 @@ const ColumnFour = styled.div`
   }
 `;
 
-export default Content;
+export default SiteContent;

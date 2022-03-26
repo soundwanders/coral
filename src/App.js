@@ -1,16 +1,16 @@
 import './App.css';
 import styled from 'styled-components';
 import Sidebar from './components/Sidebar';
-import Content from './components/SiteContent';
+import SiteContent from './components/SiteContent';
 
 function App() {
   return (
     <Container>
       <Sidebar />
-      <Content />
+      <SiteContent />
     </Container>
-  );
-}
+  )
+};
 
 const Container = styled.div`
   display: flex;

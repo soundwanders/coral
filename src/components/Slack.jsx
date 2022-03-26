@@ -12,10 +12,10 @@ const SlackBar = () => {
             <FaSlack />
           </SlackLogo>
           <SlackText>
-            <SlackHeader> Stop by and say hello!</SlackHeader>
+            <SlackHeader> Stop by our Slack and say hello!</SlackHeader>
           </SlackText>
         </SlackContainer>
-        <Join>Join Our Slack</Join>
+        <Join>Join</Join>
       </CardContent>
     </Wrapper>
   );

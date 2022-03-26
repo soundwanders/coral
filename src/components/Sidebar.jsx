@@ -1,4 +1,5 @@
 import React from 'react';
+import { Outlet, Link } from "react-router-dom";
 import styled from 'styled-components';
 import Badges from './Badges';
 import AvatarImage from '../assets/Chase.png';
@@ -19,34 +20,38 @@ const Sidebar = () => {
 
       <LinksContainer>
         <PageLinks>
-          <Link>
+          <SidebarLinks>
             <BiHomeSmile />
-            <h2> Dashboard </h2>
-          </Link>
-          <Link>
+            <Link to="/"> <h2> Dashboard </h2> </Link>
+          </SidebarLinks>
+
+          <SidebarLinks>
             <AiOutlinePieChart />
-            <h2> Charts </h2>
-          </Link>
-          <Link>
+            <Link to="/"> <h2> Charts </h2> </Link>
+          </SidebarLinks>
+
+          <SidebarLinks>
             <AiOutlineFileSync />
-            <h2> Projects </h2>
-          </Link>
-          <Link>
+            <Link to="/"> <h2> Projects </h2> </Link>
+          </SidebarLinks>
+
+          <SidebarLinks>
             <HiOutlineCash />
-            <h2> Invoices </h2>
-          </Link>
-          <Link>
+            <Link to="/"> <h2> Invoices </h2> </Link>
+          </SidebarLinks>
+
+          <SidebarLinks>
             <BsFileEarmarkPerson />
-            <h2> Clients </h2>
-          </Link>
+            <Link to="/ClientList"> <h2> Clients </h2> </Link>
+          </SidebarLinks>
+
         </PageLinks>
         <ContactContainer>
           <Questions>Any Questions?</Questions>
-          <a href="/">
             <ContactUs>Contact us!</ContactUs>
-          </a>
         </ContactContainer>
       </LinksContainer>
+      <Outlet />
     </Container>
   );
 };
@@ -82,7 +87,7 @@ const ProfileContainer = styled.div`
 `;
 
 const Avatar = styled.img`
-  width: 3.25rem;
+  width: 3.5rem;
   border-radius: 6rem;
   margin-top: 20%;
   &:hover {
@@ -109,6 +114,11 @@ const LinksContainer = styled.div`
   width: 100%;
   border-radius: 2rem;
   text-align: center;
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `;
 
 const PageLinks = styled.div`
@@ -119,7 +129,7 @@ const PageLinks = styled.div`
   padding-top: 2rem;
 `;
 
-const Link = styled.div`
+const SidebarLinks = styled.div`
   display: flex;
   margin-left: 25%;
   margin-bottom: 2rem;
