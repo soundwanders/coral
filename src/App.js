@@ -22,8 +22,8 @@ const Container = styled.div`
   border-radius: 2rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
-    margin: 1rem 0 0 0;
-    padding: 0.5rem 0.25rem;
+    margin: 0;
+    padding: 0;
     background: #eaf5ff;
   }
 `;
