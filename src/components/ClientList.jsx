@@ -50,7 +50,7 @@ const Container = styled.div`
     height: 100%;
     padding: 0;
     margin: 0;
-    background: #eaf5ff;
+    background: transparent;
   }
 `;
 
@@ -70,7 +70,7 @@ const ListWrapper = styled.div`
     height: max-content;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    background: linear-gradient(to bottom, #eaf5ff 75%, #ffe4ce 100%);
+    background: #eaf5ff;
     overflow-x: hidden;
   }
 `;
@@ -131,7 +131,7 @@ const ListItem = styled.li`
   box-sizing: border-box;
   border-radius: 0.2rem;
   border-bottom: 1px solid #d8e2e7;
-  background: #fffcf0;
+  background: #fffcf1;
   &:nth-child(3) {
     font-size: 1.675rem;
   }
