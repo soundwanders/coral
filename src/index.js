@@ -1,24 +1,37 @@
 import React from 'react';
 import App from './App';
 import ClientList from './components/ClientList';
-import { render } from "react-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {render} from 'react-dom';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
-const rootElement = document.getElementById("root");
+const rootElement = document.getElementById('root');
 render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="ClientList" element={<ClientList />} />
-      <Route path="*" element=
-        {
-          <main style={{ position:"absolute", top:"30%", left:"30%", padding: "1rem" }}>
+      <Route
+        path="*"
+        element={
+          <main style={{position: 'absolute', top: '30%', left: '30%', padding: '1rem'}}>
             <h1>Oops! Looks like we took a wrong turn.</h1>
-            <a href="/" style={{ position:"absolute", left:"30%", margin: "2rem auto", textDecoration: "none", fontSize: "2rem", fontWeight: "bold"}} >Return home!</a>
+            <a
+              href="/"
+              style={{
+                position: 'absolute',
+                left: '30%',
+                margin: '2rem auto',
+                textDecoration: 'none',
+                fontSize: '2rem',
+                fontWeight: 'bold',
+              }}
+            >
+              Return home!
+            </a>
           </main>
         }
-        />
+      />
     </Routes>
   </BrowserRouter>,
-  rootElement
+  rootElement,
 );

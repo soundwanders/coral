@@ -1,8 +1,17 @@
 {
   "clients": [
     {
+      "id": 0,
+      "name": "Misty Molasses",
+      "organization": "Molasses Glasses",
+      "email": "misty@molassesgang.org",
+      "phone": 19993443,
+      "dateAcquired": "September 20, 2020",
+      "totalSales": 39000
+    },
+    {
       "id": 1,
-      "name": "Billy Bolognabranch",
+      "name": "Billy Bolognas",
       "organization": "Bologna Crew",
       "email": "billy@bolognacrew.com",
       "phone": 1112221111,
@@ -13,7 +22,7 @@
       "id": 2,
       "name": "Holly Hollandaise",
       "organization": "Hollandaise Resorts",
-      "email": "holly@eggsquad.net",
+      "email": "holly@eggsquad.co",
       "phone": 2227771921,
       "dateAcquired": "March 22, 2021",
       "totalSales": 32999
@@ -43,7 +52,7 @@
       "email": "percy@seedsailors.crew",
       "phone": 8880012222,
       "dateAcquired": "March 18, 2022",
-      "totalSales": 35322
+      "totalSales": 35320
     },
     {
       "id": 6,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet, Link } from "react-router-dom";
+import {Outlet, Link} from 'react-router-dom';
 import styled from 'styled-components';
 import Badges from './Badges';
 import AvatarImage from '../assets/Chase.png';
@@ -22,33 +22,47 @@ const Sidebar = () => {
         <PageLinks>
           <SidebarLinks>
             <BiHomeSmile />
-            <Link to="/"> <h2> Dashboard </h2> </Link>
+            <Link to="/">
+              {' '}
+              <h2> Dashboard </h2>{' '}
+            </Link>
           </SidebarLinks>
 
           <SidebarLinks>
             <AiOutlinePieChart />
-            <Link to="/"> <h2> Charts </h2> </Link>
+            <Link to="/">
+              {' '}
+              <h2> Charts </h2>{' '}
+            </Link>
           </SidebarLinks>
 
           <SidebarLinks>
             <AiOutlineFileSync />
-            <Link to="/"> <h2> Projects </h2> </Link>
+            <Link to="/">
+              {' '}
+              <h2> Projects </h2>{' '}
+            </Link>
           </SidebarLinks>
 
           <SidebarLinks>
             <HiOutlineCash />
-            <Link to="/"> <h2> Invoices </h2> </Link>
+            <Link to="/">
+              {' '}
+              <h2> Invoices </h2>{' '}
+            </Link>
           </SidebarLinks>
 
           <SidebarLinks>
             <BsFileEarmarkPerson />
-            <Link to="/ClientList"> <h2> Clients </h2> </Link>
+            <Link to="/ClientList">
+              {' '}
+              <h2> Clients </h2>{' '}
+            </Link>
           </SidebarLinks>
-
         </PageLinks>
         <ContactContainer>
           <Questions>Any Questions?</Questions>
-            <ContactUs>Contact us!</ContactUs>
+          <ContactUs>Contact us!</ContactUs>
         </ContactContainer>
       </LinksContainer>
       <Outlet />
@@ -114,7 +128,7 @@ const LinksContainer = styled.div`
   width: 100%;
   border-radius: 2rem;
   text-align: center;
-  
+
   a {
     text-decoration: none;
     color: inherit;
@@ -127,6 +141,9 @@ const PageLinks = styled.div`
   height: 63%;
   list-style-type: none;
   padding-top: 2rem;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    transform: translateX(20px);
+  }
 `;
 
 const SidebarLinks = styled.div`

@@ -9,8 +9,8 @@ function App() {
       <Sidebar />
       <SiteContent />
     </Container>
-  )
-};
+  );
+}
 
 const Container = styled.div`
   display: flex;
@@ -20,16 +20,11 @@ const Container = styled.div`
   background: linear-gradient(to bottom right, #eaf5ff 60%, #ffe4ce 100%);
   border: 0px solid transparent;
   border-radius: 2rem;
-  @media screen and (min-width: 320px) and (max-width: 960px) {
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
-    @media screen and (min-width: 320px) and (max-width 960px) {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      margin: 1rem 0 0 0;
-      padding: 0.5rem 0.25rem;
-      background: #eaf5ff;
-    }
+    margin: 1rem 0 0 0;
+    padding: 0.5rem 0.25rem;
+    background: #eaf5ff;
   }
 `;
 

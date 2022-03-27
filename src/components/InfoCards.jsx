@@ -53,7 +53,7 @@ const InfoCardContainer = styled.div`
   &:hover {
     box-shadow: ${HoverEffect};
   }
-  @media screen and (min-width: 320px) and (max-width: 960px) {
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 80%;
     padding: 1rem;
     margin: 0;
@@ -95,7 +95,7 @@ const NumberValue = styled.div`
   border-radius: 1rem;
   font-family: 'Arvo', serif;
   font-size: 1.1rem;
-  @media (max-width: 960px) {
+  @media (max-width: 1080px) {
     margin-left: 0.25rem;
     padding: 0.6rem 0.8rem;
   }
@@ -108,7 +108,7 @@ const Title = styled.h3`
   color: #0e1e36;
   margin-left: 0.7rem;
   margin-bottom: 4px;
-  @media (max-width: 960px) {
+  @media (max-width: 1080px) {
     margin-left: 0.25rem;
   }
 `;
@@ -117,7 +117,7 @@ const SubTitle = styled.h5`
   color: #222;
   font-weight: normal;
   margin-left: 0.7rem;
-  @media (max-width: 960px) {
+  @media (max-width: 1080px) {
     margin-left: 0.25rem;
   }
 `;

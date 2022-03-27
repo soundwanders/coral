@@ -44,7 +44,7 @@ const Div = styled.span`
       border: 0.05rem solid ${ThemeColor};
       color:${ThemeColor};
       margin: 0 1.4rem 0 0;
-      @media screen and (max-width: 960px) {
+      @media screen and (max-width: 1080px) {
         margin: 0.2rem auto;
       }
     `}
