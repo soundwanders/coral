@@ -58,8 +58,8 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 1rem 0 0 0;
-    padding: 0.5rem 0.25rem;
+    margin: 0 0 1rem 0;
+    padding: 0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     background: linear-gradient(to bottom, #eaf5ff 75%, #ffe4ce 100%);
