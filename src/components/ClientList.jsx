@@ -3,7 +3,8 @@ import {Outlet} from 'react-router-dom';
 import styled from 'styled-components';
 import Sidebar from './Sidebar';
 import data from '../db.json';
-import Avatar from '../assets/Avatar.png';
+import Avatar from '../assets/Avatar2.png';
+import {DarkTheme, White, CardShadow} from '../utilities';
 
 const ClientList = () => {
   return (
@@ -11,7 +12,7 @@ const ClientList = () => {
       <Container>
         <Sidebar />
         <ListWrapper>
-          <Title>Clients</Title>
+          <Title>Coral Clients</Title>
           <Underline />
           <FlexContainer>
             <Grid>
@@ -42,7 +43,7 @@ const Container = styled.div`
   position: relative;
   width: 100%;
   height: 97vh;
-  background: #fff2e9;
+  background: transparent;
   border: 0px solid transparent;
   border-radius: 2rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -86,6 +87,7 @@ const FlexContainer = styled.div`
 
 const Title = styled.h1`
   font-size: 4rem;
+  color: #464646;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 90%;
     text-align: center;
@@ -99,30 +101,25 @@ const Underline = styled.span`
   border-bottom: 1px solid #dcdcdc;
 `;
 
-const Grid = styled.div`
-  display: grid;
-  width: 80%;
-  grid-auto-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 6rem 20%;
-  white-space: nowrap;
-  justify-content: space-between;
-  @media screen and (min-width: 320px) and (max-width: 1080px) {
-    width: 80%;
-    grid-template-columns: 1fr;
-    gap: 4rem 0;
-    white-space: nowrap;
-  }
+const Portrait = styled.img`
+  display: flex;
+  width: 5rem;
+  padding: 0.5rem 0;
+  margin: 0 auto;
 `;
 
-const ClientUl = styled.ul``;
-
-const Label = styled.span`
-  display: flex;
-  padding: 0.1rem 0;
-  margin: 0.8rem 0 0.1rem 0.4rem;
-  font-weight: bold;
-  color: #9a9a9a;
+const ClientUl = styled.ul`
+  padding: 1rem 2rem;
+  margin: 0;
+  min-width: 260px;
+  background: ${White};
+  border-radius: 1rem;
+  box-shadow: ${CardShadow};
+  transition: 0.2s ease-in-out;
+  cursor: default;
+  &:hover {
+    opacity: 0.9;
+  }
 `;
 
 const ListItem = styled.li`
@@ -132,13 +129,33 @@ const ListItem = styled.li`
   border-radius: 0.2rem;
   border-bottom: 1px solid #d8e2e7;
   background: #fffcf1;
+  color: ${DarkTheme};
   &:nth-child(3) {
-    font-size: 1.675rem;
+    font-size: 1.6rem;
   }
 `;
 
-const Portrait = styled.img`
-  width: 5rem;
+const Label = styled.span`
+  display: flex;
+  padding: 0.1rem 0;
+  margin: 0.8rem 0 0.1rem 0.4rem;
+  font-weight: bold;
+  color: #a4a4a4;
+`;
+
+const Grid = styled.div`
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 6rem 10%;
+  white-space: nowrap;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    width: 80%;
+    grid-template-columns: 1fr;
+    gap: 4rem 0;
+    white-space: nowrap;
+  }
 `;
 
 export default ClientList;

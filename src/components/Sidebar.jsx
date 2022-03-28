@@ -162,7 +162,9 @@ const SidebarLinks = styled.div`
     margin-top: 1%;
   }
   &:hover {
-    filter: brightness(120%);
+    transform: scale(1.02);
+    transition: 0.2s;
+    color: #fff;
   }
 `;
 

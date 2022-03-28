@@ -5,7 +5,7 @@
     
   [coralquarrel.netlify.app](https://coralquarrel.netlify.app/)
     
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/7a2ca23b-0fe6-4a24-8fce-e52cd745c819/deploy-status)](https://app.netlify.com/sites/coralquarrel/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4e4a21fd-e0f6-4f15-8e4c-7ca55f0acb33/deploy-status)](https://app.netlify.com/sites/coralquarrel/deploys)
   
   [Vectors from freepik](https://www.freepik.com/vectors/pet-animals)
   

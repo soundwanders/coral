@@ -11,7 +11,7 @@
     },
     {
       "id": 1,
-      "name": "Billy Bolognas",
+      "name": "Billy Bologna",
       "organization": "Bologna Crew",
       "email": "billy@bolognacrew.com",
       "phone": 1112221111,
@@ -52,16 +52,16 @@
       "email": "percy@seedsailors.crew",
       "phone": 8880012222,
       "dateAcquired": "March 18, 2022",
-      "totalSales": 35320
+      "totalSales": 55320
     },
     {
       "id": 6,
-      "name": "Mary Mooglemaker",
-      "organization": "Moogle Media",
-      "email": "mary@mooglemaker.dev",
+      "name": "Mary Muzzlemaker",
+      "organization": "Muzzle Media",
+      "email": "mary@muzzlemaker.dev",
       "phone": 8880012121,
       "dateAcquired": "January 18, 2022",
-      "totalSales": 55200
+      "totalSales": 35200
     },
     {
       "id": 7,
