@@ -4,7 +4,7 @@ import {IoStatsChart} from 'react-icons/io5';
 import {BiDollarCircle} from 'react-icons/bi';
 import {ThemeColor, HoverEffect, White} from '../utilities';
 import data from '../db.json';
- 
+
 const RevenueArray = data.clients.map(client => client.totalSales);
 const TotalRevenue = RevenueArray.reduce(function (x, y) {
   return x + y;
@@ -18,7 +18,13 @@ const Revenue = () => {
           <IoStatsChart />
         </ChartIcon>
         <NetRevenue>Net Revenue</NetRevenue>
-        <Earning><DollarSign> <BiDollarCircle /> </DollarSign>{TotalRevenue}</Earning>
+        <Earning>
+          <DollarSign>
+            {' '}
+            <BiDollarCircle />{' '}
+          </DollarSign>
+          {TotalRevenue}
+        </Earning>
         <RevenueIncrease>+ 10% YTD</RevenueIncrease>
       </CardContent>
     </RevenueCard>

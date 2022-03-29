@@ -1,61 +1,28 @@
 {
   "clients": [
     {
-      "id": 0,
-      "name": "Misty Molasses",
-      "organization": "Molasses Glasses",
-      "email": "misty@molassesgang.org",
-      "phone": 19993443,
-      "dateAcquired": "September 20, 2020",
-      "totalSales": 39000
-    },
-    {
       "id": 1,
-      "name": "Billy Bologna",
-      "organization": "Bologna Crew",
-      "email": "billy@bolognacrew.com",
-      "phone": 1112221111,
-      "dateAcquired": "January 21, 2021",
-      "totalSales": 52505
+      "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520554/CORAL/Billowbear_jczbfm.png",
+      "name": "Bernie Billowbear",
+      "organization": "Billowbear Bakery",
+      "email": "bernie@billowbakery.com",
+      "phone": 8880012020,
+      "dateAcquired": "November 18, 2021",
+      "totalSales": 12500
     },
     {
       "id": 2,
-      "name": "Holly Hollandaise",
-      "organization": "Hollandaise Resorts",
-      "email": "holly@eggsquad.co",
-      "phone": 2227771921,
-      "dateAcquired": "March 22, 2021",
-      "totalSales": 32999
+      "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520554/CORAL/Percy_t48gvk.png",
+      "name": "Percy Poppyseed",
+      "organization": "Poppyseed Sailing",
+      "email": "percy@seedsailors.co",
+      "phone": 8880012222,
+      "dateAcquired": "March 18, 2022",
+      "totalSales": 55000
     },
     {
       "id": 3,
-      "name": "Barry Barrelboss",
-      "organization": "Barrel Bosses",
-      "email": "bernie@barrelboys.com",
-      "phone": 3334443535,
-      "dateAcquired": "May 15, 2021",
-      "totalSales": 125995
-    },
-    {
-      "id": 4,
-      "name": "Wayne Brainburden",
-      "organization": "Brainy Bunch",
-      "email": "wayne@brainybunch.com",
-      "phone": 4448882828,
-      "dateAcquired": "July 5, 2021",
-      "totalSales": 283300
-    },
-    {
-      "id": 5,
-      "name": "Percy Poppyseed",
-      "organization": "Poppyseed Sailing",
-      "email": "percy@seedsailors.crew",
-      "phone": 8880012222,
-      "dateAcquired": "March 18, 2022",
-      "totalSales": 55320
-    },
-    {
-      "id": 6,
+      "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520554/CORAL/Mary_eehkpp.png",
       "name": "Mary Muzzlemaker",
       "organization": "Muzzle Media",
       "email": "mary@muzzlemaker.dev",
@@ -64,22 +31,64 @@
       "totalSales": 35200
     },
     {
+      "id": 4,
+      "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520553/CORAL/Cosmo_jt6zav.png",
+      "name": "Cosmo Chocobo",
+      "organization": "The Chocobo Coop",
+      "email": "cosmo@chocobo.coop",
+      "phone": 19993443,
+      "dateAcquired": "September 20, 2020",
+      "totalSales": 39000
+    },
+    {
+      "id": 5,
+      "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520553/CORAL/Avatar_dex9ut.png",
+      "name": "Billy Bologna",
+      "organization": "Bologna Crew",
+      "email": "billy@bolognacrew.com",
+      "phone": 1112221111,
+      "dateAcquired": "January 21, 2021",
+      "totalSales": 52505
+    },
+    {
+      "id": 6,
+      "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520554/CORAL/Barry_e5eqrw.png",
+      "name": "Barry Barrelboss",
+      "organization": "Barrel Bosses",
+      "email": "bernie@barrelboys.com",
+      "phone": 3334443535,
+      "dateAcquired": "May 15, 2021",
+      "totalSales": 125990
+    },
+    {
       "id": 7,
+      "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520554/CORAL/Chase_ndo97b.png",
       "name": "Frederick Leverlegs",
       "organization": "Slimetime University",
       "email": "fred@slimetime.edu",
       "phone": 8880011919,
       "dateAcquired": "November 18, 2021",
-      "totalSales": 85010
+      "totalSales": 85006
     },
     {
       "id": 8,
-      "name": "Bernie Billowbear",
-      "organization": "Billowbear Bakery",
-      "email": "bernie@billowbearbakery.net",
-      "phone": 8880012020,
-      "dateAcquired": "November 18, 2021",
-      "totalSales": 12500
+      "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520598/CORAL/Avatar3.png",
+      "name": "Wayne Brainburden",
+      "organization": "Brainy Bunch",
+      "email": "wayne@brainybunch.com",
+      "phone": 4448882828,
+      "dateAcquired": "July 5, 2021",
+      "totalSales": 183000
+    },
+    {
+      "id": 9,
+      "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520553/CORAL/Avatar_dex9ut.png",
+      "name": "Holly Hollandaise",
+      "organization": "Hollandaise Resorts",
+      "email": "holly@eggsquad.io",
+      "phone": 2227771921,
+      "dateAcquired": "March 22, 2021",
+      "totalSales": 22999
     }
   ]
 }

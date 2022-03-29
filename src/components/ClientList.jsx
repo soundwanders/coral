@@ -3,8 +3,8 @@ import {Outlet} from 'react-router-dom';
 import styled from 'styled-components';
 import Sidebar from './Sidebar';
 import data from '../db.json';
-import Avatar from '../assets/Avatar2.png';
-import {DarkTheme, White, CardShadow} from '../utilities';
+import {BiDollarCircle} from 'react-icons/bi';
+import {DarkTheme, White, CardShadow, HoverEffect} from '../utilities';
 
 const ClientList = () => {
   return (
@@ -17,15 +17,21 @@ const ClientList = () => {
           <FlexContainer>
             <Grid>
               {data.clients.map(
-                ({id, name, organization, email, phone, dateAcquired, totalSales}) => (
+                ({id, img, name, organization, email, phone, dateAcquired, totalSales}) => (
                   <ClientUl key={id}>
-                    <Portrait src={Avatar} id="ClientPhoto" alt={name} draggable="false" />
+                    <Portrait src={img} id="ClientPhoto" alt={name} draggable="false" />
                     <Label>NAME</Label> <ListItem>{name}</ListItem>
                     <Label>ORGANIZATION</Label> <ListItem>{organization}</ListItem>
                     <Label>EMAIL</Label> <ListItem>{email}</ListItem>
                     <Label>PHONE</Label> <ListItem>{phone}</ListItem>
                     <Label>ACQUIRED</Label> <ListItem>{dateAcquired}</ListItem>
-                    <Label>SALES</Label> <ListItem>{totalSales}</ListItem>
+                    <Label>SALES</Label>
+                    <ListItem>
+                      <Icon>
+                        <BiDollarCircle />
+                      </Icon>
+                      {totalSales}
+                    </ListItem>
                   </ClientUl>
                 ),
               )}
@@ -87,7 +93,7 @@ const FlexContainer = styled.div`
 
 const Title = styled.h1`
   font-size: 4rem;
-  color: #464646;
+  color: #3f3f3f;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 90%;
     text-align: center;
@@ -109,7 +115,7 @@ const Portrait = styled.img`
 `;
 
 const ClientUl = styled.ul`
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 1.5rem 2rem;
   margin: 0;
   min-width: 260px;
   background: ${White};
@@ -119,19 +125,23 @@ const ClientUl = styled.ul`
   cursor: default;
   &:hover {
     opacity: 0.9;
+    box-shadow: ${HoverEffect};
+  }
+  img {
+    margin: 0 auto;
   }
 `;
 
 const ListItem = styled.li`
-  padding: 0.5rem;
+  padding: 0.4rem 0.5rem;
   list-style-type: none;
   box-sizing: border-box;
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
   border-bottom: 1px solid #d8e2e7;
-  background: #fffcf1;
+  background: #fffbf1;
   color: ${DarkTheme};
   &:nth-child(3) {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 `;
 
@@ -139,8 +149,17 @@ const Label = styled.span`
   display: flex;
   padding: 0.1rem 0;
   margin: 0.8rem 0 0.1rem 0.4rem;
+  font-size: 0.8rem;
   font-weight: bold;
   color: #a4a4a4;
+`;
+
+const Icon = styled.span`
+  svg {
+    margin: 0 2% -1.5% 0;
+    max-width: 1.1rem;
+    color: #a4a4a4;
+  }
 `;
 
 const Grid = styled.div`
