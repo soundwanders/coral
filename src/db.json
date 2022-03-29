@@ -42,7 +42,7 @@
     },
     {
       "id": 5,
-      "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520553/CORAL/Avatar_dex9ut.png",
+      "img": ""https://res.cloudinary.com/cloudwanders/image/upload/v1648520554/CORAL/Chase_ndo97b.png",
       "name": "Billy Bologna",
       "organization": "Bologna Crew",
       "email": "billy@bolognacrew.com",
@@ -62,7 +62,7 @@
     },
     {
       "id": 7,
-      "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520554/CORAL/Chase_ndo97b.png",
+      "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520553/CORAL/Avatar_dex9ut.png",
       "name": "Frederick Leverlegs",
       "organization": "Slimetime University",
       "email": "fred@slimetime.edu",
@@ -83,8 +83,8 @@
     {
       "id": 9,
       "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520553/CORAL/Avatar_dex9ut.png",
-      "name": "Holly Hollandaise",
-      "organization": "Hollandaise Resorts",
+      "name": "Holly Hollandaze",
+      "organization": "Hollandaze Resorts",
       "email": "holly@eggsquad.io",
       "phone": 2227771921,
       "dateAcquired": "March 22, 2021",
