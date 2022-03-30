@@ -32,15 +32,15 @@ const Sidebar = () => {
             <AiOutlinePieChart />
             <Link to="/">
               {' '}
-              <h2> Charts </h2>{' '}
+              <h2> Analytics </h2>{' '}
             </Link>
           </SidebarLinks>
 
           <SidebarLinks>
-            <AiOutlineFileSync />
-            <Link to="/">
+            <BsFileEarmarkPerson />
+            <Link to="/ClientList">
               {' '}
-              <h2> Projects </h2>{' '}
+              <h2> Clients </h2>{' '}
             </Link>
           </SidebarLinks>
 
@@ -53,13 +53,14 @@ const Sidebar = () => {
           </SidebarLinks>
 
           <SidebarLinks>
-            <BsFileEarmarkPerson />
-            <Link to="/ClientList">
+            <AiOutlineFileSync />
+            <Link to="/">
               {' '}
-              <h2> Clients </h2>{' '}
+              <h2> Projects </h2>{' '}
             </Link>
           </SidebarLinks>
         </PageLinks>
+        
         <ContactContainer>
           <Questions>Any Questions?</Questions>
           <ContactUs>Contact us!</ContactUs>

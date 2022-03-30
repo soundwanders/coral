@@ -6,8 +6,8 @@ import {ThemeColor, HoverEffect, White} from '../utilities';
 import data from '../db.json';
 
 const RevenueArray = data.clients.map(client => client.totalSales);
-const TotalRevenue = RevenueArray.reduce(function (x, y) {
-  return x + y;
+const TotalRevenue = RevenueArray.reduce(function (total, saleValue) {
+  return total + saleValue;
 }, 0);
 
 const Revenue = () => {

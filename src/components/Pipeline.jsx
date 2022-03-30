@@ -45,7 +45,7 @@ const Project = styled.div`
   width: 100%;
   max-width: 700px;
   margin: 0 1rem;
-  padding: 1.5rem;
+  padding: 0.75rem 1.5rem 2rem 1.5rem;
   background-color: ${White};
   border-radius: 1rem;
   box-shadow: ${CardShadow};

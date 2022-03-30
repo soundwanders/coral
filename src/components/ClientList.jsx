@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Sidebar from './Sidebar';
 import data from '../db.json';
 import {BiDollarCircle} from 'react-icons/bi';
-import {DarkTheme, White, CardShadow, HoverEffect} from '../utilities';
+import {White, CardShadow, HoverEffect} from '../utilities';
 
 const ClientList = () => {
   return (
@@ -133,13 +133,13 @@ const ClientUl = styled.ul`
 `;
 
 const ListItem = styled.li`
-  padding: 0.4rem 0.5rem;
+  padding: 0.45rem 0.5rem;
   list-style-type: none;
   box-sizing: border-box;
   border-radius: 0.5rem;
-  border-bottom: 1px solid #d8e2e7;
-  background: #fffbf1;
-  color: ${DarkTheme};
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px -1px , rgba(0, 0, 0, 0.05) 0px 2px 6px -2px;
+  background: #fffbf3;
+  font-weight: 500;
   &:nth-child(3) {
     font-size: 1.3rem;
   }

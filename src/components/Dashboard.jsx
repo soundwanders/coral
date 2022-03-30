@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import {MdOutlineSavings, MdOutlineEditCalendar} from 'react-icons/md';
+import {BiBuildings} from 'react-icons/bi';
 import Header from './Header';
 import Revenue from './Revenue';
 import ContentCard from './InfoCards';
@@ -7,10 +9,8 @@ import Projects from './Projects';
 import Invoices from './Invoice';
 import SlackBar from './Slack';
 import Pipeline from './Pipeline';
-import {MdOutlineSavings, MdOutlineEditCalendar} from 'react-icons/md';
-import {BiBuildings} from 'react-icons/bi';
 
-const SiteContent = () => {
+const Dashboard = () => {
   return (
     <Wrapper>
       <Header />
@@ -212,4 +212,4 @@ const ColumnFour = styled.div`
   }
 `;
 
-export default SiteContent;
+export default Dashboard;
