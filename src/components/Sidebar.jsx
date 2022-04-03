@@ -46,7 +46,7 @@ const Sidebar = () => {
 
           <SidebarLinks>
             <HiOutlineCash />
-            <Link to="/">
+            <Link to="/InvoiceList">
               {' '}
               <h2> Invoices </h2>{' '}
             </Link>

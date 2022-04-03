@@ -18,7 +18,7 @@
 In the project directory, you can run:
 
 ### `npm install`
-Run this command inside the project directory to install dependencies.
+Run in project's root directory to install the necessary dependencies (styled-components, react-router).
 
 ### `npm start`
 

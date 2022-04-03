@@ -1,46 +1,44 @@
 import React from 'react';
 import {Outlet} from 'react-router-dom';
-import styled from 'styled-components';
-import Sidebar from './Sidebar';
+import styled, { keyframes } from 'styled-components';
+import Sidebar from '../components/Sidebar';
 import data from '../db.json';
 import {BiDollarCircle} from 'react-icons/bi';
-import {White, CardShadow, HoverEffect} from '../utilities';
+import {DarkTheme, White, CardShadow, HoverEffect} from '../utilities';
 
 const ClientList = () => {
   return (
-    <>
-      <Container>
-        <Sidebar />
-        <ListWrapper>
-          <Title>Coral Clients</Title>
-          <Underline />
-          <FlexContainer>
-            <Grid>
-              {data.clients.map(
-                ({id, img, name, organization, email, phone, dateAcquired, totalSales}) => (
-                  <ClientUl key={id}>
-                    <Portrait src={img} id="ClientPhoto" alt={name} draggable="false" />
-                    <Label>NAME</Label> <ListItem>{name}</ListItem>
-                    <Label>ORGANIZATION</Label> <ListItem>{organization}</ListItem>
-                    <Label>EMAIL</Label> <ListItem>{email}</ListItem>
-                    <Label>PHONE</Label> <ListItem>{phone}</ListItem>
-                    <Label>ACQUIRED</Label> <ListItem>{dateAcquired}</ListItem>
-                    <Label>SALES</Label>
-                    <ListItem>
-                      <Icon>
-                        <BiDollarCircle />
-                      </Icon>
-                      {totalSales}
-                    </ListItem>
-                  </ClientUl>
-                ),
-              )}
-            </Grid>
-          </FlexContainer>
-        </ListWrapper>
-        <Outlet />
-      </Container>
-    </>
+    <Container>
+      <Sidebar />
+      <ListWrapper>
+        <Title>Coral Clients</Title>
+        <Underline />
+        <FlexContainer>
+          <Grid>
+            {data.clients.map(
+              ({id, img, name, organization, email, phone, dateAcquired, totalSales}) => (
+                <ClientUl key={id}>
+                  <Portrait src={img} id="ClientPhoto" alt={name} draggable="false" />
+                  <Label>NAME</Label> <ListItem>{name}</ListItem>
+                  <Label>ORGANIZATION</Label> <ListItem>{organization}</ListItem>
+                  <Label>EMAIL</Label> <ListItem>{email}</ListItem>
+                  <Label>PHONE</Label> <ListItem>{phone}</ListItem>
+                  <Label>ACQUIRED</Label> <ListItem>{dateAcquired}</ListItem>
+                  <Label>SALES</Label>
+                  <ListItem>
+                    <Icon>
+                      <BiDollarCircle />
+                    </Icon>
+                    {totalSales}
+                  </ListItem>
+                </ClientUl>
+              ),
+            )}
+          </Grid>
+        </FlexContainer>
+      </ListWrapper>
+      <Outlet />
+    </Container>
   );
 };
 
@@ -69,7 +67,7 @@ const ListWrapper = styled.div`
   width: 100%;
   max-height: 97vh;
   left: 5%;
-  padding: 0.25rem 0;
+  padding: 0.25rem 0 0 1rem;
   overflow-y: auto;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin: 1rem 0 0 0;
@@ -91,9 +89,20 @@ const FlexContainer = styled.div`
   }
 `;
 
+export const Fade = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+`;
+
 const Title = styled.h1`
   font-size: 4rem;
-  color: #3f3f3f;
+  color: ${DarkTheme};
+  animation: 1s ease-out 0s 1 ${Fade};
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 90%;
     text-align: center;
@@ -104,7 +113,7 @@ const Underline = styled.span`
   display: inline-block;
   width: 90%;
   margin: 0 0 2rem 0;
-  border-bottom: 1px solid #dcdcdc;
+  border-bottom: 2px solid #dcdcdc;
 `;
 
 const Portrait = styled.img`
@@ -115,10 +124,15 @@ const Portrait = styled.img`
 `;
 
 const ClientUl = styled.ul`
-  padding: 1rem 2rem 1.5rem 2rem;
+  padding: 1rem 2rem 2rem 2rem;
   margin: 0;
   min-width: 260px;
   background: ${White};
+  background-image: linear-gradient(
+    to bottom,
+    #1c2c5d 12% ,
+    ${White} 12%
+  );
   border-radius: 1rem;
   box-shadow: ${CardShadow};
   transition: 0.2s ease-in-out;
