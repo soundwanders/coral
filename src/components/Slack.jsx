@@ -33,6 +33,7 @@ const Wrapper = styled.div`
   border-radius: 1rem;
   background-color: ${ThemeColor};
   transition: 0.3s ease-in-out;
+
   &:hover {
     box-shadow: ${HoverEffect};
   }
@@ -50,6 +51,7 @@ const CardContent = styled.div`
   width: 100%;
   align-items: center;
   justify-content: space-between;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
     gap: 1rem;
@@ -93,6 +95,7 @@ const Join = styled.button`
   color: ${White};
   background-color: ${DarkTheme};
   cursor: pointer;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin-bottom: 0.3rem;
   }

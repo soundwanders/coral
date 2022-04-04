@@ -74,9 +74,9 @@ const InvoiceList = () => {
                   <Row>
                     <CardsBottomRow>
                       <Label>AMOUNT</Label>
-                      <Icon>
+                      <DollarSign>
                         <BiDollarCircle />
-                      </Icon>
+                      </DollarSign>
                       {totalSales}
                     </CardsBottomRow>
                     <CardsBottomRow>
@@ -100,14 +100,25 @@ const InvoiceList = () => {
   );
 };
 
+export const Fade = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+`;
+
 const Container = styled.div`
   position: relative;
   display: flex;
   width: 100%;
   height: 97vh;
   background: transparent;
-  border: 0px solid TableRowansparent;
   border-radius: 2rem;
+  animation: 0.7s ease-out 0s 1 ${Fade};
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
     height: 100%;
@@ -126,6 +137,7 @@ const Wrapper = styled.div`
   max-height: 97vh;
   left: 3%;
   overflow-y: auto;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin: 1rem 0 0 0;
     padding: 0;
@@ -137,21 +149,11 @@ const Wrapper = styled.div`
   }
 `;
 
-export const Fade = keyframes`
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1.0;
-  }
-}
-`;
-
 const Title = styled.h1`
   font-size: 4rem;
   padding: 0 0.875rem;
   color: ${DarkTheme};
-  animation: 1s ease-out 0s 1 ${Fade};
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 90%;
     text-align: center;
@@ -171,6 +173,7 @@ const FlexContainer = styled.div`
   min-width: 0;
   max-width: 85%;
   padding: 0 0.875rem;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin-left: 0;
     min-width: 0;
@@ -181,7 +184,8 @@ const FlexContainer = styled.div`
 const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5rem 2rem;
+  gap: 5.5rem 4.5rem;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 80%;
     grid-template-columns: 1fr;
@@ -191,16 +195,18 @@ const Grid = styled.div`
 `;
 
 // white-space: normal prevents invoice description from overflowing container
-// https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
 // nth-child(5) to target the card's DESCRIPTION text
 const CardContainer = styled.div`
-  padding: 6% 8%;
+  padding: 5% 7% 7% 7%;
   white-space: normal;
   background: ${White};
+  background-image: linear-gradient(180deg, #172854 12%, ${White} 12%, ${White} 87%, #172854 87%);
+  background-clip: padding-box;
   border-radius: 1rem;
   box-shadow: ${CardShadow};
   transition: 0.2s ease-in-out;
   cursor: default;
+
   div:nth-child(5) {
     line-height: 1.5;
   }
@@ -215,6 +221,7 @@ const Row = styled.div`
   display: flex;
   min-width: 0;
   padding: 0.2rem 0 0 0;
+
   &:nth-child(5) > div {
     flex: 0 0 95%;
     @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -237,11 +244,15 @@ const Portrait = styled.img`
 
 const CardContent = styled.div`
   width: 90%;
-  border-radius: 0.5rem;
   flex: 0 0 55%;
   font-size: 1.125rem;
   font-weight: 500;
   transform: translateX(1rem);
+
+  &:last-child {
+    margin-bottom: -1rem;
+  }
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     font-size: 0.75rem;
   }
@@ -250,20 +261,24 @@ const CardContent = styled.div`
 const CardsBottomRow = styled.div`
   width: 90%;
   border-radius: 0.5rem;
-  padding: 0.15rem;
-  padding-bottom: 0;
+  padding-bottom: 1rem;
   flex: 0 0 35%;
   font-size: inherit;
-  font-weight: 500;
-  transform: translateX(1rem);
-  @media screen and (min-width: 320px) and (max-width: 1080px) {
-    font-size: 0.75rem;
-    flex: 0 0 50%;
+  font-weight: 600;
+  color: ${White};
+  transform: translate(1rem, 2rem);
+
+  span {
+    color: #cecece;
   }
   &:nth-child(2) {
     @media screen and (min-width: 320px) and (max-width: 1080px) {
       display: none;
     }
+  }
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    font-size: 0.75rem;
+    flex: 0 0 52%;
   }
 `;
 
@@ -271,25 +286,27 @@ const CardsBottomRow = styled.div`
 const Label = styled.span`
   display: flex;
   padding: 0.1rem 0;
-  margin: 1.2rem 0 0.125rem 0rem;
+  margin: 1.3rem 0 0.125rem 0rem;
   font-size: 0.8rem;
   font-weight: bold;
   color: #a4a4a4;
 
   span:nth-child(1) {
-    font-size: 1.1rem;
-    transform: translateY(0.3rem);
+    font-size: 1rem;
+    background: #64e764;
+    color: #0d530d;
+    margin: 0.5rem 0 0 0.5rem;
     @media screen and (min-width: 320px) and (max-width: 1080px) {
       font-size: 0.85rem;
     }
   }
 `;
 
-const Icon = styled.span`
+const DollarSign = styled.span`
   svg {
-    margin: 0 2% -2% 0;
-    max-width: 1.25rem;
-    color: #a4a4a4;
+    margin: 0 2% -2.5% 0;
+    max-width: 1.125rem;
+    color: #cecece;
   }
 `;
 

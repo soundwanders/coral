@@ -35,6 +35,16 @@ const ClientList = () => {
   );
 };
 
+export const Fade = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+`;
+
 const Container = styled.div`
   display: flex;
   position: relative;
@@ -43,12 +53,13 @@ const Container = styled.div`
   background: transparent;
   border: 0px solid transparent;
   border-radius: 2rem;
+  animation: 0.7s ease-out 0s 1 ${Fade};
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
     height: 100%;
     padding: 0;
     margin: 0;
-    background: transparent;
   }
 `;
 
@@ -61,6 +72,7 @@ const ListWrapper = styled.div`
   max-height: 97vh;
   left: 3%;
   overflow-y: auto;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin: 1rem 0 0 0;
     padding: 0;
@@ -77,6 +89,7 @@ const FlexContainer = styled.div`
   flex: 1;
   padding: 0.25rem 0 0.5rem 1rem;
   min-width: 0;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin-left: 0;
   }
@@ -89,6 +102,7 @@ const Grid = styled.div`
   grid-auto-rows: 1fr;
   gap: 5rem 9%;
   white-space: nowrap;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 80%;
     grid-template-columns: 1fr;
@@ -97,21 +111,11 @@ const Grid = styled.div`
   }
 `;
 
-export const Fade = keyframes`
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1.0;
-  }
-}
-`;
-
 const Title = styled.h1`
   font-size: 4rem;
   margin-left: 0.5rem;
   color: ${DarkTheme};
-  animation: 1s ease-out 0s 1 ${Fade};
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 90%;
     text-align: center;
@@ -135,6 +139,7 @@ const ClientUl = styled.ul`
   box-shadow: ${CardShadow};
   transition: 0.2s ease-in-out;
   cursor: default;
+
   &:hover {
     opacity: 0.93;
     box-shadow: ${HoverEffect};
@@ -155,10 +160,11 @@ const ListItem = styled.li`
   min-width: min-content;
   list-style-type: none;
   box-sizing: border-box;
-  border-radius: 0.5rem;
+  border-radius: 0.4rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px -1px, rgba(0, 0, 0, 0.05) 0px 2px 6px -2px;
   background: #fffbf3;
   font-weight: 500;
+
   &:nth-child(3) {
     font-size: 1.3rem;
   }

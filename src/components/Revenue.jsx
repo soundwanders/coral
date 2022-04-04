@@ -44,7 +44,6 @@ const RevenueCard = styled.div`
   &:hover {
     box-shadow: ${HoverEffect};
   }
-
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 80%;
     margin-right: 0;

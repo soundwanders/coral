@@ -29,6 +29,7 @@ const HeaderContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   height: 10%;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin-bottom: 0.3rem;
   }
@@ -39,11 +40,11 @@ const Greeting = styled.h1`
     font-weight: 500;
     color: #393d68;
   }
-  @media screen and (min-width: 320px) and (max-width: 1080px) {
-    padding-left: 1.25rem;
-  }
   svg {
     transform: translateY(3px);
+  }
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    padding-left: 1.25rem;
   }
 `;
 
@@ -51,6 +52,7 @@ const InputContainer = styled.div`
   display: flex;
   box-shadow: ${SearchBarShadow};
   transform: translateX(2.5rem);
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     overflow-x: hidden;
     margin-right: 1.4rem;
@@ -81,6 +83,7 @@ const Input = styled.input`
   border-top-right-radius: 0.75rem;
   border-bottom-right-radius: 0.75rem;
   background-color: #f6f8ff;
+
   &:focus {
     border: none;
     outline: none;

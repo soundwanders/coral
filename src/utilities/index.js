@@ -6,5 +6,5 @@ export const ThemeColor = '#6161ff';
 export const DarkTheme = '#162349';
 export const White = '#fbfbfb';
 export const PrimaryBadgeColor = '#5858f5';
-export const PaidGreen = '#2d8600;';
+export const PaidGreen = '#2d8600';
 export const LateRed = '#e55054';

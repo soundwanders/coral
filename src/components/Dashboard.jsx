@@ -64,7 +64,8 @@ const Wrapper = styled.div`
   padding: 0.5rem 1.25rem;
   border-radius: 2rem;
   margin: 0rem 5rem;
-  animation: 0.8s ease-out 0s 1 ${Fade};
+  animation: 0.7s ease-out 0s 1 ${Fade};
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     display: flex;
     flex-direction: column;
@@ -84,6 +85,7 @@ const ContentContainer = styled.div`
   height: 85%;
   width: 99%;
   margin: 0.5rem 0;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     height: 100%;
   }
@@ -98,6 +100,7 @@ const SectionOne = styled.div`
   height: 40%;
   width: 100%;
   gap: 2rem;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
     align-items: center;
@@ -109,6 +112,7 @@ const SectionOne = styled.div`
 const ColumnOne = styled.div`
   display: flex;
   gap: 3rem;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
     justify-content: center;
@@ -124,6 +128,7 @@ const ColumnTwo = styled.div`
   flex-direction: column;
   height: 115%;
   width: 100%;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     height: max-content;
     justify-content: center;
@@ -140,14 +145,15 @@ const ActiveProjectsTitle = styled.h3`
   margin-left: 1rem;
   font-size: 1.5rem;
   transform: translateY(-0.5rem);
+  svg {
+    transform: translateY(3px);
+  }
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     padding: 0;
     margin-top: 0.4rem;
     margin-bottom: 1rem;
     transform: translateY(0);
-  }
-  svg {
-    transform: translateY(3px);
   }
 `;
 
@@ -155,11 +161,12 @@ const InvoiceTitle = styled.h3`
   height: 20%;
   padding: 0 4px;
   font-size: 1.5rem;
-  @media screen and (min-width: 320px) and (max-width: 1080px) {
-    padding: 0;
-  }
   svg {
     transform: translateY(3px);
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    padding: 0;
   }
 `;
 
@@ -168,13 +175,14 @@ const PipelineTitle = styled.h3`
   margin: 0 0 2px 1rem;
   padding: 0 4px;
   font-size: 1.5rem;
+  svg {
+    transform: translateY(3px);
+  }
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin-left: 0;
     padding: 0;
     margin-bottom: -0.9rem;
-  }
-  svg {
-    transform: translateY(3px);
   }
 `;
 
@@ -183,6 +191,7 @@ const SectionTwo = styled.div`
   display: flex;
   gap: 2rem;
   height: 26vh;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
     height: max-content;

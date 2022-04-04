@@ -42,6 +42,7 @@ const CurrentProjects = styled.div`
   box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
   overflow: hidden;
+  
   &:hover {
     box-shadow: ${HoverEffect};
   }
@@ -53,10 +54,12 @@ const CurrentProjects = styled.div`
     
 `;
 
+// nth-child(2) targets second row item inside Active Projects box
 const Project = styled.div`
   display: flex;
   align-items: center;
   margin: 0 0.5rem;
+
   &:nth-child(2) {
     padding-top: 1.2rem;
     @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -81,6 +84,7 @@ const Detail = styled.div`
 const Title = styled.h3`
   font-weight: 500;
   padding-bottom: 0.25rem;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     font-size: 1rem;
   }
@@ -94,7 +98,8 @@ const AllProjects = styled.h5`
   text-align: end;
   color: ${PrimaryBadgeColor};
   cursor: pointer;
-  margin: 1rem 1rem 0 1rem;
+  margin: 0.8rem 1rem 0 1rem;
+
   &:hover {
     filter: brightness(110%);
   }

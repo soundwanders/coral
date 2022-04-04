@@ -54,6 +54,7 @@ const Container = styled.div`
   box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
   overflow: hidden;
+
   &:hover {
     box-shadow: ${HoverEffect};
   }
@@ -71,16 +72,19 @@ const CardContent = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0.5rem 0 0 0;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin: 1rem 0;
   }
 `;
 
+// nth-child(2) targets second row item in Invoice container
 const InvoiceContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0.2rem;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 1rem;
+
   &:nth-child(2) {
     padding-top: 1rem;
   }
@@ -93,6 +97,7 @@ const ClientInfo = styled.div`
   display: flex;
   align-content: space-between;
   width: 60%;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
     width: 100%;
@@ -106,6 +111,7 @@ const Avatar = styled.div`
     border-radius: 3.5rem;
   }
 `;
+
 const TextContainer = styled.div`
   margin-left: 1rem;
 `;
@@ -121,6 +127,7 @@ const InvoiceDetails = styled.div`
   justify-content: space-between;
   width: 30%;
   align-items: center;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 100%;
     flex-direction: column;

@@ -82,6 +82,7 @@ const Container = styled.div`
   border: 1px solid transparent;
   border-radius: 2rem;
   background-color: ${DarkTheme};
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 100%;
     height: max-content !important;
@@ -105,6 +106,7 @@ const Avatar = styled.img`
   width: 3.5rem;
   border-radius: 6rem;
   margin-top: 20%;
+
   &:hover {
     transform: rotateZ(360deg);
     transition: 0.8s 0.3s;
@@ -129,7 +131,6 @@ const LinksContainer = styled.div`
   width: 100%;
   border-radius: 2rem;
   text-align: center;
-
   a {
     text-decoration: none;
     color: inherit;
@@ -142,6 +143,7 @@ const PageLinks = styled.div`
   height: 63%;
   list-style-type: none;
   padding-top: 2rem;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     transform: translateX(20px);
   }
@@ -162,6 +164,7 @@ const SidebarLinks = styled.div`
     font-size: 1.1rem;
     margin-top: 1%;
   }
+
   &:hover {
     transform: scale(1.02);
     transition: 0.2s;
@@ -175,7 +178,7 @@ const ContactContainer = styled.div`
   justify-content: center;
   width: 60%;
   height: 15%;
-  margin: 1rem auto 0 auto;
+  margin: 0.8rem auto 0 auto;
   border-radius: 1.75rem;
   padding: 0.8rem 1rem;
   background-color: ${DarkTheme};
@@ -184,6 +187,7 @@ const ContactContainer = styled.div`
     color: ${White};
     text-decoration: none;
   }
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin: 1rem auto 2rem auto;
   }

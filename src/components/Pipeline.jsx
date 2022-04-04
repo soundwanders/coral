@@ -51,6 +51,7 @@ const Project = styled.div`
   box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
   overflow: hidden;
+
   &:hover {
     box-shadow: ${HoverEffect};
   }
@@ -74,6 +75,7 @@ const Detail = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 0.8rem 0;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
     justify-content: flex-start;
@@ -128,6 +130,7 @@ const QuoteContainer = styled.div`
   padding: 0.4rem 0;
   border-radius: 1rem;
   background-color: rgba(146, 166, 255, 0.25);
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
     flex: 1;
@@ -141,6 +144,7 @@ const Quote = styled.div`
   padding: 0 0.8rem;
   margin: 0.4rem;
   justify-content: space-between;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin: 0 auto;
   }

@@ -50,6 +50,7 @@ const InfoCardContainer = styled.div`
   color: ${White};
   box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
+
   &:hover {
     box-shadow: ${HoverEffect};
   }
@@ -60,11 +61,13 @@ const InfoCardContainer = styled.div`
   }
 `;
 
+// nth-child(1) targeted to increase margin above the 'Projection' box
 const Card = styled.div`
   height: 40%;
   border-radius: 1rem;
   margin: 0.5rem 0;
   background-color: rgba(185, 195, 245, 0.25);
+
   &:nth-child(1) {
     margin-top: 0.25rem;
   }
@@ -82,12 +85,13 @@ const Row = styled.div`
   min-width: 0;
   align-items: center;
   margin: 0.25rem 0;
+
   ${({ justify }) =>
     justify &&
     `
       justify-content: space-around;
       width: 100%;
-  `}
+    `}
 `;
 const NumberValue = styled.div`
   background-color: ${ThemeColor};
@@ -95,6 +99,7 @@ const NumberValue = styled.div`
   border-radius: 1rem;
   font-family: 'Arvo', serif;
   font-size: 1.1rem;
+
   @media (max-width: 1080px) {
     margin-left: 0.25rem;
     padding: 0.6rem 0.8rem;
@@ -104,10 +109,12 @@ const NumberValue = styled.div`
 const InfoContainer = styled.div`
   margin-left: 0.6rem;
 `;
+
 const Title = styled.h3`
   color: #0e1e36;
   margin-left: 0.7rem;
   margin-bottom: 4px;
+
   @media (max-width: 1080px) {
     margin-left: 0.25rem;
   }
@@ -117,6 +124,7 @@ const SubTitle = styled.h5`
   color: #222;
   font-weight: normal;
   margin-left: 0.7rem;
+
   @media (max-width: 1080px) {
     margin-left: 0.25rem;
   }
