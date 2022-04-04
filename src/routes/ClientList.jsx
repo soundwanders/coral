@@ -75,7 +75,6 @@ const ListWrapper = styled.div`
 const FlexContainer = styled.div`
   display: flex;
   flex: 1;
-
   padding: 0.25rem 0 0.5rem 1rem;
   min-width: 0;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -88,7 +87,7 @@ const Grid = styled.div`
   width: 80%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 1fr;
-  gap: 5rem 10%;
+  gap: 5rem 9%;
   white-space: nowrap;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 80%;
