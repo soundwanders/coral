@@ -281,6 +281,7 @@ const CardsBottomRow = styled.div`
     font-size: 0.75rem;
     flex: 0 0 52%;
     padding-bottom: 0.5rem;
+    transform: translate(1rem, 1.4rem);
   }
 `;
 
