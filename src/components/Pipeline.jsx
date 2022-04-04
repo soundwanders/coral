@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Badges from './Badges';
 import AvatarImage from '../assets/Billowbear.png';
-import {CardShadow, HoverEffect, White} from '../utilities';
-import {MdOutlineLoyalty} from 'react-icons/md';
+import { CardShadow, HoverEffect, White } from '../utilities';
+import { MdOutlineLoyalty } from 'react-icons/md';
 
 const Pipeline = () => {
   return (
@@ -127,7 +127,7 @@ const QuoteContainer = styled.div`
   justify-content: space-between;
   padding: 0.4rem 0;
   border-radius: 1rem;
-  background-color: rgba(146, 166, 255, 0.3);
+  background-color: rgba(146, 166, 255, 0.25);
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
     flex: 1;

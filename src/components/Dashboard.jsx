@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
-import {MdOutlineSavings, MdOutlineEditCalendar} from 'react-icons/md';
-import {BiBuildings} from 'react-icons/bi';
+import styled, { keyframes } from 'styled-components';
+import { MdOutlineSavings, MdOutlineEditCalendar } from 'react-icons/md';
+import { BiBuildings } from 'react-icons/bi';
 import Header from './Header';
 import Revenue from './Revenue';
 import ContentCard from './InfoCards';
@@ -49,11 +49,22 @@ const Dashboard = () => {
   );
 };
 
+export const Fade = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+`;
+
 const Wrapper = styled.div`
   width: 80%;
   padding: 0.5rem 1.25rem;
   border-radius: 2rem;
   margin: 0rem 5rem;
+  animation: 0.8s ease-out 0s 1 ${Fade};
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     display: flex;
     flex-direction: column;

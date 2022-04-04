@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Badges from './Badges';
-import {CardShadow, HoverEffect, ThemeColor, White} from '../utilities';
+import { CardShadow, HoverEffect, ThemeColor, White } from '../utilities';
 
 const ContentCard = () => {
   return (
@@ -64,7 +64,7 @@ const Card = styled.div`
   height: 40%;
   border-radius: 1rem;
   margin: 0.5rem 0;
-  background-color: rgba(185, 195, 245, 0.3);
+  background-color: rgba(185, 195, 245, 0.25);
   &:nth-child(1) {
     margin-top: 0.25rem;
   }
@@ -82,7 +82,7 @@ const Row = styled.div`
   min-width: 0;
   align-items: center;
   margin: 0.25rem 0;
-  ${({justify}) =>
+  ${({ justify }) =>
     justify &&
     `
       justify-content: space-around;

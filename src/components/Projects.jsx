@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import AvatarImage2 from '../assets/Avatar.png';
 import AvatarImage3 from '../assets/Avatar2.png';
-import {CardShadow, HoverEffect, PrimaryBadgeColor, White} from '../utilities';
+import { CardShadow, HoverEffect, PrimaryBadgeColor, White } from '../utilities';
 
 const Projects = () => {
   return (

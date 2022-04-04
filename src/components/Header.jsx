@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import {FiSearch} from 'react-icons/fi';
-import {MdOutlineEco} from 'react-icons/md';
-import {SearchBarShadow} from '../utilities';
+import { FiSearch } from 'react-icons/fi';
+import { MdOutlineEco } from 'react-icons/md';
+import { SearchBarShadow } from '../utilities';
 
 const Header = () => {
   return (

@@ -1,43 +1,104 @@
 import React from 'react';
-import {Outlet} from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import Sidebar from '../components/Sidebar';
-import {DarkTheme, White} from '../utilities'
+import Badges from '../components/Badges';
+import { DarkTheme, White, CardShadow, HoverEffect } from '../utilities';
+import { BiDollarCircle } from 'react-icons/bi';
 import data from '../db.json';
 
 const InvoiceList = () => {
-  return (    
+  const placeholder = 'Processed';
+  const description = `
+    Tellus elementum sagittis vitae et leo duis. Eget nunc lobortis 
+    mattis aliquam faucibus purus. A erat nam at lectus urna duis
+    convallis. Porttitor dolor morbi non arcu risus quis varius terna.
+    Viverra mattis nunc sed blandit libero volutpat.
+  `;
+
+  return (
     <Container>
       <Sidebar />
-          <ListWrapper>
-          <Title>Your Invoices ...</Title>
-          <Underline />
-            <FlexContainer>
-              <InvoiceTable>
-                <TableRow>
-                  <TableHeader>Name</TableHeader>
-                  <TableHeader>Organization</TableHeader>
-                  <TableHeader>Email</TableHeader>
-                  <TableHeader>Amount</TableHeader>
-                  <TableHeader>Status</TableHeader>
-                </TableRow>
+      <Wrapper>
+        <Title>Recent Invoices</Title>
+        <Underline />
+        <FlexContainer>
+          <Grid>
+            {data.clients.map(
+              ({ id, img, name, organization, address, state, email, phone, totalSales }) => (
+                <CardContainer key={id}>
+                  <Row>
+                    <Portrait src={img} id="ClientPhoto" alt={name} draggable="false" />
+                  </Row>
 
-                {data.clients.map(({id, name, organization, email}) => (
-                  <TableRow key={id}>
-                    <Cell>{name}</Cell>
-                    <Cell>{organization}</Cell>
-                    <Cell>{email}</Cell>
-                    <Cell>placeholder</Cell>
-                    <Cell>paid/late badge here</Cell>
-                  </TableRow>
-                ))}
-              </InvoiceTable>
-            </FlexContainer>
-        </ListWrapper>
+                  <Row>
+                    <CardContent>
+                      <Label>NAME</Label>
+                      {name}
+                    </CardContent>
+                    <CardContent>
+                      <Label>ORGANIZATION</Label>
+                      {organization}
+                    </CardContent>
+                  </Row>
+
+                  <Row>
+                    <CardContent>
+                      <Label>ADDRESS</Label>
+                      {address}
+                    </CardContent>
+                    <CardContent>
+                      <Label>STATE</Label>
+                      {state}
+                    </CardContent>
+                  </Row>
+
+                  <Row>
+                    <CardContent>
+                      <Label>EMAIL</Label>
+                      {email}
+                    </CardContent>
+                    <CardContent>
+                      <Label>PHONE</Label>
+                      {phone}
+                    </CardContent>
+                  </Row>
+
+                  <Row>
+                    <CardContent>
+                      <Label>DETAILS</Label>
+                      {description}
+                    </CardContent>
+                  </Row>
+
+                  <Row>
+                    <CardsBottomRow>
+                      <Label>AMOUNT</Label>
+                      <Icon>
+                        <BiDollarCircle />
+                      </Icon>
+                      {totalSales}
+                    </CardsBottomRow>
+                    <CardsBottomRow>
+                      <Label>STATUS</Label>
+                      {placeholder}
+                    </CardsBottomRow>
+                    <CardsBottomRow>
+                      <Label>
+                        <Badges content="Paid" paid />
+                      </Label>
+                    </CardsBottomRow>
+                  </Row>
+                </CardContainer>
+              ),
+            )}
+          </Grid>
+        </FlexContainer>
+      </Wrapper>
       <Outlet />
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   position: relative;
@@ -56,15 +117,14 @@ const Container = styled.div`
   }
 `;
 
-const ListWrapper = styled.div`
+const Wrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
   max-height: 97vh;
-  left: 5%;
-  padding: 0.25rem;
+  left: 3%;
   overflow-y: auto;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin: 1rem 0 0 0;
@@ -89,6 +149,7 @@ export const Fade = keyframes`
 
 const Title = styled.h1`
   font-size: 4rem;
+  padding: 0 0.875rem;
   color: ${DarkTheme};
   animation: 1s ease-out 0s 1 ${Fade};
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -100,7 +161,7 @@ const Title = styled.h1`
 const Underline = styled.span`
   display: inline-block;
   width: 90%;
-  margin: 0 0 2rem 0;
+  margin: 0 0 2rem 0.875rem;
   border-bottom: 2px solid #dcdcdc;
 `;
 
@@ -108,20 +169,128 @@ const FlexContainer = styled.div`
   display: flex;
   flex: 1;
   min-width: 0;
+  max-width: 85%;
+  padding: 0 0.875rem;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin-left: 0;
+    min-width: 0;
+    max-width: 95%;
   }
 `;
 
-const InvoiceTable = styled.table`
-  background: ${White};
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem 2rem;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    width: 80%;
+    grid-template-columns: 1fr;
+    gap: 4rem 0;
+    white-space: nowrap;
+  }
 `;
 
-const TableRow = styled.tr``;
+// white-space: normal prevents invoice description from overflowing container
+// https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
+// nth-child(5) to target the card's DESCRIPTION text
+const CardContainer = styled.div`
+  padding: 6% 8%;
+  white-space: normal;
+  background: ${White};
+  border-radius: 1rem;
+  box-shadow: ${CardShadow};
+  transition: 0.2s ease-in-out;
+  cursor: default;
+  div:nth-child(5) {
+    line-height: 1.5;
+  }
+  &:hover {
+    opacity: 0.9;
+    box-shadow: ${HoverEffect};
+  }
+`;
 
-const TableHeader = styled.th``;
+// nth-child(6) targets last row of card (AMOUNT, STATUS, and Badge)
+const Row = styled.div`
+  display: flex;
+  min-width: 0;
+  padding: 0.2rem 0 0 0;
+  &:nth-child(5) > div {
+    flex: 0 0 95%;
+    @media screen and (min-width: 320px) and (max-width: 1080px) {
+      font-size: 0.85rem;
+    }
+  }
+  &:nth-child(6) > div {
+    font-size: 1.2rem;
+    @media screen and (min-width: 320px) and (max-width: 1080px) {
+      font-size: 0.85rem;
+    }
+  }
+`;
 
-const Cell = styled.td``;
+const Portrait = styled.img`
+  width: 5rem;
+  padding: 0 0 0.5rem 0;
+  margin: 0 auto;
+`;
 
+const CardContent = styled.div`
+  width: 90%;
+  border-radius: 0.5rem;
+  flex: 0 0 55%;
+  font-size: 1.125rem;
+  font-weight: 500;
+  transform: translateX(1rem);
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    font-size: 0.75rem;
+  }
+`;
+
+const CardsBottomRow = styled.div`
+  width: 90%;
+  border-radius: 0.5rem;
+  padding: 0.15rem;
+  padding-bottom: 0;
+  flex: 0 0 35%;
+  font-size: inherit;
+  font-weight: 500;
+  transform: translateX(1rem);
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    font-size: 0.75rem;
+    flex: 0 0 50%;
+  }
+  &:nth-child(2) {
+    @media screen and (min-width: 320px) and (max-width: 1080px) {
+      display: none;
+    }
+  }
+`;
+
+// span:nth-child(1) targets Badge icon
+const Label = styled.span`
+  display: flex;
+  padding: 0.1rem 0;
+  margin: 1.2rem 0 0.125rem 0rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #a4a4a4;
+
+  span:nth-child(1) {
+    font-size: 1.1rem;
+    transform: translateY(0.3rem);
+    @media screen and (min-width: 320px) and (max-width: 1080px) {
+      font-size: 0.85rem;
+    }
+  }
+`;
+
+const Icon = styled.span`
+  svg {
+    margin: 0 2% -2% 0;
+    max-width: 1.25rem;
+    color: #a4a4a4;
+  }
+`;
 
 export default InvoiceList;

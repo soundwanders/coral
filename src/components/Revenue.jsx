@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import {IoStatsChart} from 'react-icons/io5';
-import {BiDollarCircle} from 'react-icons/bi';
-import {ThemeColor, HoverEffect, White} from '../utilities';
+import { IoStatsChart } from 'react-icons/io5';
+import { BiDollarCircle } from 'react-icons/bi';
+import { ThemeColor, HoverEffect, White } from '../utilities';
 import data from '../db.json';
 
 const RevenueArray = data.clients.map(client => client.totalSales);

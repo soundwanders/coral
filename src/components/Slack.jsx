@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import {FaSlack} from 'react-icons/fa';
-import {DarkTheme, HoverEffect, ThemeColor, White} from '../utilities';
+import { FaSlack } from 'react-icons/fa';
+import { DarkTheme, HoverEffect, ThemeColor, White } from '../utilities';
 
 const SlackBar = () => {
   return (

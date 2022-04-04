@@ -1,13 +1,13 @@
 import React from 'react';
-import {Outlet, Link} from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Badges from './Badges';
 import AvatarImage from '../assets/Chase.png';
-import {BiHomeSmile} from 'react-icons/bi';
-import {BsFileEarmarkPerson} from 'react-icons/bs';
-import {AiOutlinePieChart, AiOutlineFileSync} from 'react-icons/ai';
-import {HiOutlineCash} from 'react-icons/hi';
-import {DarkTheme, White} from '../utilities';
+import { BiHomeSmile } from 'react-icons/bi';
+import { BsFileEarmarkPerson } from 'react-icons/bs';
+import { AiOutlinePieChart, AiOutlineFileSync } from 'react-icons/ai';
+import { HiOutlineCash } from 'react-icons/hi';
+import { DarkTheme, White } from '../utilities';
 
 const Sidebar = () => {
   return (
@@ -60,7 +60,7 @@ const Sidebar = () => {
             </Link>
           </SidebarLinks>
         </PageLinks>
-        
+
         <ContactContainer>
           <Questions>Any Questions?</Questions>
           <ContactUs>Contact us!</ContactUs>
