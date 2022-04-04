@@ -178,6 +178,7 @@ const FlexContainer = styled.div`
     margin-left: 0;
     min-width: 0;
     max-width: 95%;
+    padding: 0 0.5rem;
   }
 `;
 
@@ -187,7 +188,7 @@ const Grid = styled.div`
   gap: 5.5rem 4.5rem;
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
-    width: 80%;
+    width: 90%;
     grid-template-columns: 1fr;
     gap: 4rem 0;
     white-space: nowrap;
@@ -279,6 +280,7 @@ const CardsBottomRow = styled.div`
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     font-size: 0.75rem;
     flex: 0 0 52%;
+    padding-bottom: 0.5rem;
   }
 `;
 
