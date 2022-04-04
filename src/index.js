@@ -2,6 +2,7 @@ import React from 'react';
 import App from './App';
 import ClientList from './routes/ClientList';
 import InvoiceList from './routes/InvoiceList';
+import Analytics from './routes/Analytics';
 import { render } from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -10,6 +11,7 @@ render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
+      <Route path="Analytics" element={<Analytics />} />
       <Route path="ClientList" element={<ClientList />} />
       <Route path="InvoiceList" element={<InvoiceList />} />
       <Route

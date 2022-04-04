@@ -25,7 +25,7 @@ const InvoiceList = () => {
         <FlexContainer>
           <Grid>
             {data.clients.map(
-              ({ id, img, name, organization, address, state, email, phone, totalSales }) => (
+              ({ id, img, name, organization, address, state, lastInvoice, phone, totalSales }) => (
                 <CardContainer key={id}>
                   <Row>
                     <Portrait src={img} id="ClientPhoto" alt={name} draggable="false" />
@@ -55,8 +55,8 @@ const InvoiceList = () => {
 
                   <Row>
                     <CardContent>
-                      <Label>EMAIL</Label>
-                      {email}
+                      <Label>DATE</Label>
+                      {lastInvoice}
                     </CardContent>
                     <CardContent>
                       <Label>PHONE</Label>
