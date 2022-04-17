@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components';
 import Sidebar from '../components/Sidebar';
 import { DarkTheme } from '../utilities';
 import BoomChart from '../charts/Recharts';
-// White, CardShadow, HoverEffect 
+// White, CardShadow, HoverEffect
 
 const Analytics = () => {
   return (
@@ -19,7 +19,7 @@ const Analytics = () => {
       </ListWrapper>
       <Outlet />
     </Container>
-  )
+  );
 };
 
 export const Fade = keyframes`

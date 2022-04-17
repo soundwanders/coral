@@ -162,7 +162,7 @@ const Title = styled.h1`
 
 const Underline = styled.span`
   display: inline-block;
-  width: 90%;
+  width: 85%;
   margin: 0 0 2rem 0.875rem;
   border-bottom: 2px solid #dcdcdc;
 `;
@@ -196,7 +196,6 @@ const Grid = styled.div`
 `;
 
 // white-space: normal prevents invoice description from overflowing container
-// nth-child(5) to target the card's DESCRIPTION text
 const CardContainer = styled.div`
   padding: 5% 7% 7% 7%;
   white-space: normal;
@@ -208,15 +207,13 @@ const CardContainer = styled.div`
   transition: 0.2s ease-in-out;
   cursor: default;
 
-  div:nth-child(5) {
-    line-height: 1.5;
-  }
   &:hover {
     opacity: 0.9;
     box-shadow: ${HoverEffect};
   }
 `;
 
+// nth-child(5) to target the DETAILS text field
 // nth-child(6) targets last row of card (AMOUNT, STATUS, and Badge)
 const Row = styled.div`
   display: flex;
@@ -225,6 +222,10 @@ const Row = styled.div`
 
   &:nth-child(5) > div {
     flex: 0 0 95%;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    margin-bottom: -1rem;
+
     @media screen and (min-width: 320px) and (max-width: 1080px) {
       font-size: 0.85rem;
     }
@@ -245,14 +246,10 @@ const Portrait = styled.img`
 
 const CardContent = styled.div`
   width: 90%;
-  flex: 0 0 55%;
+  flex: 0 0 58%;
   font-size: 1.125rem;
   font-weight: 500;
   transform: translateX(1rem);
-
-  &:last-child {
-    margin-bottom: -1rem;
-  }
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     font-size: 0.75rem;
@@ -309,7 +306,7 @@ const DollarSign = styled.span`
   svg {
     margin: 0 2% -2.5% 0;
     max-width: 1.125rem;
-    color: #cecece;
+    color: ${White};
   }
 `;
 

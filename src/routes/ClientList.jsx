@@ -1,22 +1,38 @@
-import React from 'react';
+import { React, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import Sidebar from '../components/Sidebar';
-import data from '../db.json';
-import { DarkTheme, White, CardShadow, HoverEffect } from '../utilities';
+import ListFilter from '../components/ListFilter';
+import { DarkTheme, White, CardShadow, HoverEffect, SearchBarShadow } from '../utilities';
+import { FiSearch } from 'react-icons/fi';
 
 const ClientList = () => {
+  const [inputText, setInputText] = useState('');
+  let handleInput = e => {
+    const lowerCase = e.target.value.toLowerCase();
+    setInputText(lowerCase);
+  };
   return (
     <Container>
       <Sidebar />
       <ListWrapper>
-        <Title>Coral Clients</Title>
+        <TitleWrapper>
+          <Title>Coral Clients</Title>
+          <InputContainer>
+            <Icon>
+              <FiSearch />
+            </Icon>
+            <Input type="text" placeholder="Browse projects" onChange={handleInput} />
+          </InputContainer>
+        </TitleWrapper>
         <Underline />
         <FlexContainer>
           <Grid>
-            {data.clients.map(
+            <ListFilter input={inputText} />
+
+            {/* {data.clients.map(
               ({ id, img, name, organization, address, email, phone, dateAcquired }) => (
-                <ClientUl key={id}>
+                <ClientUl key={id} input={inputText}>
                   <Portrait src={img} id="ClientPhoto" alt={name} draggable="false" />
                   <Label>NAME</Label> <ListItem>{name}</ListItem>
                   <Label>ORGANIZATION</Label> <ListItem>{organization}</ListItem>
@@ -26,7 +42,7 @@ const ClientList = () => {
                   <Label>ACQUIRED</Label> <ListItem>{dateAcquired}</ListItem>
                 </ClientUl>
               ),
-            )}
+            )} */}
           </Grid>
         </FlexContainer>
       </ListWrapper>
@@ -100,7 +116,7 @@ const Grid = styled.div`
   width: 80%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 1fr;
-  gap: 5rem 9%;
+  gap: 5rem 10%;
   white-space: nowrap;
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -108,6 +124,54 @@ const Grid = styled.div`
     grid-template-columns: 1fr;
     gap: 4rem 0;
     white-space: nowrap;
+  }
+`;
+
+const TitleWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+`;
+
+const InputContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  box-shadow: ${SearchBarShadow};
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    box-shadow: none;
+    padding: 2rem 0;
+  }
+`;
+
+const Icon = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  background-color: #f6f8ff;
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+  svg {
+    color: #444444;
+  }
+`;
+
+const Input = styled.input`
+  border: 0;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  background-color: #f6f8ff;
+
+  &:focus {
+    border: none;
+    outline: none;
   }
 `;
 
@@ -124,15 +188,15 @@ const Title = styled.h1`
 
 const Underline = styled.span`
   display: inline-block;
-  width: 90%;
+  width: 85%;
   margin: 0 0 2rem 0.5rem;
   border-bottom: 2px solid #dcdcdc;
 `;
 
-const ClientUl = styled.ul`
-  padding: 1rem 2.2rem 2rem 2.2rem;
+export const ClientUl = styled.ul`
+  padding: 1rem 2rem 2rem 2rem;
   margin: 0;
-  min-width: 260px;
+  min-width: 285px;
   background: ${White};
   background-image: linear-gradient(to bottom, #172854 12%, ${White} 12%);
   border-radius: 1rem;
@@ -147,22 +211,26 @@ const ClientUl = styled.ul`
   img {
     margin: 0 auto;
   }
+
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    min-width: 260px;
+  }
 `;
 
-const Portrait = styled.img`
+export const Portrait = styled.img`
   display: flex;
   width: 5rem;
   padding: 0.5rem 0;
 `;
 
-const ListItem = styled.li`
+export const ListItem = styled.li`
   padding: 0.5rem;
   min-width: min-content;
   list-style-type: none;
   box-sizing: border-box;
   border-radius: 0.4rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px -1px, rgba(0, 0, 0, 0.05) 0px 2px 6px -2px;
-  background: #fffbf3;
+  background: #fffdfa;
   font-weight: 500;
 
   &:nth-child(3) {
@@ -170,7 +238,7 @@ const ListItem = styled.li`
   }
 `;
 
-const Label = styled.span`
+export const Label = styled.span`
   display: flex;
   padding: 0.1rem 0;
   margin: 0.8rem 0 0.1rem 0.5rem;
