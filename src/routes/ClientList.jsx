@@ -22,27 +22,13 @@ const ClientList = () => {
             <Icon>
               <FiSearch />
             </Icon>
-            <Input type="text" placeholder="Browse projects" onChange={handleInput} />
+            <Input type="text" placeholder="Search..." onChange={handleInput} />
           </InputContainer>
         </TitleWrapper>
         <Underline />
         <FlexContainer>
           <Grid>
             <ListFilter input={inputText} />
-
-            {/* {data.clients.map(
-              ({ id, img, name, organization, address, email, phone, dateAcquired }) => (
-                <ClientUl key={id} input={inputText}>
-                  <Portrait src={img} id="ClientPhoto" alt={name} draggable="false" />
-                  <Label>NAME</Label> <ListItem>{name}</ListItem>
-                  <Label>ORGANIZATION</Label> <ListItem>{organization}</ListItem>
-                  <Label>ADDRESS</Label> <ListItem>{address}</ListItem>
-                  <Label>EMAIL</Label> <ListItem>{email}</ListItem>
-                  <Label>PHONE</Label> <ListItem>{phone}</ListItem>
-                  <Label>ACQUIRED</Label> <ListItem>{dateAcquired}</ListItem>
-                </ClientUl>
-              ),
-            )} */}
           </Grid>
         </FlexContainer>
       </ListWrapper>
@@ -116,7 +102,7 @@ const Grid = styled.div`
   width: 80%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 1fr;
-  gap: 5rem 10%;
+  gap: 5rem 8%;
   white-space: nowrap;
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -196,7 +182,7 @@ const Underline = styled.span`
 export const ClientUl = styled.ul`
   padding: 1rem 2rem 2rem 2rem;
   margin: 0;
-  min-width: 285px;
+  min-width: 265px;
   background: ${White};
   background-image: linear-gradient(to bottom, #172854 12%, ${White} 12%);
   border-radius: 1rem;
