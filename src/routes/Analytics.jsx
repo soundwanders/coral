@@ -3,18 +3,21 @@ import { Outlet } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import Sidebar from '../components/Sidebar';
 import { DarkTheme } from '../utilities';
-import BoomChart from '../charts/Recharts';
-// White, CardShadow, HoverEffect
+import SalesChart from '../charts/Sales';
+import ProjectsChart from '../charts/Projects';
 
 const Analytics = () => {
   return (
     <Container>
       <Sidebar />
       <ListWrapper>
-        <Title>Charts &amp; Analytics</Title>
+        <Title>Analytics</Title>
         <Underline />
         <FlexContainer>
-          <BoomChart />
+          <SalesChart />
+        </FlexContainer>
+        <FlexContainer>
+          <ProjectsChart />
         </FlexContainer>
       </ListWrapper>
       <Outlet />
@@ -33,6 +36,7 @@ export const Fade = keyframes`
 `;
 
 const Container = styled.div`
+  display: flex;
   position: relative;
   width: 100%;
   height: 97vh;
@@ -94,7 +98,7 @@ const Title = styled.h1`
 
 const Underline = styled.span`
   display: inline-block;
-  width: 90%;
+  width: 85%;
   margin: 0 0 2rem 0.5rem;
   border-bottom: 2px solid #dcdcdc;
 `;

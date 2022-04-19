@@ -10,7 +10,8 @@
       "email": "bernie@billowbakery.com",
       "phone": "888-001-2020",
       "dateAcquired": "November 18, 2021",
-      "totalSales": 12500,
+      "totalSales": 82500,
+      "projects": 10,
       "lastInvoice": "December 20, 2021"
     },
     {
@@ -24,6 +25,7 @@
       "phone": "333-444-3535",
       "dateAcquired": "May 15, 2021",
       "totalSales": 105990,
+      "projects": 16,
       "lastInvoice": "January 9, 2022"
     },
     {
@@ -37,6 +39,7 @@
       "phone": "890-001-2121",
       "dateAcquired": "January 18, 2022",
       "totalSales": 18200,
+      "projects": 1,
       "lastInvoice": "December 2, 2021"
     },
     {
@@ -50,6 +53,7 @@
       "phone": "343-001-2222",
       "dateAcquired": "March 5, 2022",
       "totalSales": 35000,
+      "projects": 2,
       "lastInvoice": "March 29, 2022"
     },
     {
@@ -63,6 +67,7 @@
       "phone": "111-222-1111",
       "dateAcquired": "January 21, 2021",
       "totalSales": 52505,
+      "projects": 6,
       "lastInvoice": "February 3, 2022"
     },
     {
@@ -76,6 +81,7 @@
       "phone": "888-001-1919",
       "dateAcquired": "November 18, 2021",
       "totalSales": 85006,
+      "projects": 9,
       "lastInvoice": "January 2, 2022"
     },
     {
@@ -89,6 +95,7 @@
       "phone": "199-934-4344",
       "dateAcquired": "September 20, 2020",
       "totalSales": 39000,
+      "projects": 7,
       "lastInvoice": "December 2, 2021"
     },
     {
@@ -102,6 +109,7 @@
       "phone": "444-123-2828",
       "dateAcquired": "July 5, 2021",
       "totalSales": 82000,
+      "projects": 12,
       "lastInvoice": "March 12, 2022"
     },
     {
@@ -115,6 +123,7 @@
       "phone": "222-777-1921",
       "dateAcquired": "February 4, 2022",
       "totalSales": 32999,
+      "projects": 6,
       "lastInvoice": "February 25, 2022"
     }
   ]

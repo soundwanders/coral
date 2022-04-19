@@ -1,10 +1,10 @@
 import { React, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
-import Sidebar from '../components/Sidebar';
-import ListFilter from '../components/ListFilter';
-import { DarkTheme, White, CardShadow, HoverEffect, SearchBarShadow } from '../utilities';
 import { FiSearch } from 'react-icons/fi';
+import Sidebar from '../components/Sidebar';
+import ListFilter from '../components/List';
+import { DarkTheme, White, CardShadow, HoverEffect, SearchBarShadow } from '../utilities';
 
 const ClientList = () => {
   const [inputText, setInputText] = useState('');
