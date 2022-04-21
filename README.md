@@ -19,7 +19,7 @@ In the project directory, you can run:
 
 ### `npm install`
 
-Run to install the necessary dependencies (styled-components, react-router, etc).
+Run inside project directory to install necessary dependencies (styled-components, react-router, etc).
 
 ### `npm start`
 
@@ -38,3 +38,30 @@ Runs specified prettier format fixes. Visit the prettier config file to view the
 ### npm run reset
 
 Deletes contents of the 'build' directory to allow for a fresh rebuild.
+
+### 🌳 Project Structure
+
+```bash
+
+.
+└─── src
+     │
+     └─── assets
+     │    └── static
+     │
+     ├─── components
+     │    └── charts
+     │    └── common
+     │    └── dashboard
+     │
+     ├─── routes
+     │
+     └─── utilities
+     │
+     └─── App.js
+     │
+     └─── db.json
+     │
+     └─── index.js
+
+```

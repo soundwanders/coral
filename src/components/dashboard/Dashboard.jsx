@@ -12,7 +12,7 @@ import Pipeline from './Pipeline';
 
 const Dashboard = () => {
   return (
-    <Wrapper>
+    <DashboardWrapper>
       <Header />
       <ContentContainer>
         <SectionOne>
@@ -45,7 +45,7 @@ const Dashboard = () => {
           </ColumnFour>
         </SectionTwo>
       </ContentContainer>
-    </Wrapper>
+    </DashboardWrapper>
   );
 };
 
@@ -59,12 +59,12 @@ export const Fade = keyframes`
 }
 `;
 
-const Wrapper = styled.div`
+const DashboardWrapper = styled.div`
   width: 80%;
   padding: 0.5rem 1.25rem;
   border-radius: 2rem;
   margin: 0rem 5rem;
-  animation: 0.7s ease-in-out 0s 1 ${Fade};
+  animation: 1s ease-in-out 0s 1 ${Fade};
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     display: flex;
