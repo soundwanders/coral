@@ -117,7 +117,7 @@ const Container = styled.div`
   height: 97vh;
   background: transparent;
   border-radius: 2rem;
-  animation: 0.7s ease-out 0s 1 ${Fade};
+  animation: 0.7s ease-in-out 0s 1 ${Fade};
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;

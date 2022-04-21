@@ -9,7 +9,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from 'recharts';
-import data from '../db.json';
+import data from '../../db.json';
 
 const fetchSales = data.clients.map(({ name, totalSales }) => ({ name, totalSales }));
 
@@ -42,7 +42,7 @@ const SalesChart = () => {
         <YAxis />
         <Tooltip content={<CustomTooltip />} />
         <Legend />
-        <Bar dataKey="totalSales" stackId="a" fill="#d88884" />
+        <Bar dataKey="Revenue" stackId="a" fill="#d88884" />
       </BarChart>
     </ResponsiveContainer>
   );

@@ -55,7 +55,7 @@ const Container = styled.div`
   background: transparent;
   border: 0px solid transparent;
   border-radius: 2rem;
-  animation: 0.7s ease-out 0s 1 ${Fade};
+  animation: 0.7s ease-in-out 0s 1 ${Fade};
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
