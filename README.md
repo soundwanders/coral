@@ -58,9 +58,9 @@ Deletes contents of the 'build' directory to allow for a fresh rebuild.
      │
      └─── utilities
      │
-     └─── App.js
-     │
      └─── db.json
+     │
+     └─── App.js
      │
      └─── index.js
 
