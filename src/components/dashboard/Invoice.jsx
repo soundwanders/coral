@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Badges from '../Badges';
+import Badges from '../common/Badges';
 import Percy from '../../assets/Percy.png';
 import Mary from '../../assets/Mary.png';
 import { CardShadow, HoverEffect, White } from '../../utilities';

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Badges from '../Badges';
+import Badges from '../common/Badges';
 import AvatarImage from '../../assets/Billowbear.png';
 import { CardShadow, HoverEffect, White } from '../../utilities';
 import { MdOutlineLoyalty } from 'react-icons/md';

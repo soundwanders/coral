@@ -68,7 +68,7 @@ const Icon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 3rem;
+  height: 2.7rem;
   width: 3rem;
   background-color: #f6f8ff;
   border-top-left-radius: 0.75rem;

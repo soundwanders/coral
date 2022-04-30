@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet, Link } from 'react-router-dom';
 import styled from 'styled-components';
-import Badges from './Badges';
+import Badges from './common/Badges';
 import AvatarImage from '../assets/Chase.png';
 import { BiHomeSmile } from 'react-icons/bi';
 import { BsFileEarmarkPerson } from 'react-icons/bs';

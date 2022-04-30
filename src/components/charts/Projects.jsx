@@ -1,49 +1,27 @@
 import React from 'react';
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-} from 'recharts';
+import { ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
+import { ProjectSlices } from '../../utilities';
 import data from '../../db.json';
 
 const fetchProjects = data.clients.map(({ name, projects }) => ({ name, projects }));
 
-const CustomTooltip = ({ active, payload, label }) => {
-  if (active && payload && payload.length) {
-    return (
-      <div className="tooltip">
-        <p className="label">{`${label} : ${payload[0].value}`}</p>
-        <p className="desc">Anything you want can be displayed here.</p>
-      </div>
-    );
-  }
-  return null;
-};
-
 const ProjectsChart = () => {
   return (
-    <ResponsiveContainer width="90%" height="90%">
-      <BarChart
-        data={fetchProjects}
+    <ResponsiveContainer minHeight={345}>
+      <PieChart
         margin={{
-          top: 5,
-          right: 30,
-          left: 5,
-          bottom: 5,
+          top: 2,
+          right: 4,
+          left: 4,
+          bottom: 2,
         }}
       >
-        <CartesianGrid strokeDasharray="2 2" />
-        <XAxis dataKey="Clients" />
-        <YAxis />
-        <Tooltip content={<CustomTooltip />} />
-        <Legend />
-        <Bar dataKey="Projects" stackId="a" fill="#8884d8" />
-      </BarChart>
+        <Pie data={fetchProjects} dataKey="projects" outerRadius={120} fill="#8884d8" label>
+          {data.clients.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={ProjectSlices[index % ProjectSlices.length]} />
+          ))}
+        </Pie>
+      </PieChart>
     </ResponsiveContainer>
   );
 };

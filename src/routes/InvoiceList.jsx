@@ -2,7 +2,7 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import Sidebar from '../components/Sidebar';
-import Badges from '../components/Badges';
+import Badges from '../components/common/Badges';
 import { DarkTheme, White, CardShadow, HoverEffect } from '../utilities';
 import { BiDollarCircle } from 'react-icons/bi';
 import data from '../db.json';
@@ -117,7 +117,7 @@ const Container = styled.div`
   height: 97vh;
   background: transparent;
   border-radius: 2rem;
-  animation: 0.7s ease-in-out 0s 1 ${Fade};
+  animation: 0.9s ease-in-out 0s 1 ${Fade};
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;

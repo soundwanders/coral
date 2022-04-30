@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import { FiSearch } from 'react-icons/fi';
 import Sidebar from '../components/Sidebar';
-import ListFilter from '../components/List';
+import ListFilter from '../components/ClientFilter';
 import { DarkTheme, White, CardShadow, HoverEffect, SearchBarShadow } from '../utilities';
 
 const ClientList = () => {
@@ -55,7 +55,7 @@ const Container = styled.div`
   background: transparent;
   border: 0px solid transparent;
   border-radius: 2rem;
-  animation: 0.7s ease-in-out 0s 1 ${Fade};
+  animation: 0.9s ease-in-out 0s 1 ${Fade};
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
@@ -139,7 +139,7 @@ const Icon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 3rem;
+  height: 2.7rem;
   width: 3rem;
   background-color: #f6f8ff;
   border-top-left-radius: 0.75rem;

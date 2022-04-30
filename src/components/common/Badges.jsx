@@ -1,6 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ThemeColor, DarkTheme, White, PrimaryBadgeColor, PaidGreen, LateRed } from '../utilities';
+import {
+  ThemeColor,
+  DarkTheme,
+  White,
+  PrimaryBadgeColor,
+  PaidGreen,
+  LateRed,
+} from '../../utilities';
 
 const BadgeTypes = ({
   content,

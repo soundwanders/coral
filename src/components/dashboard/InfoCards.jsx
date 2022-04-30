@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Badges from '../Badges';
+import Badges from '../common/Badges';
 import { CardShadow, HoverEffect, ThemeColor, White } from '../../utilities';
 
 const ContentCard = () => {

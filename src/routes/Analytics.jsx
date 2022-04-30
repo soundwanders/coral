@@ -10,16 +10,19 @@ const Analytics = () => {
   return (
     <Container>
       <Sidebar />
-      <ListWrapper>
+      <ChartWrapper>
         <Title>Analytics</Title>
         <Underline />
         <FlexContainer>
           <SalesChart />
-        </FlexContainer>
-        <FlexContainer>
           <ProjectsChart />
         </FlexContainer>
-      </ListWrapper>
+
+        <FlexContainer>
+          <ProjectsChart />
+          <SalesChart />
+        </FlexContainer>
+      </ChartWrapper>
       <Outlet />
     </Container>
   );
@@ -43,7 +46,7 @@ const Container = styled.div`
   background: transparent;
   border: 0px solid transparent;
   border-radius: 2rem;
-  animation: 0.7s ease-in-out 0s 1 ${Fade};
+  animation: 0.9s ease-in-out 0s 1 ${Fade};
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
@@ -53,7 +56,7 @@ const Container = styled.div`
   }
 `;
 
-const ListWrapper = styled.div`
+const ChartWrapper = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -77,11 +80,18 @@ const ListWrapper = styled.div`
 const FlexContainer = styled.div`
   display: flex;
   flex: 1;
-  padding: 0.25rem 0 0.5rem 1rem;
   min-width: 0;
+  width: 90%;
+  padding: 0.25rem 0;
+  justify-content: left;
+  transform: translateX(-10%);
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin-left: 0;
+    padding: 0.25rem 0.5rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transform: none;
   }
 `;
 

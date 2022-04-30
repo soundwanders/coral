@@ -1,51 +1,42 @@
 import React from 'react';
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-} from 'recharts';
+import { ResponsiveContainer, PieChart, Pie, Cell, Tooltip } from 'recharts';
+import { SaleSlices } from '../../utilities';
 import data from '../../db.json';
 
 const fetchSales = data.clients.map(({ name, totalSales }) => ({ name, totalSales }));
 
-const CustomTooltip = ({ active, payload, label }) => {
-  if (active && payload && payload.length) {
-    return (
-      <div className="tooltip">
-        <p className="label">{`${label} : ${payload[0].value}`}</p>
-        <p className="desc">Anything you want can be displayed here.</p>
-      </div>
-    );
-  }
-  return null;
-};
+const ProjectsChart = () => {
+  const CustomTooltip = ({ active, payload, label }) => {
+    if (active && payload && payload.length) {
+      return (
+        <div className="tooltip">
+          <p className="label">{`${label} : ${payload[0].value}`}</p>
+          <p className="desc">Anything displayed here.</p>
+        </div>
+      );
+    }
+    return null;
+  };
 
-const SalesChart = () => {
   return (
-    <ResponsiveContainer width="90%" height="90%">
-      <BarChart
-        data={fetchSales}
+    <ResponsiveContainer minHeight={345}>
+      <PieChart
         margin={{
-          top: 5,
-          right: 30,
-          left: 5,
-          bottom: 5,
+          top: 2,
+          right: 4,
+          left: 4,
+          bottom: 2,
         }}
       >
-        <CartesianGrid strokeDasharray="2 2" />
-        <XAxis dataKey="Client" />
-        <YAxis />
         <Tooltip content={<CustomTooltip />} />
-        <Legend />
-        <Bar dataKey="Revenue" stackId="a" fill="#d88884" />
-      </BarChart>
+        <Pie data={fetchSales} dataKey="totalSales" outerRadius={120} fill="#8884d8" label>
+          {data.clients.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={SaleSlices[index % SaleSlices.length]} />
+          ))}
+        </Pie>
+      </PieChart>
     </ResponsiveContainer>
   );
 };
 
-export default SalesChart;
+export default ProjectsChart;
