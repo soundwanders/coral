@@ -1,24 +1,25 @@
 import React from 'react';
 import { ResponsiveContainer, PieChart, Pie, Cell, Tooltip } from 'recharts';
-import { PastelPalette } from '../../utilities';
+import { BluePalette } from '../../utilities';
 import { TooltipLabel } from '../common';
 import data from '../../db.json';
 
-const fetchSales = data.clients.map(({ name, totalSales }) => ({ name, totalSales }));
+const fetchGrowth = data.clients.map(({ name, growth }) => ({ name, growth }));
 
-const ProjectsChart = () => {
+const GrowthChart = () => {
   const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
       return (
         <div className="tooltip">
           <TooltipLabel>
-            {`${payload[0].name} - ${payload[0].value}`}% revenue growth
+            {`${payload[0].name} - ${payload[0].value}`}% revenue growth!
           </TooltipLabel>
         </div>
       );
     }
     return null;
   };
+  
   return (
     <ResponsiveContainer minHeight={345}>
       <PieChart
@@ -31,15 +32,16 @@ const ProjectsChart = () => {
       >
         <Tooltip content={<CustomTooltip />} />
         <Pie 
-          data={fetchSales} 
-          dataKey="totalSales" 
-          innerRadius={70} 
+          data={fetchGrowth} 
+          dataKey="growth" 
+          innerRadius={60}
           outerRadius={120} 
-          paddingAngle={5} 
-          fill="#6161ff" 
+          paddingAngle={10} 
+          fill="#6161ff"
+          label 
         >
           {data.clients.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={PastelPalette[index % PastelPalette.length]} />
+            <Cell key={`cell-${index}`} fill={BluePalette[index % BluePalette.length]} />
           ))}
         </Pie>
       </PieChart>
@@ -47,4 +49,4 @@ const ProjectsChart = () => {
   );
 };
 
-export default ProjectsChart;
+export default GrowthChart;

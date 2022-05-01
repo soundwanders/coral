@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import Sidebar from '../components/Sidebar';
 import { DarkTheme } from '../utilities';
+import GrowthChart from '../components/charts/Growth';
 import SalesChart from '../components/charts/Sales';
 import ProjectsChart from '../components/charts/Projects';
 
@@ -14,9 +15,9 @@ const Charts = () => {
         <Title>Coral Charts</Title>
         <Underline />
         <FlexContainer>
+          <GrowthChart />
           <SalesChart />
           <ProjectsChart />
-          <SalesChart />
         </FlexContainer>
       </ChartWrapper>
       <Outlet />
