@@ -6,12 +6,11 @@ import data from '../../db.json';
 const fetchSales = data.clients.map(({ name, totalSales }) => ({ name, totalSales }));
 
 const ProjectsChart = () => {
-  const CustomTooltip = ({ active, payload, label }) => {
+  const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
       return (
         <div className="tooltip">
-          <p className="label">{`${label} : ${payload[0].value}`}</p>
-          <p className="desc">Anything displayed here.</p>
+          <p className="label">{`${payload[0].name} -- $${payload[0].value}`}</p>
         </div>
       );
     }
@@ -29,7 +28,15 @@ const ProjectsChart = () => {
         }}
       >
         <Tooltip content={<CustomTooltip />} />
-        <Pie data={fetchSales} dataKey="totalSales" outerRadius={120} fill="#8884d8" label>
+        <Pie 
+          data={fetchSales} 
+          dataKey="totalSales" 
+          innerRadius={75} 
+          outerRadius={120} 
+          paddingAngle={5} 
+          fill="#6161ff" 
+          label
+        >
           {data.clients.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={SaleSlices[index % SaleSlices.length]} />
           ))}

@@ -39,7 +39,7 @@
       "phone": "890-001-2121",
       "dateAcquired": "January 18, 2022",
       "totalSales": 18200,
-      "projects": 3,
+      "projects": 4,
       "lastInvoice": "December 2, 2021"
     },
     {
@@ -109,7 +109,7 @@
       "phone": "444-123-2828",
       "dateAcquired": "July 5, 2021",
       "totalSales": 82000,
-      "projects": 12,
+      "projects": 19,
       "lastInvoice": "March 12, 2022"
     },
     {

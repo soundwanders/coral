@@ -83,7 +83,7 @@ const InvoiceContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0.2rem;
-  padding: 0.3rem 1rem;
+  padding: 0.25rem 1rem;
 
   &:nth-child(2) {
     padding-top: 1rem;
@@ -97,6 +97,7 @@ const ClientInfo = styled.div`
   display: flex;
   align-content: space-between;
   width: 60%;
+  font-size: 1.125rem;
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
@@ -125,7 +126,7 @@ const SubTitle = styled.h5`
 const InvoiceDetails = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 30%;
+  width: 40%;
   align-items: center;
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -137,6 +138,11 @@ const InvoiceDetails = styled.div`
 
 const Amount = styled.div`
   font-family: 'Arvo', serif;
+  
+  @media screen and (min-width: 1080px) {
+    margin-right: 0.5rem;
+    font-size: 1.25rem;
+  }
 `;
 
 export default Invoices;

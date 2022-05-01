@@ -117,7 +117,6 @@ const ProjectInfo = styled.p`
   margin: 0;
   padding: 0.4rem;
   padding-left: 0;
-  font-size: 1rem;
   color: #3b3b3b;
   margin-bottom: 0.5em;
 `;
@@ -140,9 +139,8 @@ const QuoteContainer = styled.div`
 
 const Quote = styled.div`
   font-family: 'Arvo', serif;
-  font-size: 1rem;
   padding: 0 0.8rem;
-  margin: 0.4rem;
+  margin: 0.375rem;
   justify-content: space-between;
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {

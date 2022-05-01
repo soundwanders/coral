@@ -60,10 +60,10 @@ export const Fade = keyframes`
 `;
 
 const DashboardWrapper = styled.div`
-  width: 80%;
+  width: 90%;
   padding: 0.5rem 1.25rem;
   border-radius: 2rem;
-  margin: 0rem 5rem;
+  margin: 0rem 5rem 0 3rem;
   animation: 1s ease-in-out 0s 1 ${Fade};
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {

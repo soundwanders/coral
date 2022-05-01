@@ -83,10 +83,13 @@ const SlackText = styled.div`
 const SlackHeader = styled.h2`
   margin: 1rem 0;
   font-weight: 600;
+
+  @media screen and (min-width: 1080px) {
+    font-size: 1.375rem;
+  }
 `;
 
 const Join = styled.button`
-  font-size: 1rem;
   font-weight: 500;
   border: none;
   outline: none;

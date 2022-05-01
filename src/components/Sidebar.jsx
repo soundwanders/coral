@@ -76,7 +76,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   width: 20%;
-  height: 100% !important;
+  height: 100%;
   gap: 3rem;
   text-align: center;
   border: 1px solid transparent;
