@@ -102,7 +102,7 @@ const Grid = styled.div`
   width: 80%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 1fr;
-  gap: 5rem 11%;
+  gap: 5rem 8%;
   white-space: nowrap;
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
