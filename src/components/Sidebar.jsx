@@ -30,9 +30,9 @@ const Sidebar = () => {
 
           <SidebarLinks>
             <AiOutlinePieChart />
-            <Link to="/Analytics">
+            <Link to="/Charts">
               {' '}
-              <h2> Analytics </h2>{' '}
+              <h2> Charts </h2>{' '}
             </Link>
           </SidebarLinks>
 

@@ -8,5 +8,5 @@ export const White = '#fbfbfb';
 export const PrimaryBadgeColor = '#5858f5';
 export const PaidGreen = '#2d8600';
 export const LateRed = '#e55054';
-export const ProjectSlices = ['#ffdabb', '#b8b8e8', '#c3e4e4', '#d6c1b3', '#f4fcd9' ];
+export const ProjectSlices = ['#6161ff', '#7070ff', '#5757e5', '#9090ff', '#7e7eff', '#6186ff', '#7070ff' ];
 export const SaleSlices = [ '#f6a6b2', '#cdfdd5', '#ffecb8', '#bfc6ff', '#ffd7b5', '#bfe6ff', '#ffc7e3' ];

@@ -66,7 +66,7 @@ const Project = styled.div`
 `;
 
 const CardContent = styled.div`
-  width: 100%; !important;
+  width: 100%;
   margin: 0.4rem;
 `;
 

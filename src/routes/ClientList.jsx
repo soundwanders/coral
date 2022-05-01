@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import { FiSearch } from 'react-icons/fi';
 import Sidebar from '../components/Sidebar';
-import ListFilter from '../components/ClientFilter';
+import ClientFilter from '../components/ClientFilter';
 import { DarkTheme, White, CardShadow, HoverEffect, SearchBarShadow } from '../utilities';
 
 const ClientList = () => {
@@ -28,7 +28,7 @@ const ClientList = () => {
         <Underline />
         <FlexContainer>
           <Grid>
-            <ListFilter input={inputText} />
+            <ClientFilter input={inputText} />
           </Grid>
         </FlexContainer>
       </ListWrapper>
@@ -66,8 +66,8 @@ const Container = styled.div`
 `;
 
 const ListWrapper = styled.div`
-  position: relative;
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
@@ -102,7 +102,7 @@ const Grid = styled.div`
   width: 80%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 1fr;
-  gap: 5rem 8%;
+  gap: 5rem 11%;
   white-space: nowrap;
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -180,7 +180,7 @@ const Underline = styled.span`
 `;
 
 export const ClientUl = styled.ul`
-  padding: 1rem 2rem 2rem 2rem;
+  padding: 1rem 2.25rem 2rem 2.25rem;
   margin: 0;
   min-width: 265px;
   background: ${White};
@@ -210,7 +210,7 @@ export const Portrait = styled.img`
 `;
 
 export const ListItem = styled.li`
-  padding: 0.5rem;
+  padding: 0.6rem;
   min-width: min-content;
   list-style-type: none;
   box-sizing: border-box;

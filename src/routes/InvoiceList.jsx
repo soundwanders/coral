@@ -129,8 +129,8 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  position: relative;
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
@@ -223,7 +223,7 @@ const Row = styled.div`
   &:nth-child(5) > div {
     flex: 0 0 95%;
     line-height: 1.5;
-    font-size: 1.1rem;
+    font-size: 1rem !important;
     margin-bottom: -1rem;
 
     @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -265,7 +265,6 @@ const CardsBottomRow = styled.div`
   font-weight: 600;
   color: ${White};
   transform: translate(1rem, 2rem);
-
   span {
     color: #cecece;
   }
@@ -274,6 +273,7 @@ const CardsBottomRow = styled.div`
       display: none;
     }
   }
+  
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     font-size: 0.75rem;
     flex: 0 0 52%;

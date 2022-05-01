@@ -3,7 +3,7 @@ import data from '../db.json';
 import { ClientUl, ListItem, Portrait, Label } from '../routes/ClientList';
 
 const List = props => {
-  const ListFilter = data.clients.filter(info => {
+  const ClientFilter = data.clients.filter(info => {
     if (props.input === '') return info;
     else {
       return (
@@ -12,7 +12,7 @@ const List = props => {
       );
     }
   });
-  return ListFilter.map(({ id, img, name, organization, address, email, phone, dateAcquired }) => (
+  return ClientFilter.map(({ id, img, name, organization, address, email, phone, dateAcquired }) => (
     <ClientUl key={id}>
       <Portrait src={img} id="ClientPhoto" alt={name} draggable="false" />
       <Label>NAME</Label> <ListItem>{name}</ListItem>

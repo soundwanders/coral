@@ -6,19 +6,15 @@ import { DarkTheme } from '../utilities';
 import SalesChart from '../components/charts/Sales';
 import ProjectsChart from '../components/charts/Projects';
 
-const Analytics = () => {
+const Charts = () => {
   return (
     <Container>
       <Sidebar />
       <ChartWrapper>
-        <Title>Analytics</Title>
+        <Title>Coral Charts</Title>
         <Underline />
         <FlexContainer>
           <SalesChart />
-          <ProjectsChart />
-        </FlexContainer>
-
-        <FlexContainer>
           <ProjectsChart />
           <SalesChart />
         </FlexContainer>
@@ -57,8 +53,8 @@ const Container = styled.div`
 `;
 
 const ChartWrapper = styled.div`
-  position: relative;
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
@@ -81,14 +77,14 @@ const FlexContainer = styled.div`
   display: flex;
   flex: 1;
   min-width: 0;
-  width: 90%;
+  width: 85%;
   padding: 0.25rem 0;
-  justify-content: left;
-  transform: translateX(-10%);
+  justify-content: center;
+  align-content: center;
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin-left: 0;
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem 1rem;
     flex-direction: column;
     flex-wrap: wrap;
     transform: none;
@@ -113,4 +109,4 @@ const Underline = styled.span`
   border-bottom: 2px solid #dcdcdc;
 `;
 
-export default Analytics;
+export default Charts;
