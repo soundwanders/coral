@@ -12,7 +12,7 @@ const ProjectsChart = () => {
       return (
         <div className="tooltip">
           <TooltipLabel>
-            {`${payload[0].name} - ${payload[0].value}`}% revenue growth
+            {`${payload[0].name} - ${payload[0].value}`}
           </TooltipLabel>
         </div>
       );
