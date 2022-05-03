@@ -1,6 +1,6 @@
 import React from 'react';
 import { ResponsiveContainer, PieChart, Pie, Cell, Tooltip } from 'recharts';
-import { BluePalette } from '../../utilities';
+import { BluePaletteTwo } from '../../utilities';
 import { TooltipLabel } from '../common';
 import data from '../../db.json';
 
@@ -40,7 +40,7 @@ const ProjectsChart = () => {
           label 
         >
           {data.clients.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={BluePalette[index % BluePalette.length]} />
+            <Cell key={`cell-${index}`} fill={BluePaletteTwo[index % BluePaletteTwo.length]} />
           ))}
         </Pie>
       </PieChart>

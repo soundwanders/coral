@@ -9,4 +9,5 @@ export const PrimaryBadgeColor = '#5858f5';
 export const PaidGreen = '#2d8600';
 export const LateRed = '#e55054';
 export const BluePalette = ['#6161ff', '#7070ff', '#5757e5', '#9090ff', '#7e7eff', '#6186ff', '#7070ff' ];
+export const BluePaletteTwo = ['#6186ff', '#9090ff', '#7070ff', '#5757e5', '#7e7eff', '#6161ff', '#7070ff' ];
 export const PastelPalette = [ '#f6a6b2', '#cdfdd5', '#ffecb8', '#bfc6ff', '#ffd7b5', '#bfe6ff', '#ffc7e3' ];

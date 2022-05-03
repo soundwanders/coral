@@ -24,9 +24,9 @@ const SlackBar = () => {
 const Wrapper = styled.div`
   display: flex;
   position: relative;
-  top: 70%;
+  top: 67%;
   align-items: center;
-  height: 23%;
+  height: 24%;
   margin: 1rem 0;
   padding: 0.2rem 0;
   border: 0px solid transparent;
@@ -90,11 +90,12 @@ const SlackHeader = styled.h2`
 `;
 
 const Join = styled.button`
-  font-weight: 500;
   border: none;
   outline: none;
   padding: 0.3rem 2rem;
   border-radius: 2rem;
+  font-weight: 500;
+  font-size: 1.05rem;
   color: ${White};
   background-color: ${DarkTheme};
   cursor: pointer;
