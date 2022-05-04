@@ -1,10 +1,12 @@
 import { React, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
-import { FiSearch } from 'react-icons/fi';
 import Sidebar from '../components/Sidebar';
 import ClientFilter from '../components/ClientFilter';
-import { DarkTheme, White, CardShadow, HoverEffect, SearchBarShadow } from '../utilities';
+import { Container, Wrapper, FlexContainer, Title, Underline } from '../components/common';
+import { White, CardShadow, HoverEffect, SearchBarShadow } from '../utilities';
+import { FiSearch } from 'react-icons/fi';
+import { GiSeaTurtle } from 'react-icons/gi';
 
 const ClientList = () => {
   const [inputText, setInputText] = useState('');
@@ -15,9 +17,11 @@ const ClientList = () => {
   return (
     <Container>
       <Sidebar />
-      <ListWrapper>
+      <Wrapper>
         <TitleWrapper>
-          <Title>Coral Clients</Title>
+          <Title>
+            Coral Clients <GiSeaTurtle />{' '}
+          </Title>
           <InputContainer>
             <Icon>
               <FiSearch />
@@ -31,7 +35,7 @@ const ClientList = () => {
             <ClientFilter input={inputText} />
           </Grid>
         </FlexContainer>
-      </ListWrapper>
+      </Wrapper>
       <Outlet />
     </Container>
   );
@@ -43,57 +47,6 @@ export const Fade = keyframes`
   }
   100% {
     opacity: 1.0;
-  }
-}
-`;
-
-const Container = styled.div`
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 97vh;
-  background: transparent;
-  border: 0px solid transparent;
-  border-radius: 2rem;
-  animation: 0.9s ease-in-out 0s 1 ${Fade};
-
-  @media screen and (min-width: 320px) and (max-width: 1080px) {
-    flex-direction: column;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-  }
-`;
-
-const ListWrapper = styled.div`
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  max-height: 97vh;
-  left: 3%;
-  overflow-y: auto;
-
-  @media screen and (min-width: 320px) and (max-width: 1080px) {
-    margin: 1rem 0 0 0;
-    padding: 0;
-    height: max-content;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    background: #eaf5ff;
-    overflow-x: hidden;
-  }
-`;
-
-const FlexContainer = styled.div`
-  display: flex;
-  flex: 1;
-  padding: 0.25rem 0 0.5rem 1rem;
-  min-width: 0;
-
-  @media screen and (min-width: 320px) and (max-width: 1080px) {
-    margin-left: 0;
   }
 `;
 
@@ -159,24 +112,6 @@ const Input = styled.input`
     border: none;
     outline: none;
   }
-`;
-
-const Title = styled.h1`
-  font-size: 4rem;
-  margin-left: 0.5rem;
-  color: ${DarkTheme};
-
-  @media screen and (min-width: 320px) and (max-width: 1080px) {
-    width: 90%;
-    text-align: center;
-  }
-`;
-
-const Underline = styled.span`
-  display: inline-block;
-  width: 85%;
-  margin: 0 0 2rem 0.5rem;
-  border-bottom: 2px solid #dcdcdc;
 `;
 
 export const ClientUl = styled.ul`

@@ -19,7 +19,7 @@ const GrowthChart = () => {
     }
     return null;
   };
-  
+
   return (
     <ResponsiveContainer minHeight={345}>
       <PieChart
@@ -31,14 +31,14 @@ const GrowthChart = () => {
         }}
       >
         <Tooltip content={<CustomTooltip />} />
-        <Pie 
-          data={fetchGrowth} 
-          dataKey="growth" 
+        <Pie
+          data={fetchGrowth}
+          dataKey="growth"
           innerRadius={60}
-          outerRadius={120} 
-          paddingAngle={10} 
+          outerRadius={120}
+          paddingAngle={10}
           fill="#6161ff"
-          label 
+          label
         >
           {data.clients.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={BluePalette[index % BluePalette.length]} />

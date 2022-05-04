@@ -11,9 +11,7 @@ const ProjectsChart = () => {
     if (active && payload && payload.length) {
       return (
         <div className="tooltip">
-          <TooltipLabel>
-            {`${payload[0].name} - ${payload[0].value}`}
-          </TooltipLabel>
+          <TooltipLabel>{`${payload[0].name} - ${payload[0].value}`}</TooltipLabel>
         </div>
       );
     }
@@ -30,13 +28,13 @@ const ProjectsChart = () => {
         }}
       >
         <Tooltip content={<CustomTooltip />} />
-        <Pie 
-          data={fetchSales} 
-          dataKey="totalSales" 
-          innerRadius={70} 
-          outerRadius={120} 
-          paddingAngle={5} 
-          fill="#6161ff" 
+        <Pie
+          data={fetchSales}
+          dataKey="totalSales"
+          innerRadius={70}
+          outerRadius={120}
+          paddingAngle={5}
+          fill="#6161ff"
         >
           {data.clients.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={PastelPalette[index % PastelPalette.length]} />

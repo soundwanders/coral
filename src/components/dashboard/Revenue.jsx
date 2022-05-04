@@ -2,13 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { IoStatsChart } from 'react-icons/io5';
 import { BiDollarCircle } from 'react-icons/bi';
-import { ThemeColor, HoverEffect, White } from '../../utilities';
-import data from '../../db.json';
-
-const RevenueArray = data.clients.map(client => client.totalSales);
-const TotalRevenue = RevenueArray.reduce(function (total, saleValue) {
-  return total + saleValue;
-}, 0);
+import { ThemeColor, HoverEffect, White, TotalRevenue } from '../../utilities';
 
 const Revenue = () => {
   return (
@@ -88,7 +82,7 @@ const Earning = styled.h2`
 
 const RevenueIncrease = styled.h4`
   max-width: 70%;
-  margin: 0.1rem  auto 0 auto;
+  margin: 0.1rem auto 0 auto;
   text-align: center;
   font-weight: 600;
   letter-spacing: 1px;

@@ -138,7 +138,7 @@ const InvoiceDetails = styled.div`
 
 const Amount = styled.div`
   font-family: 'Arvo', serif;
-  
+
   @media screen and (min-width: 1080px) {
     margin-right: 0.5rem;
     font-size: 1.25rem;

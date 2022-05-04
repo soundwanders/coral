@@ -9,9 +9,7 @@ const CustomTooltip = ({ active, payload }) => {
   if (active && payload && payload.length) {
     return (
       <div className="tooltip">
-        <TooltipLabel>
-          {`${payload[0].name} - ${payload[0].value}`} projects
-        </TooltipLabel>
+        <TooltipLabel>{`${payload[0].name} - ${payload[0].value}`} projects</TooltipLabel>
       </div>
     );
   }
@@ -30,14 +28,14 @@ const ProjectsChart = () => {
         }}
       >
         <Tooltip content={<CustomTooltip />} />
-        <Pie 
-          data={fetchProjects} 
-          dataKey="projects" 
+        <Pie
+          data={fetchProjects}
+          dataKey="projects"
           innerRadius={60}
-          outerRadius={120} 
-          paddingAngle={10} 
+          outerRadius={120}
+          paddingAngle={10}
           fill="#6161ff"
-          label 
+          label
         >
           {data.clients.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={BluePaletteTwo[index % BluePaletteTwo.length]} />
