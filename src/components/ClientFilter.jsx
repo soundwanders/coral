@@ -12,17 +12,19 @@ const List = props => {
       );
     }
   });
-  return ClientFilter.map(({ id, img, name, organization, address, email, phone, dateAcquired }) => (
-    <ClientUl key={id}>
-      <Portrait src={img} id="ClientPhoto" alt={name} draggable="false" />
-      <Label>NAME</Label> <ListItem>{name}</ListItem>
-      <Label>ORGANIZATION</Label> <ListItem>{organization}</ListItem>
-      <Label>ADDRESS</Label> <ListItem>{address}</ListItem>
-      <Label>EMAIL</Label> <ListItem>{email}</ListItem>
-      <Label>PHONE</Label> <ListItem>{phone}</ListItem>
-      <Label>ACQUIRED</Label> <ListItem>{dateAcquired}</ListItem>
-    </ClientUl>
-  ));
+  return ClientFilter.map(
+    ({ id, img, name, organization, address, email, phone, dateAcquired }) => (
+      <ClientUl key={id}>
+        <Portrait src={img} id="ClientPhoto" alt={name} draggable="false" />
+        <Label>NAME</Label> <ListItem>{name}</ListItem>
+        <Label>ORGANIZATION</Label> <ListItem>{organization}</ListItem>
+        <Label>ADDRESS</Label> <ListItem>{address}</ListItem>
+        <Label>EMAIL</Label> <ListItem>{email}</ListItem>
+        <Label>PHONE</Label> <ListItem>{phone}</ListItem>
+        <Label>ACQUIRED</Label> <ListItem>{dateAcquired}</ListItem>
+      </ClientUl>
+    ),
+  );
 };
 
 export default List;

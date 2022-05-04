@@ -3,8 +3,10 @@ import { Outlet } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import Sidebar from '../components/Sidebar';
 import Badges from '../components/common/Badges';
-import { DarkTheme, White, CardShadow, HoverEffect } from '../utilities';
+import { Container, Wrapper, FlexContainer, Title, Underline } from '../components/common';
+import { White, CardShadow, HoverEffect } from '../utilities';
 import { BiDollarCircle } from 'react-icons/bi';
+import { GiAnglerFish } from 'react-icons/gi';
 import data from '../db.json';
 
 const InvoiceList = () => {
@@ -13,14 +15,16 @@ const InvoiceList = () => {
     Tellus elementum sagittis vitae et leo duis. Eget nunc lobortis 
     mattis aliquam faucibus purus. A erat nam at lectus urna duis
     convallis. Porttitor dolor morbi non arcu risus quis varius terna.
-    Viverra mattis nunc sed blandit libero volutpat.
+    Viverra mattis nunc sed blano.
   `;
 
   return (
     <Container>
       <Sidebar />
       <Wrapper>
-        <Title>Recent Invoices</Title>
+        <Title>
+          Recent Invoices <GiAnglerFish />{' '}
+        </Title>
         <Underline />
         <FlexContainer>
           <Grid>
@@ -107,79 +111,6 @@ export const Fade = keyframes`
   100% {
     opacity: 1.0;
   }
-}
-`;
-
-const Container = styled.div`
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 97vh;
-  background: transparent;
-  border-radius: 2rem;
-  animation: 0.9s ease-in-out 0s 1 ${Fade};
-
-  @media screen and (min-width: 320px) and (max-width: 1080px) {
-    flex-direction: column;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    background: transparent;
-  }
-`;
-
-const Wrapper = styled.div`
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  max-height: 97vh;
-  left: 3%;
-  overflow-y: auto;
-
-  @media screen and (min-width: 320px) and (max-width: 1080px) {
-    margin: 1rem 0 0 0;
-    padding: 0;
-    height: max-content;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    background: #eaf5ff;
-    overflow-x: hidden;
-  }
-`;
-
-const Title = styled.h1`
-  font-size: 4rem;
-  padding: 0 0.875rem;
-  color: ${DarkTheme};
-
-  @media screen and (min-width: 320px) and (max-width: 1080px) {
-    width: 90%;
-    text-align: center;
-  }
-`;
-
-const Underline = styled.span`
-  display: inline-block;
-  width: 85%;
-  margin: 0 0 2rem 0.875rem;
-  border-bottom: 2px solid #dcdcdc;
-`;
-
-const FlexContainer = styled.div`
-  display: flex;
-  flex: 1;
-  min-width: 0;
-  max-width: 85%;
-  padding: 0 0.875rem;
-
-  @media screen and (min-width: 320px) and (max-width: 1080px) {
-    margin-left: 0;
-    min-width: 0;
-    max-width: 95%;
-    padding: 0 0.5rem;
-  }
 `;
 
 const Grid = styled.div`
@@ -227,11 +158,12 @@ const Row = styled.div`
     margin-bottom: -1rem;
 
     @media screen and (min-width: 320px) and (max-width: 1080px) {
-      font-size: 0.85rem;
+      font-size: 0.9rem;
     }
   }
   &:nth-child(6) > div {
     font-size: 1.2rem;
+    padding: 4px 0;
     @media screen and (min-width: 320px) and (max-width: 1080px) {
       font-size: 0.85rem;
     }
@@ -273,7 +205,7 @@ const CardsBottomRow = styled.div`
       display: none;
     }
   }
-  
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     font-size: 0.75rem;
     flex: 0 0 52%;
