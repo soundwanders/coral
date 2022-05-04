@@ -158,11 +158,11 @@ const Row = styled.div`
     margin-bottom: -1rem;
 
     @media screen and (min-width: 320px) and (max-width: 1080px) {
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
   }
   &:nth-child(6) > div {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 4px 0;
     @media screen and (min-width: 320px) and (max-width: 1080px) {
       font-size: 0.85rem;
