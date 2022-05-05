@@ -7,6 +7,7 @@ export const Title = styled.h1`
   color: ${DarkTheme};
 
   svg {
+    margin: 0 0 -0.3rem 0.1rem;
     font-size: 2.7rem;
   }
 
@@ -15,6 +16,7 @@ export const Title = styled.h1`
     text-align: center;
 
     svg {
+      margin: 0 0 -0.1rem 0;
       font-size: 2rem;
   }
 `;

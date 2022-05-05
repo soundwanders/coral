@@ -12,7 +12,7 @@ const GrowthChart = () => {
       return (
         <div className="tooltip">
           <TooltipLabel>
-            {`${payload[0].name} - ${payload[0].value}`}% growth this year
+            {`${payload[0].name} - ${payload[0].value}`}% growth
           </TooltipLabel>
         </div>
       );
@@ -21,12 +21,12 @@ const GrowthChart = () => {
   };
 
   return (
-    <ResponsiveContainer minHeight={345}>
+    <ResponsiveContainer minHeight={340} width="100%">
       <PieChart
         margin={{
           top: 2,
-          right: 4,
-          left: 4,
+          right: 2,
+          left: 2,
           bottom: 2,
         }}
       >

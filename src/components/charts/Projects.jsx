@@ -18,12 +18,12 @@ const CustomTooltip = ({ active, payload }) => {
 
 const ProjectsChart = () => {
   return (
-    <ResponsiveContainer minHeight={345}>
+    <ResponsiveContainer minHeight={340} width="100%">
       <PieChart
         margin={{
           top: 2,
-          right: 4,
-          left: 4,
+          right: 2,
+          left: 2,
           bottom: 2,
         }}
       >

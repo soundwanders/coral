@@ -8,6 +8,6 @@ export const TooltipLabel = styled.p`
   font-size: 0.9rem;
   font-weight: 600;
   background: #ffe1d7;
-  transform: translateY(0.7rem);
-  opacity: 0.95;
+  transform: translate(0.5rem);
+  opacity: 0.8;
 `;

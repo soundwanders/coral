@@ -47,7 +47,5 @@ export const TotalProjects = ProjectArray.reduce(function (total, projectValue) 
   return total + projectValue;
 }, 0);
 
-const ClientArray = data.clients.map(index => index.length);
-export const TotalClients = ClientArray.reduce(function (total, clients) {
-  return total + clients;
-}, 0);
+const ClientArray = data.clients.map(client => client.name);
+export const TotalClients = ClientArray.length;

@@ -6,7 +6,7 @@ import GrowthChart from '../components/charts/Growth';
 import SalesChart from '../components/charts/Sales';
 import ProjectsChart from '../components/charts/Projects';
 import OverviewChart from '../components/charts/Overview';
-import { TotalClients, TotalProjects, TotalRevenue } from '../utilities';
+import { TotalClients, TotalProjects, TotalRevenue, White, HoverEffect, CardShadow } from '../utilities';
 import { Container, Wrapper, FlexContainer, Title, Underline } from '../components/common';
 import { GiJugglingSeal } from 'react-icons/gi';
 
@@ -21,22 +21,21 @@ const Charts = () => {
         <Underline />
         <FlexContainer>
           <Grid>
-            <Card>{TotalRevenue}</Card>
-            <Card>{TotalProjects}</Card>
-            <Card>{TotalClients}</Card>
+            <InfoCard>{TotalRevenue}</InfoCard> <span> Revenue </span>
+            <InfoCard>{TotalProjects}</InfoCard> <span> Projects </span>
+            <InfoCard>{TotalClients}</InfoCard> <span> Clients </span>
 
             <CardContainer>
               <GrowthChart />
             </CardContainer>
             <CardContainer>
+              <SalesChart />
+            </CardContainer>
+            <CardContainer>
               <ProjectsChart />
             </CardContainer>
-            <Break />
             <CardContainer>
               <OverviewChart />
-            </CardContainer>
-            <CardContainer>
-              <SalesChart />
             </CardContainer>
           </Grid>
         </FlexContainer>
@@ -60,40 +59,49 @@ const Grid = styled.div`
   width: 80%;
   height: 5rem;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 1fr;
-  gap: 2rem 10%;
+  grid-template-rows: auto;
+  gap: 3rem 4rem;
   white-space: nowrap;
-  justify-content: center;
-
+  justify-content: start;
+  
   @media screen and (min-width: 320px) and (max-width: 1080px) {
-    width: 80%;
     grid-template-columns: 1fr;
-    gap: 4rem 0;
+    gap: 3rem 0;
     white-space: nowrap;
   }
 `;
 
-const CardContainer = styled.div`
+const InfoCard = styled.div`
   width: 80%;
-  height: 100%;
-  background: lightgrey;
-  padding: 0 2rem;
-  margin: 0 1rem;
-  border-radius: 2rem;
-`;
-
-const Card = styled.div`
-  width: 100%;
   height: 6rem;
-  background: lightgrey;
   padding: 0 2rem;
-  margin: 0 1rem;
-  border-radius: 2rem;
+  margin: 0;
+  border-radius: 1rem;
+  background: ${White};
+  box-shadow: ${CardShadow};
+  transition: 0.2s ease-in-out;
+  font-size: 3.5rem;
+
+  &:hover {
+    opacity: 0.9;
+    box-shadow: ${HoverEffect};
+  }
 `;
 
-const Break = styled.div`
-  flex-basis: 100%;
-  height: 0;
+const CardContainer = styled.div`
+  height: 100%;
+  width: 
+  padding: 0 2rem;
+  border-radius: 1rem;
+  background: ${White};
+  box-shadow: ${CardShadow};
+  transition: 0.2s ease-in-out;
+  z-index: 0;
+
+  &:hover {
+    opacity: 0.9;
+    box-shadow: ${HoverEffect};
+  }
 `;
 
 export default Charts;
