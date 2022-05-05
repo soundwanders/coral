@@ -68,6 +68,7 @@ const Grid = styled.div`
     grid-template-columns: 1fr;
     gap: 3rem 0;
     white-space: nowrap;
+    width; 90%
   }
 `;
 
@@ -90,7 +91,6 @@ const InfoCard = styled.div`
 
 const CardContainer = styled.div`
   height: 100%;
-  width: 
   padding: 0 2rem;
   border-radius: 1rem;
   background: ${White};
