@@ -167,7 +167,7 @@ const SidebarLinks = styled.div`
 
   &:hover {
     transform: scale(1.02);
-    transition: 0.2s;
+    transition: 0.3s;
     color: #fff;
   }
 `;

@@ -61,7 +61,7 @@ const Grid = styled.div`
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 80%;
     grid-template-columns: 1fr;
-    gap: 4rem 0;
+    gap: 4.25rem 0;
     white-space: nowrap;
   }
 `;
@@ -122,7 +122,7 @@ export const ClientUl = styled.ul`
   background-image: linear-gradient(to bottom, #172854 12%, ${White} 12%);
   border-radius: 1rem;
   box-shadow: ${CardShadow};
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
   cursor: default;
 
   &:hover {

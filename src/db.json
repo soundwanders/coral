@@ -101,7 +101,7 @@
       "phone": "199-934-4344",
       "dateAcquired": "September 20, 2020",
       "totalSales": 39000,
-      "projects": 7,
+      "projects": 3,
       "growth": 12,
       "lastInvoice": "December 2, 2021"
     },
@@ -116,8 +116,8 @@
       "phone": "444-123-2828",
       "dateAcquired": "July 5, 2021",
       "totalSales": 82000,
-      "projects": 19,
-      "growth": 16,
+      "projects": 16,
+      "growth": 8,
       "lastInvoice": "March 12, 2022"
     },
     {
@@ -132,7 +132,7 @@
       "dateAcquired": "February 4, 2022",
       "totalSales": 32999,
       "projects": 6,
-      "growth": 6,
+      "growth": 14,
       "lastInvoice": "February 25, 2022"
     }
   ]

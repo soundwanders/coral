@@ -115,32 +115,15 @@ export const Fade = keyframes`
 
 const Grid = styled.div`
   display: grid;
+  width: 85%;
   grid-template-columns: 1fr 1fr;
-  gap: 5.5rem 4.5rem;
+  gap: 6rem 5rem;
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 90%;
     grid-template-columns: 1fr;
-    gap: 4rem 0;
+    gap: 4.25rem 0;
     white-space: nowrap;
-  }
-`;
-
-// white-space: normal prevents invoice description from overflowing container
-const CardContainer = styled.div`
-  padding: 5% 7% 7% 7%;
-  white-space: normal;
-  background: ${White};
-  background-image: linear-gradient(180deg, #172854 12%, ${White} 12%, ${White} 87%, #172854 87%);
-  background-clip: padding-box;
-  border-radius: 1rem;
-  box-shadow: ${CardShadow};
-  transition: 0.2s ease-in-out;
-  cursor: default;
-
-  &:hover {
-    opacity: 0.9;
-    box-shadow: ${HoverEffect};
   }
 `;
 
@@ -152,7 +135,7 @@ const Row = styled.div`
   padding: 0.2rem 0 0 0;
 
   &:nth-child(5) > div {
-    flex: 0 0 95%;
+    flex: 0 0 90%;
     line-height: 1.5;
     font-size: 1rem !important;
     margin-bottom: -1rem;
@@ -170,6 +153,25 @@ const Row = styled.div`
   }
 `;
 
+// white-space: normal prevents invoice description from overflowing container
+const CardContainer = styled.div`
+  padding: 5% 2% 7% 7%;
+  white-space: normal;
+  background: ${White};
+  background-image: linear-gradient(180deg, #172854 12%, ${White} 12%, ${White} 87%, #172854 87%);
+  background-clip: padding-box;
+  border-radius: 1rem;
+  box-shadow: ${CardShadow};
+  transition: 0.3s ease-in-out;
+  cursor: default;
+
+  &:hover {
+    opacity: 0.9;
+    box-shadow: ${HoverEffect};
+  }
+`;
+
+
 const Portrait = styled.img`
   width: 5rem;
   padding: 0 0 0.5rem 0;
@@ -178,7 +180,7 @@ const Portrait = styled.img`
 
 const CardContent = styled.div`
   width: 90%;
-  flex: 0 0 58%;
+  flex: 0 0 55%;
   font-size: 1.125rem;
   font-weight: 500;
   transform: translateX(1rem);

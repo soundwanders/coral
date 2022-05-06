@@ -7,7 +7,7 @@ export const TooltipLabel = styled.p`
   color: #00009c;
   font-size: 0.9rem;
   font-weight: 600;
-  background: #ffe1d7;
-  transform: translate(0.5rem);
+  background: #ffe1c3;
+  transform: translateY(0.2rem);
   opacity: 0.8;
 `;
