@@ -6,7 +6,7 @@ import data from '../../db.json';
 
 const fetchSales = data.clients.map(({ name, totalSales }) => ({ name, totalSales }));
 
-const ProjectsChart = () => {
+const SalesChart = () => {
   const CustomTooltip = ({ active, payload }) => {
     if (active && payload && payload.length) {
       return (
@@ -35,6 +35,7 @@ const ProjectsChart = () => {
           outerRadius={120}
           paddingAngle={5}
           fill="#6161ff"
+          label
         >
           {data.clients.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={PastelPalette[index % PastelPalette.length]} />
@@ -45,4 +46,4 @@ const ProjectsChart = () => {
   );
 };
 
-export default ProjectsChart;
+export default SalesChart;

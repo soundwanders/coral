@@ -171,7 +171,6 @@ const CardContainer = styled.div`
   }
 `;
 
-
 const Portrait = styled.img`
   width: 5rem;
   padding: 0 0 0.5rem 0;

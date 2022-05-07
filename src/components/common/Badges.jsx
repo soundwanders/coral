@@ -33,7 +33,6 @@ const Badge = styled.span`
   color: ${White};
   background-color: ${PrimaryBadgeColor};
   cursor: pointer;
-}
 
   ${({ tech }) =>
     tech &&

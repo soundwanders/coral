@@ -18,5 +18,6 @@ export const Title = styled.h1`
     svg {
       margin: 0 0 -0.1rem 0;
       font-size: 2rem;
+    }
   }
 `;
