@@ -41,8 +41,8 @@
       "phone": "890-001-2121",
       "dateAcquired": "January 18, 2022",
       "totalSales": 18200,
-      "projects": 4,
-      "growth": 25,
+      "projects": 14,
+      "growth": 15,
       "lastInvoice": "December 2, 2021"
     },
     {
@@ -56,8 +56,8 @@
       "phone": "343-001-2222",
       "dateAcquired": "March 5, 2022",
       "totalSales": 35000,
-      "projects": 7,
-      "growth": 33,
+      "projects": 17,
+      "growth": 13,
       "lastInvoice": "March 29, 2022"
     },
     {
@@ -71,8 +71,8 @@
       "phone": "111-222-1111",
       "dateAcquired": "January 21, 2021",
       "totalSales": 52505,
-      "projects": 6,
-      "growth": 11,
+      "projects": 9,
+      "growth": 6,
       "lastInvoice": "February 3, 2022"
     },
     {
@@ -86,8 +86,8 @@
       "phone": "888-001-1919",
       "dateAcquired": "November 18, 2021",
       "totalSales": 85006,
-      "projects": 16,
-      "growth": 42,
+      "projects": 21,
+      "growth": 21,
       "lastInvoice": "January 2, 2022"
     },
     {
@@ -101,7 +101,7 @@
       "phone": "199-934-4344",
       "dateAcquired": "September 20, 2020",
       "totalSales": 39000,
-      "projects": 3,
+      "projects": 13,
       "growth": 12,
       "lastInvoice": "December 2, 2021"
     },
@@ -116,7 +116,7 @@
       "phone": "444-123-2828",
       "dateAcquired": "July 5, 2021",
       "totalSales": 82000,
-      "projects": 16,
+      "projects": 18,
       "growth": 8,
       "lastInvoice": "March 12, 2022"
     },

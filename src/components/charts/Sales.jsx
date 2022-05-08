@@ -21,7 +21,7 @@ const SalesChart = () => {
     <ResponsiveContainer minHeight={340} width="100%">
       <PieChart
         margin={{
-          top: 2,
+          top: -30,
           right: 2,
           left: 2,
           bottom: 2,
@@ -31,11 +31,10 @@ const SalesChart = () => {
         <Pie
           data={fetchSales}
           dataKey="totalSales"
-          innerRadius={70}
+          innerRadius={60}
           outerRadius={120}
           paddingAngle={5}
           fill="#6161ff"
-          label
         >
           {data.clients.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={PastelPalette[index % PastelPalette.length]} />

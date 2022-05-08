@@ -11,9 +11,7 @@ const GrowthChart = () => {
     if (active && payload && payload.length) {
       return (
         <div className="tooltip">
-          <TooltipLabel>
-            {`${payload[0].name} - ${payload[0].value}`}% growth
-          </TooltipLabel>
+          <TooltipLabel>{`${payload[0].name} - ${payload[0].value}`}% growth</TooltipLabel>
         </div>
       );
     }
@@ -24,7 +22,7 @@ const GrowthChart = () => {
     <ResponsiveContainer minHeight={340} width="100%">
       <PieChart
         margin={{
-          top: 2,
+          top: -30,
           right: 2,
           left: 2,
           bottom: 2,
@@ -36,7 +34,7 @@ const GrowthChart = () => {
           dataKey="growth"
           innerRadius={60}
           outerRadius={120}
-          paddingAngle={10}
+          paddingAngle={8}
           fill="#6161ff"
           label
         >

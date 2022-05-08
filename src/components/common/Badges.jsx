@@ -42,9 +42,9 @@ const Badge = styled.span`
       color:${ThemeColor};
     `}
 
-    ${({ scope }) =>
-      scope &&
-      `
+  ${({ scope }) =>
+    scope &&
+    `
       font-size: 0.85rem;
       background-color: ${White};
       border: 0.05rem solid ${ThemeColor};
@@ -56,8 +56,8 @@ const Badge = styled.span`
     `}
 
     ${({ glowTags }) =>
-      glowTags &&
-      `
+    glowTags &&
+    `
         font-size: 0.8rem;
         padding: 0.25rem 0.5rem;
         margin-top: 0.8rem;
@@ -67,15 +67,15 @@ const Badge = styled.span`
       `}
 
     ${({ paid }) =>
-      paid &&
-      `
+    paid &&
+    `
         background-color: #70e00041;
         color: ${PaidGreen};
       `}
 
     ${({ late }) =>
-      late &&
-      `
+    late &&
+    `
         background-color: #ff595e41;
         color: ${LateRed};
       `}

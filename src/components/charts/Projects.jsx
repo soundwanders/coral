@@ -5,6 +5,7 @@ import { TooltipLabel } from '../common';
 import data from '../../db.json';
 
 const fetchProjects = data.clients.map(({ name, projects }) => ({ name, projects }));
+
 const CustomTooltip = ({ active, payload }) => {
   if (active && payload && payload.length) {
     return (
@@ -21,7 +22,7 @@ const ProjectsChart = () => {
     <ResponsiveContainer minHeight={340} width="100%">
       <PieChart
         margin={{
-          top: 2,
+          top: -30,
           right: 2,
           left: 2,
           bottom: 2,
@@ -33,7 +34,7 @@ const ProjectsChart = () => {
           dataKey="projects"
           innerRadius={60}
           outerRadius={120}
-          paddingAngle={10}
+          paddingAngle={8}
           fill="#6161ff"
           label
         >
