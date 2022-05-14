@@ -87,7 +87,7 @@ const Grid = styled.div`
 const InfoCard = styled.div`
   width: 80%;
   height: 6rem;
-  padding: 0.3rem 2.1rem;
+  padding: 0.3rem 2rem;
   margin: 0;
   border-radius: 1rem;
   font-size: 3.4rem;
@@ -139,8 +139,8 @@ const CardContainer = styled.div`
   }
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
-    width: 85%;
-    padding: 0.5rem 1rem;
+    width: 90%;
+    padding: 0.3rem 1rem;
   }
 `;
 
