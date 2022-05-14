@@ -34,7 +34,6 @@ const SalesChart = () => {
           innerRadius={60}
           outerRadius={120}
           paddingAngle={5}
-          fill="#6161ff"
         >
           {data.clients.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={PastelPalette[index % PastelPalette.length]} />

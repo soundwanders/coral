@@ -34,7 +34,8 @@ const Charts = () => {
               {TotalClients} <Label>Clients</Label>{' '}
             </InfoCard>
             <InfoCard>
-              <Dollar>$</Dollar> {TotalRevenue}{' '}
+              <Dollar>$</Dollar>
+              {TotalRevenue} <Label>Sales</Label>{' '}
             </InfoCard>
 
             <CardContainer>
@@ -117,7 +118,7 @@ const InfoCard = styled.div`
 
 const Label = styled.span`
   display: block;
-  font-size: 1.675rem;
+  font-size: 1.6rem;
   line-height: 0.5;
   text-align: right;
   color: ${White};
@@ -125,7 +126,7 @@ const Label = styled.span`
 
 const CardContainer = styled.div`
   width: 80%;
-  padding: 0 2.1rem;
+  padding: 0 2rem;
   margin: 0;
   border-radius: 1rem;
   background: ${White};
@@ -133,9 +134,13 @@ const CardContainer = styled.div`
   box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
 
+  &:hover {
+    box-shadow: ${HoverEffect};
+  }
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
-    width: 90%;
-    padding: 0.3rem 1rem;
+    width: 85%;
+    padding: 0.5rem 1rem;
   }
 `;
 
@@ -150,14 +155,14 @@ const ChartLabel = styled.div`
   height: 0;
   line-height: 0;
   text-align: center;
-  font-size: 1.5rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.75rem;
   color: ${White};
   font-weight: 600;
   transform: translateY(-1.5rem);
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     font-size: 1.375rem;
-    transform: translateY(-1rem);
   }
 `;
 
