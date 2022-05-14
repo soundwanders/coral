@@ -163,6 +163,7 @@ const ChartLabel = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     font-size: 1.375rem;
+    transform: translateY(-1.4rem);
   }
 `;
 
