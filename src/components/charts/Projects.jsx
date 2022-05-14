@@ -36,7 +36,6 @@ const ProjectsChart = () => {
           outerRadius={120}
           paddingAngle={8}
           fill="#6161ff"
-          label
         >
           {data.clients.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={BluePaletteTwo[index % BluePaletteTwo.length]} />
