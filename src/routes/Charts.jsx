@@ -43,7 +43,7 @@ const Charts = () => {
             <CardContainer>
               <GrowthChart />
               <ChartLabel>
-                CLIENT GROWTH
+                ANNUAL GROWTH
                 <Badges content="+ 8%" charts />
               </ChartLabel>
             </CardContainer>
@@ -51,7 +51,7 @@ const Charts = () => {
               <SalesChart />
               <ChartLabel>
                 TOTAL REVENUE
-                <Badges content="+ 18%" charts />
+                <Badges content="+ 14%" charts />
               </ChartLabel>
             </CardContainer>
             <CardContainer>
