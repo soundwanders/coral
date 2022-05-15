@@ -90,7 +90,7 @@ const Grid = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     grid-template-columns: 1fr;
-    gap: 4rem 0;
+    gap: 3.5rem 0;
     white-space: nowrap;
     width: 90%;
   }
