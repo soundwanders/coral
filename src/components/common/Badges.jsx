@@ -93,6 +93,10 @@ const Badge = styled.span`
       padding: 0.2rem 0.5rem;
       margin: 0 0 0 1rem;
       cursor: default;
+
+     @media screen and (max-width: 1080px) {
+        bottom: 0.1rem;
+      }
     `}
 `;
 
