@@ -16,9 +16,10 @@ const BadgeTypes = ({
   glowTags = false,
   paid = false,
   late = false,
+  charts = false,
 }) => {
   return (
-    <Badge tech={tech} scope={scope} glowTags={glowTags} paid={paid} late={late}>
+    <Badge tech={tech} scope={scope} glowTags={glowTags} paid={paid} late={late} charts={charts}>
       {content}
     </Badge>
   );
@@ -58,27 +59,41 @@ const Badge = styled.span`
     ${({ glowTags }) =>
     glowTags &&
     `
-        font-size: 0.8rem;
-        padding: 0.25rem 0.5rem;
-        margin-top: 0.8rem;
-        font-weight: 500;
-        background-color: #ffea94;
-        color: ${DarkTheme};
-      `}
+      font-size: 0.8rem;
+      padding: 0.25rem 0.5rem;
+      margin-top: 0.8rem;
+      font-weight: 500;
+      background-color: #ffea94;
+      color: ${DarkTheme};
+    `}
 
     ${({ paid }) =>
     paid &&
     `
-        background-color: #70e00041;
-        color: ${PaidGreen};
-      `}
+      background-color: #70e00041;
+      color: ${PaidGreen};
+    `}
 
     ${({ late }) =>
     late &&
     `
-        background-color: #ff595e41;
-        color: ${LateRed};
-      `}
+      background-color: #ff595e41;
+      color: ${LateRed};
+    `}
+
+    ${({ charts }) =>
+    charts &&
+    `
+      position: relative;
+      bottom: 0.3rem;
+      background-color: ${White};
+      color: #020202;
+      font-size: 0.825rem;
+      font-weight: 600;
+      padding: 0.2rem 0.5rem;
+      margin: 0 0 0 1rem;
+      cursor: default;
+    `}
 `;
 
 export default BadgeTypes;

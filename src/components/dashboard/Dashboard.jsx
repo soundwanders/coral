@@ -56,7 +56,6 @@ export const Fade = keyframes`
   100% {
     opacity: 1.0;
   }
-}
 `;
 
 const DashboardWrapper = styled.div`

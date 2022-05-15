@@ -1,10 +1,12 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
+import Badges from '../components/common/Badges';
 import Sidebar from '../components/Sidebar';
 import GrowthChart from '../components/charts/Growth';
 import SalesChart from '../components/charts/Sales';
 import ProjectsChart from '../components/charts/Projects';
+
 import {
   TotalClients,
   TotalProjects,
@@ -31,7 +33,7 @@ const Charts = () => {
               {TotalProjects} <Label>Projects</Label>{' '}
             </InfoCard>
             <InfoCard>
-              {TotalClients} <Label>Clients</Label>{' '}
+              0{TotalClients} <Label>Clients</Label>{' '}
             </InfoCard>
             <InfoCard>
               <Dollar>$</Dollar>
@@ -40,15 +42,24 @@ const Charts = () => {
 
             <CardContainer>
               <GrowthChart />
-              <ChartLabel>ANNUAL GROWTH</ChartLabel>
+              <ChartLabel>
+                CLIENT GROWTH
+                <Badges content="+ 8%" charts />
+              </ChartLabel>
             </CardContainer>
             <CardContainer>
               <SalesChart />
-              <ChartLabel>TOTAL SALES</ChartLabel>
+              <ChartLabel>
+                TOTAL REVENUE
+                <Badges content="+ 18%" charts />
+              </ChartLabel>
             </CardContainer>
             <CardContainer>
               <ProjectsChart />
-              <ChartLabel>ACTIVE PROJECTS</ChartLabel>
+              <ChartLabel>
+                ACTIVE PROJECTS 
+                <Badges content="+ 6%" charts />
+              </ChartLabel>
             </CardContainer>
           </Grid>
         </FlexContainer>
@@ -91,7 +102,7 @@ const InfoCard = styled.div`
   padding: 0.3rem 2rem;
   margin: 0;
   border-radius: 1rem;
-  font-size: 3.25rem;
+  font-size: 3.5rem;
   font-weight: 600;
   text-align: left;
   color: ${White};
@@ -157,7 +168,7 @@ const ChartLabel = styled.div`
   line-height: 0;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   color: ${White};
   font-weight: 600;
   transform: translateY(-1.5rem);

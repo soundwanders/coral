@@ -7,7 +7,6 @@ export const Fade = keyframes`
   100% {
     opacity: 1.0;
   }
-}
 `;
 
 export const Container = styled.div`

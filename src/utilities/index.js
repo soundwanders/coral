@@ -35,6 +35,8 @@ export const VermillionCityPalette = [
   '#c1c3ff',
   '#b3b6e9',
   '#d0d2f1',
+  '#818ed9',
+  '#95a0df',
 ];
 
 export const PastelPalette = ['#f6a6b2', '#9cfbac', '#bfc6ff', '#ffd7b5', '#ffaed6', '#bfe6ff'];
@@ -50,4 +52,4 @@ export const TotalProjects = ProjectArray.reduce(function (total, projectValue) 
 }, 0);
 
 const ClientArray = data.clients.map(client => client.name);
-export const TotalClients = '0' + ClientArray.length;
+export const TotalClients = ClientArray.length;
