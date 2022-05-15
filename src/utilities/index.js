@@ -18,7 +18,7 @@ export const BluePalette = [
   '#6186ff',
   '#7070ff',
 ];
-export const BluePaletteTwo = [
+export const GlacierPalette = [
   '#6186ff',
   '#9090ff',
   '#7070ff',
@@ -27,6 +27,16 @@ export const BluePaletteTwo = [
   '#6161ff',
   '#7070ff',
 ];
+
+export const VermillionCityPalette = [
+  '#b3b5ea',
+  '#c7c9ef',
+  '#dbdcf5',
+  '#c1c3ff',
+  '#b3b6e9',
+  '#d0d2f1',
+];
+
 export const PastelPalette = ['#f6a6b2', '#9cfbac', '#bfc6ff', '#ffd7b5', '#ffaed6', '#bfe6ff'];
 
 const RevenueArray = data.clients.map(client => client.totalSales);

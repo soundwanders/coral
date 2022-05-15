@@ -127,35 +127,9 @@ const Grid = styled.div`
   }
 `;
 
-// nth-child(5) to target the DETAILS text field
-// nth-child(6) targets last row of card (AMOUNT, STATUS, and Badge)
-const Row = styled.div`
-  display: flex;
-  min-width: 0;
-  padding: 0.2rem 0 0 0;
-
-  &:nth-child(5) > div {
-    flex: 0 0 90%;
-    line-height: 1.5;
-    font-size: 1rem !important;
-    margin-bottom: -1rem;
-
-    @media screen and (min-width: 320px) and (max-width: 1080px) {
-      font-size: 0.75rem !important;
-    }
-  }
-  &:nth-child(6) > div {
-    font-size: 1.1rem;
-    padding: 4px 0;
-    @media screen and (min-width: 320px) and (max-width: 1080px) {
-      font-size: 0.85rem;
-    }
-  }
-`;
-
 // white-space: normal prevents invoice description from overflowing container
 const CardContainer = styled.div`
-  padding: 5% 2% 7% 7%;
+  padding: 2rem 2rem 3rem 2rem;
   white-space: normal;
   background: ${White};
   background-image: linear-gradient(180deg, #172854 12%, ${White} 12%, ${White} 87%, #172854 87%);
@@ -163,11 +137,14 @@ const CardContainer = styled.div`
   border-radius: 1rem;
   box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
-  cursor: default;
 
   &:hover {
     opacity: 0.9;
     box-shadow: ${HoverEffect};
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    padding: 2rem 1rem;
   }
 `;
 
@@ -186,6 +163,32 @@ const CardContent = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     font-size: 0.75rem;
+  }
+`;
+
+// nth-child(5) to target the DETAILS text field
+// nth-child(6) targets last row of card (AMOUNT, STATUS, and Badge)
+const Row = styled.div`
+  display: flex;
+  min-width: 0;
+  padding: 0.2rem 0 0 0;
+
+  &:nth-child(5) > div {
+    flex: 0 0 90%;
+    line-height: 1.5;
+    font-size: 1rem;
+    margin-bottom: -1rem;
+
+    @media screen and (min-width: 320px) and (max-width: 1080px) {
+      font-size: 0.725rem;
+    }
+  }
+  &:nth-child(6) > div {
+    font-size: 1.1rem;
+    padding: 4px 0;
+    @media screen and (min-width: 320px) and (max-width: 1080px) {
+      font-size: 0.85rem;
+    }
   }
 `;
 

@@ -44,7 +44,7 @@ const Charts = () => {
             </CardContainer>
             <CardContainer>
               <SalesChart />
-              <ChartLabel>SALES PER CLIENT</ChartLabel>
+              <ChartLabel>TOTAL SALES</ChartLabel>
             </CardContainer>
             <CardContainer>
               <ProjectsChart />
@@ -72,7 +72,8 @@ const Grid = styled.div`
   width: 80%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  gap: 4.5rem 4rem;
+  gap: 4.5rem;
+  margin-top: 0.125rem;
   white-space: nowrap;
   justify-content: start;
 
@@ -90,7 +91,7 @@ const InfoCard = styled.div`
   padding: 0.3rem 2rem;
   margin: 0;
   border-radius: 1rem;
-  font-size: 3.4rem;
+  font-size: 3.25rem;
   font-weight: 600;
   text-align: left;
   color: ${White};
@@ -130,7 +131,7 @@ const CardContainer = styled.div`
   margin: 0;
   border-radius: 1rem;
   background: ${White};
-  background-image: linear-gradient(to top, #4d6bcc 14%, ${White} 14%);
+  background-image: linear-gradient(to top, #294085 14%, ${White} 14%);
   box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
 
@@ -163,7 +164,7 @@ const ChartLabel = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     font-size: 1.25rem;
-    transform: translateY(-1.4rem);
+    transform: translateY(-1.375rem);
   }
 `;
 

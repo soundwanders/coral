@@ -11,7 +11,7 @@ const SalesChart = () => {
     if (active && payload && payload.length) {
       return (
         <div className="tooltip">
-          <TooltipLabel>{`${payload[0].name} - ${payload[0].value}`}</TooltipLabel>
+          <TooltipLabel>{`${payload[0].name} - $${payload[0].value}`}</TooltipLabel>
         </div>
       );
     }

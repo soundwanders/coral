@@ -1,6 +1,6 @@
 import React from 'react';
 import { ResponsiveContainer, PieChart, Pie, Cell, Tooltip } from 'recharts';
-import { BluePaletteTwo } from '../../utilities';
+import { VermillionCityPalette } from '../../utilities';
 import { TooltipLabel } from '../common';
 import data from '../../db.json';
 
@@ -38,7 +38,10 @@ const ProjectsChart = () => {
           fill="#6161ff"
         >
           {data.clients.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={BluePaletteTwo[index % BluePaletteTwo.length]} />
+            <Cell
+              key={`cell-${index}`}
+              fill={VermillionCityPalette[index % VermillionCityPalette.length]}
+            />
           ))}
         </Pie>
       </PieChart>

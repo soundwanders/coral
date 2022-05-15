@@ -122,7 +122,6 @@ export const ClientUl = styled.ul`
   border-radius: 1rem;
   box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
-  cursor: default;
 
   &:hover {
     opacity: 0.93;

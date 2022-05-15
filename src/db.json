@@ -1,7 +1,7 @@
 {
   "clients": [
     {
-      "id": 1,
+      "id": 0,
       "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520554/CORAL/Billowbear_jczbfm.png",
       "name": "Bernie Billowbear",
       "organization": "Billowbear Bakery",
@@ -10,13 +10,13 @@
       "email": "bernie@billowbakery.com",
       "phone": "888-001-2020",
       "dateAcquired": "November 18, 2021",
-      "totalSales": 82500,
+      "totalSales": 8200,
       "projects": 10,
       "growth": 25,
       "lastInvoice": "December 20, 2021"
     },
     {
-      "id": 2,
+      "id": 1,
       "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520554/CORAL/Barry_e5eqrw.png",
       "name": "Barry Barrelboss",
       "organization": "Barrel Bosses",
@@ -25,13 +25,13 @@
       "email": "barry@barrelboys.com",
       "phone": "333-444-3535",
       "dateAcquired": "May 15, 2021",
-      "totalSales": 105990,
+      "totalSales": 10590,
       "projects": 16,
       "growth": 8,
       "lastInvoice": "January 9, 2022"
     },
     {
-      "id": 3,
+      "id": 2,
       "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520554/CORAL/Mary_eehkpp.png",
       "name": "Mary Muzzlemaker",
       "organization": "Muzzle Media",
@@ -40,13 +40,13 @@
       "email": "mary@muzzlemaker.dev",
       "phone": "890-001-2121",
       "dateAcquired": "January 18, 2022",
-      "totalSales": 18200,
+      "totalSales": 1820,
       "projects": 14,
       "growth": 15,
       "lastInvoice": "December 2, 2021"
     },
     {
-      "id": 4,
+      "id": 3,
       "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520554/CORAL/Percy_t48gvk.png",
       "name": "Percy Poppyseed",
       "organization": "Poppyseed Sailing",
@@ -55,13 +55,13 @@
       "email": "percy@seedsailors.com",
       "phone": "343-001-2222",
       "dateAcquired": "March 5, 2022",
-      "totalSales": 35000,
+      "totalSales": 3500,
       "projects": 17,
       "growth": 13,
       "lastInvoice": "March 29, 2022"
     },
     {
-      "id": 5,
+      "id": 4,
       "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520554/CORAL/Chase_ndo97b.png",
       "name": "Reggie Berryburst",
       "organization": "The Golden Berry",
@@ -70,13 +70,13 @@
       "email": "reggie@goldenberry.com",
       "phone": "111-222-1111",
       "dateAcquired": "January 21, 2021",
-      "totalSales": 52505,
+      "totalSales": 5255,
       "projects": 9,
       "growth": 6,
       "lastInvoice": "February 3, 2022"
     },
     {
-      "id": 6,
+      "id": 5,
       "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520553/CORAL/Avatar_dex9ut.png",
       "name": "Frederick Leverlegs",
       "organization": "Slimetime University",
@@ -85,13 +85,13 @@
       "email": "fred@slimetime.edu",
       "phone": "888-001-1919",
       "dateAcquired": "November 18, 2021",
-      "totalSales": 85006,
+      "totalSales": 8506,
       "projects": 21,
       "growth": 21,
       "lastInvoice": "January 2, 2022"
     },
     {
-      "id": 7,
+      "id": 6,
       "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520553/CORAL/Cosmo_jt6zav.png",
       "name": "Cosmo Chocobo",
       "organization": "The Chocobo Coop",
@@ -100,13 +100,13 @@
       "email": "cosmo@chocobo.coop",
       "phone": "199-934-4344",
       "dateAcquired": "September 20, 2020",
-      "totalSales": 39000,
+      "totalSales": 3900,
       "projects": 13,
       "growth": 12,
       "lastInvoice": "December 2, 2021"
     },
     {
-      "id": 8,
+      "id": 7,
       "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520598/CORAL/Avatar3.png",
       "name": "Wayne Brainburden",
       "organization": "Brainy Bunch",
@@ -115,13 +115,13 @@
       "email": "wayne@brainybunch.com",
       "phone": "444-123-2828",
       "dateAcquired": "July 5, 2021",
-      "totalSales": 82000,
+      "totalSales": 8200,
       "projects": 18,
       "growth": 8,
       "lastInvoice": "March 12, 2022"
     },
     {
-      "id": 9,
+      "id": 8,
       "img": "https://res.cloudinary.com/cloudwanders/image/upload/v1648520553/CORAL/Avatar_dex9ut.png",
       "name": "Holly Hollandaze",
       "organization": "Hollandaze Resorts",
@@ -130,7 +130,7 @@
       "email": "holly@eggsquad.io",
       "phone": "222-777-1921",
       "dateAcquired": "February 4, 2022",
-      "totalSales": 32999,
+      "totalSales": 3299,
       "projects": 6,
       "growth": 14,
       "lastInvoice": "February 25, 2022"
