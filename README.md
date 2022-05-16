@@ -55,6 +55,9 @@ Deletes contents of the 'build' directory to allow for a fresh rebuild.
      │    └── dashboard
      │
      ├─── routes
+     │    └── analytics
+     │    └── client list
+     │    └── invoice list
      │
      └─── utilities
      │

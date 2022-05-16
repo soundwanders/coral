@@ -18,6 +18,7 @@ export const BluePalette = [
   '#6186ff',
   '#7070ff',
 ];
+
 export const GlacierPalette = [
   '#6186ff',
   '#9090ff',
