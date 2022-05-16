@@ -14,6 +14,7 @@ export const Title = styled.h1`
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 90%;
     text-align: center;
+    font-size: 3rem;
 
     svg {
       margin: 0 0 -0.1rem 0;
