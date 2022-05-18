@@ -114,7 +114,7 @@ const Input = styled.input`
 `;
 
 export const ClientUl = styled.ul`
-  padding: 1rem 2.25rem 2rem 2.25rem;
+  padding: 1rem 2.3rem 2rem 2.3rem;
   margin: 0;
   min-width: 265px;
   background: ${White};
@@ -134,12 +134,6 @@ export const ClientUl = styled.ul`
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     min-width: 260px;
   }
-`;
-
-export const Portrait = styled.img`
-  display: flex;
-  width: 5rem;
-  padding: 0.5rem 0;
 `;
 
 export const ListItem = styled.li`

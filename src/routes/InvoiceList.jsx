@@ -1,101 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import Sidebar from '../components/Sidebar';
-import Badges from '../components/common/Badges';
+import InvoiceFilter from '../components/InvoiceFilter';
 import { Container, Wrapper, FlexContainer, Title, Underline } from '../components/common';
-import { White, CardShadow, HoverEffect } from '../utilities';
-import { BiDollarCircle } from 'react-icons/bi';
+import { White, CardShadow, HoverEffect, SearchBarShadow } from '../utilities';
 import { GiAnglerFish } from 'react-icons/gi';
-import data from '../db.json';
+import { FiSearch } from 'react-icons/fi';
 
 const InvoiceList = () => {
-  const placeholder = 'Processed';
-  const description = `
-    Tellus elementum sagittis vitae et leo duis. Eget nunc lobortis 
-    mattis aliquam faucibus purus. A erat nam at lectus urna duis
-    convallis. Porttitor dolor morbi non arcu risus quis varius terna.
-    Viverra mattis nunc sed blano.
-  `;
-
+  const [inputText, setInputText] = useState('');
+  let handleInput = e => {
+    const lowerCase = e.target.value.toLowerCase();
+    setInputText(lowerCase);
+  };
   return (
     <Container>
       <Sidebar />
       <Wrapper>
-        <Title>
-          Recent Invoices <GiAnglerFish />{' '}
-        </Title>
+        <TitleWrapper>
+          <Title>
+            Recent Invoices <GiAnglerFish />{' '}
+          </Title>
+          <InputContainer>
+            <Icon>
+              <FiSearch />
+            </Icon>
+            <Input type="text" placeholder="Search..." onChange={handleInput} />
+          </InputContainer>
+          </TitleWrapper>
         <Underline />
         <FlexContainer>
           <Grid>
-            {data.clients.map(
-              ({ id, img, name, organization, address, state, lastInvoice, phone, totalSales }) => (
-                <CardContainer key={id}>
-                  <Row>
-                    <Portrait src={img} id="ClientPhoto" alt={name} draggable="false" />
-                  </Row>
-
-                  <Row>
-                    <CardContent>
-                      <Label>NAME</Label>
-                      {name}
-                    </CardContent>
-                    <CardContent>
-                      <Label>ORGANIZATION</Label>
-                      {organization}
-                    </CardContent>
-                  </Row>
-
-                  <Row>
-                    <CardContent>
-                      <Label>ADDRESS</Label>
-                      {address}
-                    </CardContent>
-                    <CardContent>
-                      <Label>STATE</Label>
-                      {state}
-                    </CardContent>
-                  </Row>
-
-                  <Row>
-                    <CardContent>
-                      <Label>DATE</Label>
-                      {lastInvoice}
-                    </CardContent>
-                    <CardContent>
-                      <Label>PHONE</Label>
-                      {phone}
-                    </CardContent>
-                  </Row>
-
-                  <Row>
-                    <CardContent>
-                      <Label>DETAILS</Label>
-                      {description}
-                    </CardContent>
-                  </Row>
-
-                  <Row>
-                    <CardsBottomRow>
-                      <Label>AMOUNT</Label>
-                      <DollarSign>
-                        <BiDollarCircle />
-                      </DollarSign>
-                      {totalSales}
-                    </CardsBottomRow>
-                    <CardsBottomRow>
-                      <Label>STATUS</Label>
-                      {placeholder}
-                    </CardsBottomRow>
-                    <CardsBottomRow>
-                      <Label>
-                        <Badges content="Paid" paid />
-                      </Label>
-                    </CardsBottomRow>
-                  </Row>
-                </CardContainer>
-              ),
-            )}
+            <InvoiceFilter input={inputText} />
           </Grid>
         </FlexContainer>
       </Wrapper>
@@ -110,6 +47,54 @@ export const Fade = keyframes`
   }
   100% {
     opacity: 1.0;
+  }
+`;
+
+const TitleWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+`;
+
+const InputContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  box-shadow: ${SearchBarShadow};
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    box-shadow: none;
+    padding: 2rem 0;
+  }
+`;
+
+const Icon = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.7rem;
+  width: 3rem;
+  background-color: #f6f8ff;
+  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+  svg {
+    color: #444444;
+  }
+`;
+
+const Input = styled.input`
+  border: 0;
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  background-color: #f6f8ff;
+
+  &:focus {
+    border: none;
+    outline: none;
   }
 `;
 
@@ -128,7 +113,7 @@ const Grid = styled.div`
 `;
 
 // white-space: normal prevents invoice description from overflowing container
-const CardContainer = styled.div`
+export const CardContainer = styled.div`
   padding: 2rem 2rem 3rem 2rem;
   white-space: normal;
   background: ${White};
@@ -148,13 +133,7 @@ const CardContainer = styled.div`
   }
 `;
 
-const Portrait = styled.img`
-  width: 5rem;
-  padding: 0 0 0.5rem 0;
-  margin: 0 auto;
-`;
-
-const CardContent = styled.div`
+export const CardContent = styled.div`
   width: 90%;
   flex: 0 0 55%;
   font-size: 1.125rem;
@@ -168,7 +147,7 @@ const CardContent = styled.div`
 
 // nth-child(5) to target the DETAILS text field
 // nth-child(6) targets last row of card (AMOUNT, STATUS, and Badge)
-const Row = styled.div`
+export const Row = styled.div`
   display: flex;
   min-width: 0;
   padding: 0.2rem 0 0 0;
@@ -192,7 +171,7 @@ const Row = styled.div`
   }
 `;
 
-const CardsBottomRow = styled.div`
+export const CardsBottomRow = styled.div`
   width: 90%;
   border-radius: 0.5rem;
   padding-bottom: 1rem;
@@ -219,7 +198,7 @@ const CardsBottomRow = styled.div`
 `;
 
 // span:nth-child(1) targets Badge icon
-const Label = styled.span`
+export const Label = styled.span`
   display: flex;
   padding: 0.1rem 0;
   margin: 1.3rem 0 0.125rem 0rem;
@@ -238,7 +217,7 @@ const Label = styled.span`
   }
 `;
 
-const DollarSign = styled.span`
+export const DollarSign = styled.span`
   svg {
     margin: 0 2% -2.5% 0;
     max-width: 1.125rem;

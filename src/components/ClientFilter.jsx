@@ -1,8 +1,9 @@
 import React from 'react';
+import { ClientUl, ListItem, Label } from '../routes/ClientList';
+import { Portrait } from './common/Portrait';
 import data from '../db.json';
-import { ClientUl, ListItem, Portrait, Label } from '../routes/ClientList';
 
-const List = props => {
+const ClientList = props => {
   const ClientFilter = data.clients.filter(info => {
     if (props.input === '') return info;
     else {
@@ -27,4 +28,4 @@ const List = props => {
   );
 };
 
-export default List;
+export default ClientList;
