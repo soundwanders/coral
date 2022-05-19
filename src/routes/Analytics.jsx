@@ -169,7 +169,7 @@ const CardContainer = styled.div`
   margin: 0;
   border-radius: 1rem;
   background: ${White};
-  background-image: linear-gradient(to top, #294085 14%, #fbfaee 14%);
+  background-image: linear-gradient(to top, #294085 14%, #fffef5 14%);
   box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
 
