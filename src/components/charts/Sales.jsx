@@ -21,7 +21,7 @@ const SalesChart = () => {
     <ResponsiveContainer minHeight={340} width="100%">
       <PieChart
         margin={{
-          top: -30,
+          top: -50,
           right: 2,
           left: 2,
           bottom: 2,
@@ -32,7 +32,7 @@ const SalesChart = () => {
           data={fetchSales}
           dataKey="totalSales"
           innerRadius={60}
-          outerRadius={120}
+          outerRadius={130}
           paddingAngle={8}
         >
           {data.clients.map((entry, index) => (

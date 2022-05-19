@@ -166,7 +166,7 @@ const Label = styled.span`
 const CardContainer = styled.div`
   width: 80%;
   padding: 0 2rem;
-  margin: 0;
+  margin: 0 0 2rem 0;
   border-radius: 1rem;
   background: ${White};
   background-image: linear-gradient(to top, #294085 14%, #fffef5 14%);
