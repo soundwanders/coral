@@ -83,7 +83,7 @@ const Grid = styled.div`
   width: 80%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  gap: 4.5rem;
+  gap: 3rem 4.5rem;
   margin-top: 0.125rem;
   white-space: nowrap;
   justify-content: start;
@@ -169,7 +169,7 @@ const CardContainer = styled.div`
   margin: 0;
   border-radius: 1rem;
   background: ${White};
-  background-image: linear-gradient(to top, #294085 14%, ${White} 14%);
+  background-image: linear-gradient(to top, #294085 14%, #fbfaee 14%);
   box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
 

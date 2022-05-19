@@ -9,7 +9,8 @@ export const White = '#fbfbfb';
 export const PrimaryBadgeColor = '#5858f5';
 export const PaidGreen = '#2d8600';
 export const LateRed = '#e55054';
-export const BluePalette = [
+
+export const ThemeColorPalette = [
   '#6161ff',
   '#7070ff',
   '#5757e5',
@@ -35,9 +36,21 @@ export const VermillionCityPalette = [
   '#dbdcf5',
   '#c1c3ff',
   '#b3b6e9',
-  '#d0d2f1',
+  '#bcc3eb',
   '#818ed9',
   '#95a0df',
+];
+
+export const PurplePalette = [
+  '#cfcfff', 
+  '#cdc0ff', 
+  '#ccb3ff', 
+  '#cca6ff', 
+  '#c894fd', 
+  '#c9e3ff', 
+  '#c9d6ff', 
+  '#d7c9ff', 
+  '#c9e0ff', 
 ];
 
 export const PastelPalette = ['#f6a6b2', '#9cfbac', '#bfc6ff', '#ffd7b5', '#ffaed6', '#bfe6ff'];

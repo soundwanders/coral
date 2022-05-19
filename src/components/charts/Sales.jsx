@@ -1,6 +1,6 @@
 import React from 'react';
 import { ResponsiveContainer, PieChart, Pie, Cell, Tooltip } from 'recharts';
-import { PastelPalette } from '../../utilities';
+import { ThemeColorPalette } from '../../utilities';
 import { TooltipLabel } from '../common';
 import data from '../../db.json';
 
@@ -33,10 +33,10 @@ const SalesChart = () => {
           dataKey="totalSales"
           innerRadius={60}
           outerRadius={120}
-          paddingAngle={5}
+          paddingAngle={8}
         >
           {data.clients.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={PastelPalette[index % PastelPalette.length]} />
+            <Cell key={`cell-${index}`} fill={ThemeColorPalette[index % ThemeColorPalette.length]} />
           ))}
         </Pie>
       </PieChart>

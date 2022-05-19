@@ -169,6 +169,9 @@ export const Row = styled.div`
       font-size: 0.85rem;
     }
   }
+  img {
+    margin: 0 auto;
+  }
 `;
 
 export const CardsBottomRow = styled.div`
