@@ -32,7 +32,7 @@ const SalesChart = () => {
           data={fetchSales}
           dataKey="totalSales"
           innerRadius={60}
-          outerRadius={130}
+          outerRadius={125}
           paddingAngle={8}
         >
           {data.clients.map((entry, index) => (
