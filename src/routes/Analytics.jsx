@@ -179,7 +179,7 @@ const CardContainer = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 90%;
-    padding: 0.3rem 1rem;
+    padding: 0.5rem 1rem;
   }
 `;
 
