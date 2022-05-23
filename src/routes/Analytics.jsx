@@ -6,6 +6,7 @@ import Sidebar from '../components/Sidebar';
 import GrowthChart from '../components/charts/Growth';
 import SalesChart from '../components/charts/Sales';
 import ProjectsChart from '../components/charts/Projects';
+import Fish from '../components/common/Fish';
 
 import {
   TotalClients,
@@ -63,6 +64,11 @@ const Analytics = () => {
             </CardContainer>
           </Grid>
         </FlexContainer>
+        <ProgressBar>
+          <FishWrapper>
+            <Fish />
+          </FishWrapper>
+        </ProgressBar>
       </Wrapper>
       <Outlet />
     </Container>
@@ -90,7 +96,7 @@ const Grid = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     grid-template-columns: 1fr;
-    gap: 3.5rem 0;
+    gap: 2.5rem 0;
     white-space: nowrap;
     width: 90%;
   }
@@ -169,7 +175,7 @@ const CardContainer = styled.div`
   margin: 0 0 2rem 0;
   border-radius: 1rem;
   background: ${White};
-  background-image: linear-gradient(to top, #294085 14%, #fffef5 14%);
+  background-image: linear-gradient(to top, #294085 15%, #fffef5 15%);
   box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
 
@@ -203,6 +209,28 @@ const ChartLabel = styled.div`
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     font-size: 1.25rem;
     transform: translateY(-1.35rem);
+  }
+`;
+
+const ProgressBar = styled.div`
+  display: inline-block;
+  width: 86%;
+  height: 2.5rem;
+  margin-left: 1rem;
+  border-radius: 0.75rem;
+  background-color: #85FFBD;
+  background-image: linear-gradient(90deg, #223775 0%, #5f81e6 50%, #3e63ce 80%, #223775 100%);
+  overflow: hidden;
+`;
+
+const FishWrapper = styled.span`
+  display: block;
+  color: ${White};
+  line-height: 1.5;
+  margin: 0 auto;
+
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    color: #255dd5;
   }
 `;
 

@@ -54,7 +54,7 @@ const Sidebar = () => {
 
           <SidebarLinks>
             <AiOutlineFileSync />
-            <Link to="/">
+            <Link to="/Projects">
               {' '}
               <h2> Projects </h2>{' '}
             </Link>
