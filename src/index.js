@@ -3,6 +3,7 @@ import App from './App';
 import ClientList from './routes/ClientList';
 import InvoiceList from './routes/InvoiceList';
 import Analytics from './routes/Analytics';
+import Projects from './routes/Projects';
 import { render } from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -14,13 +15,13 @@ render(
       <Route path="Analytics" element={<Analytics />} />
       <Route path="ClientList" element={<ClientList />} />
       <Route path="InvoiceList" element={<InvoiceList />} />
+      <Route path="Projects" element={<Projects />} />
       <Route
         path="*"
         element={
           <main style={{ position: 'absolute', top: '30%', left: '30%', padding: '1rem' }}>
             <h1>Oops! Looks like we took a wrong turn.</h1>
-            <a
-              href="/"
+            <a href="/"
               style={{
                 position: 'absolute',
                 left: '30%',
