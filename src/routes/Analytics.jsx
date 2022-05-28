@@ -196,6 +196,11 @@ const OverviewWrapper = styled.div`
   background-position: bottom;
   box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
+
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
 `;
 
 const CardContainer = styled.div`
