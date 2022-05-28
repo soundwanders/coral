@@ -28,7 +28,7 @@ const InvoiceList = () => {
             </Icon>
             <Input type="text" placeholder="Search..." onChange={handleInput} />
           </InputContainer>
-          </TitleWrapper>
+        </TitleWrapper>
         <Underline />
         <FlexContainer>
           <Grid>

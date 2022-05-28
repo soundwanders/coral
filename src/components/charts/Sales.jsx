@@ -36,7 +36,10 @@ const SalesChart = () => {
           paddingAngle={8}
         >
           {data.clients.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={ThemeColorPalette[index % ThemeColorPalette.length]} />
+            <Cell
+              key={`cell-${index}`}
+              fill={ThemeColorPalette[index % ThemeColorPalette.length]}
+            />
           ))}
         </Pie>
       </PieChart>

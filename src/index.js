@@ -21,7 +21,8 @@ render(
         element={
           <main style={{ position: 'absolute', top: '30%', left: '30%', padding: '1rem' }}>
             <h1>Oops! Looks like we took a wrong turn.</h1>
-            <a href="/"
+            <a
+              href="/"
               style={{
                 position: 'absolute',
                 left: '30%',

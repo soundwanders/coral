@@ -38,7 +38,10 @@ const GrowthChart = () => {
           fill="#6161ff"
         >
           {data.clients.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={VermillionCityPalette[index % VermillionCityPalette.length]} />
+            <Cell
+              key={`cell-${index}`}
+              fill={VermillionCityPalette[index % VermillionCityPalette.length]}
+            />
           ))}
         </Pie>
       </PieChart>

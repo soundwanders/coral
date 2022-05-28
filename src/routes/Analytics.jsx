@@ -2,11 +2,13 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import Badges from '../components/common/Badges';
-import Sidebar from '../components/Sidebar';
-import GrowthChart from '../components/charts/Growth';
-import SalesChart from '../components/charts/Sales';
-import ProjectsChart from '../components/charts/Projects';
 import Fish from '../components/common/Fish';
+import Sidebar from '../components/Sidebar';
+import ConversionsChart from '../components/charts/Conversions';
+import GrowthChart from '../components/charts/Growth';
+import OverviewChart from '../components/charts/Overview';
+import ProjectsChart from '../components/charts/Projects';
+import SalesChart from '../components/charts/Sales';
 
 import {
   TotalClients,
@@ -42,6 +44,18 @@ const Analytics = () => {
             </SalesCard>
 
             <CardContainer>
+              <ConversionsChart />
+              <ChartLabel>
+                CONVERSIONS
+                <Badges content="+ 21%" charts />
+              </ChartLabel>
+            </CardContainer>
+
+            <OverviewWrapper>
+              <OverviewChart />
+            </OverviewWrapper>
+
+            <CardContainer>
               <GrowthChart />
               <ChartLabel>
                 ANNUAL GROWTH
@@ -52,7 +66,7 @@ const Analytics = () => {
               <SalesChart />
               <ChartLabel>
                 TOTAL REVENUE
-                <Badges content="+ 14%" charts />
+                <Badges content="+ 15%" charts />
               </ChartLabel>
             </CardContainer>
             <CardContainer>
@@ -64,6 +78,7 @@ const Analytics = () => {
             </CardContainer>
           </Grid>
         </FlexContainer>
+
         <ProgressBar>
           <FishWrapper>
             <Fish />
@@ -89,7 +104,7 @@ const Grid = styled.div`
   width: 80%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  gap: 3rem 4.5rem;
+  gap: 3.5rem 4.5rem;
   margin-top: 0.125rem;
   white-space: nowrap;
   justify-content: start;
@@ -169,10 +184,25 @@ const Label = styled.span`
   color: ${White};
 `;
 
+const OverviewWrapper = styled.div`
+  grid-column-start: 2;
+  grid-column-end: 4;
+  padding: 0 2rem;
+  margin: 0;
+  border-radius: 1rem;
+  background-color: #f9f9f9;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -500 100 1000'%3E%3Cg %3E%3Ccircle fill='%23F9F9F9' cx='50' cy='0' r='50'/%3E%3Cg fill='%23f8f8f9' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f7f7fa' cx='50' cy='100' r='50'/%3E%3Cg fill='%23f5f6fa' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f4f4fa' cx='50' cy='200' r='50'/%3E%3Cg fill='%23f3f3fb' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f2f2fb' cx='50' cy='300' r='50'/%3E%3Cg fill='%23f1f1fb' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f0f0fb' cx='50' cy='400' r='50'/%3E%3Cg fill='%23eeeffc' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ededfc' cx='50' cy='500' r='50'/%3E%3Cg fill='%23ececfc' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ebebfd' cx='50' cy='600' r='50'/%3E%3Cg fill='%23eaeafd' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e8e9fd' cx='50' cy='700' r='50'/%3E%3Cg fill='%23e7e8fe' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e6e7fe' cx='50' cy='800' r='50'/%3E%3Cg fill='%23e5e5fe' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e3e4fe' cx='50' cy='900' r='50'/%3E%3Cg fill='%23e2e3ff' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23E1E2FF' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: contain;
+  background-position: bottom;
+  box-shadow: ${CardShadow};
+  transition: 0.3s ease-in-out;
+`;
+
 const CardContainer = styled.div`
   width: 80%;
+  max-height: 22rem;
   padding: 0 2rem;
-  margin: 0 0 2rem 0;
+  margin: 0;
   border-radius: 1rem;
   background: ${White};
   background-image: linear-gradient(to top, #294085 15%, #fffef5 15%);
@@ -214,12 +244,10 @@ const ChartLabel = styled.div`
 
 const ProgressBar = styled.div`
   display: inline-block;
-  width: 86%;
+  width: 85%;
   height: 2.5rem;
   margin-left: 1rem;
-  border-radius: 0.75rem;
-  background-color: #85FFBD;
-  background-image: linear-gradient(90deg, #223775 0%, #5f81e6 50%, #3e63ce 80%, #223775 100%);
+  background-color: transparent;
   overflow: hidden;
 `;
 

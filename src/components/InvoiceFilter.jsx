@@ -1,6 +1,13 @@
 import React from 'react';
 import Badges from '../components/common/Badges';
-import { CardContainer, Row, CardContent, CardsBottomRow, Label, DollarSign } from '../routes/InvoiceList';
+import {
+  CardContainer,
+  Row,
+  CardContent,
+  CardsBottomRow,
+  Label,
+  DollarSign,
+} from '../routes/InvoiceList';
 import { Portrait } from './common/Portrait';
 import { BiDollarCircle } from 'react-icons/bi';
 import data from '../db.json';
@@ -20,7 +27,7 @@ const InvoiceList = props => {
       return (
         info.name.toLowerCase().includes(props.input) ||
         info.organization.toLowerCase().includes(props.input) ||
-        info.state.toLowerCase() === (props.input) 
+        info.state.toLowerCase() === props.input
       );
     }
   });

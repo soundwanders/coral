@@ -18,16 +18,18 @@ export const ThemeColorPalette = [
   '#7e7eff',
   '#6186ff',
   '#7070ff',
+  '#5a5ae5',
 ];
 
-export const GlacierPalette = [
-  '#6186ff',
-  '#9090ff',
-  '#7070ff',
-  '#5757e5',
-  '#7e7eff',
-  '#6161ff',
-  '#7070ff',
+export const DeepBluePalette = [
+  '#145f8f',
+  '#00618a',
+  '#004d6e',
+  '#195e7c',
+  '#164367',
+  '#4c8299',
+  '#0074a4',
+  '#32667c',
 ];
 
 export const VermillionCityPalette = [
@@ -42,15 +44,15 @@ export const VermillionCityPalette = [
 ];
 
 export const PurplePalette = [
-  '#cfcfff', 
-  '#cdc0ff', 
-  '#ccb3ff', 
-  '#cca6ff', 
-  '#c894fd', 
-  '#c9e3ff', 
-  '#c9d6ff', 
-  '#d7c9ff', 
-  '#c9e0ff', 
+  '#cfcfff',
+  '#cdc0ff',
+  '#ccb3ff',
+  '#cca6ff',
+  '#c894fd',
+  '#bcbbe7',
+  '#c9d6ff',
+  '#d7c9ff',
+  '#c9e0ff',
 ];
 
 export const PastelPalette = ['#f6a6b2', '#9cfbac', '#bfc6ff', '#ffd7b5', '#ffaed6', '#bfe6ff'];

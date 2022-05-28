@@ -1,25 +1,31 @@
 import React from 'react';
-import { ResponsiveContainer, AreaChart, Area } from 'recharts';
+import { LineChart, Line, Legend, ResponsiveContainer } from 'recharts';
 import data from '../../db.json';
 
 const fetchData = data.clients.map(({ name, growth, projects }) => ({ name, growth, projects }));
 
 const OverviewChart = () => {
   return (
-    <ResponsiveContainer minHeight={320} width="100%">
-      <AreaChart
+    <ResponsiveContainer width="100%" height="100%">
+      <LineChart
         data={fetchData}
-        stackOffset="expand"
         margin={{
-          top: -20,
-          right: 2,
-          left: 2,
-          bottom: 2,
+          top: 5,
+          right: 20,
+          left: 20,
+          bottom: 5,
         }}
       >
-        <Area type="monotone" dataKey="growth" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
-        <Area type="monotone" dataKey="projects" stackId="1" stroke="#6161ff" fill="#6161ff" />
-      </AreaChart>
+        <Legend />
+        <Line
+          type="monotone"
+          dataKey="growth"
+          strokeWidth={2}
+          stroke="#ff8834"
+          activeDot={{ r: 8 }}
+        />
+        <Line type="monotone" dataKey="projects" strokeWidth={2} stroke="#6161ff" fill="#6161ff" />
+      </LineChart>
     </ResponsiveContainer>
   );
 };
