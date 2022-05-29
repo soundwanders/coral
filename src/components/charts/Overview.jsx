@@ -6,7 +6,7 @@ const fetchData = data.clients.map(({ name, growth, projects }) => ({ name, grow
 
 const OverviewChart = () => {
   return (
-    <ResponsiveContainer width="100%" height="100%">
+    <ResponsiveContainer width="100%" minHeight={340}>
       <LineChart
         data={fetchData}
         margin={{
