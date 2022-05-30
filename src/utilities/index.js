@@ -28,8 +28,8 @@ export const DeepBluePalette = [
   '#195e7c',
   '#164367',
   '#4c8299',
-  '#0074a4',
   '#32667c',
+  '#00577c',
 ];
 
 export const VermillionCityPalette = [

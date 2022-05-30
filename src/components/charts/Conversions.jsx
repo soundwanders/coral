@@ -1,6 +1,6 @@
 import React from 'react';
 import { ResponsiveContainer, PieChart, Pie, Cell, Tooltip } from 'recharts';
-import { DeepBluePalette } from '../../utilities';
+import { VermillionCityPalette } from '../../utilities';
 import { TooltipLabel } from '../common';
 import data from '../../db.json';
 
@@ -75,7 +75,10 @@ const ConversionsChart = () => {
           fill="#fff"
         >
           {data.clients.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={DeepBluePalette[index % DeepBluePalette.length]} />
+            <Cell
+              key={`cell-${index}`}
+              fill={VermillionCityPalette[index % VermillionCityPalette.length]}
+            />
           ))}
         </Pie>
       </PieChart>

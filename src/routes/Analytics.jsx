@@ -187,7 +187,6 @@ const Label = styled.span`
 const OverviewWrapper = styled.div`
   grid-column-start: 2;
   grid-column-end: 4;
-  padding: 0 2rem;
   margin: 0;
   border-radius: 1rem;
   background-color: #f9f9f9;
@@ -196,6 +195,10 @@ const OverviewWrapper = styled.div`
   background-position: bottom;
   box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: ${HoverEffect};
+  }
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     grid-column-start: 1;
@@ -207,7 +210,7 @@ const OverviewWrapper = styled.div`
 
 const CardContainer = styled.div`
   width: 80%;
-  max-height: 22rem;
+  max-height: 25rem;
   padding: 0 2rem;
   margin: 0;
   border-radius: 1rem;

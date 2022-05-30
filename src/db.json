@@ -12,7 +12,8 @@
       "dateAcquired": "November 18, 2021",
       "totalSales": 8200,
       "projects": 10,
-      "growth": 25,
+      "growth": 18,
+      "conversions": 5,
       "lastInvoice": "December 20, 2021"
     },
     {
@@ -28,6 +29,7 @@
       "totalSales": 10590,
       "projects": 16,
       "growth": 8,
+      "conversions": 16,
       "lastInvoice": "January 9, 2022"
     },
     {
@@ -43,6 +45,7 @@
       "totalSales": 1820,
       "projects": 14,
       "growth": 15,
+      "conversions": 14,
       "lastInvoice": "December 2, 2021"
     },
     {
@@ -58,6 +61,7 @@
       "totalSales": 3500,
       "projects": 17,
       "growth": 13,
+      "conversions": 9,
       "lastInvoice": "March 29, 2022"
     },
     {
@@ -73,6 +77,7 @@
       "totalSales": 5255,
       "projects": 9,
       "growth": 6,
+      "conversions": 22,
       "lastInvoice": "February 3, 2022"
     },
     {
@@ -88,6 +93,7 @@
       "totalSales": 8506,
       "projects": 21,
       "growth": 21,
+      "conversions": 15,
       "lastInvoice": "January 2, 2022"
     },
     {
@@ -103,6 +109,7 @@
       "totalSales": 3900,
       "projects": 13,
       "growth": 12,
+      "conversions": 10,
       "lastInvoice": "December 2, 2021"
     },
     {
@@ -118,6 +125,7 @@
       "totalSales": 8200,
       "projects": 18,
       "growth": 8,
+      "conversions": 14,
       "lastInvoice": "March 12, 2022"
     },
     {
@@ -133,6 +141,7 @@
       "totalSales": 3299,
       "projects": 6,
       "growth": 14,
+      "conversions": 16,
       "lastInvoice": "February 25, 2022"
     }
   ]
