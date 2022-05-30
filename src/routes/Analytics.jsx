@@ -44,46 +44,46 @@ const Analytics = () => {
             </SalesCard>
 
             <CardContainer>
-              <ConversionsChart />
+              <SalesChart />
               <ChartLabel>
-                CONVERSIONS
-                <Badges content="+ 21%" charts />
+                Revenue
+                <Badges content="+ 15%" charts />
               </ChartLabel>
             </CardContainer>
 
             <OverviewWrapper>
               <OverviewChart />
             </OverviewWrapper>
-
+            
             <CardContainer>
-              <GrowthChart />
+              <ConversionsChart />
               <ChartLabel>
-                ANNUAL GROWTH
-                <Badges content="+ 8%" charts />
+                Conversions
+                <Badges content="+ 21%" charts />
               </ChartLabel>
             </CardContainer>
             <CardContainer>
-              <SalesChart />
+              <GrowthChart />
               <ChartLabel>
-                TOTAL REVENUE
-                <Badges content="+ 15%" charts />
+                Growth
+                <Badges content="+ 8%" charts />
               </ChartLabel>
             </CardContainer>
             <CardContainer>
               <ProjectsChart />
               <ChartLabel>
-                ACTIVE PROJECTS
+                Projects
                 <Badges content="+ 6%" charts />
               </ChartLabel>
             </CardContainer>
           </Grid>
         </FlexContainer>
 
-        <ProgressBar>
+        <AnimationWrapper>
           <FishWrapper>
             <Fish />
           </FishWrapper>
-        </ProgressBar>
+        </AnimationWrapper>
       </Wrapper>
       <Outlet />
     </Container>
@@ -178,7 +178,7 @@ const SalesCard = styled.div`
 
 const Label = styled.span`
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 0.5;
   text-align: right;
   color: ${White};
@@ -190,7 +190,7 @@ const OverviewWrapper = styled.div`
   margin: 0;
   border-radius: 1rem;
   background-color: #f9f9f9;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -600 100 1000'%3E%3Cg %3E%3Ccircle fill='%23F9F9F9' cx='50' cy='0' r='50'/%3E%3Cg fill='%23f8f8f9' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f7f7fa' cx='50' cy='100' r='50'/%3E%3Cg fill='%23f5f6fa' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f4f4fa' cx='50' cy='200' r='50'/%3E%3Cg fill='%23f3f3fb' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f2f2fb' cx='50' cy='300' r='50'/%3E%3Cg fill='%23f1f1fb' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f0f0fb' cx='50' cy='400' r='50'/%3E%3Cg fill='%23eeeffc' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ededfc' cx='50' cy='500' r='50'/%3E%3Cg fill='%23ececfc' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ebebfd' cx='50' cy='600' r='50'/%3E%3Cg fill='%23eaeafd' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e8e9fd' cx='50' cy='700' r='50'/%3E%3Cg fill='%23e7e8fe' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e6e7fe' cx='50' cy='800' r='50'/%3E%3Cg fill='%23e5e5fe' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e3e4fe' cx='50' cy='900' r='50'/%3E%3Cg fill='%23e2e3ff' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23E1E2FF' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -400 100 1000'%3E%3Cg %3E%3Ccircle fill='%23F9F9F9' cx='50' cy='0' r='50'/%3E%3Cg fill='%23f8f8f9' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f7f7fa' cx='50' cy='100' r='50'/%3E%3Cg fill='%23f5f6fa' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f4f4fa' cx='50' cy='200' r='50'/%3E%3Cg fill='%23f3f3fb' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f2f2fb' cx='50' cy='300' r='50'/%3E%3Cg fill='%23f1f1fb' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f0f0fb' cx='50' cy='400' r='50'/%3E%3Cg fill='%23eeeffc' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ededfc' cx='50' cy='500' r='50'/%3E%3Cg fill='%23ececfc' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ebebfd' cx='50' cy='600' r='50'/%3E%3Cg fill='%23eaeafd' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e8e9fd' cx='50' cy='700' r='50'/%3E%3Cg fill='%23e7e8fe' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e6e7fe' cx='50' cy='800' r='50'/%3E%3Cg fill='%23e5e5fe' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e3e4fe' cx='50' cy='900' r='50'/%3E%3Cg fill='%23e2e3ff' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23E1E2FF' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
   background-size: contain;
   background-position: bottom;
   box-shadow: ${CardShadow};
@@ -241,7 +241,7 @@ const ChartLabel = styled.div`
   line-height: 0;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.45rem;
+  font-size: 1.5rem;
   color: ${White};
   font-weight: 600;
   transform: translateY(-1.5rem);
@@ -252,7 +252,7 @@ const ChartLabel = styled.div`
   }
 `;
 
-const ProgressBar = styled.div`
+const AnimationWrapper = styled.div`
   display: inline-block;
   width: 85%;
   height: 2.5rem;

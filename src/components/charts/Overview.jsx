@@ -11,13 +11,13 @@ const fetchData = data.clients.map(({ name, growth, projects, conversions }) => 
 
 const OverviewChart = () => {
   return (
-    <ResponsiveContainer minHeight={340} width="99%">
+    <ResponsiveContainer minHeight={320} width="100%">
       <LineChart
         data={fetchData}
         margin={{
-          top: 5,
-          right: 20,
-          left: 20,
+          top: 10,
+          right: 30,
+          left: 30,
           bottom: 5,
         }}
       >
@@ -33,25 +33,21 @@ const OverviewChart = () => {
           type="monotone"
           dataKey="conversions"
           strokeWidth={2}
-          stroke="#57e557"
-          fill="#57e557"
+          stroke="#1dd177"
+          fill="#1dd177"
           dot={false}
         />
         <Line
           type="monotone"
           dataKey="projects"
           strokeWidth={2}
-          stroke="#5757e5"
-          fill="#5757e5"
+          stroke="#6f57e5"
+          fill="#6f57e5"
           dot={false}
         />
         <Legend
-          margin={{
-            top: 0,
-            right: 0,
-            left: 0,
-            bottom: 10,
-          }}
+          height={30} 
+          formatter={(value, entry, index) => <span className="overview-legend">{value}</span>}
         />
       </LineChart>
     </ResponsiveContainer>

@@ -70,7 +70,7 @@ const ConversionsChart = () => {
           data={conversionData}
           dataKey="percentage"
           innerRadius={60}
-          outerRadius={125}
+          outerRadius={120}
           paddingAngle={8}
           fill="#fff"
         >

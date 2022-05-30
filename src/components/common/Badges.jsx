@@ -85,12 +85,12 @@ const Badge = styled.span`
     charts &&
     `
       position: relative;
-      bottom: 0.3rem;
+      bottom: 0.1rem;
       background-color: ${White};
       color: #020202;
-      font-size: 0.825rem;
+      font-size: 0.8rem;
       font-weight: 600;
-      padding: 0.2rem 0.5rem;
+      padding: 0.175rem 0.525rem;
       margin: 0 0 0 1rem;
       cursor: default;
 

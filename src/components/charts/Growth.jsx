@@ -33,7 +33,7 @@ const GrowthChart = () => {
           data={fetchGrowth}
           dataKey="growth"
           innerRadius={60}
-          outerRadius={125}
+          outerRadius={120}
           paddingAngle={8}
           fill="#6161ff"
         >
