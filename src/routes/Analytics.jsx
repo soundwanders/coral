@@ -241,13 +241,13 @@ const ChartLabel = styled.div`
   line-height: 0;
   text-align: center;
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   color: ${White};
   font-weight: 600;
   transform: translateY(-1.5rem);
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     transform: translateY(-1.35rem);
   }
 `;
