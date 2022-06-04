@@ -1,18 +1,12 @@
-import { React, useState } from 'react';
+import { React } from 'react';
 import { Outlet } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import Sidebar from '../components/Sidebar';
 import { Container, Wrapper, FlexContainer, Title, Underline } from '../components/common';
-import { White, CardShadow, HoverEffect, SearchBarShadow } from '../utilities';
-import { FiSearch } from 'react-icons/fi';
+import { White } from '../utilities';
 import { GiOctopus } from 'react-icons/gi';
 
 const Projects = () => {
-  const [inputText, setInputText] = useState('');
-  let handleInput = e => {
-    const lowerCase = e.target.value.toLowerCase();
-    setInputText(lowerCase);
-  };
   return (
     <Container>
       <Sidebar />
@@ -21,12 +15,6 @@ const Projects = () => {
           <Title>
             Coral Projects <GiOctopus />{' '}
           </Title>
-          <InputContainer>
-            <Icon>
-              <FiSearch />
-            </Icon>
-            <Input type="text" placeholder="Search..." onChange={handleInput} />
-          </InputContainer>
         </TitleWrapper>
         <Underline />
         <FlexContainer>
@@ -72,6 +60,34 @@ export const Fade = keyframes`
 //   }
 // `;
 
+
+const ProjectGrid = styled.div`
+  display: grid;
+  width: 85%;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+
+  div {
+    background-color: hotpink;
+    color: ${White};
+    font-size: 4vw;
+    padding: 10px;
+  }
+
+  div:nth-child(1) {
+    grid-column: span 2;
+  }
+
+  div:nth-child(2) {
+    grid-row: span 4;
+  }
+
+  div:nth-child(9) {
+    grid-column: span 3;
+  }
+`;
+
 const TitleWrapper = styled.div`
   display: flex;
   justify-content: space-between;
@@ -81,42 +97,6 @@ const TitleWrapper = styled.div`
     width: 90%;
     flex-wrap: wrap;
     justify-content: center;
-  }
-`;
-
-const InputContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  box-shadow: ${SearchBarShadow};
-  @media screen and (min-width: 320px) and (max-width: 1080px) {
-    box-shadow: none;
-    padding: 2rem 0;
-  }
-`;
-
-const Icon = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 2.7rem;
-  width: 3rem;
-  background-color: #f6f8ff;
-  border-top-left-radius: 0.75rem;
-  border-bottom-left-radius: 0.75rem;
-  svg {
-    color: #444444;
-  }
-`;
-
-const Input = styled.input`
-  border: 0;
-  border-top-right-radius: 0.75rem;
-  border-bottom-right-radius: 0.75rem;
-  background-color: #f6f8ff;
-
-  &:focus {
-    border: none;
-    outline: none;
   }
 `;
 
@@ -142,33 +122,6 @@ export const Label = styled.span`
   font-size: 0.8rem;
   font-weight: bold;
   color: #a4a4a4;
-`;
-
-const ProjectGrid = styled.div`
-  display: grid;
-  width: 85%;
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-
-  div {
-    background-color: hotpink;
-    color: white;
-    font-size: 4vw;
-    padding: 10px;
-  }
-
-  div:nth-child(1) {
-    grid-column: span 2;
-  }
-
-  div:nth-child(2) {
-    grid-row: span 4;
-  }
-
-  div:nth-child(9) {
-    grid-column: span 3;
-  }
 `;
 
 export default Projects;
