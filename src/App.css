@@ -40,8 +40,16 @@ ul > li > .recharts-surface {
      display: none;
   }
   .overview-legend {
-    margin: 0 0.2rem;
+    position: relative;
+    margin: 0 0.1rem;
+    right: 1rem;
     color: #f9f9f9;
-    font-size: 0.825rem;
+    font-size: 0.8rem;
+  }
+  ul > li > .recharts-surface {
+    position: relative;
+    height: 0.9rem;
+    width: auto;
+    right: 1rem;
   }
 }
