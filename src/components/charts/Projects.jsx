@@ -1,6 +1,6 @@
 import React from 'react';
 import { ResponsiveContainer, PieChart, Pie, Cell, Tooltip } from 'recharts';
-import { PurplePalette } from '../../utilities';
+import { IceCreamPalette } from '../../utilities';
 import { TooltipLabel } from '../common';
 import data from '../../db.json';
 
@@ -38,7 +38,7 @@ const ProjectsChart = () => {
           fill="#6161ff"
         >
           {data.clients.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={PurplePalette[index % PurplePalette.length]} />
+            <Cell key={`cell-${index}`} fill={IceCreamPalette[index % IceCreamPalette.length]} />
           ))}
         </Pie>
       </PieChart>

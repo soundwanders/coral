@@ -21,6 +21,13 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li {
 
 .overview-legend {
   margin: 0 0.5rem;
+  color: #f9f9f9;
+  font-size: 1.05rem;
+}
+
+ul > li > .recharts-surface {
+  width: 2rem;
+  height: 1.5rem;
 }
 
 @media (max-width: 1080px) {

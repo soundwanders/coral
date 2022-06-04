@@ -25,8 +25,8 @@ const OverviewChart = () => {
           type="monotone"
           dataKey="growth"
           strokeWidth={2}
-          stroke="#e55757"
-          fill="#e55757"
+          stroke="#fa7c7c"
+          fill="#fa7c7c"
           dot={false}
         />
         <Line

@@ -2,7 +2,6 @@ import { React, useState } from 'react';
 import { Outlet } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import Sidebar from '../components/Sidebar';
-import ClientFilter from '../components/ClientFilter';
 import { Container, Wrapper, FlexContainer, Title, Underline } from '../components/common';
 import { White, CardShadow, HoverEffect, SearchBarShadow } from '../utilities';
 import { FiSearch } from 'react-icons/fi';
@@ -31,9 +30,17 @@ const Projects = () => {
         </TitleWrapper>
         <Underline />
         <FlexContainer>
-          <Grid>
-            <ClientFilter input={inputText} />
-          </Grid>
+          <ProjectGrid>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+          </ProjectGrid>
         </FlexContainer>
       </Wrapper>
       <Outlet />
@@ -50,20 +57,20 @@ export const Fade = keyframes`
   }
 `;
 
-const Grid = styled.div`
-  display: grid;
-  width: 80%;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 1fr;
-  gap: 5rem 8%;
-  white-space: nowrap;
-
-  @media screen and (min-width: 320px) and (max-width: 1080px) {
-    grid-template-columns: 1fr;
-    gap: 4.25rem 0;
-    white-space: nowrap;
-  }
-`;
+// const Grid = styled.div`
+//   display: grid;
+//   width: 80%;
+//   grid-template-columns: 1fr 1fr 1fr;
+//   grid-auto-rows: 1fr;
+//   gap: 5rem 8%;
+//   white-space: nowrap;
+// 
+//   @media screen and (min-width: 320px) and (max-width: 1080px) {
+//     grid-template-columns: 1fr;
+//     gap: 4.25rem 0;
+//     white-space: nowrap;
+//   }
+// `;
 
 const TitleWrapper = styled.div`
   display: flex;
@@ -113,29 +120,6 @@ const Input = styled.input`
   }
 `;
 
-export const ClientUl = styled.ul`
-  padding: 1rem 2.3rem 2rem 2.3rem;
-  margin: 0;
-  min-width: 265px;
-  background: ${White};
-  background-image: linear-gradient(to bottom, #172854 12%, ${White} 12%);
-  border-radius: 1rem;
-  box-shadow: ${CardShadow};
-  transition: 0.3s ease-in-out;
-
-  &:hover {
-    opacity: 0.93;
-    box-shadow: ${HoverEffect};
-  }
-  img {
-    margin: 0 auto;
-  }
-
-  @media screen and (min-width: 320px) and (max-width: 1080px) {
-    min-width: 260px;
-  }
-`;
-
 export const ListItem = styled.li`
   padding: 0.6rem;
   min-width: min-content;
@@ -158,6 +142,33 @@ export const Label = styled.span`
   font-size: 0.8rem;
   font-weight: bold;
   color: #a4a4a4;
+`;
+
+const ProjectGrid = styled.div`
+  display: grid;
+  width: 85%;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+
+  div {
+    background-color: hotpink;
+    color: white;
+    font-size: 4vw;
+    padding: 10px;
+  }
+
+  div:nth-child(1) {
+    grid-column: span 2;
+  }
+
+  div:nth-child(2) {
+    grid-row: span 4;
+  }
+
+  div:nth-child(9) {
+    grid-column: span 3;
+  }
 `;
 
 export default Projects;
