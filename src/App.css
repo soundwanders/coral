@@ -39,4 +39,9 @@ ul > li > .recharts-surface {
   tspan {
      display: none;
   }
+  .overview-legend {
+    margin: 0 0.2rem;
+    color: #f9f9f9;
+    font-size: 0.825rem;
+  }
 }
