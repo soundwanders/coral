@@ -46,7 +46,7 @@ const OverviewChart = () => {
           dot={false}
         />
         <Legend
-          height={30} 
+          height={30}
           formatter={(value, entry, index) => <span className="overview-legend">{value}</span>}
         />
       </LineChart>

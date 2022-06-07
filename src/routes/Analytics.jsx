@@ -54,7 +54,7 @@ const Analytics = () => {
             <OverviewWrapper>
               <OverviewChart />
             </OverviewWrapper>
-            
+
             <CardContainer>
               <ConversionsChart />
               <ChartLabel>

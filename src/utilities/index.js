@@ -55,8 +55,6 @@ export const IceCreamPalette = [
   '#b29ae0',
 ];
 
-export const PastelPalette = ['#f6a6b2', '#9cfbac', '#bfc6ff', '#ffd7b5', '#ffaed6', '#bfe6ff'];
-
 const RevenueArray = data.clients.map(client => client.totalSales);
 export const TotalRevenue = RevenueArray.reduce(function (total, saleValue) {
   return total + saleValue;

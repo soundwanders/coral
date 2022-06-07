@@ -75,10 +75,7 @@ const ConversionsChart = () => {
           fill="#fff"
         >
           {data.clients.map((entry, index) => (
-            <Cell
-              key={`cell-${index}`}
-              fill={PurplePalette[index % PurplePalette.length]}
-            />
+            <Cell key={`cell-${index}`} fill={PurplePalette[index % PurplePalette.length]} />
           ))}
         </Pie>
       </PieChart>

@@ -2,8 +2,9 @@ import { React } from 'react';
 import { Outlet } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import Sidebar from '../components/Sidebar';
+import ProjectCard from '../components/ProjectCards';
 import { Container, Wrapper, FlexContainer, Title, Underline } from '../components/common';
-import { White } from '../utilities';
+import { White, TotalProjects } from '../utilities';
 import { GiOctopus } from 'react-icons/gi';
 
 const Projects = () => {
@@ -19,14 +20,9 @@ const Projects = () => {
         <Underline />
         <FlexContainer>
           <ProjectGrid>
-            <div>1</div>
+            <GridSection>{TotalProjects} Coral Reefs Being Built! </GridSection>
             <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
+            <ProjectCard />
             <div>9</div>
           </ProjectGrid>
         </FlexContainer>
@@ -45,22 +41,6 @@ export const Fade = keyframes`
   }
 `;
 
-// const Grid = styled.div`
-//   display: grid;
-//   width: 80%;
-//   grid-template-columns: 1fr 1fr 1fr;
-//   grid-auto-rows: 1fr;
-//   gap: 5rem 8%;
-//   white-space: nowrap;
-// 
-//   @media screen and (min-width: 320px) and (max-width: 1080px) {
-//     grid-template-columns: 1fr;
-//     gap: 4.25rem 0;
-//     white-space: nowrap;
-//   }
-// `;
-
-
 const ProjectGrid = styled.div`
   display: grid;
   width: 85%;
@@ -71,7 +51,6 @@ const ProjectGrid = styled.div`
   div {
     background-color: hotpink;
     color: ${White};
-    font-size: 4vw;
     padding: 10px;
   }
 
@@ -87,6 +66,18 @@ const ProjectGrid = styled.div`
     grid-column: span 3;
   }
 `;
+
+export const GridSection = styled.div`
+  div {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+  }
+`;
+
+export const Row = styled.div``;
+
+export const CardText = styled.span``;
 
 const TitleWrapper = styled.div`
   display: flex;
