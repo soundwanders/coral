@@ -1,24 +1,25 @@
 import React from 'react';
-import { GridSection, Row, CardText } from '../routes/Projects';
+import { GridSection, Row, CardText, PhotoWrapper, Photo } from '../routes/Projects';
 import data from '../db.json';
 
-const ProjectCard = () => {
+const ProjectCards = () => {
   return data.clients
     .slice(0, 6)
-    .map(({ id, img, name, organization, email, totalSales, dateAcquired }) => (
+    .map(({ id, img, name, organization, email, totalSales }) => (
       <GridSection key={id}>
         <Row>
+          <PhotoWrapper>
+            <Photo src={img} id="ClientPhoto" alt={name} draggable="false" />
+          </PhotoWrapper>
           <CardText>{name}</CardText>
           <CardText>{organization}</CardText>
-          <CardText>{dateAcquired}</CardText>
+         <CardText>{email}</CardText>
+          <CardText>{totalSales}</CardText>
+          <CardText>project status</CardText>
         </Row>
 
-        <Row>
-          <CardText>{email}</CardText>
-          <CardText>{totalSales}</CardText>
-        </Row>
       </GridSection>
     ));
 };
 
-export default ProjectCard;
+export default ProjectCards;
