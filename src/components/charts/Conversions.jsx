@@ -47,7 +47,7 @@ const CustomTooltip = ({ active, payload }) => {
   if (active && payload && payload.length) {
     return (
       <div className="tooltip">
-        <TooltipLabel>{`${payload[0].value}`} conversion percentage</TooltipLabel>
+        <TooltipLabel>{`${payload[0].value}`}% conversion rate</TooltipLabel>
       </div>
     );
   }

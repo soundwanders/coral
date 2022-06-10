@@ -50,11 +50,9 @@ const Analytics = () => {
                 <Badges content="+ 15%" charts />
               </ChartLabel>
             </CardContainer>
-
             <OverviewWrapper>
               <OverviewChart />
             </OverviewWrapper>
-
             <CardContainer>
               <ConversionsChart />
               <ChartLabel>

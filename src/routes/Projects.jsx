@@ -14,11 +14,9 @@ const Projects = () => {
     <Container>
       <Sidebar />
       <Wrapper>
-        <TitleWrapper>
-          <Title>
-            Coral Projects <GiOctopus />{' '}
-          </Title>
-        </TitleWrapper>
+        <Title>
+          Coral Projects <GiOctopus />{' '}
+        </Title>
         <Underline />
         <FlexContainer>
           <ProjectGrid>
@@ -51,9 +49,9 @@ const ProjectGrid = styled.div`
   grid-gap: 10px;
 
   div {
-    background-color: ${DarkTheme};
-    color: ${White};
-    padding: 10px;
+    background-color: ${White};
+    color: ${DarkTheme};
+    padding: 0.3rem;
   }
 
   div:nth-child(1) {
@@ -62,10 +60,13 @@ const ProjectGrid = styled.div`
 
   div:nth-child(2) {
     grid-row: span 4;
+    background-color: ${DarkTheme};
   }
 
   div:nth-child(9) {
     grid-column: span 3;
+    background-color: ${DarkTheme};
+    background-image: linear-gradient(to left, ${DarkTheme} 32.8%, ${White} 32.8%);
   }
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -91,6 +92,8 @@ const BannerSection = styled.div`
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     background-image: url(${MobileBanner});
+    background-size: cover;
+    min-height: 8vmax;
   }
 `;
 
@@ -105,49 +108,16 @@ export const GridSection = styled.div`
 export const Row = styled.div`
 `;
 
-export const CardText = styled.span``;
-
-export const PhotoWrapper = styled.div`
+export const CardText = styled.span`
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    font-size: 0.725rem;
+  }
 `;
+
+export const PhotoWrapper = styled.div``;
 
 export const Photo = styled.img`
   width: 2.5rem;
-`;
-
-const TitleWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 85%;
-  @media screen and (min-width: 320px) and (max-width: 1080px) {
-    width: 90%;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-`;
-
-export const ListItem = styled.li`
-  padding: 0.6rem;
-  min-width: min-content;
-  list-style-type: none;
-  box-sizing: border-box;
-  border-radius: 0.4rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px -1px, rgba(0, 0, 0, 0.05) 0px 2px 6px -2px;
-  background: #fffdfa;
-  font-weight: 500;
-
-  &:nth-child(3) {
-    font-size: 1.3rem;
-  }
-`;
-
-export const Label = styled.span`
-  display: flex;
-  padding: 0.1rem 0;
-  margin: 0.8rem 0 0.1rem 0.5rem;
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: #a4a4a4;
 `;
 
 export default Projects;
