@@ -49,8 +49,8 @@ const ProjectGrid = styled.div`
   grid-gap: 10px;
 
   div {
-    background-color: ${White};
-    color: ${DarkTheme};
+    background-color: ${DarkTheme};
+    color: ${White};
     padding: 0.3rem;
   }
 
@@ -65,8 +65,7 @@ const ProjectGrid = styled.div`
 
   div:nth-child(9) {
     grid-column: span 3;
-    background-color: ${DarkTheme};
-    background-image: linear-gradient(to left, ${DarkTheme} 32.8%, ${White} 32.8%);
+    background-color: ${White};
   }
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -97,27 +96,36 @@ const BannerSection = styled.div`
   }
 `;
 
-export const GridSection = styled.div`
-  div {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+export const GridSection = styled.div``;
+
+export const ProjectWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex: 1;
+  background-color: ${DarkTheme};
+
+  &:nth-child(2) {
+    flex-basis: 70%;
   }
 `;
-
 export const Row = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: auto;
+  align-content: start;
 `;
 
 export const CardText = styled.span`
+  color: ${White};
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     font-size: 0.725rem;
   }
 `;
 
-export const PhotoWrapper = styled.div``;
-
 export const Photo = styled.img`
-  width: 2.5rem;
+  width: 3rem;
 `;
 
 export default Projects;
