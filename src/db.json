@@ -9,12 +9,12 @@
       "state": "Oregon",
       "email": "bernie@billowbakery.com",
       "phone": "888-001-2020",
-      "dateAcquired": "November 18, 2021",
+      "dateAcquired": "November 18",
       "totalSales": 8200,
       "projects": 10,
       "growth": 18,
       "conversions": 5,
-      "lastInvoice": "December 20, 2021",
+      "lastInvoice": "December 20",
       "service": "Web Application"
     },
     {
@@ -26,12 +26,12 @@
       "state": "Wyoming",
       "email": "barry@barrelboys.com",
       "phone": "333-444-3535",
-      "dateAcquired": "May 15, 2021",
+      "dateAcquired": "May 15",
       "totalSales": 10590,
       "projects": 16,
       "growth": 8,
       "conversions": 16,
-      "lastInvoice": "January 9, 2022",
+      "lastInvoice": "January 9",
       "service": "Digital Marketing"
     },
     {
@@ -43,12 +43,12 @@
       "state": "Vermont",
       "email": "mary@muzzlemaker.dev",
       "phone": "890-001-2121",
-      "dateAcquired": "January 18, 2022",
+      "dateAcquired": "January 18",
       "totalSales": 1820,
       "projects": 14,
       "growth": 15,
       "conversions": 14,
-      "lastInvoice": "December 2, 2021",
+      "lastInvoice": "December 2",
       "service": "Web Design"
     },
     {
@@ -58,14 +58,14 @@
       "organization": "Poppyseed Sailing",
       "address": "28 Apricot Lane",
       "state": "Michigan",
-      "email": "percy@seedsailors.com",
+      "email": "percy@popsails.com",
       "phone": "343-001-2222",
-      "dateAcquired": "March 5, 2022",
+      "dateAcquired": "March 5",
       "totalSales": 3500,
       "projects": 17,
       "growth": 13,
       "conversions": 9,
-      "lastInvoice": "March 29, 2022",
+      "lastInvoice": "March 29",
       "service": "Digital Marketing"
     },
     {
@@ -75,14 +75,14 @@
       "organization": "The Golden Berry",
       "address": "82 Blueberry Boulevard",
       "state": "New York",
-      "email": "reggie@goldenberry.com",
+      "email": "reggie@goldberry.com",
       "phone": "111-222-1111",
-      "dateAcquired": "January 21, 2021",
+      "dateAcquired": "January 21",
       "totalSales": 5255,
       "projects": 9,
       "growth": 6,
       "conversions": 22,
-      "lastInvoice": "February 3, 2022",
+      "lastInvoice": "February 3",
       "service": "Web Development"
     },
     {
@@ -94,12 +94,12 @@
       "state": "New Hampshire",
       "email": "fred@slimetime.edu",
       "phone": "888-001-1919",
-      "dateAcquired": "November 18, 2021",
+      "dateAcquired": "November 18",
       "totalSales": 8506,
       "projects": 21,
       "growth": 21,
       "conversions": 15,
-      "lastInvoice": "January 2, 2022",
+      "lastInvoice": "January 2",
       "service": "Web Design"
     },
     {
@@ -111,12 +111,12 @@
       "state": "South Carolina",
       "email": "cosmo@chocobo.coop",
       "phone": "199-934-4344",
-      "dateAcquired": "September 20, 2020",
+      "dateAcquired": "September 20",
       "totalSales": 3900,
       "projects": 13,
       "growth": 12,
       "conversions": 10,
-      "lastInvoice": "December 2, 2021",
+      "lastInvoice": "December 2",
       "service": "Digital Marketing"
     },
     {
@@ -128,12 +128,12 @@
       "state": "Colorado",
       "email": "wayne@brainybunch.com",
       "phone": "444-123-2828",
-      "dateAcquired": "July 5, 2021",
+      "dateAcquired": "July 5",
       "totalSales": 8200,
       "projects": 18,
       "growth": 8,
       "conversions": 14,
-      "lastInvoice": "March 12, 2022",
+      "lastInvoice": "March 12",
       "service": "Web Design"
     },
     {
@@ -145,12 +145,12 @@
       "state": "Ohio",
       "email": "holly@eggsquad.io",
       "phone": "222-777-1921",
-      "dateAcquired": "February 4, 2022",
+      "dateAcquired": "February 4",
       "totalSales": 3299,
       "projects": 6,
       "growth": 14,
       "conversions": 16,
-      "lastInvoice": "February 25, 2022",
+      "lastInvoice": "February 25",
       "service": "Web Application"
     }
   ]
