@@ -54,9 +54,11 @@ const ProjectGrid = styled.div`
     background-color: #172854;
     color: ${White};
     align-content: space-around;
+    padding: 0.5rem 0.25rem;
 
     @media (min-width: 1028px) {
       height: 100%;
+      padding: 0;
     }
   }
 
@@ -152,7 +154,7 @@ export const CardContainer = styled.div`
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     grid-template-columns: 1fr;
     margin: 0 auto;
-    grid-row-gap: 0.75rem;
+    grid-row-gap: 0.9rem;
   }
 `;
 
