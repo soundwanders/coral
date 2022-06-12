@@ -73,7 +73,7 @@ const ProjectGrid = styled.div`
 
   div:nth-child(9) {
     grid-column: span 3;
-    background-color: ${White};
+    background-color: inherit;
     background-image: url(${ReefBanner});
     background-size: contain;
   }
@@ -107,18 +107,14 @@ const BannerSection = styled.div`
   }
 `;
 
-export const GridWrapper = styled.div``;
+export const GridWrapper = styled.div`
+`;
 
 export const ProjectWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-content: center;
-  flex: 1;
   background-color: ${DarkTheme};
-
-  @media (min-width: 1080px) {
-    flex-basis: 60%;
-  }
 `;
 
 export const PhotoWrapper = styled.div`
@@ -129,18 +125,20 @@ export const PhotoWrapper = styled.div`
   @media (min-width: 1028px) {
     height: 100%;
     padding-left: 1.5rem;
-    flex-basis: 18%;
+    flex-basis: 20%;
   }
 `;
 
 export const Photo = styled.img`
-  width: 3rem;
-  height: 3rem;
+  width: 2.8rem;
+  height: auto;
   align-self: center;
+  margin: 0 auto;
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
-    margin: 0 auto;
     padding: 0.5rem;
+    width: 3.7rem;
+    height: 3.7rem;
   }
 `;
 
@@ -148,8 +146,8 @@ export const CardContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-row-gap: 0.2rem;
-  padding: 1rem 0.5rem;
+  margin: 0.9rem auto;
+  grid-gap: 0;
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     grid-template-columns: 1fr;
@@ -163,7 +161,6 @@ export const Card = styled.div`
   flex-wrap: wrap;
   flex-direction: row;
   align-items: auto;
-  align-content: start;
 `;
 
 export const CardText = styled.p`
