@@ -69,9 +69,7 @@ const ProjectGrid = styled.div`
     background-color: ${White};
     background-image: url(${ReefBanner});
     background-size: contain; 
-    @media screen and (min-width: 320px) and (max-width: 1080px) {
-      min-height: 8vmax;
-    }
+  }
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     grid-template-columns: 1fr;
@@ -80,9 +78,10 @@ const ProjectGrid = styled.div`
     div:nth-child(1) {
       grid-column: auto;
     }
-
     div:nth-child(9) {
       grid-column: auto;
+      background-size: cover;
+      min-height: 6vmax;
     }
     }
   }
@@ -96,7 +95,7 @@ const BannerSection = styled.div`
   background-size: cover;
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
-    7background-image: url(${MobileBanner});
+    background-image: url(${MobileBanner});
     background-size: cover;
     min-height: 8vmax;
   }
