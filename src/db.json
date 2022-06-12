@@ -14,7 +14,8 @@
       "projects": 10,
       "growth": 18,
       "conversions": 5,
-      "lastInvoice": "December 20, 2021"
+      "lastInvoice": "December 20, 2021",
+      "service": "Web Application"
     },
     {
       "id": 1,
@@ -30,7 +31,8 @@
       "projects": 16,
       "growth": 8,
       "conversions": 16,
-      "lastInvoice": "January 9, 2022"
+      "lastInvoice": "January 9, 2022",
+      "service": "Digital Marketing"
     },
     {
       "id": 2,
@@ -46,7 +48,8 @@
       "projects": 14,
       "growth": 15,
       "conversions": 14,
-      "lastInvoice": "December 2, 2021"
+      "lastInvoice": "December 2, 2021",
+      "service": "Web Design"
     },
     {
       "id": 3,
@@ -62,7 +65,8 @@
       "projects": 17,
       "growth": 13,
       "conversions": 9,
-      "lastInvoice": "March 29, 2022"
+      "lastInvoice": "March 29, 2022",
+      "service": "Digital Marketing"
     },
     {
       "id": 4,
@@ -78,7 +82,8 @@
       "projects": 9,
       "growth": 6,
       "conversions": 22,
-      "lastInvoice": "February 3, 2022"
+      "lastInvoice": "February 3, 2022",
+      "service": "Web Development"
     },
     {
       "id": 5,
@@ -94,7 +99,8 @@
       "projects": 21,
       "growth": 21,
       "conversions": 15,
-      "lastInvoice": "January 2, 2022"
+      "lastInvoice": "January 2, 2022",
+      "service": "Web Design"
     },
     {
       "id": 6,
@@ -110,7 +116,8 @@
       "projects": 13,
       "growth": 12,
       "conversions": 10,
-      "lastInvoice": "December 2, 2021"
+      "lastInvoice": "December 2, 2021",
+      "service": "Digital Marketing"
     },
     {
       "id": 7,
@@ -126,7 +133,8 @@
       "projects": 18,
       "growth": 8,
       "conversions": 14,
-      "lastInvoice": "March 12, 2022"
+      "lastInvoice": "March 12, 2022",
+      "service": "Web Design"
     },
     {
       "id": 8,
@@ -142,7 +150,8 @@
       "projects": 6,
       "growth": 14,
       "conversions": 16,
-      "lastInvoice": "February 25, 2022"
+      "lastInvoice": "February 25, 2022",
+      "service": "Web Application"
     }
   ]
 }

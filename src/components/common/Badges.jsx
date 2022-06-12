@@ -17,9 +17,10 @@ const BadgeTypes = ({
   paid = false,
   late = false,
   charts = false,
+  projects = false,
 }) => {
   return (
-    <Badge tech={tech} scope={scope} glowTags={glowTags} paid={paid} late={late} charts={charts}>
+    <Badge tech={tech} scope={scope} glowTags={glowTags} paid={paid} late={late} charts={charts} projects={projects}>
       {content}
     </Badge>
   );
@@ -99,6 +100,20 @@ const Badge = styled.span`
         bottom: 0.1rem;
       }
     `}
+
+
+    ${({ projects }) =>
+      projects &&
+      `
+        background-color: ${White};
+        color: ${DarkTheme};
+        font-size: 0.75rem;
+        font-weight: 600;
+        padding: 0.2rem 0.4rem;
+        margin: 0; 
+        cursor: default;
+      `
+    }
 `;
 
 export default BadgeTypes;

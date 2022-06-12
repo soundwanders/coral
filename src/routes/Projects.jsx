@@ -1,4 +1,4 @@
-import { React } from 'react';
+ import { React } from 'react';
 import { Outlet } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import Sidebar from '../components/Sidebar';
@@ -8,6 +8,7 @@ import { White, DarkTheme } from '../utilities';
 import { GiOctopus } from 'react-icons/gi';
 import DesktopBanner from '../assets/OceanDesktop.svg';
 import MobileBanner from '../assets/OceanMobile.svg';
+import ReefBanner from '../assets/ReefBanner.png';
 
 const Projects = () => {
   return (
@@ -66,6 +67,8 @@ const ProjectGrid = styled.div`
   div:nth-child(9) {
     grid-column: span 3;
     background-color: ${White};
+    background-image: url(${ReefBanner});
+    background-size: contain;
   }
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -78,6 +81,7 @@ const ProjectGrid = styled.div`
 
     div:nth-child(9) {
       grid-column: auto;
+    }
     }
   }
 `;
@@ -119,6 +123,8 @@ export const Row = styled.div`
 
 export const CardText = styled.span`
   color: ${White};
+  font-size: 0.725rem;
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     font-size: 0.725rem;
   }
