@@ -81,7 +81,7 @@ const ProjectGrid = styled.div`
     div:nth-child(9) {
       grid-column: auto;
       background-size: cover;
-      min-height: 6vmax;
+      min-height: 8vmax;
     }
     }
   }
