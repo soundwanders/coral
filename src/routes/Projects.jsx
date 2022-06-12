@@ -68,7 +68,8 @@ const ProjectGrid = styled.div`
     grid-column: span 3;
     background-color: ${White};
     background-image: url(${ReefBanner});
-    background-size: contain;
+    background-size: contain; 
+    min-height: 8vmax;
   }
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
