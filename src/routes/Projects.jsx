@@ -169,7 +169,7 @@ export const CardText = styled.p`
   font-weight: 600;
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 `;
 
