@@ -123,7 +123,7 @@ const Badge = styled.span`
         margin: 0; 
         cursor: default;
         @media screen and (max-width: 1080px) {
-          font-size: 0.575rem;
+          font-size: 0.65rem;
           padding: 6px 8px;
         }
       `}
@@ -139,7 +139,7 @@ const Badge = styled.span`
         margin: 0 0 0 1rem; 
         cursor: default;
         @media screen and (max-width: 1080px) {
-          font-size: 0.575rem;
+          font-size: 0.65rem;
           padding: 6px 8px;
         }
       `}
