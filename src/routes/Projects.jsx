@@ -130,7 +130,7 @@ export const PhotoWrapper = styled.div`
 `;
 
 export const Photo = styled.img`
-  width: 2.8rem;
+  width: 2.675rem;
   height: auto;
   align-self: center;
   margin: 0 auto;
@@ -165,13 +165,17 @@ export const Card = styled.div`
 
 export const CardText = styled.p`
   color: ${White};
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 600;
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
-    font-size: 0.8rem;
+    text-decoration: underline;
+    text-decoration-color: #b3b3b3;
+    text-underline-offset: 0.5rem;
   }
 `;
+
+export const BadgeContainer = styled.p``;
 
 const ReefFooter = styled.div``;
 

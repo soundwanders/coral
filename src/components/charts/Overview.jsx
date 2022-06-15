@@ -24,7 +24,7 @@ const OverviewChart = () => {
         <Line
           type="monotone"
           dataKey="growth"
-          strokeWidth={2}
+          strokeWidth={4}
           stroke="#fa7c7c"
           fill="#fa7c7c"
           dot={false}
@@ -32,7 +32,7 @@ const OverviewChart = () => {
         <Line
           type="monotone"
           dataKey="conversions"
-          strokeWidth={2}
+          strokeWidth={4}
           stroke="#1dd177"
           fill="#1dd177"
           dot={false}
@@ -40,7 +40,7 @@ const OverviewChart = () => {
         <Line
           type="monotone"
           dataKey="projects"
-          strokeWidth={2}
+          strokeWidth={4}
           stroke="#6f57e5"
           fill="#6f57e5"
           dot={false}

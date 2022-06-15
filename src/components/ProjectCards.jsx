@@ -7,6 +7,7 @@ import {
   CardContainer,
   ProjectWrapper,
   CardText,
+  BadgeContainer 
 } from '../routes/Projects';
 import Badges from '../components/common/Badges';
 import data from '../db.json';
@@ -27,10 +28,10 @@ const ProjectCards = () => {
               <CardText>{service}</CardText>
               <CardText>{email}</CardText>
               <CardText>Due: {dateAcquired}</CardText>
-              <CardText>
+              <BadgeContainer>
                 {' '}
-                <Badges content="Active" active /> <Badges content="View Tasks" tasks />{' '}
-              </CardText>
+                <Badges content="Manage" manage /> <Badges content="View Tasks" tasks />{' '}
+              </BadgeContainer>
             </CardContainer>
           </ProjectWrapper>
         </Card>

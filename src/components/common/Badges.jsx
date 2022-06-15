@@ -17,7 +17,7 @@ const BadgeTypes = ({
   paid = false,
   late = false,
   charts = false,
-  active = false,
+  manage = false,
   tasks = false,
 }) => {
   return (
@@ -28,7 +28,7 @@ const BadgeTypes = ({
       paid={paid}
       late={late}
       charts={charts}
-      active={active}
+      manage={manage}
       tasks={tasks}
     >
       {content}
@@ -112,37 +112,37 @@ const Badge = styled.span`
     `}
 
 
-    ${({ active }) =>
-    active &&
+    ${({ manage }) =>
+    manage &&
     `
-        background-color: #b8ffb8;
-        color: ${DarkTheme};
+      background-color: #b8ffb8;
+      color: ${DarkTheme};
+      font-size: 0.65rem;
+      font-weight: 600;
+      padding: 0.2rem 0.4rem;
+      margin: 0; 
+      cursor: default;
+      @media screen and (max-width: 1080px) {
         font-size: 0.65rem;
-        font-weight: 600;
-        padding: 0.2rem 0.4rem;
-        margin: 0; 
-        cursor: default;
-        @media screen and (max-width: 1080px) {
-          font-size: 0.65rem;
-          padding: 6px 8px;
-        }
-      `}
+        padding: 6px 8px;
+      }
+    `}
 
     ${({ tasks }) =>
     tasks &&
     `
-        background-color: #fffab1;
-        color: ${DarkTheme};
+      background-color: #fffab1;
+      color: ${DarkTheme};
+      font-size: 0.65rem;
+      font-weight: 600;
+      padding: 0.2rem 0.4rem;
+      margin: 0 0 0 1rem; 
+      cursor: default;
+      @media screen and (max-width: 1080px) {
         font-size: 0.65rem;
-        font-weight: 600;
-        padding: 0.2rem 0.4rem;
-        margin: 0 0 0 1rem; 
-        cursor: default;
-        @media screen and (max-width: 1080px) {
-          font-size: 0.65rem;
-          padding: 6px 8px;
-        }
-      `}
+        padding: 6px 8px;
+      }
+    `}
 `;
 
 export default BadgeTypes;
