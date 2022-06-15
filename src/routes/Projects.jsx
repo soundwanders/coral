@@ -170,7 +170,7 @@ export const CardText = styled.p`
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     text-decoration: underline;
-    text-decoration-color: #b3b3b3;
+    text-decoration-color: rgba(5, 5, 5, 0.1);
     text-underline-offset: 0.5rem;
   }
 `;
