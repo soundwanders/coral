@@ -20,10 +20,10 @@ const ContentCard = () => {
       <Card>
         <CardContent>
           <Row>
-            <NumberValue>9</NumberValue>
+            <NumberValue>12</NumberValue>
             <InfoContainer>
               <Title>Projects</Title>
-              <SubTitle>2 currently active</SubTitle>
+              <SubTitle>6 currently active</SubTitle>
             </InfoContainer>
           </Row>
           <Row justify>
