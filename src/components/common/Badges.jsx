@@ -115,7 +115,7 @@ const Badge = styled.span`
     ${({ manage }) =>
     manage &&
     `
-      background-color: #b8ffb8;
+      background-color: #c2ffcc;
       color: ${DarkTheme};
       font-size: 0.65rem;
       font-weight: 600;

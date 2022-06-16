@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components';
 import Sidebar from '../components/Sidebar';
 import ProjectCards from '../components/ProjectCards';
 import { Container, Wrapper, FlexContainer, Title, Underline } from '../components/common';
-import { White, DarkTheme } from '../utilities';
+import { White, DarkTheme, CardShadow } from '../utilities';
 import { GiOctopus } from 'react-icons/gi';
 import DesktopBanner from '../assets/OceanDesktop.svg';
 import MobileBanner from '../assets/OceanMobile.svg';
@@ -22,7 +22,7 @@ const Projects = () => {
         <FlexContainer>
           <ProjectGrid>
             <BannerSection />
-            <div>2</div>
+            <RightSection/>
             <ProjectCards />
             <ReefFooter></ReefFooter>
           </ProjectGrid>
@@ -48,32 +48,33 @@ const ProjectGrid = styled.div`
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.3rem;
-  border-radius: 1rem;
 
   div {
-    background-color: #172854;
-    color: ${White};
+    background-color: ${White};
     align-content: space-around;
     padding: 0.5rem 0.25rem;
+    border-radius: 0.5rem;
 
     @media (min-width: 1028px) {
       height: 100%;
       padding: 0;
     }
+    @media screen and (min-width: 320px) and (max-width: 1080px) {
+      background-color: #172854;
+    }
   }
 
   div:nth-child(1) {
     grid-column: span 2;
+    border: none;
   }
 
   div:nth-child(2) {
     grid-row: span 4;
-    background-color: #172854;
   }
 
   div:nth-child(9) {
     grid-column: span 3;
-    background-color: inherit;
     background-image: url(${ReefBanner});
     background-size: contain;
   }
@@ -130,7 +131,7 @@ export const PhotoWrapper = styled.div`
 `;
 
 export const Photo = styled.img`
-  width: 2.675rem;
+  width: 2.7rem;
   height: auto;
   align-self: center;
   margin: 0 auto;
@@ -161,22 +162,33 @@ export const Card = styled.div`
   flex-wrap: wrap;
   flex-direction: row;
   align-items: auto;
+  box-shadow: ${CardShadow};
+  transition: 0.3s ease-in-out;
 `;
 
 export const CardText = styled.p`
-  color: ${White};
+  color: ${DarkTheme};
   font-size: 0.8rem;
   font-weight: 600;
-
+  
   @media screen and (min-width: 320px) and (max-width: 1080px) {
+    color: ${White};
     text-decoration: underline;
-    text-decoration-color: rgba(250, 250, 250, 0.3);
+    text-decoration-color: rgba(250, 250, 250, 0.2);
     text-underline-offset: 0.5rem;
   }
 `;
 
-export const BadgeContainer = styled.p``;
+export const BadgeContainer = styled.p`
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    padding: 0.5rem 0 0 0;
+  }
+`;
 
 const ReefFooter = styled.div``;
+
+const RightSection = styled.div`
+  background-color: #172854 !important;
+`;
 
 export default Projects;
