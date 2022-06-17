@@ -149,7 +149,7 @@ export const CardContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  margin: 0.5rem auto;
+  margin: 0.65rem auto;
   grid-gap: 0;
   
   @media screen and (min-width: 320px) and (max-width: 1080px) {
