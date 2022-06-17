@@ -160,7 +160,7 @@ const Badge = styled.span`
       cursor: default;
       margin: 0.75rem auto 0 auto;
       @media screen and (min-width: 320px) and (max-width: 1080px) {
-        margin: 0.3rem auto 0 auto;
+        margin: 1rem auto 0 auto;
         padding: 6px 8px;
       }
     `}
