@@ -20,6 +20,9 @@ const ProjectCards = () => {
         <Card>
           <PhotoWrapper>
             <Photo src={img} id="ProjectPhoto" alt={name} draggable="false" />
+
+
+            <Badges content="Info" info /> {' '}
           </PhotoWrapper>
           <ProjectWrapper>
             <CardContainer>

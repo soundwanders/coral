@@ -112,7 +112,8 @@ export const GridWrapper = styled.div`
 `;
 
 export const ProjectWrapper = styled.div`
-  display: flex;
+  display: flex;  
+  flex: 1;
   flex-direction: column;
   align-content: center;
   background-color: ${DarkTheme};
@@ -120,19 +121,20 @@ export const ProjectWrapper = styled.div`
 
 export const PhotoWrapper = styled.div`
   display: flex;
-  margin: auto 0;
+  flex: 0;
   padding-left: 1rem;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
 
   @media (min-width: 1028px) {
-    height: 100%;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     flex-basis: 20%;
   }
 `;
 
 export const Photo = styled.img`
-  width: 2.7rem;
-  height: auto;
+  width: 2.6rem;
   align-self: center;
   margin: 0 auto;
 
@@ -147,9 +149,9 @@ export const CardContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  margin: 0.9rem auto;
+  margin: 0.5rem auto;
   grid-gap: 0;
-
+  
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     grid-template-columns: 1fr;
     margin: 0 auto;

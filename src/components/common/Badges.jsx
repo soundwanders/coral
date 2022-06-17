@@ -19,6 +19,7 @@ const BadgeTypes = ({
   charts = false,
   manage = false,
   tasks = false,
+  info = false,
 }) => {
   return (
     <Badge
@@ -30,6 +31,7 @@ const BadgeTypes = ({
       charts={charts}
       manage={manage}
       tasks={tasks}
+      info={info}
     >
       {content}
     </Badge>
@@ -57,12 +59,12 @@ const Badge = styled.span`
   ${({ scope }) =>
     scope &&
     `
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       background-color: ${White};
       border: 0.05rem solid ${ThemeColor};
       color:${ThemeColor};
       margin: 0 1.4rem 0 0;
-      @media screen and (max-width: 1080px) {
+      @media screen and (min-width: 320px) and (max-width: 1080px) {
         margin: 0.2rem auto;
       }
     `}
@@ -105,8 +107,8 @@ const Badge = styled.span`
       padding: 0.175rem 0.525rem;
       margin: 0; 
       cursor: default;
-
-     @media screen and (max-width: 1080px) {
+      
+      @media screen and (min-width: 320px) and (max-width: 1080px) {
         bottom: 0.1rem;
       }
     `}
@@ -122,7 +124,7 @@ const Badge = styled.span`
       padding: 0.2rem 0.4rem;
       margin: 0; 
       cursor: default;
-      @media screen and (max-width: 1080px) {
+      @media screen and (min-width: 320px) and (max-width: 1080px) {
         font-size: 0.65rem;
         padding: 6px 8px;
       }
@@ -138,8 +140,27 @@ const Badge = styled.span`
       padding: 0.2rem 0.4rem;
       margin: 0 0 0 1rem; 
       cursor: default;
-      @media screen and (max-width: 1080px) {
+      @media screen and (min-width: 320px) and (max-width: 1080px) {
         font-size: 0.65rem;
+        padding: 6px 8px;
+      }
+    `}
+
+    ${({ info }) =>
+    info &&
+    `
+      width: 1.5rem;
+      background-color:  ${White};
+      color: ${ThemeColor};
+      border: 1px solid ${ThemeColor};
+      font-size: 0.6rem;
+      font-weight: 600;
+      padding: 0.15rem 0.25rem;
+      text-align: center;
+      cursor: default;
+      margin: 0.75rem auto 0 auto;
+      @media screen and (min-width: 320px) and (max-width: 1080px) {
+        margin: 0.3rem auto 0 auto;
         padding: 6px 8px;
       }
     `}
