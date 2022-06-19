@@ -230,7 +230,7 @@ const TimelineSection = styled.div`
 export const TimelineWrapper = styled.div`
   height: max-content;
   overflow: auto;
-  background-color: #172854;
+  background-color: transparent;
   padding: 2rem 0;
 `;
 
