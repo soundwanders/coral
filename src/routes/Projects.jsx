@@ -208,6 +208,9 @@ export const BadgeContainer = styled.p`
 
 const ReefFooter = styled.div`
   background: transparent;
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    max-height: 9vmax;
+  }
 `;
 
 const AnimationTrack = styled.div`
