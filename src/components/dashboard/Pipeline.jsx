@@ -23,9 +23,9 @@ const Pipeline = () => {
           </InfoContainer>
           <Badges content="Website" />
         </Detail>
-        <Title>Billowbear Animal Shelter</Title>
+        <Title>Billowbear Bakery</Title>
         <ProjectInfo>
-          Web design and development, integrate client's database with our CMS, provide serverless
+          Web design and development, integrate client's data into new CMS, serverless
           hosting.
         </ProjectInfo>
         <QuoteContainer>

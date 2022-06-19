@@ -4,13 +4,14 @@ import styled, { keyframes } from 'styled-components';
 import Sidebar from '../components/Sidebar';
 import ProjectCards from '../components/ProjectCards';
 import ProjectsTimeline from '../components/Timeline';
+import Fish from '../components/common/Fish';
+import { FishWrapper } from '../components/common/FishWrapper';
 import { Container, Wrapper, FlexContainer, Title, Underline } from '../components/common';
 import { White, CardShadow } from '../utilities';
-import { GiOctopus } from 'react-icons/gi';
-import Fish from '../components/common/Fish';
 import DesktopBanner from '../assets/OceanDesktop.svg';
 import MobileBanner from '../assets/OceanMobile.svg';
 import ReefBanner from '../assets/ReefBanner.png';
+import { GiOctopus } from 'react-icons/gi';
 
 const Projects = () => {
   return (
@@ -29,11 +30,11 @@ const Projects = () => {
             </TimelineSection>
             <ProjectCards />
             <ReefFooter>
-              <AnimationWrapper>
+              <AnimationTrack>
                 <FishWrapper>
                   <Fish />
                 </FishWrapper>
-              </AnimationWrapper>
+              </AnimationTrack>
             </ReefFooter>
           </ProjectGrid>
         </FlexContainer>
@@ -63,6 +64,13 @@ const ProjectGrid = styled.div`
     align-content: space-around;
     padding: 0.5rem 0.25rem;
     border-radius: 0.675rem;
+
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     @media (min-width: 1028px) {
       height: 100%;
@@ -188,7 +196,7 @@ export const Card = styled.div`
 `;
 
 export const CardText = styled.p`
-  font-size: 0.8rem;
+  font-size: 0.825rem;
   font-weight: 600;
 `;
 
@@ -202,30 +210,21 @@ const ReefFooter = styled.div`
   background: transparent;
 `;
 
-const AnimationWrapper = styled.div`
+const AnimationTrack = styled.div`
   display: inline-block;
   width: 85%;
-  height: 2.25rem;
   margin-left: 1rem;
-  background-color: transparent !important;
+  background-color: transparent;
   overflow: hidden;
-`;
-
-const FishWrapper = styled.span`
-  display: block;
-  color: #68b6e7;
-  line-height: 1.5;
-  margin: 0.7rem auto 0 auto;
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
-    color: #255dd5;
-    margin: 0 auto;
+    height: 8vmax;
   }
 `;
 
 const TimelineSection = styled.div`
   max-height: 540px;
-  overflow-y: scroll;
+  overflow-y: auto;
 `;
 
 export const TimelineWrapper = styled.div`

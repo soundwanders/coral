@@ -64,6 +64,7 @@ const Badge = styled.span`
       border: 0.05rem solid ${ThemeColor};
       color:${ThemeColor};
       margin: 0 1.4rem 0 0;
+      
       @media screen and (min-width: 320px) and (max-width: 1080px) {
         margin: 0.2rem auto;
       }
@@ -105,8 +106,7 @@ const Badge = styled.span`
       font-size: 0.825rem;
       font-weight: 600;
       padding: 0.175rem 0.525rem;
-      margin: 0; 
-      cursor: default;
+      margin: 0;
       
       @media screen and (min-width: 320px) and (max-width: 1080px) {
         bottom: 0.1rem;
@@ -122,8 +122,8 @@ const Badge = styled.span`
       font-size: 0.625rem;
       font-weight: 600;
       padding: 0.2rem 0.4rem;
-      margin: 0; 
-      cursor: default;
+      margin: 0;
+
       @media screen and (min-width: 320px) and (max-width: 1080px) {
         font-size: 0.65rem;
         padding: 6px 8px;
@@ -139,7 +139,7 @@ const Badge = styled.span`
       font-weight: 600;
       padding: 0.2rem 0.4rem;
       margin: 0 0 0 1rem;
-      cursor: default;
+
       @media screen and (min-width: 320px) and (max-width: 1080px) {
         font-size: 0.65rem;
         padding: 6px 8px;
@@ -150,15 +150,15 @@ const Badge = styled.span`
     info &&
     `
       width: 1.5rem;
-      background-color:  ${White};
+      background-color: ${White};
       color: ${ThemeColor};
       border: 1px solid ${ThemeColor};
-      font-size: 0.6rem;
+      font-size: 0.625rem;
       font-weight: 600;
-      padding: 0.15rem 0.25rem;
+      padding: 0.2rem 0.4rem;
       text-align: center;
-      cursor: default;
       margin: 0.75rem auto 0 auto;
+
       @media screen and (min-width: 320px) and (max-width: 1080px) {
         margin: 1rem auto 0 auto;
         padding: 6px 8px;
