@@ -117,9 +117,9 @@ const Badge = styled.span`
     ${({ manage }) =>
     manage &&
     `
-      background-color: #c2ffcc;
+      background-color: #c2ffd6;
       color: ${DarkTheme};
-      font-size: 0.625rem;
+      font-size: 0.635rem;
       font-weight: 600;
       padding: 0.2rem 0.4rem;
       margin: 0;
@@ -135,7 +135,7 @@ const Badge = styled.span`
     `
       background-color: #fffab1;
       color: ${DarkTheme};
-      font-size: 0.625rem;
+      font-size: 0.635rem;
       font-weight: 600;
       padding: 0.2rem 0.4rem;
       margin: 0 0 0 1rem;
@@ -153,13 +153,14 @@ const Badge = styled.span`
       background-color: ${White};
       color: ${ThemeColor};
       border: 1px solid ${ThemeColor};
-      font-size: 0.625rem;
+      font-size: 0.635rem;
       font-weight: 600;
       padding: 0.2rem 0.4rem;
       text-align: center;
       margin: 0.75rem auto 0 auto;
 
       @media screen and (min-width: 320px) and (max-width: 1080px) {
+        font-size: 0.65rem;
         margin: 1rem auto 0 auto;
         padding: 6px 8px;
       }
