@@ -25,8 +25,7 @@ const Pipeline = () => {
         </Detail>
         <Title>Billowbear Bakery</Title>
         <ProjectInfo>
-          Web design and development, integrate client's data into new CMS, serverless
-          hosting.
+          Web design and development, integrate client's data into new CMS, serverless hosting.
         </ProjectInfo>
         <QuoteContainer>
           <Quote>

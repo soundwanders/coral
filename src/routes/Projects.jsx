@@ -65,8 +65,8 @@ const ProjectGrid = styled.div`
     padding: 0.5rem 0.25rem;
     border-radius: 0.675rem;
 
-    -ms-overflow-style: none; 
-    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 
     &::-webkit-scrollbar {
       display: none;

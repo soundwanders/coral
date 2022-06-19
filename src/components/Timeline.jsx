@@ -4,7 +4,7 @@ import Badges from './common/Badges';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { GiDivingHelmet, GiGiantSquid } from 'react-icons/gi';
-import { RiBearSmileLine , RiRobotLine } from 'react-icons/ri';
+import { RiBearSmileLine, RiRobotLine } from 'react-icons/ri';
 
 import { MdDonutSmall } from 'react-icons/md';
 
@@ -79,25 +79,23 @@ export default function ProjectsTimeline() {
       <VerticalTimeline layout="1-column-left" className="react-timeline">
         {timeline.map((t, i) => {
           return (
-            <VerticalTimelineElement key={i} date={ t.date } { ...t.icon }>
-              { t.title ? (
+            <VerticalTimelineElement key={i} date={t.date} {...t.icon}>
+              {t.title ? (
                 <React.Fragment>
                   <h3 className="vertical-timeline-element-title">{t.title}</h3>
-                  { t.subtitle && (
+                  {t.subtitle && (
                     <h4 className="vertical-timeline-element-subtitle">{t.subtitle}</h4>
                   )}
-                  { t.desc && <p className="desc">{ t.desc }</p>
-                }
-                <BadgeContainer>
-                {' '}
-                  <Badges content="Project Specs" info />
-                  <Badges content="Repo" tasks />
-                {' '}
-              </BadgeContainer>
+                  {t.desc && <p className="desc">{t.desc}</p>}
+                  <BadgeContainer>
+                    {' '}
+                    <Badges content="Project Specs" info />
+                    <Badges content="Repo" tasks />{' '}
+                  </BadgeContainer>
                 </React.Fragment>
-              ) : undefined }
+              ) : undefined}
             </VerticalTimelineElement>
-          )
+          );
         })}
       </VerticalTimeline>
     </TimelineWrapper>
