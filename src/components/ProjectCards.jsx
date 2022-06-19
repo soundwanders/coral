@@ -7,7 +7,7 @@ import {
   CardContainer,
   ProjectWrapper,
   CardText,
-  BadgeContainer 
+  BadgeContainer,
 } from '../routes/Projects';
 import Badges from '../components/common/Badges';
 import data from '../db.json';
@@ -20,9 +20,7 @@ const ProjectCards = () => {
         <Card>
           <PhotoWrapper>
             <Photo src={img} id="ProjectPhoto" alt={name} draggable="false" />
-
-
-            <Badges content="Info" info /> {' '}
+            <Badges content="Info" info />{' '}
           </PhotoWrapper>
           <ProjectWrapper>
             <CardContainer>

@@ -3,9 +3,11 @@ import { Outlet } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import Sidebar from '../components/Sidebar';
 import ProjectCards from '../components/ProjectCards';
+import ProjectsTimeline from '../components/Timeline';
 import { Container, Wrapper, FlexContainer, Title, Underline } from '../components/common';
-import { White, DarkTheme, CardShadow } from '../utilities';
+import { White, CardShadow } from '../utilities';
 import { GiOctopus } from 'react-icons/gi';
+import Fish from '../components/common/Fish';
 import DesktopBanner from '../assets/OceanDesktop.svg';
 import MobileBanner from '../assets/OceanMobile.svg';
 import ReefBanner from '../assets/ReefBanner.png';
@@ -22,9 +24,17 @@ const Projects = () => {
         <FlexContainer>
           <ProjectGrid>
             <BannerSection />
-            <RightSection/>
+            <TimelineSection>
+              <ProjectsTimeline />
+            </TimelineSection>
             <ProjectCards />
-            <ReefFooter></ReefFooter>
+            <ReefFooter>
+              <AnimationWrapper>
+                <FishWrapper>
+                  <Fish />
+                </FishWrapper>
+              </AnimationWrapper>
+            </ReefFooter>
           </ProjectGrid>
         </FlexContainer>
       </Wrapper>
@@ -50,10 +60,9 @@ const ProjectGrid = styled.div`
   grid-gap: 0.3rem;
 
   div {
-    background-color: ${White};
     align-content: space-around;
     padding: 0.5rem 0.25rem;
-    border-radius: 0.5rem;
+    border-radius: 0.675rem;
 
     @media (min-width: 1028px) {
       height: 100%;
@@ -71,6 +80,10 @@ const ProjectGrid = styled.div`
 
   div:nth-child(2) {
     grid-row: span 4;
+    @media screen and (min-width: 320px) and (max-width: 1080px) {
+      min-height: max-content;
+      color: ${White};
+    }
   }
 
   div:nth-child(9) {
@@ -108,15 +121,13 @@ const BannerSection = styled.div`
   }
 `;
 
-export const GridWrapper = styled.div`
-`;
+export const GridWrapper = styled.div``;
 
 export const ProjectWrapper = styled.div`
-  display: flex;  
+  display: flex;
   flex: 1;
   flex-direction: column;
   align-content: center;
-  background-color: ${DarkTheme};
 `;
 
 export const PhotoWrapper = styled.div`
@@ -149,9 +160,9 @@ export const CardContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  margin: 0.65rem auto;
+  margin: 0.675rem auto;
   grid-gap: 0;
-  
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     grid-template-columns: 1fr;
     margin: 0 auto;
@@ -166,19 +177,19 @@ export const Card = styled.div`
   align-items: auto;
   box-shadow: ${CardShadow};
   transition: 0.3s ease-in-out;
-`;
+  background-color: #172854;
+  color: ${White};
 
-export const CardText = styled.p`
-  color: ${DarkTheme};
-  font-size: 0.8rem;
-  font-weight: 600;
-  
   @media screen and (min-width: 320px) and (max-width: 1080px) {
-    color: ${White};
     text-decoration: underline;
     text-decoration-color: rgba(250, 250, 250, 0.2);
     text-underline-offset: 0.5rem;
   }
+`;
+
+export const CardText = styled.p`
+  font-size: 0.8rem;
+  font-weight: 600;
 `;
 
 export const BadgeContainer = styled.p`
@@ -187,10 +198,41 @@ export const BadgeContainer = styled.p`
   }
 `;
 
-const ReefFooter = styled.div``;
+const ReefFooter = styled.div`
+  background: transparent;
+`;
 
-const RightSection = styled.div`
-  background-color: #172854 !important;
+const AnimationWrapper = styled.div`
+  display: inline-block;
+  width: 85%;
+  height: 2.25rem;
+  margin-left: 1rem;
+  background-color: transparent !important;
+  overflow: hidden;
+`;
+
+const FishWrapper = styled.span`
+  display: block;
+  color: #68b6e7;
+  line-height: 1.5;
+  margin: 0.7rem auto 0 auto;
+
+  @media screen and (min-width: 320px) and (max-width: 1080px) {
+    color: #255dd5;
+    margin: 0 auto;
+  }
+`;
+
+const TimelineSection = styled.div`
+  max-height: 540px;
+  overflow-y: scroll;
+`;
+
+export const TimelineWrapper = styled.div`
+  height: max-content;
+  overflow: auto;
+  background-color: #172854;
+  padding: 2rem 0;
 `;
 
 export default Projects;

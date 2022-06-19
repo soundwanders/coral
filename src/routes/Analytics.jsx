@@ -99,10 +99,11 @@ export const Fade = keyframes`
 
 const Grid = styled.div`
   display: grid;
+  position: relative;
   width: 80%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  gap: 3.5rem 4.5rem;
+  gap: 3rem 4.25rem;
   margin-top: 0.125rem;
   white-space: nowrap;
   justify-content: start;
@@ -262,7 +263,7 @@ const AnimationWrapper = styled.div`
 
 const FishWrapper = styled.span`
   display: block;
-  color: ${White};
+  color: #68b6e7;
   line-height: 1.5;
   margin: 0 auto;
 
