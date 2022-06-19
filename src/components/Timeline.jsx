@@ -3,9 +3,7 @@ import { TimelineWrapper, BadgeContainer } from '../routes/Projects';
 import Badges from './common/Badges';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { GiDivingHelmet, GiGiantSquid } from 'react-icons/gi';
 import { RiBearSmileLine, RiRobotLine } from 'react-icons/ri';
-
 import { MdDonutSmall } from 'react-icons/md';
 
 const workIcon = {
@@ -24,7 +22,7 @@ const starIcon = {
 export default function ProjectsTimeline() {
   const timeline = [
     {
-      icon: starIcon,
+      icon: schoolIcon,
       date: 'June 2022',
       title: 'Website Services for Slimetime University',
       subtitle: 'Slimetime University',
@@ -66,7 +64,7 @@ export default function ProjectsTimeline() {
       desc: 'UI/UX Engineering, Web Design, Serverless Hosting',
     },
     {
-      icon: workIcon,
+      icon: schoolIcon,
       date: 'August 2021',
       title: 'Developing Digital Campaign for Seasonal Events',
       subtitle: 'The Brainy Bunch',
@@ -90,7 +88,7 @@ export default function ProjectsTimeline() {
                   <BadgeContainer>
                     {' '}
                     <Badges content="Project Specs" info />
-                    <Badges content="Repo" tasks />{' '}
+                    <Badges content="Visit Repo" tasks />{' '}
                   </BadgeContainer>
                 </React.Fragment>
               ) : undefined}
