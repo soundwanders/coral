@@ -214,7 +214,7 @@ const AnimationTrack = styled.div`
   display: inline-block;
   width: 85%;
   margin-left: 1rem;
-  background-color: transparent;
+  background-color: transparent !important;
   overflow: hidden;
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
@@ -230,7 +230,7 @@ const TimelineSection = styled.div`
 export const TimelineWrapper = styled.div`
   height: max-content;
   overflow: auto;
-  background-color: transparent;
+  background-color: #172854;
   padding: 2rem 0;
 `;
 
