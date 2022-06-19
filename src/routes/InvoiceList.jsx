@@ -114,7 +114,7 @@ const Grid = styled.div`
 
 // white-space: normal prevents invoice description from overflowing container
 export const CardContainer = styled.div`
-  padding: 2rem 2rem 3rem 2rem;
+  padding: 2rem 1rem 3rem 2rem;
   white-space: normal;
   background: ${White};
   background-image: linear-gradient(180deg, #172854 12%, ${White} 12%, ${White} 87%, #172854 87%);

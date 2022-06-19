@@ -30,6 +30,25 @@ ul > li > .recharts-surface {
   height: 1.5rem;
 }
 
+.vertical-timeline {
+  padding: 1.5rem 0 !important;
+}
+
+.vertical-timeline-element {
+  max-height: 160px;
+}
+
+.vertical-timeline-element-content {
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #fbfbfb;
+}
+
+.react-timeline {
+  height: max-content !important;
+  padding: 2rem 0;
+}
+
 @media (max-width: 1080px) {
   body {
     width: 99.5%;
