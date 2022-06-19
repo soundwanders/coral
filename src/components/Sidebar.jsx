@@ -15,7 +15,7 @@ const Sidebar = () => {
       <ProfileContainer>
         <Avatar src={AvatarImage} />
         <Name>Chase Wunderkatz</Name>
-        <Badges content="Mastermind" />
+        <Badges content="King Tiger" />
       </ProfileContainer>
 
       <LinksContainer>

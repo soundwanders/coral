@@ -28,8 +28,8 @@ const ContentCard = () => {
           </Row>
           <Row justify>
             <Badges content="Design" glowTags />
-            <Badges content="Branding" glowTags />
-            <Badges content="CMS" glowTags />
+            <Badges content="Marketing" glowTags />
+            <Badges content="UI/UX" glowTags />
           </Row>
         </CardContent>
       </Card>

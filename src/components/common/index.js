@@ -6,3 +6,4 @@ export * from './Underline';
 export * from './Badges';
 export * from './Tooltip';
 export * from './Portrait';
+export * from './FishWrapper';

@@ -3,12 +3,14 @@ import { Outlet } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import Badges from '../components/common/Badges';
 import Fish from '../components/common/Fish';
+import { FishWrapper } from '../components/common/FishWrapper';
 import Sidebar from '../components/Sidebar';
 import ConversionsChart from '../components/charts/Conversions';
 import GrowthChart from '../components/charts/Growth';
 import OverviewChart from '../components/charts/Overview';
 import ProjectsChart from '../components/charts/Projects';
 import SalesChart from '../components/charts/Sales';
+import ReefBanner from '../assets/ReefBanner.png';
 
 import {
   TotalClients,
@@ -77,11 +79,13 @@ const Analytics = () => {
           </Grid>
         </FlexContainer>
 
-        <AnimationWrapper>
-          <FishWrapper>
-            <Fish />
-          </FishWrapper>
-        </AnimationWrapper>
+        <ReefFooter>
+          <AnimationTrack>
+            <FishWrapper>
+              <Fish />
+            </FishWrapper>
+          </AnimationTrack>
+        </ReefFooter>
       </Wrapper>
       <Outlet />
     </Container>
@@ -96,11 +100,9 @@ export const Fade = keyframes`
     opacity: 1.0;
   }
 `;
-
 const Grid = styled.div`
   display: grid;
   position: relative;
-  width: 80%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   gap: 3rem 4.25rem;
@@ -252,23 +254,25 @@ const ChartLabel = styled.div`
   }
 `;
 
-const AnimationWrapper = styled.div`
+const ReefFooter = styled.div`
+  width: 80%;
+  margin: 2rem 0 0 1rem;
+  background-image: url(${ReefBanner});
+  background-size: contain;
+  padding: 0 0 0 2rem;
+  border-radius: 0.675rem;
+`;
+
+const AnimationTrack = styled.div`
   display: inline-block;
   width: 85%;
-  height: 2.5rem;
+  height: 5vmax;
   margin-left: 1rem;
   background-color: transparent;
   overflow: hidden;
-`;
-
-const FishWrapper = styled.span`
-  display: block;
-  color: #68b6e7;
-  line-height: 1.5;
-  margin: 0 auto;
 
   @media screen and (min-width: 320px) and (max-width: 1080px) {
-    color: #255dd5;
+    height: 8vmax;
   }
 `;
 

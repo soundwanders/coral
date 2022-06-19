@@ -14,8 +14,8 @@ const Fish = () => (
 );
 
 const StyledFish = styled.svg`
-  width: 3rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 1.75rem;
   margin-left: 0%;
   position: absolute;
   overflow: hidden;
@@ -32,6 +32,7 @@ const StyledFish = styled.svg`
       margin-left: 0%;
       -webkit-transform: translateY(0);
       transform: translateY(0);
+      opacity: 0.95;
     }
     25% {
       -webkit-transform: translateY(6px);
@@ -41,11 +42,15 @@ const StyledFish = styled.svg`
       -webkit-transform: translateY(2px);
       transform: translateY(2px);
     }
-    75% {
+    65% {
       -webkit-transform: translateY(4px);
       transform: translateY(4px);
+    }
+    75% {
+      -webkit-transform: translateY(2px);
+      transform: translateY(2px);
       margin-left: 75%;
-      opacity: 0.5;
+      opacity: 0.75;
     }
     100% {
       -webkit-transform: translateY(0);
