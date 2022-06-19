@@ -153,7 +153,7 @@ const Badge = styled.span`
       background-color:  ${White};
       color: ${ThemeColor};
       border: 1px solid ${ThemeColor};
-      font-size: 0.6rem;
+      font-size: 0.615rem;
       font-weight: 600;
       padding: 0.15rem 0.25rem;
       text-align: center;
@@ -162,6 +162,7 @@ const Badge = styled.span`
       @media screen and (min-width: 320px) and (max-width: 1080px) {
         margin: 1rem auto 0 auto;
         padding: 6px 8px;
+        font-size: 0.7rem;
       }
     `}
 `;
