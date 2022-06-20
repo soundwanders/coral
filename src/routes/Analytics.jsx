@@ -10,7 +10,6 @@ import GrowthChart from '../components/charts/Growth';
 import OverviewChart from '../components/charts/Overview';
 import ProjectsChart from '../components/charts/Projects';
 import SalesChart from '../components/charts/Sales';
-import ReefBanner from '../assets/ReefBanner.png';
 
 import {
   TotalClients,
@@ -79,13 +78,11 @@ const Analytics = () => {
           </Grid>
         </FlexContainer>
 
-        <ReefFooter>
-          <AnimationTrack>
-            <FishWrapper>
-              <Fish />
-            </FishWrapper>
-          </AnimationTrack>
-        </ReefFooter>
+        <AnimationTrack>
+          <FishWrapper>
+            <Fish />
+          </FishWrapper>
+        </AnimationTrack>
       </Wrapper>
       <Outlet />
     </Container>
@@ -156,7 +153,7 @@ const SalesCard = styled.div`
   padding: 0.3rem 2rem;
   margin: 0;
   border-radius: 1rem;
-  font-size: 3.5rem;
+  font-size: 3.45rem;
   font-weight: 600;
   text-align: left;
   color: ${White};
@@ -252,15 +249,6 @@ const ChartLabel = styled.div`
     font-size: 1.1rem;
     transform: translateY(-1.35rem);
   }
-`;
-
-const ReefFooter = styled.div`
-  width: 80%;
-  margin: 2rem 0 0 1rem;
-  background-image: url(${ReefBanner});
-  background-size: contain;
-  padding: 0 0 0 2rem;
-  border-radius: 0.675rem;
 `;
 
 const AnimationTrack = styled.div`
