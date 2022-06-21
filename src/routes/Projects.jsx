@@ -196,7 +196,7 @@ export const Card = styled.div`
 `;
 
 export const CardText = styled.p`
-  font-size: 0.825rem;
+  font-size: 0.815rem;
   font-weight: 600;
 `;
 
@@ -226,12 +226,13 @@ const AnimationTrack = styled.div`
 `;
 
 const TimelineSection = styled.div`
-  max-height: 540px;
+  max-height: 600px;
   overflow-y: auto;
 `;
 
 export const TimelineWrapper = styled.div`
   height: max-content;
+  min-height: 100%;
   overflow: auto;
   background-color: #172854;
   padding: 2rem 0;

@@ -52,11 +52,14 @@ ul > li > .recharts-surface {
 .vertical-timeline-element-title {
   font-size:  1.1rem;
   margin-bottom:  0.8rem !important;
+  width: 95%;
 }
 
 .desc {
   margin-top:  0.5rem !important;
   margin-bottom:  -0.7rem !important;
+  font-size:  0.9rem !important;
+  width: 95%;
 }
 
 
