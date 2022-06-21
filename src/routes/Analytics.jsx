@@ -259,6 +259,10 @@ const AnimationTrack = styled.div`
   background-color: transparent;
   overflow: hidden;
 
+   svg { 
+     color: #6b4ad4;
+   }
+
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     height: 9vmax;
   }
