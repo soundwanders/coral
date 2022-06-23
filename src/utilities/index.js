@@ -23,12 +23,14 @@ export const ThemeColorPalette = [
 
 export const DeepBluePalette = [
   '#2766ae',
-  '#0c78c9',
-  '#1396e5',
   '#065ecf',
-  '#1671bf',
+  '#175dbd',
   '#2e77cb',
-  '#076ef2',
+  '#1396e5',
+  '#0a6bb4',
+  '#1671bf',
+  '#2072b0',
+  '#0c78c9',
 ];
 
 export const PurplePalette = [

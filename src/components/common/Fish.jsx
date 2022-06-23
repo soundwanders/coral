@@ -16,9 +16,9 @@ const Fish = () => (
 const StyledFish = styled.svg`
   width: 2.5rem;
   height: 1.75rem;
+  margin-top: 4px;
   margin-left: 0%;
   position: absolute;
-  overflow: hidden;
 
   -webkit-animation: swim 25s;
   animation: swim 25s;

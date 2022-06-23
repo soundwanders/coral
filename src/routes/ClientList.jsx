@@ -114,9 +114,9 @@ const Input = styled.input`
 `;
 
 export const ClientUl = styled.ul`
-  padding: 1rem 2.3rem 2rem 2.3rem;
+  padding: 1rem 2.4rem 2rem 2.4rem;
   margin: 0;
-  min-width: 265px;
+  min-width: 275px;
   background: ${White};
   background-image: linear-gradient(to bottom, #172854 12%, ${White} 12%);
   border-radius: 1rem;

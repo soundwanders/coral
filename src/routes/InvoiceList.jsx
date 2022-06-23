@@ -136,7 +136,7 @@ export const CardContainer = styled.div`
 export const CardContent = styled.div`
   width: 90%;
   flex: 0 0 55%;
-  font-size: 1.125rem;
+  font-size: 1.1rem;
   font-weight: 500;
   transform: translateX(1rem);
 

@@ -45,16 +45,16 @@ export default function ProjectsTimeline() {
     {
       icon: schoolIcon,
       date: 'January 2022',
-      title: 'Digital Campaign for The Golden Berry Product Launch',
+      title: 'Digital Campaign for Golden Berry Product Launch',
       subtitle: 'The Golden Berry',
       desc: 'Digital Marketing, UI/UX Engineering, Web Design',
     },
     {
       icon: starIcon,
       date: 'March 2020',
-      title: 'Full Website Services for the group at The Chocobo Coop',
+      title: 'Website Services for the group at Chocobo Coop',
       subtitle: 'The Chocobo Coop',
-      desc: 'Full-Stack Web Services, Serverless Hosting',
+      desc: 'Full-Stack Web Services, Web Design',
     },
     {
       icon: workIcon,
@@ -88,7 +88,7 @@ export default function ProjectsTimeline() {
                   <BadgeContainer>
                     {' '}
                     <Badges content="Project Specs" info />
-                    <Badges content="Visit Repo" tasks />{' '}
+                    <Badges content="Codebase" tasks />{' '}
                   </BadgeContainer>
                 </React.Fragment>
               ) : undefined}
