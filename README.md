@@ -20,11 +20,12 @@
 - ![Recharts](https://recharts.org/en-US/)
 - ![React Vertical Timeline](https://www.npmjs.com/package/react-vertical-timeline-component)
 
-#### 🐳 A few points of emphasis for this project...
+#### 🐳 Points of emphasis...
 
-- Use of ES6 Array methods such as map, filter to fetch data and populate UI
-- Components are isolated, but data is shared throughout
+- ES6 Array methods such as map, filter used to fetch data and populate UI while avoiding repetition
 - Reusable components to boost scalability and prevent insanity
+- Fully Responsive, all modern browsers are supported
+- Components are isolated for a modular build
 
 <br />
 
