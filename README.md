@@ -13,18 +13,19 @@
 
 </p>
 
-## 🛸 Built With...
+### 🛸 Built With...
 
 - React
-- Sass (💅 styled-components) 
-- ![Recharts](https://recharts.org/en-US/)
-- ![React Vertical Timeline](https://www.npmjs.com/package/react-vertical-timeline-component)
+- 💅 [styled-components](https://styled-components.com/)
+- [Recharts](https://recharts.org/en-US/)
+- [React Vertical Timeline](https://www.npmjs.com/package/react-vertical-timeline-component)
 
-#### 🐳 Points of emphasis...
+
+### 🐳 Points of emphasis...
 
 - ES6 Array methods such as map, filter used to fetch data and populate UI while avoiding repetition
 - Reusable components to boost scalability and prevent insanity
-- Fully Responsive, all modern browsers are supported
+- Fully Responsive, supports all modern browsers web + mobile
 - Components are isolated for a modular build
 
 <br />
