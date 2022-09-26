@@ -23,10 +23,10 @@
 
 ### 🐳 Points of emphasis...
 
-- ES6 Array methods such as map, filter used to fetch data and populate UI while avoiding repetition
+- ES6 Array methods such as map, filter used to fetch data and populate UI while avoiding code repetition
 - Reusable components to boost scalability and prevent insanity
 - Fully Responsive, supports all modern browsers web + mobile
-- Components are isolated for a modular build
+- Flexible and modular components to improve scalability and deter breaking changes
 
 <br />
 
