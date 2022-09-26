@@ -50,7 +50,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 Runs specified prettier format fixes. Visit the prettier config file to view the formatting rules.
 
-#### npm run reset
+#### `npm run reset`
 
 Deletes contents of the 'build' directory to allow for a fresh rebuild.
 
