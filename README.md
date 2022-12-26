@@ -13,15 +13,15 @@
 
 </p>
 
-### 🛸 Built With...
+### 🧶 Built With...
 
-- React
+- React.js
 - 💅 [styled-components](https://styled-components.com/)
 - [Recharts](https://recharts.org/en-US/)
 - [React Vertical Timeline](https://www.npmjs.com/package/react-vertical-timeline-component)
 
 
-### 🐳 Points of emphasis...
+### 🐳 Points of Emphasis...
 
 - ES6 Array methods such as map, filter used to fetch data and populate UI while avoiding code repetition
 - Reusable components to boost scalability and prevent insanity
@@ -32,7 +32,7 @@
 
 ## Available Scripts
 
-### `npm install`
+#### `npm install`
 
 Run inside project directory to install necessary dependencies (styled-components, recharts, react-router, etc).
 
