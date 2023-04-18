@@ -147,7 +147,7 @@ export const ListItem = styled.li`
   font-weight: 500;
 
   &:nth-child(3) {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
   }
 `;
 
